@@ -8,7 +8,7 @@ No warranties. If MCP does not work for you, or causes any damage, it's your pro
 You are allowed to:
 - Use MCP to decompile the Minecraft client and server jar files.
 - Use the decompiled source code to create mods for Minecraft.
-- Recompile modified versions of Minecraft.
+- Recompile modified versions of Minecraft. 
 - Reobfuscate the classes of your mod for Minecraft.
 
 You are NOT allowed to:
