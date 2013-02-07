@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.Instance"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.SidedProxy"/>
+<fullyQualifiedTypeName name="mod.legendaire45.common.CommonProxy"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.Block"/>
+<fullyQualifiedTypeName name="mod.legendaire45.blocks.BlockCarottes"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
+</qualifiedTypeNameHistroy>

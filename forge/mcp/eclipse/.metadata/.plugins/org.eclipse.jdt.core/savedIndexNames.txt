@@ -1,0 +1,10 @@
+INDEX VERSION 1.126+/mnt/home/furet/Project/bellumacraft/forge/mcp/eclipse/.metadata/.plugins/org.eclipse.jdt.core
+4069914397.index
+714336231.index
+1909201204.index
+3130428439.index
+1627294015.index
+208370467.index
+2797902560.index
+211521381.index
+3027229578.index

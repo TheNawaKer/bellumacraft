@@ -1,0 +1,218 @@
+2013-02-07 13:54:18 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
+2013-02-07 13:54:18 [FINEST] [ForgeModLoader] All core mods are successfully located
+2013-02-07 13:54:18 [FINEST] [ForgeModLoader] Discovering coremods
+2013-02-07 13:54:18 [FINEST] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/argo-2.25.jar
+2013-02-07 13:54:18 [INFO] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/argo-2.25.jar
+2013-02-07 13:54:23 [SEVERE] [ForgeModLoader] There was a problem downloading the file argo-2.25.jar automatically. Perhaps you have an environment without internet access. You will need to download the file manually or restart and let it try again
+
+2013-02-07 13:54:23 [FINEST] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/guava-12.0.1.jar
+2013-02-07 13:54:23 [INFO] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/guava-12.0.1.jar
+2013-02-07 13:54:28 [SEVERE] [ForgeModLoader] There was a problem downloading the file guava-12.0.1.jar automatically. Perhaps you have an environment without internet access. You will need to download the file manually or restart and let it try again
+
+2013-02-07 13:54:28 [FINEST] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/asm-all-4.0.jar
+2013-02-07 13:54:28 [INFO] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/asm-all-4.0.jar
+2013-02-07 13:54:33 [SEVERE] [ForgeModLoader] There was a problem downloading the file asm-all-4.0.jar automatically. Perhaps you have an environment without internet access. You will need to download the file manually or restart and let it try again
+
+2013-02-07 13:54:33 [FINEST] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/bcprov-jdk15on-147.jar
+2013-02-07 13:54:33 [INFO] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/bcprov-jdk15on-147.jar
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] There was a problem downloading the file bcprov-jdk15on-147.jar automatically. Perhaps you have an environment without internet access. You will need to download the file manually or restart and let it try again
+
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] There were errors during initial FML setup. Some files failed to download or were otherwise corrupted. You will need to manually obtain the following files from these download links and ensure your lib directory is clean. 
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] *** Download http://files.minecraftforge.net/fmllibs/argo-2.25.jar
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] *** Download http://files.minecraftforge.net/fmllibs/guava-12.0.1.jar
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] *** Download http://files.minecraftforge.net/fmllibs/asm-all-4.0.jar
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] *** Download http://files.minecraftforge.net/fmllibs/bcprov-jdk15on-147.jar
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] <===========>
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] The following is the errors that caused the setup to fail. They may help you diagnose and resolve the issue
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] A download error occured
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] A download error occured
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] A download error occured
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] A download error occured
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] <<< ==== >>>
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] The following is diagnostic information for developers to review.
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] Error details
+java.lang.RuntimeException: A download error occured
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:483)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:132)
+	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
+	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
+	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
+	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
+	at Start.main(Start.java:29)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1664)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1662)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1660)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1243)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:467)
+	... 6 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:931)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
+	at sun.net.www.protocol.http.HttpURLConnection.getHeaderField(HttpURLConnection.java:2660)
+	at java.net.URLConnection.getHeaderFieldLong(URLConnection.java:639)
+	at java.net.URLConnection.getContentLengthLong(URLConnection.java:511)
+	at java.net.URLConnection.getContentLength(URLConnection.java:495)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:466)
+	... 6 more
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] Error details
+java.lang.RuntimeException: A download error occured
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:483)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:132)
+	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
+	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
+	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
+	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
+	at Start.main(Start.java:29)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1664)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1662)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1660)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1243)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:467)
+	... 6 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:931)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
+	at sun.net.www.protocol.http.HttpURLConnection.getHeaderField(HttpURLConnection.java:2660)
+	at java.net.URLConnection.getHeaderFieldLong(URLConnection.java:639)
+	at java.net.URLConnection.getContentLengthLong(URLConnection.java:511)
+	at java.net.URLConnection.getContentLength(URLConnection.java:495)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:466)
+	... 6 more
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] Error details
+java.lang.RuntimeException: A download error occured
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:483)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:132)
+	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
+	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
+	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
+	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
+	at Start.main(Start.java:29)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1664)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1662)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1660)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1243)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:467)
+	... 6 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:931)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
+	at sun.net.www.protocol.http.HttpURLConnection.getHeaderField(HttpURLConnection.java:2660)
+	at java.net.URLConnection.getHeaderFieldLong(URLConnection.java:639)
+	at java.net.URLConnection.getContentLengthLong(URLConnection.java:511)
+	at java.net.URLConnection.getContentLength(URLConnection.java:495)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:466)
+	... 6 more
+2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] Error details
+java.lang.RuntimeException: A download error occured
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:483)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:132)
+	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
+	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
+	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
+	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
+	at Start.main(Start.java:29)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1664)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1662)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1660)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1243)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:467)
+	... 6 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:931)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
+	at sun.net.www.protocol.http.HttpURLConnection.getHeaderField(HttpURLConnection.java:2660)
+	at java.net.URLConnection.getHeaderFieldLong(URLConnection.java:639)
+	at java.net.URLConnection.getContentLengthLong(URLConnection.java:511)
+	at java.net.URLConnection.getContentLength(URLConnection.java:495)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:466)
+	... 6 more
+2013-02-07 13:54:43 [INFO] [STDERR] Exception in thread "main" java.lang.RuntimeException: java.lang.RuntimeException: A fatal error occured and FML cannot continue
+2013-02-07 13:54:43 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:175)
+2013-02-07 13:54:43 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
+2013-02-07 13:54:43 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
+2013-02-07 13:54:43 [INFO] [STDERR] 	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
+2013-02-07 13:54:43 [INFO] [STDERR] 	at Start.main(Start.java:29)
+2013-02-07 13:54:43 [INFO] [STDERR] Caused by: java.lang.RuntimeException: A fatal error occured and FML cannot continue
+2013-02-07 13:54:43 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:228)
+2013-02-07 13:54:43 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
+2013-02-07 13:54:43 [INFO] [STDERR] 	... 4 more

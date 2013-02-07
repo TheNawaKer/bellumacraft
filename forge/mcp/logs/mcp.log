@@ -5591,3 +5591,234 @@ based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
 18:56:07 - 10 warnings
 18:56:07 - - Done in 32.60 seconds
 18:56:07 - > Generating client md5s
+13:56:34 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+13:56:34 - OS : linux2
+13:56:35 - # VERSION INFO
+13:56:35 - python: 2.7.3 (default, Apr 20 2012, 22:39:59) 
+[GCC 4.6.3]
+13:56:35 - platform: Linux-3.2.0-23-generic-x86_64-with-Ubuntu-12.04-precise
+13:56:35 - # java: '"java" -version'
+13:56:35 - java version "1.7.0_07"
+Java(TM) SE Runtime Environment (build 1.7.0_07-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 23.3-b01, mixed mode)
+13:56:35 - # javac: '"javac" -version'
+13:56:35 - javac 1.7.0_07
+13:56:35 - # javac runtime: '"javac" -J-version'
+13:56:35 - java version "1.7.0_07"
+Java(TM) SE Runtime Environment (build 1.7.0_07-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 23.3-b01, mixed mode)
+13:56:35 - # retroguard: 'runtime/bin/retroguard.jar --version'
+13:56:35 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+13:56:35 - # mcinjector: 'runtime/bin/mcinjector.jar --version'
+13:56:35 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+13:56:35 - # patch: 'patch --version'
+13:56:35 - patch 2.6.1
+13:56:35 - # wine: 'wine --version'
+13:56:35 - # astyle: 'astyle --version'
+13:56:35 - Artistic Style Version 2.01
+13:56:35 - # fernflower: 'runtime/bin/fernflower.jar'
+13:56:35 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+13:56:35 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+13:56:35 - == Recompiling client ==
+13:56:35 - > Cleaning bin
+13:56:36 - > Recompiling
+13:56:36 - runcmd: '"javac" -encoding UTF-8 -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "lib:lib/*:jars/bin/minecraft.jar:jars/bin/jinput.jar:jars/bin/lwjgl.jar:jars/bin/lwjgl_util.jar" -sourcepath src/minecraft -d bin/minecraft src/minecraft/Start.java src/minecraft/mod/legendaire45/mod_iut.java src/minecraft/mod/legendaire45/blocks/BlockCarottes.java src/minecraft/mod/legendaire45/client/ClientProxy.java src/minecraft/mod/legendaire45/common/CommonProxy.java src/minecraft/ibxm/Instrument.ja...'
+13:56:36 - shlex: ['javac', '-encoding', 'UTF-8', '-Xlint:-options', '-deprecation', '-g', '-source', '1.6', '-target', '1.6', '-classpath', 'lib:lib/*:jars/bin/minecraft.jar:jars/bin/jinput.jar:jars/bin/lwjgl.jar:jars/bin/lwjgl_util.jar', '-sourcepath', 'src/minecraft', '-d', 'bin/minecraft', 'src/minecraft/Start.java', 'src/minecraft/mod/legendaire45/mod_iut.java', 'src/minecraft/mod/legendaire45/blocks/BlockCarottes.java', 'src/minecraft/mod/legendaire45/client/ClientProxy.java', 'src/minecraft/mod/legendaire4...
+13:56:53 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderDispenseHelper.java:8: warning: [deprecation] IDispenseHandler in cpw.mods.fml.common has been deprecated
+13:56:53 - import cpw.mods.fml.common.IDispenseHandler;
+13:56:53 -                           ^
+13:56:53 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderDispenseHelper.java:9: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+13:56:53 - import cpw.mods.fml.common.IDispenserHandler;
+13:56:53 -                           ^
+13:56:53 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderDispenseHelper.java:11: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+13:56:53 - public class ModLoaderDispenseHelper implements IDispenserHandler
+13:56:53 -                                                 ^
+13:56:53 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderHelper.java:39: warning: [deprecation] IDispenseHandler in cpw.mods.fml.common has been deprecated
+13:56:53 - import cpw.mods.fml.common.IDispenseHandler;
+13:56:53 -                           ^
+13:56:53 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderHelper.java:40: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+13:56:53 - import cpw.mods.fml.common.IDispenserHandler;
+13:56:53 -                           ^
+13:56:53 - src/minecraft/cpw/mods/fml/common/registry/GameRegistry.java:39: warning: [deprecation] IDispenseHandler in cpw.mods.fml.common has been deprecated
+13:56:53 - import cpw.mods.fml.common.IDispenseHandler;
+13:56:53 -                           ^
+13:56:53 - src/minecraft/cpw/mods/fml/common/registry/GameRegistry.java:40: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+13:56:53 - import cpw.mods.fml.common.IDispenserHandler;
+13:56:53 -                           ^
+13:56:53 - src/minecraft/net/minecraft/world/SpawnerAnimals.java:27: warning: [deprecation] LivingSpecialSpawnEvent in net.minecraftforge.event.entity.living has been deprecated
+13:56:53 - import net.minecraftforge.event.entity.living.LivingSpecialSpawnEvent;
+13:56:53 -                                              ^
+13:56:53 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderModContainer.java:528: warning: [deprecation] registerDispenserHandler(IDispenserHandler) in GameRegistry has been deprecated
+13:56:53 -             GameRegistry.registerDispenserHandler(ModLoaderHelper.buildDispenseHelper(mod));
+13:56:53 -                         ^
+13:56:53 - src/minecraft/net/minecraft/src/ModLoader.java:638: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+13:56:53 -         GameRegistry.registerBlock(block);
+13:56:53 -                     ^
+13:56:53 - src/minecraft/net/minecraft/src/ModLoader.java:649: warning: [deprecation] registerBlock(Block,Class<? extends ItemBlock>) in GameRegistry has been deprecated
+13:56:53 -         GameRegistry.registerBlock(block, itemclass);
+13:56:53 -                     ^
+13:56:53 - Note: Some input files use unchecked or unsafe operations.
+13:56:53 - Note: Recompile with -Xlint:unchecked for details.
+13:56:53 - 11 warnings
+13:56:53 - - Done in 17.82 seconds
+13:56:53 - !! Can not find server sources, try decompiling !!
+13:57:18 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+13:57:18 - OS : linux2
+13:57:18 - # VERSION INFO
+13:57:18 - python: 2.7.3 (default, Apr 20 2012, 22:39:59) 
+[GCC 4.6.3]
+13:57:18 - platform: Linux-3.2.0-23-generic-x86_64-with-Ubuntu-12.04-precise
+13:57:18 - # java: '"java" -version'
+13:57:18 - java version "1.7.0_07"
+Java(TM) SE Runtime Environment (build 1.7.0_07-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 23.3-b01, mixed mode)
+13:57:18 - # javac: '"javac" -version'
+13:57:18 - javac 1.7.0_07
+13:57:18 - # javac runtime: '"javac" -J-version'
+13:57:18 - java version "1.7.0_07"
+Java(TM) SE Runtime Environment (build 1.7.0_07-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 23.3-b01, mixed mode)
+13:57:18 - # retroguard: 'runtime/bin/retroguard.jar --version'
+13:57:18 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+13:57:18 - # mcinjector: 'runtime/bin/mcinjector.jar --version'
+13:57:18 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+13:57:18 - # patch: 'patch --version'
+13:57:18 - patch 2.6.1
+13:57:18 - # wine: 'wine --version'
+13:57:18 - # astyle: 'astyle --version'
+13:57:18 - Artistic Style Version 2.01
+13:57:18 - # fernflower: 'runtime/bin/fernflower.jar'
+13:57:18 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+13:57:18 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+13:57:18 - == Recompiling client ==
+13:57:18 - > Cleaning bin
+13:57:19 - > Recompiling
+13:57:19 - runcmd: '"javac" -encoding UTF-8 -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "lib:lib/*:jars/bin/minecraft.jar:jars/bin/jinput.jar:jars/bin/lwjgl.jar:jars/bin/lwjgl_util.jar" -sourcepath src/minecraft -d bin/minecraft src/minecraft/Start.java src/minecraft/mod/legendaire45/mod_iut.java src/minecraft/mod/legendaire45/blocks/BlockCarottes.java src/minecraft/mod/legendaire45/client/ClientProxy.java src/minecraft/mod/legendaire45/common/CommonProxy.java src/minecraft/ibxm/Instrument.ja...'
+13:57:19 - shlex: ['javac', '-encoding', 'UTF-8', '-Xlint:-options', '-deprecation', '-g', '-source', '1.6', '-target', '1.6', '-classpath', 'lib:lib/*:jars/bin/minecraft.jar:jars/bin/jinput.jar:jars/bin/lwjgl.jar:jars/bin/lwjgl_util.jar', '-sourcepath', 'src/minecraft', '-d', 'bin/minecraft', 'src/minecraft/Start.java', 'src/minecraft/mod/legendaire45/mod_iut.java', 'src/minecraft/mod/legendaire45/blocks/BlockCarottes.java', 'src/minecraft/mod/legendaire45/client/ClientProxy.java', 'src/minecraft/mod/legendaire4...
+13:57:36 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderDispenseHelper.java:8: warning: [deprecation] IDispenseHandler in cpw.mods.fml.common has been deprecated
+13:57:36 - import cpw.mods.fml.common.IDispenseHandler;
+13:57:36 -                           ^
+13:57:36 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderDispenseHelper.java:9: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+13:57:36 - import cpw.mods.fml.common.IDispenserHandler;
+13:57:36 -                           ^
+13:57:36 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderDispenseHelper.java:11: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+13:57:36 - public class ModLoaderDispenseHelper implements IDispenserHandler
+13:57:36 -                                                 ^
+13:57:36 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderHelper.java:39: warning: [deprecation] IDispenseHandler in cpw.mods.fml.common has been deprecated
+13:57:36 - import cpw.mods.fml.common.IDispenseHandler;
+13:57:36 -                           ^
+13:57:36 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderHelper.java:40: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+13:57:36 - import cpw.mods.fml.common.IDispenserHandler;
+13:57:36 -                           ^
+13:57:36 - src/minecraft/cpw/mods/fml/common/registry/GameRegistry.java:39: warning: [deprecation] IDispenseHandler in cpw.mods.fml.common has been deprecated
+13:57:36 - import cpw.mods.fml.common.IDispenseHandler;
+13:57:36 -                           ^
+13:57:36 - src/minecraft/cpw/mods/fml/common/registry/GameRegistry.java:40: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+13:57:36 - import cpw.mods.fml.common.IDispenserHandler;
+13:57:36 -                           ^
+13:57:36 - src/minecraft/net/minecraft/world/SpawnerAnimals.java:27: warning: [deprecation] LivingSpecialSpawnEvent in net.minecraftforge.event.entity.living has been deprecated
+13:57:36 - import net.minecraftforge.event.entity.living.LivingSpecialSpawnEvent;
+13:57:36 -                                              ^
+13:57:36 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderModContainer.java:528: warning: [deprecation] registerDispenserHandler(IDispenserHandler) in GameRegistry has been deprecated
+13:57:36 -             GameRegistry.registerDispenserHandler(ModLoaderHelper.buildDispenseHelper(mod));
+13:57:36 -                         ^
+13:57:36 - src/minecraft/net/minecraft/src/ModLoader.java:638: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+13:57:36 -         GameRegistry.registerBlock(block);
+13:57:36 -                     ^
+13:57:36 - src/minecraft/net/minecraft/src/ModLoader.java:649: warning: [deprecation] registerBlock(Block,Class<? extends ItemBlock>) in GameRegistry has been deprecated
+13:57:36 -         GameRegistry.registerBlock(block, itemclass);
+13:57:36 -                     ^
+13:57:36 - Note: Some input files use unchecked or unsafe operations.
+13:57:36 - Note: Recompile with -Xlint:unchecked for details.
+13:57:36 - 11 warnings
+13:57:36 - - Done in 17.14 seconds
+13:57:36 - !! Can not find server sources, try decompiling !!
+13:57:44 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+13:57:44 - OS : linux2
+13:57:44 - runmc: '"java" -Xincgc -Xms1024M -Xmx1024M -cp "../bin/minecraft:../src/minecraft:../lib:../lib/*:../jars/bin/minecraft.jar:../jars/bin/jinput.jar:../jars/bin/lwjgl.jar:../jars/bin/lwjgl_util.jar" -Djava.library.path=../jars/bin/natives Start'
+13:57:44 - shlex: ['java', '-Xincgc', '-Xms1024M', '-Xmx1024M', '-cp', '../bin/minecraft:../src/minecraft:../lib:../lib/*:../jars/bin/minecraft.jar:../jars/bin/jinput.jar:../jars/bin/lwjgl.jar:../jars/bin/lwjgl_util.jar', '-Djava.library.path=../jars/bin/natives', 'Start']
+13:57:45 - 2013-02-07 13:57:45 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] java.lang.reflect.InvocationTargetException
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:601)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:111)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at Start.main(Start.java:29)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] Caused by: java.lang.UnsatisfiedLinkError: /mnt/home/furet/Project/bellumacraft/forge/mcp/jars/bin/natives/liblwjgl.so: /mnt/home/furet/Project/bellumacraft/forge/mcp/jars/bin/natives/liblwjgl.so: mauvaise classe ELF : ELFCLASS32 (Possible cause: architecture word width mismatch)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at java.lang.ClassLoader.loadLibrary1(ClassLoader.java:1939)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1864)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1854)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at java.lang.Runtime.loadLibrary0(Runtime.java:845)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at java.lang.System.loadLibrary(System.java:1084)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at org.lwjgl.Sys$1.run(Sys.java:72)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at java.security.AccessController.doPrivileged(Native Method)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at org.lwjgl.Sys.doLoadLibrary(Sys.java:65)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at org.lwjgl.Sys.loadLibrary(Sys.java:81)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at org.lwjgl.Sys.<clinit>(Sys.java:98)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at net.minecraft.client.Minecraft.getSystemTime(Minecraft.java:2556)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	at net.minecraft.client.Minecraft.fmlReentry(Minecraft.java:2245)
+13:57:46 - 2013-02-07 13:57:46 [INFO] [STDERR] 	... 8 more
+14:07:21 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+14:07:21 - OS : linux2
+14:07:21 - runmc: '"java" -Xincgc -Xms1024M -Xmx1024M -cp "../bin/minecraft:../src/minecraft:../lib:../lib/*:../jars/bin/minecraft.jar:../jars/bin/jinput.jar:../jars/bin/lwjgl.jar:../jars/bin/lwjgl_util.jar" -Djava.library.path=../jars/bin/natives Start'
+14:07:21 - shlex: ['java', '-Xincgc', '-Xms1024M', '-Xmx1024M', '-cp', '../bin/minecraft:../src/minecraft:../lib:../lib/*:../jars/bin/minecraft.jar:../jars/bin/jinput.jar:../jars/bin/lwjgl.jar:../jars/bin/lwjgl_util.jar', '-Djava.library.path=../jars/bin/natives', 'Start']
+14:07:22 - 2013-02-07 14:07:22 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] java.lang.reflect.InvocationTargetException
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:601)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:111)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at Start.main(Start.java:29)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] Caused by: java.lang.UnsatisfiedLinkError: /mnt/home/furet/Project/bellumacraft/forge/mcp/jars/bin/natives/liblwjgl.so: /mnt/home/furet/Project/bellumacraft/forge/mcp/jars/bin/natives/liblwjgl.so: mauvaise classe ELF : ELFCLASS32 (Possible cause: architecture word width mismatch)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at java.lang.ClassLoader.loadLibrary1(ClassLoader.java:1939)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1864)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1854)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at java.lang.Runtime.loadLibrary0(Runtime.java:845)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at java.lang.System.loadLibrary(System.java:1084)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at org.lwjgl.Sys$1.run(Sys.java:72)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at java.security.AccessController.doPrivileged(Native Method)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at org.lwjgl.Sys.doLoadLibrary(Sys.java:65)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at org.lwjgl.Sys.loadLibrary(Sys.java:81)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at org.lwjgl.Sys.<clinit>(Sys.java:98)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at net.minecraft.client.Minecraft.getSystemTime(Minecraft.java:2556)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	at net.minecraft.client.Minecraft.fmlReentry(Minecraft.java:2245)
+14:07:23 - 2013-02-07 14:07:23 [INFO] [STDERR] 	... 8 more
+14:07:49 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+14:07:49 - OS : linux2
+14:07:50 - runmc: '"java" -Xincgc -Xms1024M -Xmx1024M -cp "../bin/minecraft:../src/minecraft:../lib:../lib/*:../jars/bin/minecraft.jar:../jars/bin/jinput.jar:../jars/bin/lwjgl.jar:../jars/bin/lwjgl_util.jar" -Djava.library.path=../jars/bin/natives Start'
+14:07:50 - shlex: ['java', '-Xincgc', '-Xms1024M', '-Xmx1024M', '-cp', '../bin/minecraft:../src/minecraft:../lib:../lib/*:../jars/bin/minecraft.jar:../jars/bin/jinput.jar:../jars/bin/lwjgl.jar:../jars/bin/lwjgl_util.jar', '-Djava.library.path=../jars/bin/natives', 'Start']
+14:07:50 - 2013-02-07 14:07:50 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] java.lang.reflect.InvocationTargetException
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:601)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:111)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at Start.main(Start.java:29)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] Caused by: java.lang.UnsatisfiedLinkError: /mnt/home/furet/Project/bellumacraft/forge/mcp/jars/bin/natives/liblwjgl.so: /mnt/home/furet/Project/bellumacraft/forge/mcp/jars/bin/natives/liblwjgl.so: mauvaise classe ELF : ELFCLASS32 (Possible cause: architecture word width mismatch)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at java.lang.ClassLoader.loadLibrary1(ClassLoader.java:1939)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1864)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1854)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at java.lang.Runtime.loadLibrary0(Runtime.java:845)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at java.lang.System.loadLibrary(System.java:1084)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at org.lwjgl.Sys$1.run(Sys.java:72)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at java.security.AccessController.doPrivileged(Native Method)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at org.lwjgl.Sys.doLoadLibrary(Sys.java:65)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at org.lwjgl.Sys.loadLibrary(Sys.java:81)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at org.lwjgl.Sys.<clinit>(Sys.java:98)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at net.minecraft.client.Minecraft.getSystemTime(Minecraft.java:2556)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	at net.minecraft.client.Minecraft.fmlReentry(Minecraft.java:2245)
+14:07:51 - 2013-02-07 14:07:51 [INFO] [STDERR] 	... 8 more

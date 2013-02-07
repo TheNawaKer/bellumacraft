@@ -1,0 +1,19 @@
+2013-02-07 13:53:35 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
+2013-02-07 13:53:35 [FINEST] [ForgeModLoader] All core mods are successfully located
+2013-02-07 13:53:35 [FINEST] [ForgeModLoader] Discovering coremods
+2013-02-07 13:53:35 [FINEST] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/argo-2.25.jar
+2013-02-07 13:53:35 [INFO] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/argo-2.25.jar
+2013-02-07 13:53:40 [SEVERE] [ForgeModLoader] There was a problem downloading the file argo-2.25.jar automatically. Perhaps you have an environment without internet access. You will need to download the file manually or restart and let it try again
+
+2013-02-07 13:53:40 [FINEST] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/guava-12.0.1.jar
+2013-02-07 13:53:40 [INFO] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/guava-12.0.1.jar
+2013-02-07 13:53:45 [WARNING] [ForgeModLoader] You have stopped the downloading operation before it could complete
+2013-02-07 13:53:45 [FINEST] [ForgeModLoader] Library file guava-12.0.1.jar was downloaded and verified successfully
+2013-02-07 13:53:45 [FINEST] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/asm-all-4.0.jar
+2013-02-07 13:53:45 [INFO] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/asm-all-4.0.jar
+2013-02-07 13:53:50 [WARNING] [ForgeModLoader] You have stopped the downloading operation before it could complete
+2013-02-07 13:53:50 [FINEST] [ForgeModLoader] Library file asm-all-4.0.jar was downloaded and verified successfully
+2013-02-07 13:53:50 [FINEST] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/bcprov-jdk15on-147.jar
+2013-02-07 13:53:50 [INFO] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/bcprov-jdk15on-147.jar
+2013-02-07 13:53:55 [WARNING] [ForgeModLoader] You have stopped the downloading operation before it could complete
+2013-02-07 13:53:55 [FINEST] [ForgeModLoader] Library file bcprov-jdk15on-147.jar was downloaded and verified successfully
