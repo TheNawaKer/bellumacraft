@@ -1,218 +1,380 @@
-2013-02-07 13:54:18 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
-2013-02-07 13:54:18 [FINEST] [ForgeModLoader] All core mods are successfully located
-2013-02-07 13:54:18 [FINEST] [ForgeModLoader] Discovering coremods
-2013-02-07 13:54:18 [FINEST] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/argo-2.25.jar
-2013-02-07 13:54:18 [INFO] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/argo-2.25.jar
-2013-02-07 13:54:23 [SEVERE] [ForgeModLoader] There was a problem downloading the file argo-2.25.jar automatically. Perhaps you have an environment without internet access. You will need to download the file manually or restart and let it try again
-
-2013-02-07 13:54:23 [FINEST] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/guava-12.0.1.jar
-2013-02-07 13:54:23 [INFO] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/guava-12.0.1.jar
-2013-02-07 13:54:28 [SEVERE] [ForgeModLoader] There was a problem downloading the file guava-12.0.1.jar automatically. Perhaps you have an environment without internet access. You will need to download the file manually or restart and let it try again
-
-2013-02-07 13:54:28 [FINEST] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/asm-all-4.0.jar
-2013-02-07 13:54:28 [INFO] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/asm-all-4.0.jar
-2013-02-07 13:54:33 [SEVERE] [ForgeModLoader] There was a problem downloading the file asm-all-4.0.jar automatically. Perhaps you have an environment without internet access. You will need to download the file manually or restart and let it try again
-
-2013-02-07 13:54:33 [FINEST] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/bcprov-jdk15on-147.jar
-2013-02-07 13:54:33 [INFO] [ForgeModLoader] Downloading file http://files.minecraftforge.net/fmllibs/bcprov-jdk15on-147.jar
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] There was a problem downloading the file bcprov-jdk15on-147.jar automatically. Perhaps you have an environment without internet access. You will need to download the file manually or restart and let it try again
-
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] There were errors during initial FML setup. Some files failed to download or were otherwise corrupted. You will need to manually obtain the following files from these download links and ensure your lib directory is clean. 
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] *** Download http://files.minecraftforge.net/fmllibs/argo-2.25.jar
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] *** Download http://files.minecraftforge.net/fmllibs/guava-12.0.1.jar
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] *** Download http://files.minecraftforge.net/fmllibs/asm-all-4.0.jar
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] *** Download http://files.minecraftforge.net/fmllibs/bcprov-jdk15on-147.jar
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] <===========>
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] The following is the errors that caused the setup to fail. They may help you diagnose and resolve the issue
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] A download error occured
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] A download error occured
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] A download error occured
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] A download error occured
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] <<< ==== >>>
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] The following is diagnostic information for developers to review.
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] Error details
-java.lang.RuntimeException: A download error occured
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:483)
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:132)
-	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
-	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
-	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
-	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
-	at Start.main(Start.java:29)
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1664)
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1662)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1660)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1243)
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:467)
-	... 6 more
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
-	at java.net.Socket.connect(Socket.java:579)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:931)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
-	at sun.net.www.protocol.http.HttpURLConnection.getHeaderField(HttpURLConnection.java:2660)
-	at java.net.URLConnection.getHeaderFieldLong(URLConnection.java:639)
-	at java.net.URLConnection.getContentLengthLong(URLConnection.java:511)
-	at java.net.URLConnection.getContentLength(URLConnection.java:495)
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:466)
-	... 6 more
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] Error details
-java.lang.RuntimeException: A download error occured
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:483)
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:132)
-	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
-	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
-	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
-	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
-	at Start.main(Start.java:29)
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1664)
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1662)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1660)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1243)
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:467)
-	... 6 more
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
-	at java.net.Socket.connect(Socket.java:579)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:931)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
-	at sun.net.www.protocol.http.HttpURLConnection.getHeaderField(HttpURLConnection.java:2660)
-	at java.net.URLConnection.getHeaderFieldLong(URLConnection.java:639)
-	at java.net.URLConnection.getContentLengthLong(URLConnection.java:511)
-	at java.net.URLConnection.getContentLength(URLConnection.java:495)
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:466)
-	... 6 more
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] Error details
-java.lang.RuntimeException: A download error occured
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:483)
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:132)
-	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
-	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
-	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
-	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
-	at Start.main(Start.java:29)
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1664)
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1662)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1660)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1243)
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:467)
-	... 6 more
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
-	at java.net.Socket.connect(Socket.java:579)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:931)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
-	at sun.net.www.protocol.http.HttpURLConnection.getHeaderField(HttpURLConnection.java:2660)
-	at java.net.URLConnection.getHeaderFieldLong(URLConnection.java:639)
-	at java.net.URLConnection.getContentLengthLong(URLConnection.java:511)
-	at java.net.URLConnection.getContentLength(URLConnection.java:495)
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:466)
-	... 6 more
-2013-02-07 13:54:38 [SEVERE] [ForgeModLoader] Error details
-java.lang.RuntimeException: A download error occured
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:483)
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:132)
-	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
-	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
-	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
-	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
-	at Start.main(Start.java:29)
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1664)
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1662)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1660)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1243)
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:467)
-	... 6 more
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
-	at java.net.Socket.connect(Socket.java:579)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:931)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
-	at sun.net.www.protocol.http.HttpURLConnection.getHeaderField(HttpURLConnection.java:2660)
-	at java.net.URLConnection.getHeaderFieldLong(URLConnection.java:639)
-	at java.net.URLConnection.getContentLengthLong(URLConnection.java:511)
-	at java.net.URLConnection.getContentLength(URLConnection.java:495)
-	at cpw.mods.fml.relauncher.RelaunchLibraryManager.downloadFile(RelaunchLibraryManager.java:466)
-	... 6 more
-2013-02-07 13:54:43 [INFO] [STDERR] Exception in thread "main" java.lang.RuntimeException: java.lang.RuntimeException: A fatal error occured and FML cannot continue
-2013-02-07 13:54:43 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:175)
-2013-02-07 13:54:43 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
-2013-02-07 13:54:43 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
-2013-02-07 13:54:43 [INFO] [STDERR] 	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
-2013-02-07 13:54:43 [INFO] [STDERR] 	at Start.main(Start.java:29)
-2013-02-07 13:54:43 [INFO] [STDERR] Caused by: java.lang.RuntimeException: A fatal error occured and FML cannot continue
-2013-02-07 13:54:43 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:228)
-2013-02-07 13:54:43 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
-2013-02-07 13:54:43 [INFO] [STDERR] 	... 4 more
+2013-02-07 23:36:52 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
+2013-02-07 23:36:52 [FINEST] [ForgeModLoader] All core mods are successfully located
+2013-02-07 23:36:52 [FINEST] [ForgeModLoader] Discovering coremods
+2013-02-07 23:36:52 [FINEST] [ForgeModLoader] Found library file argo-2.25.jar present and correct in lib dir
+2013-02-07 23:36:52 [FINEST] [ForgeModLoader] Found library file guava-12.0.1.jar present and correct in lib dir
+2013-02-07 23:36:52 [FINEST] [ForgeModLoader] Found library file asm-all-4.0.jar present and correct in lib dir
+2013-02-07 23:36:52 [FINEST] [ForgeModLoader] Found library file bcprov-jdk15on-147.jar present and correct in lib dir
+2013-02-07 23:36:52 [FINEST] [ForgeModLoader] Running coremod plugins
+2013-02-07 23:36:52 [FINEST] [ForgeModLoader] Running coremod plugin FMLCorePlugin
+2013-02-07 23:36:52 [FINEST] [ForgeModLoader] Coremod plugin FMLCorePlugin run successfully
+2013-02-07 23:36:52 [FINEST] [ForgeModLoader] Running coremod plugin FMLForgePlugin
+2013-02-07 23:36:52 [FINEST] [ForgeModLoader] Coremod plugin FMLForgePlugin run successfully
+2013-02-07 23:36:52 [FINEST] [ForgeModLoader] Validating minecraft
+2013-02-07 23:36:53 [FINEST] [ForgeModLoader] Minecraft validated, launching...
+2013-02-07 23:36:55 [INFO] [STDOUT] 27 achievements
+2013-02-07 23:36:55 [INFO] [STDOUT] 210 recipes
+2013-02-07 23:36:55 [INFO] [STDOUT] Setting user: Player831, -
+2013-02-07 23:36:55 [INFO] [STDERR] Client asked for parameter: server
+2013-02-07 23:36:55 [INFO] [STDOUT] LWJGL Version: 2.4.2
+2013-02-07 23:36:56 [INFO] [ForgeModLoader] Attempting early MinecraftForge initialization
+2013-02-07 23:36:56 [INFO] [STDOUT] MinecraftForge v6.6.0.497 Initialized
+2013-02-07 23:36:56 [INFO] [ForgeModLoader] MinecraftForge v6.6.0.497 Initialized
+2013-02-07 23:36:56 [INFO] [STDOUT] Replaced 84 ore recipies
+2013-02-07 23:36:56 [INFO] [ForgeModLoader] Completed early MinecraftForge initialization
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Building injected Mod Containers [cpw.mods.fml.common.FMLDummyContainer, net.minecraftforge.common.ForgeDummyContainer]
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Attempting to load mods contained in the minecraft jar file and associated classes
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Found a minecraft related directory at D:\minecraft modding\bellumacraft\forge\mcp\eclipse\Minecraft\bin, examining for mod candidates
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\jinput.jar
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\lwjgl_util.jar
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\lwjgl.jar
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Found a minecraft related file at D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\minecraft.jar, examining for mod candidates
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\argo-2.25.jar
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\bcprov-jdk15on-147.jar
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\asm-all-4.0.jar
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\guava-12.0.1.jar
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\argo-2.25.jar
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\guava-12.0.1.jar
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\asm-all-4.0.jar
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\bcprov-jdk15on-147.jar
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Minecraft jar mods loaded successfully
+2013-02-07 23:36:56 [INFO] [ForgeModLoader] Searching D:\minecraft modding\bellumacraft\forge\mcp\jars\mods for mods
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] Examining directory bin for potential mods
+2013-02-07 23:36:56 [FINE] [ForgeModLoader] No mcmod.info file found in directory bin
+2013-02-07 23:36:56 [FINEST] [ForgeModLoader] Recursing into package cpw
+2013-02-07 23:36:56 [FINEST] [ForgeModLoader] Recursing into package cpw.mods
+2013-02-07 23:36:56 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml
+2013-02-07 23:36:56 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client
+2013-02-07 23:36:56 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.modloader
+2013-02-07 23:36:56 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.registry
+2013-02-07 23:36:56 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common
+2013-02-07 23:36:56 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm
+2013-02-07 23:36:56 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm.transformers
+2013-02-07 23:36:56 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery
+2013-02-07 23:36:56 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery.asm
+2013-02-07 23:36:56 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.event
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.functions
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.modloader
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.network
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.registry
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.toposort
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.versioning
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.relauncher
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.server
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package ibxm
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package mod
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.blocks
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.client
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.common
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.items
+2013-02-07 23:36:57 [FINE] [ForgeModLoader] Identified a class mod.legendaire45.mod_iut following modloader naming convention but not directly a BaseMod or currently seen subclass
+2013-02-07 23:36:57 [FINE] [ForgeModLoader] Identified an FMLMod type mod mod.legendaire45.mod_iut
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Parsed dependency info : [] [] []
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block.material
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.audio
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.entity
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.achievement
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.inventory
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.model
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.multiplayer
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.particle
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.culling
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.entity
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.texturefx
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.tileentity
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.settings
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.texturepacks
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.command
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.crash
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.creativetab
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.dispenser
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.enchantment
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.ai
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.boss
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.effect
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.item
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.monster
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.passive
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.player
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.projectile
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.inventory
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item.crafting
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.nbt
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.packet
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.rcon
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.pathfinding
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.potion
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.profiler
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.dedicated
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.gui
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.integrated
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.management
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.src
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.stats
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.tileentity
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.util
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.village
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.biome
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk.storage
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.demo
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.feature
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.layer
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.structure
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.storage
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.classloading
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event.sound
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.common
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.item
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.living
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.minecart
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.player
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.terraingen
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.world
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.liquids
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.oredict
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.transformers
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package paulscode
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound.codecs
+2013-02-07 23:36:57 [INFO] [ForgeModLoader] Attempting to reparse the mod container bin
+2013-02-07 23:36:57 [FINE] [ForgeModLoader] Examining directory bin for potential mods
+2013-02-07 23:36:57 [FINE] [ForgeModLoader] No mcmod.info file found in directory bin
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.modloader
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.registry
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm.transformers
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery.asm
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.event
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.functions
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.modloader
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.network
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.registry
+2013-02-07 23:36:57 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.toposort
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.versioning
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.relauncher
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.server
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package ibxm
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package mod
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.blocks
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.client
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.common
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.items
+2013-02-07 23:36:58 [FINE] [ForgeModLoader] Identified a class mod.legendaire45.mod_iut following modloader naming convention but not directly a BaseMod or currently seen subclass
+2013-02-07 23:36:58 [FINE] [ForgeModLoader] Identified an FMLMod type mod mod.legendaire45.mod_iut
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Parsed dependency info : [] [] []
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block.material
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.audio
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.entity
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.achievement
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.inventory
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.model
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.multiplayer
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.particle
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.culling
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.entity
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.texturefx
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.tileentity
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.settings
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.texturepacks
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.command
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.crash
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.creativetab
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.dispenser
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.enchantment
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.ai
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.boss
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.effect
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.item
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.monster
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.passive
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.player
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.projectile
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.inventory
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item.crafting
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.nbt
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.packet
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.rcon
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.pathfinding
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.potion
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.profiler
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.dedicated
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.gui
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.integrated
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.management
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.src
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.stats
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.tileentity
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.util
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.village
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.biome
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk.storage
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.demo
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.feature
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.layer
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.structure
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.storage
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.classloading
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event.sound
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.common
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.item
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.living
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.minecart
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.player
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.terraingen
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.world
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.liquids
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.oredict
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.transformers
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package paulscode
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound
+2013-02-07 23:36:58 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound.codecs
+2013-02-07 23:36:58 [FINE] [ForgeModLoader] Examining file minecraft.jar for potential mods
+2013-02-07 23:36:58 [FINE] [ForgeModLoader] The mod container minecraft.jar appears to be missing an mcmod.info file
+2013-02-07 23:36:59 [INFO] [ForgeModLoader] Forge Mod Loader has identified 4 mods to load
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] Received a system property request ''
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] System property request managing the state of 0 mods
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] After merging, found state information for 0 mods
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] Activating mod mcp
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] Activating mod FML
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] Activating mod Forge
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] Enabling mod mod_iut
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] Activating mod mod_iut
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] Verifying mod requirements are satisfied
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] All mod requirements are satisfied
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] Sorting mods into an ordered list
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] Mod sorting completed successfully
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] Mod sorting data:
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] 	mod_iut(mod iut:1.0.0): bin ()
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod mcp
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod mcp
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod FML
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod FML
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod Forge
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod Forge
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod mod_iut
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPelleMod(756) owned by mod_iut
+2013-02-07 23:36:59 [FINEST] [ForgeModLoader] Testing mod mod_iut to verify it accepts its own version in a remote connection
+2013-02-07 23:36:59 [FINEST] [ForgeModLoader] The mod mod_iut accepts its own version (1.0.0)
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] Attempting to inject @SidedProxy classes into mod_iut
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod mod_iut
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] Mod signature data:
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] 	mcp(Minecraft Coder Pack:7.26): minecraft.jar (NO VALID CERTIFICATE FOUND)
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] 	FML(Forge Mod Loader:4.7.4.520): coremods (NO VALID CERTIFICATE FOUND)
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] 	Forge(Minecraft Forge:6.6.0.497): coremods (NO VALID CERTIFICATE FOUND)
+2013-02-07 23:36:59 [FINE] [ForgeModLoader] 	mod_iut(mod iut:1.0.0): bin (NO VALID CERTIFICATE FOUND)
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod mcp
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod mcp
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod FML
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod FML
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod Forge
+2013-02-07 23:36:59 [INFO] [ForgeModLoader] Configured a dormant chunk cache size of 0
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod Forge
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod mod_iut
+2013-02-07 23:36:59 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod mod_iut
+2013-02-07 23:37:00 [INFO] [STDOUT] Starting up SoundSystem...
+2013-02-07 23:37:00 [INFO] [STDOUT] Initializing LWJGL OpenAL
+2013-02-07 23:37:00 [INFO] [STDOUT]     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+2013-02-07 23:37:00 [INFO] [STDOUT] OpenAL initialized.
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod mcp
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod mcp
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod FML
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod FML
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod Forge
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod Forge
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod mod_iut
+2013-02-07 23:37:01 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(170) owned by mod_iut
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod mod_iut
+2013-02-07 23:37:01 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod mcp
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event IMCEvent to mod mcp
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event IMCEvent to mod mcp
+2013-02-07 23:37:01 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod FML
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event IMCEvent to mod FML
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event IMCEvent to mod FML
+2013-02-07 23:37:01 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod Forge
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event IMCEvent to mod Forge
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event IMCEvent to mod Forge
+2013-02-07 23:37:01 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod mod_iut
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event IMCEvent to mod mod_iut
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event IMCEvent to mod mod_iut
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod mcp
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod mcp
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod FML
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod FML
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod Forge
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod Forge
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod mod_iut
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod mod_iut
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod mcp
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod mcp
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod FML
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod FML
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod Forge
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod Forge
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod mod_iut
+2013-02-07 23:37:01 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod mod_iut
+2013-02-07 23:37:01 [INFO] [ForgeModLoader] Forge Mod Loader has successfully loaded 4 mods
+2013-02-07 23:37:06 [FINE] [ForgeModLoader] The difference set is equal
+2013-02-07 23:37:06 [INFO] [ForgeModLoader] Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@30594770)
+2013-02-07 23:37:06 [INFO] [ForgeModLoader] Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@30594770)
+2013-02-07 23:37:06 [INFO] [ForgeModLoader] Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@30594770)
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod mcp
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod mcp
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod FML
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod FML
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod Forge
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod Forge
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod mod_iut
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod mod_iut
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod mcp
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod mcp
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod FML
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod FML
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod Forge
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod Forge
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod mod_iut
+2013-02-07 23:37:08 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod mod_iut
+2013-02-07 23:40:14 [INFO] [STDERR] Someone is closing me!

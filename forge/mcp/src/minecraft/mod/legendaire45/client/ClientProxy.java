@@ -10,5 +10,6 @@ public class ClientProxy extends CommonProxy
     {
         //C'est ici que l'on va enregistrer tout ce qui concerne UNIQUEMENT le Client comme les RenderBlocks,... et dans notre exemple, l'enregistrement d'un fichier de texture.
     	MinecraftForgeClient.preloadTexture(this.textureBlock);
+    	MinecraftForgeClient.preloadTexture(this.textureItem);
     }
 }

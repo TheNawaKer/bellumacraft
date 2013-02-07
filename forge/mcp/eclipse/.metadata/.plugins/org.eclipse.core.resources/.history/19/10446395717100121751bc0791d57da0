@@ -1,0 +1,21 @@
+
+package mod.legendaire45.items;
+
+import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.ItemSpade;
+
+
+
+public class ItemToolPelle extends ItemSpade
+
+{  
+
+        public ItemToolPelle(int i, EnumToolMaterial enumtoolmaterial)
+
+        {
+
+                super(i, enumtoolmaterial);
+
+        }
+
+}
