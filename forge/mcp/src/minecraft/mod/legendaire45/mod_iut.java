@@ -23,7 +23,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
-@Mod(modid = "mod_iut", name = "mod iut", version = "1.0.0")
+@Mod(modid = "mod_iut", name = "mod iut", version = "1.4.0")
 
 @NetworkMod(clientSideRequired = false, serverSideRequired = true)
 
@@ -62,7 +62,7 @@ public class mod_iut
 			LanguageRegistry.addName(carottes, "Block Carottes");
 	    }	
 
-		static EnumToolMaterial emerald= net.minecraftforge.common.EnumHelper.addToolMaterial("MATERIAL", 2, 500, 7F, 3, 9);
+		static EnumToolMaterial emerald= net.minecraftforge.common.EnumHelper.addToolMaterial("EMERALD", 2, 500, 7F, 3, 9);
 		public static final Block carottes = (new BlockCarottes(170, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
 		public static final Item pelleToolE= (new ItemToolPelleMod(500, emerald )).setTextureFile(textureItem).setItemName("tool_pelle").setIconIndex(3);
 		public static final Item piocheToolE= (new ItemToolPiocheMod(501, emerald )).setTextureFile(textureItem).setItemName("tool_pioche").setIconIndex(4);
