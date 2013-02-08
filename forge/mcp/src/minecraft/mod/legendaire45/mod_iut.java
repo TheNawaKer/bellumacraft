@@ -59,17 +59,31 @@ public class mod_iut
 			LanguageRegistry.addName(piocheToolE, "Pioche en Emeraude");
 			LanguageRegistry.addName(hacheToolE, "Hache en Emeraude");
 			LanguageRegistry.addName(epeeToolE, "Epée en Emeraude");
-			LanguageRegistry.addName(carottes, "Block Carottes");
+			LanguageRegistry.addName(pelleToolS, "Pelle en Saphir");
+			LanguageRegistry.addName(piocheToolS, "Pioche en Saphir");
+			LanguageRegistry.addName(hacheToolS, "Hache en Saphir");
+			LanguageRegistry.addName(epeeToolS, "Epée en Saphir");
+			LanguageRegistry.addName(pelleToolR, "Pelle en Ruby");
+			LanguageRegistry.addName(piocheToolR, "Pioche en Ruby");
+			LanguageRegistry.addName(hacheToolR, "Hache en Ruby");
+			LanguageRegistry.addName(epeeToolR, "Epée en Ruby");
+			LanguageRegistry.addName(carottes, "Bloc Carottes");
 	    }	
 
 		static EnumToolMaterial emerald= net.minecraftforge.common.EnumHelper.addToolMaterial("EMERALD", 2, 500, 7F, 3, 9);
+		static EnumToolMaterial saphir= net.minecraftforge.common.EnumHelper.addToolMaterial("SAPHIR", 2, 500, 7F, 3, 9);
+		static EnumToolMaterial ruby= net.minecraftforge.common.EnumHelper.addToolMaterial("RUBY", 2, 500, 7F, 3, 9);		
 		public static final Block carottes = (new BlockCarottes(170, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
-		public static final Item pelleToolE= (new ItemToolPelleMod(500, emerald )).setTextureFile(textureItem).setItemName("tool_pelle").setIconIndex(3);
-		public static final Item piocheToolE= (new ItemToolPiocheMod(501, emerald )).setTextureFile(textureItem).setItemName("tool_pioche").setIconIndex(4);
-		public static final Item hacheToolE= (new ItemToolHacheMod(502, emerald )).setTextureFile(textureItem).setItemName("tool_pioche").setIconIndex(5);
-		public static final Item epeeToolE= (new ItemToolEpeeMod(503, emerald )).setTextureFile(textureItem).setItemName("tool_pioche").setIconIndex(6);
-		/*public static final Item piocheTool= (new itemToolPiocheMod(, )).setIconIndex().setItemName("tool_pioche");
-		public static final Item hacheTool= (new itemToolHacheMod(, )).setIconIndex().setItemName("tool_hache");
-		public static final Item �p�eTool= (new itemToolEpeeMod(, )).setIconIndex().setItemName("tool_epee");
-		public static final Item fauxTool= (new itemToolFauxMod(, )).setIconIndex().setItemName("tool_faux");*/
+		public static final Item pelleToolE= (new ItemToolPelleMod(500, emerald )).setTextureFile(textureItem).setItemName("tool_pelle_e").setIconIndex(3);
+		public static final Item piocheToolE= (new ItemToolPiocheMod(501, emerald )).setTextureFile(textureItem).setItemName("tool_pioche_e").setIconIndex(4);
+		public static final Item hacheToolE= (new ItemToolHacheMod(502, emerald )).setTextureFile(textureItem).setItemName("tool_hache_e").setIconIndex(5);
+		public static final Item epeeToolE= (new ItemToolEpeeMod(503, emerald )).setTextureFile(textureItem).setItemName("tool_epee_e").setIconIndex(6);
+		public static final Item pelleToolS= (new ItemToolPelleMod(504, saphir )).setTextureFile(textureItem).setItemName("tool_pelle_s").setIconIndex(7);
+		public static final Item piocheToolS= (new ItemToolPiocheMod(505, saphir )).setTextureFile(textureItem).setItemName("tool_pioche_s").setIconIndex(8);
+		public static final Item hacheToolS= (new ItemToolHacheMod(506, saphir )).setTextureFile(textureItem).setItemName("tool_hache_s").setIconIndex(9);
+		public static final Item epeeToolS= (new ItemToolEpeeMod(507, saphir )).setTextureFile(textureItem).setItemName("tool_epee_s").setIconIndex(10);
+		public static final Item pelleToolR= (new ItemToolPelleMod(504, ruby )).setTextureFile(textureItem).setItemName("tool_pelle_r").setIconIndex(11);
+		public static final Item piocheToolR= (new ItemToolPiocheMod(505, ruby )).setTextureFile(textureItem).setItemName("tool_pioche_r").setIconIndex(12);
+		public static final Item hacheToolR= (new ItemToolHacheMod(506, ruby )).setTextureFile(textureItem).setItemName("tool_hache_r").setIconIndex(13);
+		public static final Item epeeToolR= (new ItemToolEpeeMod(507, ruby )).setTextureFile(textureItem).setItemName("tool_epee_r").setIconIndex(14);
 }
