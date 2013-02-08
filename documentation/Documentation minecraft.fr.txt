@@ -1,0 +1,4 @@
+/**********************************************************************
+			Documentation Forge Mod Loader
+**********************************************************************/
+http://minecraft.fr/forum/index.php?threads/modding-1-4-7-cr%C3%A9er-un-mod-avec-minecraft-forge-ssp-smp.59416/
