@@ -2,7 +2,10 @@ package mod.legendaire45;
 
 import mod.legendaire45.blocks.BlockCarottes;
 import mod.legendaire45.common.CommonProxy;
+import mod.legendaire45.items.ItemToolEpeeMod;
+import mod.legendaire45.items.ItemToolHacheMod;
 import mod.legendaire45.items.ItemToolPelleMod;
+import mod.legendaire45.items.ItemToolPiocheMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -36,9 +39,9 @@ public class mod_iut
 		@PreInit
 		public void initConfig(FMLPreInitializationEvent event)
 		{
-			//MinecraftForge.setToolClass(this.piocheTool, "pickaxe", 2);
-			MinecraftForge.setToolClass(this.pelleTool, "shovel", 2);
-			//MinecraftForge.setToolClass(this.hacheTool, "axe", 2);
+			MinecraftForge.setToolClass(this.piocheToolE, "pickaxe", 2);
+			MinecraftForge.setToolClass(this.pelleToolE, "shovel", 2);
+			MinecraftForge.setToolClass(this.hacheToolE, "axe", 2);
 		}
 		
 		@Init
@@ -50,17 +53,23 @@ public class mod_iut
 			GameRegistry.registerBlock(carottes);
 
 
-			/** Défini le nom IN-GAME des items/blocs**/
+			/** Dï¿½fini le nom IN-GAME des items/blocs**/
 
-			LanguageRegistry.addName(pelleTool, "Pelle en Emeraude");
+			LanguageRegistry.addName(pelleToolE, "Pelle en Emeraude");
+			LanguageRegistry.addName(piocheToolE, "Pioche en Emeraude");
+			LanguageRegistry.addName(hacheToolE, "Hache en Emeraude");
+			LanguageRegistry.addName(epeeToolE, "EpÃ©e en Emeraude");
 			LanguageRegistry.addName(carottes, "Block Carottes");
 	    }	
 
-		static EnumToolMaterial toolMaterial= net.minecraftforge.common.EnumHelper.addToolMaterial("MATERIAL", 2, 500, 7F, 3, 9);
+		static EnumToolMaterial emerald= net.minecraftforge.common.EnumHelper.addToolMaterial("MATERIAL", 2, 500, 7F, 3, 9);
 		public static final Block carottes = (new BlockCarottes(170, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
-		public static final Item pelleTool= (new ItemToolPelleMod(500, toolMaterial )).setTextureFile(textureItem).setItemName("tool_pelle").setIconIndex(3);/*
-		public static final Item piocheTool= (new itemToolPiocheMod(, )).setIconIndex().setItemName("tool_pioche");
+		public static final Item pelleToolE= (new ItemToolPelleMod(500, emerald )).setTextureFile(textureItem).setItemName("tool_pelle").setIconIndex(3);
+		public static final Item piocheToolE= (new ItemToolPiocheMod(501, emerald )).setTextureFile(textureItem).setItemName("tool_pioche").setIconIndex(4);
+		public static final Item hacheToolE= (new ItemToolHacheMod(502, emerald )).setTextureFile(textureItem).setItemName("tool_pioche").setIconIndex(5);
+		public static final Item epeeToolE= (new ItemToolEpeeMod(503, emerald )).setTextureFile(textureItem).setItemName("tool_pioche").setIconIndex(6);
+		/*public static final Item piocheTool= (new itemToolPiocheMod(, )).setIconIndex().setItemName("tool_pioche");
 		public static final Item hacheTool= (new itemToolHacheMod(, )).setIconIndex().setItemName("tool_hache");
-		public static final Item épéeTool= (new itemToolEpeeMod(, )).setIconIndex().setItemName("tool_epee");
+		public static final Item ï¿½pï¿½eTool= (new itemToolEpeeMod(, )).setIconIndex().setItemName("tool_epee");
 		public static final Item fauxTool= (new itemToolFauxMod(, )).setIconIndex().setItemName("tool_faux");*/
 }
