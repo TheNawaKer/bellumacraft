@@ -1,0 +1,19 @@
+[
+{
+  "modid": "iut_mod",
+  "name": "iut_mod",
+  "description": "mod créer pour l'iut d'orléans!! divertissement accrue !",
+  "version": "1.4.0",
+  "credits": "Jimmy Furet aka Legendaire45",
+  "logoFile": "",
+  "mcversion": "1.4.7",
+  "url": "",
+  "updateUrl": "",
+  "authors": [ "legendaire45"],
+  "parent":"",
+  "screenshots": [],
+  "dependencies": [
+     "mod_MinecraftForge"
+  ]
+}
+]
