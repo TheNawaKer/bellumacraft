@@ -1,0 +1,33 @@
+2013-02-10 18:16:56 [INFO] Starting minecraft server version 1.4.7
+2013-02-10 18:16:59 [INFO] Loading properties
+2013-02-10 18:16:59 [WARNING] server.properties does not exist
+2013-02-10 18:16:59 [INFO] Generating new properties file
+2013-02-10 18:16:59 [INFO] Default game type: SURVIVAL
+2013-02-10 18:16:59 [INFO] Generating keypair
+2013-02-10 18:17:02 [INFO] Starting Minecraft server on *:25565
+2013-02-10 18:17:02 [WARNING] Failed to load operators list: java.io.FileNotFoundException: .\ops.txt (Le fichier spécifié est introuvable)
+2013-02-10 18:17:02 [WARNING] Failed to load white-list: java.io.FileNotFoundException: .\white-list.txt (Le fichier spécifié est introuvable)
+2013-02-10 18:17:03 [INFO] Preparing level "world"
+2013-02-10 18:17:04 [INFO] Preparing start region for level 0
+2013-02-10 18:17:05 [INFO] Preparing spawn area: 4%
+2013-02-10 18:17:06 [INFO] Preparing spawn area: 8%
+2013-02-10 18:17:07 [INFO] Preparing spawn area: 14%
+2013-02-10 18:17:08 [INFO] Preparing spawn area: 20%
+2013-02-10 18:17:09 [INFO] Preparing spawn area: 29%
+2013-02-10 18:17:10 [INFO] Preparing spawn area: 36%
+2013-02-10 18:17:11 [INFO] Preparing spawn area: 41%
+2013-02-10 18:17:12 [INFO] Preparing spawn area: 47%
+2013-02-10 18:17:13 [INFO] Preparing spawn area: 55%
+2013-02-10 18:17:14 [INFO] Preparing spawn area: 61%
+2013-02-10 18:17:15 [INFO] Preparing spawn area: 68%
+2013-02-10 18:17:16 [INFO] Preparing spawn area: 77%
+2013-02-10 18:17:17 [INFO] Preparing spawn area: 85%
+2013-02-10 18:17:18 [INFO] Preparing spawn area: 91%
+2013-02-10 18:17:19 [INFO] Done (16,570s)! For help, type "help" or "?"
+2013-02-10 18:17:22 [INFO] Stopping the server
+2013-02-10 18:17:22 [INFO] Stopping server
+2013-02-10 18:17:22 [INFO] Saving players
+2013-02-10 18:17:22 [INFO] Saving worlds
+2013-02-10 18:17:22 [INFO] Saving chunks for level 'world'/Overworld
+2013-02-10 18:17:30 [INFO] Saving chunks for level 'world'/Nether
+2013-02-10 18:17:30 [INFO] Saving chunks for level 'world'/The End
