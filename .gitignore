@@ -5,3 +5,5 @@
 # *.[oa]
 # *~
 /forge/mcp/eclipse/**
+/forge/mcp/eclipse/*
+/forge/mcp/eclipse/**/*
