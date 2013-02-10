@@ -2,6 +2,7 @@ package mod.legendaire45;
 
 import mod.legendaire45.blocks.BlockCarottes;
 import mod.legendaire45.common.CommonProxy;
+import mod.legendaire45.items.ArmorBase;
 import mod.legendaire45.items.ItemToolEpeeMod;
 import mod.legendaire45.items.ItemToolHacheMod;
 import mod.legendaire45.items.ItemToolPelleMod;
@@ -9,8 +10,10 @@ import mod.legendaire45.items.ItemToolPiocheMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
@@ -67,12 +70,31 @@ public class mod_iut
 			LanguageRegistry.addName(piocheToolR, "Pioche en Ruby");
 			LanguageRegistry.addName(hacheToolR, "Hache en Ruby");
 			LanguageRegistry.addName(epeeToolR, "EpÃ©e en Ruby");
+			
+			LanguageRegistry.addName(ArmorE1, "Casque en Emeraude");
+			LanguageRegistry.addName(ArmorE2, "Torse en Emeraude");
+			LanguageRegistry.addName(ArmorE3, "Jambière en Emeraude");
+			LanguageRegistry.addName(ArmorE4, "Bottes en Emeraude");
+			LanguageRegistry.addName(ArmorS1, "Casque en Saphir");
+			LanguageRegistry.addName(ArmorS2, "Torse en Saphir");
+			LanguageRegistry.addName(ArmorS3, "Jambière en Saphir");
+			LanguageRegistry.addName(ArmorS4, "Bottes en Saphir");
+			LanguageRegistry.addName(ArmorR1, "Casque en Ruby");
+			LanguageRegistry.addName(ArmorR2, "Torse en Ruby");
+			LanguageRegistry.addName(ArmorR3, "Jambière en Ruby");
+			LanguageRegistry.addName(ArmorR4, "Bottes en Ruby");
+			
 			LanguageRegistry.addName(carottes, "Bloc Carottes");
 	    }	
 
-		static EnumToolMaterial emerald= net.minecraftforge.common.EnumHelper.addToolMaterial("EMERALD", 2, 500, 7F, 3, 9);
-		static EnumToolMaterial saphir= net.minecraftforge.common.EnumHelper.addToolMaterial("SAPHIR", 2, 500, 7F, 3, 9);
-		static EnumToolMaterial ruby= net.minecraftforge.common.EnumHelper.addToolMaterial("RUBY", 2, 500, 7F, 3, 9);		
+		static EnumToolMaterial emerald= EnumHelper.addToolMaterial("EMERALD", 2, 500, 7F, 3, 9);
+		static EnumToolMaterial saphir= EnumHelper.addToolMaterial("SAPHIR", 2, 500, 7F, 3, 9);
+		static EnumToolMaterial ruby= EnumHelper.addToolMaterial("RUBY", 2, 500, 7F, 3, 9);		
+		
+		public static EnumArmorMaterial emeraldarmor = EnumHelper.addArmorMaterial("EMERALD", 29, new int[] {1, 2, 3, 4}, 9);
+		public static EnumArmorMaterial saphirarmor = EnumHelper.addArmorMaterial("SAPHIR", 29, new int[] {1, 2, 3, 4}, 9);
+		public static EnumArmorMaterial rubyarmor = EnumHelper.addArmorMaterial("RUBY", 29, new int[] {1, 2, 3, 4}, 9);
+		
 		public static final Block carottes = (new BlockCarottes(170, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
 		public static final Item pelleToolE= (new ItemToolPelleMod(400, emerald )).setTextureFile(textureItem).setItemName("tool_pelle_e").setIconIndex(3);
 		public static final Item piocheToolE= (new ItemToolPiocheMod(401, emerald )).setTextureFile(textureItem).setItemName("tool_pioche_e").setIconIndex(4);
@@ -86,4 +108,17 @@ public class mod_iut
 		public static final Item piocheToolR= (new ItemToolPiocheMod(409, ruby )).setTextureFile(textureItem).setItemName("tool_pioche_r").setIconIndex(12);
 		public static final Item hacheToolR= (new ItemToolHacheMod(410, ruby )).setTextureFile(textureItem).setItemName("tool_hache_r").setIconIndex(13);
 		public static final Item epeeToolR= (new ItemToolEpeeMod(411, ruby )).setTextureFile(textureItem).setItemName("tool_epee_r").setIconIndex(14);
+
+		public static final Item ArmorE1 = new ArmorBase(412, emeraldarmor, 0,0).setTextureFile(textureItem).setIconIndex(19).setItemName("armor_head_e");
+		public static final Item ArmorE2 = new ArmorBase(413, emeraldarmor, 1,1).setTextureFile(textureItem).setIconIndex(20).setItemName("armor_plate_e");
+		public static final Item ArmorE3= new ArmorBase(414, emeraldarmor, 2,2).setTextureFile(textureItem).setIconIndex(21).setItemName("armor_legs_e");
+		public static final Item ArmorE4= new ArmorBase(415, emeraldarmor, 3,3).setTextureFile(textureItem).setIconIndex(22).setItemName("armor_foot_e");
+		public static final Item ArmorS1 = new ArmorBase(416, saphirarmor, 0,0).setTextureFile(textureItem).setIconIndex(23).setItemName("armor_head_s");
+		public static final Item ArmorS2 = new ArmorBase(417, saphirarmor, 1,1).setTextureFile(textureItem).setIconIndex(24).setItemName("armor_plate_s");
+		public static final Item ArmorS3= new ArmorBase(418, saphirarmor, 2,2).setTextureFile(textureItem).setIconIndex(25).setItemName("armor_legs_s");
+		public static final Item ArmorS4= new ArmorBase(419, saphirarmor, 3,3).setTextureFile(textureItem).setIconIndex(26).setItemName("armor_foot_s");		
+		public static final Item ArmorR1 = new ArmorBase(420, rubyarmor, 0,0).setTextureFile(textureItem).setIconIndex(27).setItemName("armor_head_r");
+		public static final Item ArmorR2 = new ArmorBase(421, rubyarmor, 1,1).setTextureFile(textureItem).setIconIndex(28).setItemName("armor_plate_r");
+		public static final Item ArmorR3= new ArmorBase(422, rubyarmor, 2,2).setTextureFile(textureItem).setIconIndex(29).setItemName("armor_legs_r");
+		public static final Item ArmorR4= new ArmorBase(423, rubyarmor, 3,3).setTextureFile(textureItem).setIconIndex(30).setItemName("armor_foot_r");
 }
