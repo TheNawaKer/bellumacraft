@@ -85,3 +85,24 @@
 2013-02-10 18:43:57 [INFO] Saving chunks for level 'mcpworld'/Overworld
 2013-02-10 18:43:57 [INFO] Saving chunks for level 'mcpworld'/Nether
 2013-02-10 18:43:57 [INFO] Saving chunks for level 'mcpworld'/The End
+2013-02-10 20:44:46 [INFO] Starting minecraft server version 1.4.7
+2013-02-10 20:44:54 [INFO] Loading properties
+2013-02-10 20:44:54 [INFO] Default game type: SURVIVAL
+2013-02-10 20:44:54 [INFO] Generating keypair
+2013-02-10 20:44:57 [INFO] Starting Minecraft server on *:25565
+2013-02-10 20:44:57 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-02-10 20:44:57 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-02-10 20:44:57 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-02-10 20:44:57 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-02-10 20:44:58 [INFO] Preparing level "mcpworld"
+2013-02-10 20:44:59 [INFO] Preparing start region for level 0
+2013-02-10 20:45:00 [INFO] Preparing spawn area: 25%
+2013-02-10 20:45:01 [INFO] Preparing spawn area: 80%
+2013-02-10 20:45:01 [INFO] Done (3,629s)! For help, type "help" or "?"
+2013-02-10 20:45:12 [INFO] Stopping the server
+2013-02-10 20:45:12 [INFO] Stopping server
+2013-02-10 20:45:12 [INFO] Saving players
+2013-02-10 20:45:12 [INFO] Saving worlds
+2013-02-10 20:45:12 [INFO] Saving chunks for level 'mcpworld'/Overworld
+2013-02-10 20:45:12 [INFO] Saving chunks for level 'mcpworld'/Nether
+2013-02-10 20:45:12 [INFO] Saving chunks for level 'mcpworld'/The End

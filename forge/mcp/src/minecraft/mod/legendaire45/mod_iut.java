@@ -1,5 +1,6 @@
 package mod.legendaire45;
 
+import mod.legendaire45.blocks.BlockBeer;
 import mod.legendaire45.blocks.BlockCarottes;
 import mod.legendaire45.common.CommonProxy;
 import mod.legendaire45.items.ArmorBase;
@@ -7,6 +8,7 @@ import mod.legendaire45.items.ItemToolEpeeMod;
 import mod.legendaire45.items.ItemToolHacheMod;
 import mod.legendaire45.items.ItemToolPelleMod;
 import mod.legendaire45.items.ItemToolPiocheMod;
+import mod.legendaire45.tile.TileEntityBeer;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -54,6 +56,8 @@ public class mod_iut
 			/**Enregistre le bloc**/
 
 			GameRegistry.registerBlock(carottes);
+			GameRegistry.registerBlock(beer);
+			GameRegistry.registerTileEntity(TileEntityBeer.class, "tile");//ajout
 
 
 			/** D�fini le nom IN-GAME des items/blocs**/
@@ -85,6 +89,7 @@ public class mod_iut
 			LanguageRegistry.addName(ArmorR4, "Bottes en Ruby");
 			
 			LanguageRegistry.addName(carottes, "Bloc Carottes");
+			LanguageRegistry.addName(beer, "Distributeur");
 	    }	
 
 		static EnumToolMaterial emerald= EnumHelper.addToolMaterial("EMERALD", 2, 500, 7F, 3, 9);
@@ -96,6 +101,8 @@ public class mod_iut
 		public static EnumArmorMaterial rubyarmor = EnumHelper.addArmorMaterial("RUBY", 29, new int[] {1, 2, 3, 4}, 9);
 		
 		public static final Block carottes= (new BlockCarottes(170, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block beer= (new BlockBeer(171, 0, Material.wood)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
+		
 		public static final Item pelleToolE= (new ItemToolPelleMod(400, emerald )).setTextureFile(textureItem).setItemName("tool_pelle_e").setIconIndex(3);
 		public static final Item piocheToolE= (new ItemToolPiocheMod(401, emerald )).setTextureFile(textureItem).setItemName("tool_pioche_e").setIconIndex(4);
 		public static final Item hacheToolE= (new ItemToolHacheMod(402, emerald )).setTextureFile(textureItem).setItemName("tool_hache_e").setIconIndex(5);
