@@ -73,15 +73,15 @@ public class mod_iut
 			
 			LanguageRegistry.addName(ArmorE1, "Casque en Emeraude");
 			LanguageRegistry.addName(ArmorE2, "Torse en Emeraude");
-			LanguageRegistry.addName(ArmorE3, "Jambière en Emeraude");
+			LanguageRegistry.addName(ArmorE3, "Jambiere en Emeraude");
 			LanguageRegistry.addName(ArmorE4, "Bottes en Emeraude");
 			LanguageRegistry.addName(ArmorS1, "Casque en Saphir");
 			LanguageRegistry.addName(ArmorS2, "Torse en Saphir");
-			LanguageRegistry.addName(ArmorS3, "Jambière en Saphir");
+			LanguageRegistry.addName(ArmorS3, "Jambiere en Saphir");
 			LanguageRegistry.addName(ArmorS4, "Bottes en Saphir");
 			LanguageRegistry.addName(ArmorR1, "Casque en Ruby");
 			LanguageRegistry.addName(ArmorR2, "Torse en Ruby");
-			LanguageRegistry.addName(ArmorR3, "Jambière en Ruby");
+			LanguageRegistry.addName(ArmorR3, "Jambiere en Ruby");
 			LanguageRegistry.addName(ArmorR4, "Bottes en Ruby");
 			
 			LanguageRegistry.addName(carottes, "Bloc Carottes");
@@ -95,7 +95,7 @@ public class mod_iut
 		public static EnumArmorMaterial saphirarmor = EnumHelper.addArmorMaterial("SAPHIR", 29, new int[] {1, 2, 3, 4}, 9);
 		public static EnumArmorMaterial rubyarmor = EnumHelper.addArmorMaterial("RUBY", 29, new int[] {1, 2, 3, 4}, 9);
 		
-		public static final Block carottes = (new BlockCarottes(170, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block carottes= (new BlockCarottes(170, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
 		public static final Item pelleToolE= (new ItemToolPelleMod(400, emerald )).setTextureFile(textureItem).setItemName("tool_pelle_e").setIconIndex(3);
 		public static final Item piocheToolE= (new ItemToolPiocheMod(401, emerald )).setTextureFile(textureItem).setItemName("tool_pioche_e").setIconIndex(4);
 		public static final Item hacheToolE= (new ItemToolHacheMod(402, emerald )).setTextureFile(textureItem).setItemName("tool_hache_e").setIconIndex(5);

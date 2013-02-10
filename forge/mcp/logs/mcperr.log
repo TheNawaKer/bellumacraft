@@ -18,3 +18,85 @@
 12:15:19 - !! Can not find server md5s !!
 12:19:13 - !! Can not find server sources, try decompiling !!
 12:19:43 - !! Can not find server md5s !!
+18:19:10 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+18:19:10 - 
+18:19:10 - == ERRORS FOUND ==
+18:19:10 - 
+18:19:10 - src\minecraft\mod\legendaire45\mod_iut.java:76: error: unmappable character for encoding UTF-8
+18:19:10 - 			LanguageRegistry.addName(ArmorE3, "Jambi?re en Emeraude");
+18:19:10 - 			                                        ^
+18:19:10 - 
+18:19:10 - src\minecraft\mod\legendaire45\mod_iut.java:80: error: unmappable character for encoding UTF-8
+18:19:10 - 			LanguageRegistry.addName(ArmorS3, "Jambi?re en Saphir");
+18:19:10 - 			                                        ^
+18:19:10 - 
+18:19:10 - src\minecraft\mod\legendaire45\mod_iut.java:84: error: unmappable character for encoding UTF-8
+18:19:10 - 			LanguageRegistry.addName(ArmorR3, "Jambi?re en Ruby");
+18:19:10 - 			                                        ^
+18:19:10 - 
+18:19:10 - src\minecraft\mod\legendaire45\items\ArmorBase.java:18: error: unmappable character for encoding UTF-8
+18:19:10 -     @SideOnly(Side.CLIENT) //Pr?cise que le serveur n'a pas ? g?rer ?a 
+18:19:10 -                                ^
+18:19:10 - 
+18:19:10 - src\minecraft\mod\legendaire45\items\ArmorBase.java:18: error: unmappable character for encoding UTF-8
+18:19:10 -     @SideOnly(Side.CLIENT) //Pr?cise que le serveur n'a pas ? g?rer ?a 
+18:19:10 -                                                             ^
+18:19:10 - 
+18:19:10 - src\minecraft\mod\legendaire45\items\ArmorBase.java:18: error: unmappable character for encoding UTF-8
+18:19:10 -     @SideOnly(Side.CLIENT) //Pr?cise que le serveur n'a pas ? g?rer ?a 
+18:19:10 -                                                                ^
+18:19:10 - 
+18:19:10 - src\minecraft\mod\legendaire45\items\ArmorBase.java:18: error: unmappable character for encoding UTF-8
+18:19:10 -     @SideOnly(Side.CLIENT) //Pr?cise que le serveur n'a pas ? g?rer ?a 
+18:19:10 -                                                                     ^
+18:19:10 - 
+18:19:10 - src\minecraft\mod\legendaire45\items\ArmorBase.java:51: error: unmappable character for encoding UTF-8
+18:19:10 -     @SideOnly(Side.CLIENT) //Pr?cise que le serveur n'a pas ? g?rer ?a 
+18:19:10 -                                ^
+18:19:10 - 
+18:19:10 - src\minecraft\mod\legendaire45\items\ArmorBase.java:51: error: unmappable character for encoding UTF-8
+18:19:10 -     @SideOnly(Side.CLIENT) //Pr?cise que le serveur n'a pas ? g?rer ?a 
+18:19:10 -                                                             ^
+18:19:10 - 
+18:19:10 - src\minecraft\mod\legendaire45\items\ArmorBase.java:51: error: unmappable character for encoding UTF-8
+18:19:10 -     @SideOnly(Side.CLIENT) //Pr?cise que le serveur n'a pas ? g?rer ?a 
+18:19:10 -                                                                ^
+18:19:10 - 
+18:19:10 - src\minecraft\mod\legendaire45\items\ArmorBase.java:51: error: unmappable character for encoding UTF-8
+18:19:10 -     @SideOnly(Side.CLIENT) //Pr?cise que le serveur n'a pas ? g?rer ?a 
+18:19:10 -                                                                     ^
+18:19:10 - 
+18:19:10 - src\minecraft\mod\legendaire45\items\ArmorBase.java:54: error: unmappable character for encoding UTF-8
+18:19:10 -     //Rajouter les autres armures de la m?me fa?on (exemple le copper) 
+18:19:10 -                                          ^
+18:19:10 - 
+18:19:10 - src\minecraft\mod\legendaire45\items\ArmorBase.java:54: error: unmappable character for encoding UTF-8
+18:19:10 -     //Rajouter les autres armures de la m?me fa?on (exemple le copper) 
+18:19:10 -                                                ^
+18:19:10 - 
+18:19:10 - 13 errors
+18:19:10 - ==================
+18:19:10 - 
+18:19:10 - !! Can not find server sources, try decompiling !!
+18:23:09 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+18:23:09 - 
+18:23:09 - == ERRORS FOUND ==
+18:23:09 - 
+18:23:09 - src\minecraft\mod\legendaire45\mod_iut.java:76: error: unmappable character for encoding UTF-8
+18:23:09 - 			LanguageRegistry.addName(ArmorE3, "Jambi?re en Emeraude");
+18:23:09 - 			                                        ^
+18:23:09 - 
+18:23:09 - src\minecraft\mod\legendaire45\mod_iut.java:80: error: unmappable character for encoding UTF-8
+18:23:09 - 			LanguageRegistry.addName(ArmorS3, "Jambi?re en Saphir");
+18:23:09 - 			                                        ^
+18:23:09 - 
+18:23:09 - src\minecraft\mod\legendaire45\mod_iut.java:84: error: unmappable character for encoding UTF-8
+18:23:09 - 			LanguageRegistry.addName(ArmorR3, "Jambi?re en Ruby");
+18:23:09 - 			                                        ^
+18:23:09 - 
+18:23:09 - 3 errors
+18:23:09 - ==================
+18:23:09 - 
+18:23:09 - !! Can not find server sources, try decompiling !!
+18:24:05 - !! Can not find server sources, try decompiling !!
+18:24:51 - !! Can not find server md5s !!
