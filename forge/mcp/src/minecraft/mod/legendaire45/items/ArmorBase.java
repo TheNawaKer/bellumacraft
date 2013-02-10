@@ -15,7 +15,6 @@ public class ArmorBase extends ItemArmor implements IArmorTextureProvider
         super(par1, par2EnumArmorMaterial, par3, par4);
     }
 
-    @SideOnly(Side.CLIENT)
     public String getArmorTextureFile(ItemStack par1Armor)
     { 
         if(par1Armor.itemID == mod_iut.ArmorE1.itemID || par1Armor.itemID == mod_iut.ArmorE2.itemID || par1Armor.itemID == mod_iut.ArmorE4.itemID) 
@@ -48,7 +47,6 @@ public class ArmorBase extends ItemArmor implements IArmorTextureProvider
         return "/mod/item.png"; 
     }
     
-    @SideOnly(Side.CLIENT)
     public String getTextureFile()
     {
     return "/mod/item.png"; 
