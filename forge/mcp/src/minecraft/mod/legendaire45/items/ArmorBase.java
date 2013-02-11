@@ -43,6 +43,18 @@ public class ArmorBase extends ItemArmor implements IArmorTextureProvider
         { 
             return "/mod/armor/rubis_2.png"; 
         }
+        if(par1Armor.itemID == mod_iut.lunette1.itemID) 
+        { 
+            return "/mod/armor/lunette.png"; 
+        } 
+        if(par1Armor.itemID == mod_iut.lunette2.itemID) 
+        { 
+            return "/mod/armor/lunetteb.png"; 
+        } 
+        if(par1Armor.itemID == mod_iut.lunette3.itemID) 
+        { 
+            return "/mod/armor/lunettec.png"; 
+        } 
         
         return "/mod/item.png"; 
     }

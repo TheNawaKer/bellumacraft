@@ -105,6 +105,7 @@ public class mod_iut
 		public static EnumArmorMaterial emeraldarmor = EnumHelper.addArmorMaterial("EMERALD", 29, new int[] {1, 2, 3, 4}, 9);
 		public static EnumArmorMaterial saphirarmor = EnumHelper.addArmorMaterial("SAPHIR", 29, new int[] {1, 2, 3, 4}, 9);
 		public static EnumArmorMaterial rubyarmor = EnumHelper.addArmorMaterial("RUBY", 29, new int[] {1, 2, 3, 4}, 9);
+		public static EnumArmorMaterial lunette = EnumHelper.addArmorMaterial("PLASTIC", 29, new int[] {1, 2, 3, 4}, 9);
 		
 		public static final Block carottes= (new BlockCarottes(170, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
 		public static final Block beer= (new BlockBeer(171, 37, Material.wood)).setTextureFile(textureItem).setBlockName("Distributeur2").setCreativeTab(CreativeTabs.tabBlock);
@@ -136,4 +137,8 @@ public class mod_iut
 		public static final Item ArmorR2 = new ArmorBase(421, rubyarmor, 1,1).setTextureFile(textureItem).setIconIndex(28).setItemName("armor_plate_r");
 		public static final Item ArmorR3= new ArmorBase(422, rubyarmor, 2,2).setTextureFile(textureItem).setIconIndex(29).setItemName("armor_legs_r");
 		public static final Item ArmorR4= new ArmorBase(423, rubyarmor, 3,3).setTextureFile(textureItem).setIconIndex(30).setItemName("armor_foot_r");
+
+		public static final Item lunette1 = new ArmorBase(424, lunette, 0,0).setTextureFile(textureItem).setIconIndex(35).setItemName("armor_head_e");
+		public static final Item lunette2 = new ArmorBase(425, lunette, 0,0).setTextureFile(textureItem).setIconIndex(36).setItemName("armor_head_e");
+		public static final Item lunette3 = new ArmorBase(426, lunette, 0,0).setTextureFile(textureItem).setIconIndex(36).setItemName("armor_head_e");
 }

@@ -6,7 +6,7 @@
 #
 # RetroGuard MCP v3.6.5
 #
-# Logfile created on Mon Feb 11 14:36:43 CET 2013
+# Logfile created on Mon Feb 11 16:20:26 CET 2013
 #
 # Jar file to be obfuscated:           client_recomp.jar
 # Target Jar file for obfuscated code: client_reobf.jar
@@ -54,8 +54,8 @@
 #      Your class net/minecraftforge/event/ASMEventHandler$ASMClassLoader calls the java/lang/ClassLoader method defineClass(Ljava/lang/String;[BII)Ljava/lang/Class;
 #      Your class net/minecraftforge/event/EventBus calls the java/lang/Class method getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 #
-# Memory in use after class data structure built: 26418968 bytes
-# Total memory available                        : 308740096 bytes
+# Memory in use after class data structure built: 26085560 bytes
+# Total memory available                        : 308674560 bytes
 #
 #
 # Names reserved from obfuscation:
@@ -2796,7 +2796,7 @@
 .field_map mod/legendaire45/model/ModelBeer/Shape10 Shape10
 .method_map mod/legendaire45/model/ModelBeer/setRotation (Lnet/minecraft/client/model/ModelRenderer;FFF)V setRotation
 .method_map mod/legendaire45/model/ModelBeer/render (Lnet/minecraft/entity/Entity;FFFFFF)V a
-.method_map mod/legendaire45/model/ModelBeer/renderModel (F)V renderModel
+.method_map mod/legendaire45/model/ModelBeer/renderModel ()V renderModel
 .method_map mod/legendaire45/model/ModelBeer/setRotationAngles (FFFFFFLnet/minecraft/entity/Entity;)V a
 .package_map mod/legendaire45/client client
 .class_map mod/legendaire45/client/ClientProxy ClientProxy
@@ -2858,10 +2858,13 @@
 .field_map mod/legendaire45/mod_iut/hacheToolS hacheToolS
 .field_map mod/legendaire45/mod_iut/rubyarmor rubyarmor
 .field_map mod/legendaire45/mod_iut/beer beer
+.field_map mod/legendaire45/mod_iut/lunette3 lunette3
 .field_map mod/legendaire45/mod_iut/epeeToolR epeeToolR
 .field_map mod/legendaire45/mod_iut/pelleToolR pelleToolR
 .field_map mod/legendaire45/mod_iut/emerald emerald
 .field_map mod/legendaire45/mod_iut/pelleToolS pelleToolS
+.field_map mod/legendaire45/mod_iut/lunette1 lunette1
+.field_map mod/legendaire45/mod_iut/lunette2 lunette2
 .field_map mod/legendaire45/mod_iut/proxy proxy
 .field_map mod/legendaire45/mod_iut/ArmorR1 ArmorR1
 .field_map mod/legendaire45/mod_iut/ArmorR2 ArmorR2
@@ -2885,6 +2888,7 @@
 .field_map mod/legendaire45/mod_iut/emeraldarmor emeraldarmor
 .field_map mod/legendaire45/mod_iut/ArmorS2 ArmorS2
 .field_map mod/legendaire45/mod_iut/carottes carottes
+.field_map mod/legendaire45/mod_iut/lunette lunette
 .field_map mod/legendaire45/mod_iut/saphir saphir
 .method_map mod/legendaire45/mod_iut/initConfig (Lcpw/mods/fml/common/event/FMLPreInitializationEvent;)V initConfig
 .method_map mod/legendaire45/mod_iut/load (Lcpw/mods/fml/common/event/FMLInitializationEvent;)V load

@@ -647,7 +647,7 @@ FD: mod/legendaire45/model/ModelBeer/Shape11 mod/legendaire45/model/ModelBeer/Sh
 FD: mod/legendaire45/model/ModelBeer/Shape9 mod/legendaire45/model/ModelBeer/Shape9
 FD: mod/legendaire45/model/ModelBeer/Shape10 mod/legendaire45/model/ModelBeer/Shape10
 MD: mod/legendaire45/model/ModelBeer/setRotation (Lnet/minecraft/client/model/ModelRenderer;FFF)V mod/legendaire45/model/ModelBeer/setRotation (Layf;FFF)V
-MD: mod/legendaire45/model/ModelBeer/renderModel (F)V mod/legendaire45/model/ModelBeer/renderModel (F)V
+MD: mod/legendaire45/model/ModelBeer/renderModel ()V mod/legendaire45/model/ModelBeer/renderModel ()V
 PK: mod/legendaire45/client mod/legendaire45/client
 CL: mod/legendaire45/client/ClientProxy mod/legendaire45/client/ClientProxy
 PK: mod/legendaire45/common mod/legendaire45/common
@@ -693,10 +693,13 @@ FD: mod/legendaire45/mod_iut/textureBlock mod/legendaire45/mod_iut/textureBlock
 FD: mod/legendaire45/mod_iut/hacheToolS mod/legendaire45/mod_iut/hacheToolS
 FD: mod/legendaire45/mod_iut/rubyarmor mod/legendaire45/mod_iut/rubyarmor
 FD: mod/legendaire45/mod_iut/beer mod/legendaire45/mod_iut/beer
+FD: mod/legendaire45/mod_iut/lunette3 mod/legendaire45/mod_iut/lunette3
 FD: mod/legendaire45/mod_iut/epeeToolR mod/legendaire45/mod_iut/epeeToolR
 FD: mod/legendaire45/mod_iut/pelleToolR mod/legendaire45/mod_iut/pelleToolR
 FD: mod/legendaire45/mod_iut/emerald mod/legendaire45/mod_iut/emerald
 FD: mod/legendaire45/mod_iut/pelleToolS mod/legendaire45/mod_iut/pelleToolS
+FD: mod/legendaire45/mod_iut/lunette1 mod/legendaire45/mod_iut/lunette1
+FD: mod/legendaire45/mod_iut/lunette2 mod/legendaire45/mod_iut/lunette2
 FD: mod/legendaire45/mod_iut/proxy mod/legendaire45/mod_iut/proxy
 FD: mod/legendaire45/mod_iut/ArmorR1 mod/legendaire45/mod_iut/ArmorR1
 FD: mod/legendaire45/mod_iut/ArmorR2 mod/legendaire45/mod_iut/ArmorR2
@@ -720,6 +723,7 @@ FD: mod/legendaire45/mod_iut/ArmorS3 mod/legendaire45/mod_iut/ArmorS3
 FD: mod/legendaire45/mod_iut/emeraldarmor mod/legendaire45/mod_iut/emeraldarmor
 FD: mod/legendaire45/mod_iut/ArmorS2 mod/legendaire45/mod_iut/ArmorS2
 FD: mod/legendaire45/mod_iut/carottes mod/legendaire45/mod_iut/carottes
+FD: mod/legendaire45/mod_iut/lunette mod/legendaire45/mod_iut/lunette
 FD: mod/legendaire45/mod_iut/saphir mod/legendaire45/mod_iut/saphir
 MD: mod/legendaire45/mod_iut/initConfig (Lcpw/mods/fml/common/event/FMLPreInitializationEvent;)V mod/legendaire45/mod_iut/initConfig (Lcpw/mods/fml/common/event/FMLPreInitializationEvent;)V
 MD: mod/legendaire45/mod_iut/load (Lcpw/mods/fml/common/event/FMLInitializationEvent;)V mod/legendaire45/mod_iut/load (Lcpw/mods/fml/common/event/FMLInitializationEvent;)V
