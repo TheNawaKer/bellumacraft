@@ -8,6 +8,7 @@ import mod.legendaire45.items.ItemToolEpeeMod;
 import mod.legendaire45.items.ItemToolHacheMod;
 import mod.legendaire45.items.ItemToolPelleMod;
 import mod.legendaire45.items.ItemToolPiocheMod;
+import mod.legendaire45.render.RenderBeer;
 import mod.legendaire45.tile.TileEntityBeer;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -15,6 +16,8 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemReed;
+import net.minecraft.src.ModLoader;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
@@ -57,7 +60,9 @@ public class mod_iut
 
 			GameRegistry.registerBlock(carottes);
 			GameRegistry.registerBlock(beer);
-			GameRegistry.registerTileEntity(TileEntityBeer.class, "tile");//ajout
+			RenderBeer renderBeer = new RenderBeer();
+			ModLoader.registerTileEntity(TileEntityBeer.class, "tile", renderBeer);//ajout
+			
 
 
 			/** D�fini le nom IN-GAME des items/blocs**/
@@ -90,6 +95,7 @@ public class mod_iut
 			
 			LanguageRegistry.addName(carottes, "Bloc Carottes");
 			LanguageRegistry.addName(beer, "Distributeur");
+			LanguageRegistry.addName(BeerItem, "Distributeur");
 	    }	
 
 		static EnumToolMaterial emerald= EnumHelper.addToolMaterial("EMERALD", 2, 500, 7F, 3, 9);
@@ -101,7 +107,9 @@ public class mod_iut
 		public static EnumArmorMaterial rubyarmor = EnumHelper.addArmorMaterial("RUBY", 29, new int[] {1, 2, 3, 4}, 9);
 		
 		public static final Block carottes= (new BlockCarottes(170, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
-		public static final Block beer= (new BlockBeer(171, 0, Material.wood)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block beer= (new BlockBeer(171, 37, Material.wood)).setTextureFile(textureItem).setBlockName("Distributeur2").setCreativeTab(CreativeTabs.tabBlock);
+		
+		public static final Item BeerItem = (new ItemReed(399, beer)).setTextureFile(textureItem).setIconIndex(37).setItemName("Distributeur").setCreativeTab(CreativeTabs.tabBlock);
 		
 		public static final Item pelleToolE= (new ItemToolPelleMod(400, emerald )).setTextureFile(textureItem).setItemName("tool_pelle_e").setIconIndex(3);
 		public static final Item piocheToolE= (new ItemToolPiocheMod(401, emerald )).setTextureFile(textureItem).setItemName("tool_pioche_e").setIconIndex(4);

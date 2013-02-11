@@ -5,9 +5,16 @@
 <fullyQualifiedTypeName name="mod.legendaire45.common.CommonProxy"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.Block"/>
 <fullyQualifiedTypeName name="mod.legendaire45.blocks.BlockCarottes"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemPickaxe"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemSword"/>
 <fullyQualifiedTypeName name="net.minecraft.item.EnumToolMaterial"/>
+<fullyQualifiedTypeName name="mod.legendaire45.render.RenderBeer"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer"/>
+<fullyQualifiedTypeName name="mod.legendaire45.model.ModelBeer"/>
+<fullyQualifiedTypeName name="mod.legendaire45.tile.TileEntityBeer"/>
+<fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntity"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="mod.legendaire45.mod_iut"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemReed"/>
 </qualifiedTypeNameHistroy>

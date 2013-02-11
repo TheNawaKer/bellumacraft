@@ -3,6 +3,7 @@ package mod.legendaire45.blocks;
 import java.util.Iterator;
 import java.util.Random;
 
+import mod.legendaire45.tile.TileEntityBeer;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityLiving;
@@ -16,6 +17,16 @@ public class BlockBeer extends BlockContainer
     public BlockBeer (int par1, int par2, Material material)
     {
         super(par1, par2, material);
+    }
+    
+    public int idDropped(int var1, Random var2)
+    {
+        return this.blockID;
+    }
+    
+    public int quantityDropped(Random par1Random)
+    {
+        return 1;
     }
 
     /**
@@ -94,6 +105,6 @@ public class BlockBeer extends BlockContainer
      */
     public TileEntity createNewTileEntity(World par1World)
     {
-        return new TileEntity();
+        return new TileEntityBeer();
     }
 }

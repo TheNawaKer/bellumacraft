@@ -22,7 +22,7 @@ public class RenderBeer extends TileEntitySpecialRenderer{
     
       Block block = tileentity1.getBlockType();
       orientation = tileentity1.getBlockMetadata();     
-      mod_iut .beer .setBlockBounds(0.060F, 0F, 0.060F, 0.940F, 1F, 0.940F);
+      mod_iut.beer.setBlockBounds(0.060F, 0F, 0.060F, 0.940F, 1F, 0.940F);
       GL11.glPushMatrix();
       GL11.glTranslatef((float) d + 0.5F, (float) d1 +1.5F, (float) d2 +0.5F );
 
@@ -61,7 +61,7 @@ public class RenderBeer extends TileEntitySpecialRenderer{
    
    public void renderTileEntityAt(TileEntity tileentity, double d, double d1, double d2, float f)
    {
-      renderAModelAt((TileEntityBeer )tileentity, d, d1, d2, f);
+      renderAModelAt((TileEntityBeer)tileentity, d, d1, d2, f);
    }
    
    private ModelBeer  distrib ;
