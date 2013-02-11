@@ -100,3 +100,45 @@
 18:23:09 - !! Can not find server sources, try decompiling !!
 18:24:05 - !! Can not find server sources, try decompiling !!
 18:24:51 - !! Can not find server md5s !!
+14:34:51 - '"javac" -encoding UTF-8 -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "lib:lib/...' failed : 1
+14:34:51 - 
+14:34:51 - == ERRORS FOUND ==
+14:34:51 - 
+14:34:51 - src/minecraft/mod/legendaire45/blocks/BlockBeer.java:54: error: unmappable character for encoding UTF-8
+14:34:51 -         return 50; //on attribue un renderType non utilis� pour pouvoir y appliquer un rendu sp�cial
+14:34:51 -                                                          ^
+14:34:51 - 
+14:34:51 - src/minecraft/mod/legendaire45/blocks/BlockBeer.java:54: error: unmappable character for encoding UTF-8
+14:34:51 -         return 50; //on attribue un renderType non utilis� pour pouvoir y appliquer un rendu sp�cial
+14:34:51 -                                                                                                ^
+14:34:51 - 
+14:34:51 - src/minecraft/mod/legendaire45/blocks/BlockBeer.java:100: error: unmappable character for encoding UTF-8
+14:34:51 -         // vu qu'un block complexe � souvent un sens, on va en profiter pour lui attribuer des metaData � la pose qui definiront son orientation.
+14:34:51 -                                    ^
+14:34:51 - 
+14:34:51 - src/minecraft/mod/legendaire45/blocks/BlockBeer.java:100: error: unmappable character for encoding UTF-8
+14:34:51 -         // vu qu'un block complexe � souvent un sens, on va en profiter pour lui attribuer des metaData � la pose qui definiront son orientation.
+14:34:51 -                                                                                                         ^
+14:34:51 - 
+14:34:51 - src/minecraft/mod/legendaire45/tile/TileItemRenderHelper.java:10: error: unmappable character for encoding UTF-8
+14:34:51 -     public static TileItemRenderHelper instance = new TileItemRenderHelper(); //on cr�er une instance de cette class
+14:34:51 -                                                                                      ^
+14:34:51 - 
+14:34:51 - src/minecraft/mod/legendaire45/tile/TileItemRenderHelper.java:13: error: unmappable character for encoding UTF-8
+14:34:51 -     private TileEntity theTile = new TileEntity();// on r�cup�re une instance de TileEntityTile
+14:34:51 -                                                          ^
+14:34:51 - 
+14:34:51 - src/minecraft/mod/legendaire45/tile/TileItemRenderHelper.java:13: error: unmappable character for encoding UTF-8
+14:34:51 -     private TileEntity theTile = new TileEntity();// on r�cup�re une instance de TileEntityTile
+14:34:51 -                                                              ^
+14:34:51 - 
+14:34:51 - src/minecraft/mod/legendaire45/tile/TileItemRenderHelper.java:20: error: unmappable character for encoding UTF-8
+14:34:51 -     	TileEntityRenderer.instance.renderTileEntityAt(this.theTile, 0.0D, 0.0D, 0.0D, 0.0F); //on applique le rendu du TileEntityTile � l'instance de l'item.
+14:34:51 -     	                                                                                                                               ^
+14:34:51 - 
+14:34:51 - 8 errors
+14:34:51 - ==================
+14:34:51 - 
+14:34:51 - !! Can not find server sources, try decompiling !!
+14:36:39 - !! Can not find server sources, try decompiling !!
+14:37:11 - !! Can not find server md5s !!

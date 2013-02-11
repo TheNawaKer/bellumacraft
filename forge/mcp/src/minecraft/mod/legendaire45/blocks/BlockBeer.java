@@ -51,7 +51,7 @@ public class BlockBeer extends BlockContainer
      */
     public int getRenderType()
     {
-        return 50; //on attribue un renderType non utilisé pour pouvoir y appliquer un rendu spécial
+        return 50; 
     }
 
     /**
@@ -97,7 +97,7 @@ public class BlockBeer extends BlockContainer
 
             par1World.setBlockMetadataWithNotify(par2, par3, par4, var10);
         
-        // vu qu'un block complexe à souvent un sens, on va en profiter pour lui attribuer des metaData à la pose qui definiront son orientation.
+        // vu qu'un block complexe ï¿½ souvent un sens, on va en profiter pour lui attribuer des metaData ï¿½ la pose qui definiront son orientation.
     }
 
     /**

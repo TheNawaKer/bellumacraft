@@ -54,7 +54,7 @@ public class RenderBeer extends TileEntitySpecialRenderer{
       
       bindTextureByName("/mod/distrib2.png");
       GL11.glPushMatrix();
-      distrib.renderModel(0.0625F);
+      distrib.renderModel();
       GL11.glPopMatrix();
       GL11.glPopMatrix();
    }

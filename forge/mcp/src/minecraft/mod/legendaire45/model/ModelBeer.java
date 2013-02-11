@@ -128,8 +128,9 @@ public class ModelBeer extends ModelBase
     super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
   }
   
-  public void renderModel(float f)
+  public void renderModel()
   {
+	  float f = 0.0625F;
 	  Shape1.render(f);
 	  Shape2.render(f);
 	  Shape3.render(f);
