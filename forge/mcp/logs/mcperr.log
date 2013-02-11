@@ -156,3 +156,5 @@ Traceback (most recent call last):
   File "D:\minecraft modding\bellumacraft\forge\mcp\runtime\commands.py", line 1127, in runmc
     raise CalledProcessError(process.returncode, forkcmd, output)
 CalledProcessError: Command '"C:\Program Files\Java\jdk1.7.0_06\bin\java" -Xincgc -Xms1024M -Xmx1024M -cp "..\bin\minecraft;..\src\minecraft;..\lib;..\lib\*;..\jars\bin\minecraft.jar;..\jars\bin\jinput.jar;..\jars\bin\lwjgl.jar;..\jars\bin\lwjgl_util.jar" -Djava.library.path=..\jars\bin\natives Start' returned non-zero exit status 1
+20:55:11 - !! Can not find server sources, try decompiling !!
+20:57:11 - !! Can not find server md5s !!

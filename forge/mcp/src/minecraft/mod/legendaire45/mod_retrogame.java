@@ -39,14 +39,14 @@ import mod.legendaire45.client.ClientPacketHandler;
 import mod.legendaire45.server.ServerPacketHandler;
 
 @Mod(modid = "mod_retrogame", name = "mod retrogame", version = "1.4.0")
-@NetworkMod(clientSideRequired = true, serverSideRequired = false,
+@NetworkMod(clientSideRequired = false, serverSideRequired = true,
 clientPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame" }, packetHandler = ClientPacketHandler.class),
 serverPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame" }, packetHandler = ServerPacketHandler.class))
 
 public class mod_retrogame
 {	
 	    @Instance
-		public static mod_retrogame instance  = new mod_retrogame();;
+		public static mod_retrogame instance  = new mod_retrogame();
 		private GuiHandler guiHandler = new GuiHandler();
 		@SidedProxy(clientSide="mod.legendaire45.client.ClientProxy", serverSide="mod.legendaire45.common.CommonProxy", bukkitSide="mod.legendaire45.common.CommonProxy") //Vous remarquerez que Server et Bukkit partagent la même classe.
 		public static CommonProxy proxy;
@@ -70,8 +70,6 @@ public class mod_retrogame
 
 			GameRegistry.registerBlock(carottes);
 			GameRegistry.registerBlock(beer);
-			RenderBeer renderBeer = new RenderBeer();
-			ModLoader.registerTileEntity(TileEntityBeer.class, "tile", renderBeer);//ajout
 			
 
 

@@ -1,6 +1,9 @@
 package mod.legendaire45.client;
 
 import mod.legendaire45.common.CommonProxy;
+import mod.legendaire45.render.RenderBeer;
+import mod.legendaire45.tile.TileEntityBeer;
+import net.minecraft.src.ModLoader;
 import net.minecraftforge.client.MinecraftForgeClient;
 
 public class ClientProxy extends CommonProxy 
@@ -17,6 +20,8 @@ public class ClientProxy extends CommonProxy
     	MinecraftForgeClient.preloadTexture(this.textureSaphir2);
     	MinecraftForgeClient.preloadTexture(this.textureRuby);
     	MinecraftForgeClient.preloadTexture(this.textureRuby2);
+		RenderBeer renderBeer = new RenderBeer();
+		ModLoader.registerTileEntity(TileEntityBeer.class, "tile", renderBeer);//ajout
     	
     }
 }
