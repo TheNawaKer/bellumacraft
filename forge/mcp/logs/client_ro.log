@@ -6,7 +6,7 @@
 #
 # RetroGuard MCP v3.6.5
 #
-# Logfile created on Mon Feb 11 20:56:53 CET 2013
+# Logfile created on Mon Feb 11 23:17:34 CET 2013
 #
 # Jar file to be obfuscated:           client_recomp.jar
 # Target Jar file for obfuscated code: client_reobf.jar
@@ -54,7 +54,7 @@
 #      Your class net/minecraftforge/event/ASMEventHandler$ASMClassLoader calls the java/lang/ClassLoader method defineClass(Ljava/lang/String;[BII)Ljava/lang/Class;
 #      Your class net/minecraftforge/event/EventBus calls the java/lang/Class method getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 #
-# Memory in use after class data structure built: 25013472 bytes
+# Memory in use after class data structure built: 25058712 bytes
 # Total memory available                        : 275185664 bytes
 #
 #
@@ -2782,6 +2782,9 @@
 .package_map mod mod
 .package_map mod/legendaire45 legendaire45
 .package_map mod/legendaire45/model model
+.class_map mod/legendaire45/model/ModelTrampoline ModelTrampoline
+.field_map mod/legendaire45/model/ModelTrampoline/cube cube
+.method_map mod/legendaire45/model/ModelTrampoline/render ()V render
 .class_map mod/legendaire45/model/ModelBeer ModelBeer
 .field_map mod/legendaire45/model/ModelBeer/Shape5 Shape5
 .field_map mod/legendaire45/model/ModelBeer/Shape6 Shape6
@@ -2820,6 +2823,7 @@
 .class_map mod/legendaire45/gui/GuiBeer GuiBeer
 .field_map mod/legendaire45/gui/GuiBeer/BeerInventory BeerInventory
 .field_map mod/legendaire45/gui/GuiBeer/leveldose leveldose
+.field_map mod/legendaire45/gui/GuiBeer/guibeer guibeer
 .method_map mod/legendaire45/gui/GuiBeer/drawGuiContainerBackgroundLayer (FII)V a
 .method_map mod/legendaire45/gui/GuiBeer/drawGuiContainerForegroundLayer ()V drawGuiContainerForegroundLayer
 .package_map mod/legendaire45/recipe recipe
@@ -2852,6 +2856,16 @@
 .method_map mod/legendaire45/items/ItemDrink/getMaxItemUseDuration (Lnet/minecraft/item/ItemStack;)I c_
 .class_map mod/legendaire45/items/ItemToolHacheMod ItemToolHacheMod
 .class_map mod/legendaire45/items/ArmorBase ArmorBase
+.field_map mod/legendaire45/items/ArmorBase/lunettec lunettec
+.field_map mod/legendaire45/items/ArmorBase/textureItem textureItem
+.field_map mod/legendaire45/items/ArmorBase/textureSaphir2 textureSaphir2
+.field_map mod/legendaire45/items/ArmorBase/lunettea lunettea
+.field_map mod/legendaire45/items/ArmorBase/textureEmerald2 textureEmerald2
+.field_map mod/legendaire45/items/ArmorBase/lunetteb lunetteb
+.field_map mod/legendaire45/items/ArmorBase/textureRuby textureRuby
+.field_map mod/legendaire45/items/ArmorBase/textureRuby2 textureRuby2
+.field_map mod/legendaire45/items/ArmorBase/textureSaphir textureSaphir
+.field_map mod/legendaire45/items/ArmorBase/textureEmerald textureEmerald
 .method_map mod/legendaire45/items/ArmorBase/getArmorTextureFile (Lnet/minecraft/item/ItemStack;)Ljava/lang/String; getArmorTextureFile
 .method_map mod/legendaire45/items/ArmorBase/getTextureFile ()Ljava/lang/String; getTextureFile
 .class_map mod/legendaire45/items/ItemToolPelleMod ItemToolPelleMod
@@ -2860,20 +2874,27 @@
 .class_map mod/legendaire45/items/ItemToolEpeeMod ItemToolEpeeMod
 .package_map mod/legendaire45/common common
 .class_map mod/legendaire45/common/CommonProxy CommonProxy
-.field_map mod/legendaire45/common/CommonProxy/textureSaphir2 textureSaphir2
+.field_map mod/legendaire45/common/CommonProxy/lunettec lunettec
+.field_map mod/legendaire45/common/CommonProxy/lunettea lunettea
+.field_map mod/legendaire45/common/CommonProxy/lunetteb lunetteb
+.field_map mod/legendaire45/common/CommonProxy/textureRuby2 textureRuby2
+.field_map mod/legendaire45/common/CommonProxy/guibeer guibeer
+.field_map mod/legendaire45/common/CommonProxy/textureBlock textureBlock
+.field_map mod/legendaire45/common/CommonProxy/textureSaphir textureSaphir
 .field_map mod/legendaire45/common/CommonProxy/textureItem textureItem
+.field_map mod/legendaire45/common/CommonProxy/textureSaphir2 textureSaphir2
 .field_map mod/legendaire45/common/CommonProxy/textureEmerald2 textureEmerald2
 .field_map mod/legendaire45/common/CommonProxy/textureRuby textureRuby
-.field_map mod/legendaire45/common/CommonProxy/textureRuby2 textureRuby2
-.field_map mod/legendaire45/common/CommonProxy/textureSaphir textureSaphir
-.field_map mod/legendaire45/common/CommonProxy/textureBlock textureBlock
+.field_map mod/legendaire45/common/CommonProxy/distributor distributor
+.field_map mod/legendaire45/common/CommonProxy/trampoline trampoline
 .field_map mod/legendaire45/common/CommonProxy/textureEmerald textureEmerald
 .method_map mod/legendaire45/common/CommonProxy/registerRenderThings ()V registerRenderThings
 .package_map mod/legendaire45/tile tile
-.class_map mod/legendaire45/tile/TileItemRenderHelper TileItemRenderHelper
-.field_map mod/legendaire45/tile/TileItemRenderHelper/theTile theTile
-.field_map mod/legendaire45/tile/TileItemRenderHelper/instance instance
-.method_map mod/legendaire45/tile/TileItemRenderHelper/renderTile (Lnet/minecraft/block/Block;IF)V renderTile
+.class_map mod/legendaire45/tile/TileEntityTrampoline TileEntityTrampoline
+.method_map mod/legendaire45/tile/TileEntityTrampoline/openChest ()V openChest
+.method_map mod/legendaire45/tile/TileEntityTrampoline/closeChest ()V closeChest
+.method_map mod/legendaire45/tile/TileEntityTrampoline/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)V b
+.method_map mod/legendaire45/tile/TileEntityTrampoline/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V a
 .class_map mod/legendaire45/tile/TileEntityBeer TileEntityBeer
 .field_map mod/legendaire45/tile/TileEntityBeer/level level
 .field_map mod/legendaire45/tile/TileEntityBeer/LevelBeerdose LevelBeerdose
@@ -2922,16 +2943,33 @@
 .method_map mod/legendaire45/blocks/BlockBeer/getRenderType ()I d
 .method_map mod/legendaire45/blocks/BlockBeer/idDropped (ILjava/util/Random;)I idDropped
 .method_map mod/legendaire45/blocks/BlockBeer/quantityDropped (Ljava/util/Random;)I a
+.class_map mod/legendaire45/blocks/BlockTrampoline BlockTrampoline
+.field_map mod/legendaire45/blocks/BlockTrampoline/tblock tblock
+.field_map mod/legendaire45/blocks/BlockTrampoline/tentity tentity
+.method_map mod/legendaire45/blocks/BlockTrampoline/onFallenUpon (Lnet/minecraft/world/World;IIILnet/minecraft/entity/Entity;F)V a
+.method_map mod/legendaire45/blocks/BlockTrampoline/getRenderBlockPass ()I n
+.method_map mod/legendaire45/blocks/BlockTrampoline/updateTick (Lnet/minecraft/world/World;IIILjava/util/Random;)V b
+.method_map mod/legendaire45/blocks/BlockTrampoline/createNewTileEntity (Lnet/minecraft/world/World;)Lnet/minecraft/tileentity/TileEntity; a
+.method_map mod/legendaire45/blocks/BlockTrampoline/isOpaqueCube ()Z c
+.method_map mod/legendaire45/blocks/BlockTrampoline/idDropped (ILjava/util/Random;)I idDropped
+.method_map mod/legendaire45/blocks/BlockTrampoline/quantityDropped (Ljava/util/Random;)I a
 .class_map mod/legendaire45/blocks/BlockCarottes BlockCarottes
 .method_map mod/legendaire45/blocks/BlockCarottes/idDropped (ILjava/util/Random;I)I a
 .method_map mod/legendaire45/blocks/BlockCarottes/quantityDropped (Ljava/util/Random;)I a
 .package_map mod/legendaire45/render render
 .class_map mod/legendaire45/render/RenderBeer RenderBeer
 .field_map mod/legendaire45/render/RenderBeer/distrib distrib
+.field_map mod/legendaire45/render/RenderBeer/distributor distributor
 .method_map mod/legendaire45/render/RenderBeer/renderTileEntityAt (Lnet/minecraft/tileentity/TileEntity;DDDF)V a
 .method_map mod/legendaire45/render/RenderBeer/renderAModelAt (Lmod/legendaire45/tile/TileEntityBeer;DDDF)V renderAModelAt
+.class_map mod/legendaire45/render/TileEntityTrampolineRenderer TileEntityTrampolineRenderer
+.field_map mod/legendaire45/render/TileEntityTrampolineRenderer/model model
+.field_map mod/legendaire45/render/TileEntityTrampolineRenderer/trampoline trampoline
+.method_map mod/legendaire45/render/TileEntityTrampolineRenderer/renderTileEntityTileAt (Lnet/minecraft/tileentity/TileEntity;DDDF)V renderTileEntityTileAt
+.method_map mod/legendaire45/render/TileEntityTrampolineRenderer/renderTileEntityAt (Lnet/minecraft/tileentity/TileEntity;DDDF)V a
 .class_map mod/legendaire45/mod_retrogame mod_retrogame
 .field_map mod/legendaire45/mod_retrogame/ruby ruby
+.field_map mod/legendaire45/mod_retrogame/blockTrampoline blockTrampoline
 .field_map mod/legendaire45/mod_retrogame/guiHandler guiHandler
 .field_map mod/legendaire45/mod_retrogame/ArmorS4 ArmorS4
 .field_map mod/legendaire45/mod_retrogame/epeeToolS epeeToolS
@@ -2943,8 +2981,8 @@
 .field_map mod/legendaire45/mod_retrogame/lunette3 lunette3
 .field_map mod/legendaire45/mod_retrogame/epeeToolR epeeToolR
 .field_map mod/legendaire45/mod_retrogame/pelleToolR pelleToolR
-.field_map mod/legendaire45/mod_retrogame/emerald emerald
 .field_map mod/legendaire45/mod_retrogame/pelleToolS pelleToolS
+.field_map mod/legendaire45/mod_retrogame/emerald emerald
 .field_map mod/legendaire45/mod_retrogame/lunette1 lunette1
 .field_map mod/legendaire45/mod_retrogame/lunette2 lunette2
 .field_map mod/legendaire45/mod_retrogame/proxy proxy
@@ -2954,7 +2992,6 @@
 .field_map mod/legendaire45/mod_retrogame/instance instance
 .field_map mod/legendaire45/mod_retrogame/hacheToolE hacheToolE
 .field_map mod/legendaire45/mod_retrogame/ArmorE1 ArmorE1
-.field_map mod/legendaire45/mod_retrogame/BeerItem BeerItem
 .field_map mod/legendaire45/mod_retrogame/BucketBeer BucketBeer
 .field_map mod/legendaire45/mod_retrogame/ArmorE4 ArmorE4
 .field_map mod/legendaire45/mod_retrogame/IDoutil IDoutil
@@ -2973,6 +3010,7 @@
 .field_map mod/legendaire45/mod_retrogame/emeraldarmor emeraldarmor
 .field_map mod/legendaire45/mod_retrogame/ArmorS2 ArmorS2
 .field_map mod/legendaire45/mod_retrogame/saphir saphir
+.field_map mod/legendaire45/mod_retrogame/IDblock IDblock
 .field_map mod/legendaire45/mod_retrogame/lunette lunette
 .field_map mod/legendaire45/mod_retrogame/carottes carottes
 .field_map mod/legendaire45/mod_retrogame/Cup Cup

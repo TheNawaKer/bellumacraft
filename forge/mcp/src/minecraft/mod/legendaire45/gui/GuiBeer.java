@@ -2,6 +2,7 @@ package mod.legendaire45.gui;
 
 import org.lwjgl.opengl.GL11;
 
+import mod.legendaire45.common.CommonProxy;
 import mod.legendaire45.tile.TileEntityBeer;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -11,6 +12,7 @@ public class GuiBeer extends GuiContainer
 {
     private TileEntityBeer BeerInventory;
     private int leveldose;
+	private static String guibeer = CommonProxy.guibeer;
 
     public GuiBeer(InventoryPlayer par1InventoryPlayer, TileEntityBeer par2TileEntityFurnace, World world)
     {
@@ -33,7 +35,7 @@ public class GuiBeer extends GuiContainer
      */
     protected void drawGuiContainerBackgroundLayer(float var1, int var2, int var3)
     {
-        int var4 = this.mc.renderEngine.getTexture("/gui/distributor.png");
+        int var4 = this.mc.renderEngine.getTexture(guibeer);
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
         this.mc.renderEngine.bindTexture(var4);
         int var5 = (this.width - this.xSize) / 2;

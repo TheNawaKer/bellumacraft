@@ -1,6 +1,7 @@
 package mod.legendaire45.render;
 
 import mod.legendaire45.mod_retrogame;
+import mod.legendaire45.common.CommonProxy;
 import mod.legendaire45.model.ModelBeer;
 import mod.legendaire45.tile.TileEntityBeer;
 import net.minecraft.block.Block;
@@ -10,6 +11,8 @@ import net.minecraft.tileentity.TileEntity;
 import org.lwjgl.opengl.GL11;
 
 public class RenderBeer extends TileEntitySpecialRenderer{
+	
+	private static String distributor = CommonProxy.distributor;
 	
    public RenderBeer ()
    {
@@ -52,7 +55,7 @@ public class RenderBeer extends TileEntitySpecialRenderer{
           GL11.glRotatef(180F, 1.0F, 0.0F, 0.0F);
       } 
       
-      bindTextureByName("/mod/distrib2.png");
+      bindTextureByName(distributor);
       GL11.glPushMatrix();
       distrib.renderModel();
       GL11.glPopMatrix();

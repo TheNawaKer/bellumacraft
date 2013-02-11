@@ -2,6 +2,7 @@ package mod.legendaire45;
 
 import mod.legendaire45.blocks.BlockBeer;
 import mod.legendaire45.blocks.BlockCarottes;
+import mod.legendaire45.blocks.BlockTrampoline;
 import mod.legendaire45.common.CommonProxy;
 import mod.legendaire45.gui.GuiHandler;
 import mod.legendaire45.items.ArmorBase;
@@ -11,7 +12,6 @@ import mod.legendaire45.items.ItemToolEpeeMod;
 import mod.legendaire45.items.ItemToolHacheMod;
 import mod.legendaire45.items.ItemToolPelleMod;
 import mod.legendaire45.items.ItemToolPiocheMod;
-import mod.legendaire45.render.RenderBeer;
 import mod.legendaire45.tile.TileEntityBeer;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -70,6 +70,7 @@ public class mod_retrogame
 
 			GameRegistry.registerBlock(carottes);
 			GameRegistry.registerBlock(beer);
+			GameRegistry.registerBlock(blockTrampoline);
 			
 
 
@@ -100,16 +101,19 @@ public class mod_retrogame
 			LanguageRegistry.addName(ArmorR2, "Torse en Ruby");
 			LanguageRegistry.addName(ArmorR3, "Jambiere en Ruby");
 			LanguageRegistry.addName(ArmorR4, "Bottes en Ruby");
+			LanguageRegistry.addName(lunette1, "Lunettes Noir");
+			LanguageRegistry.addName(lunette2, "Lunettes Blanche");
+			LanguageRegistry.addName(lunette3, "Lunettes Violette");
 			
 			LanguageRegistry.addName(carottes, "Bloc Carottes");
 			LanguageRegistry.addName(beer, "Distributeur");
-			LanguageRegistry.addName(BeerItem, "Distributeur");
 			
 			LanguageRegistry.addName(Cup, "Chope");
 			LanguageRegistry.addName(BucketBeer, "Seau de Houblon");
 			LanguageRegistry.addName(CupBeer, "Chope Pleine");
 	    }
 		static int IDoutil = 400;
+		static int IDblock = 170;
 
 		static EnumToolMaterial emerald= EnumHelper.addToolMaterial("EMERALD", 2, 500, 7F, 3, 9);
 		static EnumToolMaterial saphir= EnumHelper.addToolMaterial("SAPHIR", 2, 500, 7F, 3, 9);
@@ -120,10 +124,10 @@ public class mod_retrogame
 		public static EnumArmorMaterial rubyarmor = EnumHelper.addArmorMaterial("RUBY", 29, new int[] {1, 2, 3, 4}, 9);
 		public static EnumArmorMaterial lunette = EnumHelper.addArmorMaterial("PLASTIC", 29, new int[] {1, 2, 3, 4}, 9);
 		
-		public static final Block carottes= (new BlockCarottes(170, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
-		public static final Block beer= (new BlockBeer(171, 37, Material.wood)).setTextureFile(textureItem).setBlockName("Distributeur2").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block carottes= (new BlockCarottes(IDblock, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block beer= (new BlockBeer(IDblock+1, 37, Material.wood)).setTextureFile(textureItem).setBlockName("Distributeur2").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block blockTrampoline = new BlockTrampoline(IDblock+2, 1, Material.cake).setTextureFile(textureBlock).setHardness(.5F).setStepSound(Block.soundSnowFootstep).setCreativeTab(CreativeTabs.tabBlock);
 		
-		public static final Item BeerItem = (new ItemReed(399, beer)).setTextureFile(textureItem).setIconIndex(37).setItemName("Distributeur").setCreativeTab(CreativeTabs.tabBlock);
 	    public static final Item Cup = (new ItemCup(IDoutil+2)).setTextureFile(textureItem).setIconIndex(0).setItemName("Chope Vide").setCreativeTab(CreativeTabs.tabBlock);
 	    public static final Item BucketBeer = (new ItemCup(IDoutil+3)).setTextureFile(textureItem).setIconIndex(2).setItemName("seau de biere").setCreativeTab(CreativeTabs.tabBlock);
 	    public static final Item CupBeer = (new ItemDrink(IDoutil+4, 10, 0.0F, false)).setAlwaysEdible().setTextureFile(textureItem).setIconIndex(1).setItemName("Chope Pleine").setCreativeTab(CreativeTabs.tabBlock);
@@ -132,7 +136,7 @@ public class mod_retrogame
 		public static final Item piocheToolE= (new ItemToolPiocheMod(IDoutil+6, emerald )).setTextureFile(textureItem).setItemName("tool_pioche_e").setIconIndex(4);
 		public static final Item hacheToolE= (new ItemToolHacheMod(IDoutil+7, emerald )).setTextureFile(textureItem).setItemName("tool_hache_e").setIconIndex(5);
 		public static final Item epeeToolE= (new ItemToolEpeeMod(IDoutil+8, emerald )).setTextureFile(textureItem).setItemName("tool_epee_e").setIconIndex(6);
-		public static final Item pelleToolS= (new ItemToolPelleMod(IDoutil+9, saphir )).setTextureFile(textureItem).setItemName("tool_pelle_s").setIconIndex(7);
+		public static final Item pelleToolS= (new ItemToolPelleMod(IDoutil+1, saphir )).setTextureFile(textureItem).setItemName("tool_pelle_s").setIconIndex(7);
 		public static final Item piocheToolS= (new ItemToolPiocheMod(IDoutil+9, saphir )).setTextureFile(textureItem).setItemName("tool_pioche_s").setIconIndex(8);
 		public static final Item hacheToolS= (new ItemToolHacheMod(IDoutil+10, saphir )).setTextureFile(textureItem).setItemName("tool_hache_s").setIconIndex(9);
 		public static final Item epeeToolS= (new ItemToolEpeeMod(IDoutil+11, saphir )).setTextureFile(textureItem).setItemName("tool_epee_s").setIconIndex(10);
@@ -154,7 +158,7 @@ public class mod_retrogame
 		public static final Item ArmorR3= new ArmorBase(IDoutil+26, rubyarmor, 2,2).setTextureFile(textureItem).setIconIndex(29).setItemName("armor_legs_r");
 		public static final Item ArmorR4= new ArmorBase(IDoutil+27, rubyarmor, 3,3).setTextureFile(textureItem).setIconIndex(30).setItemName("armor_foot_r");
 
-		public static final Item lunette1 = new ArmorBase(IDoutil+28, lunette, 0,0).setTextureFile(textureItem).setIconIndex(35).setItemName("armor_head_e");
-		public static final Item lunette2 = new ArmorBase(IDoutil+29, lunette, 0,0).setTextureFile(textureItem).setIconIndex(36).setItemName("armor_head_e");
-		public static final Item lunette3 = new ArmorBase(IDoutil+30, lunette, 0,0).setTextureFile(textureItem).setIconIndex(36).setItemName("armor_head_e");
+		public static final Item lunette1 = new ArmorBase(IDoutil+28, lunette, 0,0).setTextureFile(textureItem).setIconIndex(35).setItemName("lunette");
+		public static final Item lunette2 = new ArmorBase(IDoutil+29, lunette, 0,0).setTextureFile(textureItem).setIconIndex(36).setItemName("lunette2");
+		public static final Item lunette3 = new ArmorBase(IDoutil+30, lunette, 0,0).setTextureFile(textureItem).setIconIndex(38).setItemName("lunette3");
 }

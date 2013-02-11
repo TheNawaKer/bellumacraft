@@ -158,3 +158,14 @@ Traceback (most recent call last):
 CalledProcessError: Command '"C:\Program Files\Java\jdk1.7.0_06\bin\java" -Xincgc -Xms1024M -Xmx1024M -cp "..\bin\minecraft;..\src\minecraft;..\lib;..\lib\*;..\jars\bin\minecraft.jar;..\jars\bin\jinput.jar;..\jars\bin\lwjgl.jar;..\jars\bin\lwjgl_util.jar" -Djava.library.path=..\jars\bin\natives Start' returned non-zero exit status 1
 20:55:11 - !! Can not find server sources, try decompiling !!
 20:57:11 - !! Can not find server md5s !!
+22:39:35 - !! Can not find server sources, try decompiling !!
+22:54:54 - !! Can not find server md5s !!
+22:55:17 - !! Can not find server sources, try decompiling !!
+22:55:47 - !! Can not find server md5s !!
+23:00:54 - !! Can not find server sources, try decompiling !!
+23:01:46 - !! Can not find server md5s !!
+23:04:50 - !! Can not find server sources, try decompiling !!
+23:09:35 - !! Can not find server sources, try decompiling !!
+23:11:42 - !! Can not find server md5s !!
+23:17:29 - !! Can not find server sources, try decompiling !!
+23:17:53 - !! Can not find server md5s !!
