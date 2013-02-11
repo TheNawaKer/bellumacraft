@@ -724,8 +724,6 @@ FD: mod/legendaire45/common/CommonProxy/textureEmerald mod/legendaire45/common/C
 MD: mod/legendaire45/common/CommonProxy/registerRenderThings ()V mod/legendaire45/common/CommonProxy/registerRenderThings ()V
 PK: mod/legendaire45/tile mod/legendaire45/tile
 CL: mod/legendaire45/tile/TileEntityTrampoline mod/legendaire45/tile/TileEntityTrampoline
-MD: mod/legendaire45/tile/TileEntityTrampoline/openChest ()V mod/legendaire45/tile/TileEntityTrampoline/openChest ()V
-MD: mod/legendaire45/tile/TileEntityTrampoline/closeChest ()V mod/legendaire45/tile/TileEntityTrampoline/closeChest ()V
 CL: mod/legendaire45/tile/TileEntityBeer mod/legendaire45/tile/TileEntityBeer
 FD: mod/legendaire45/tile/TileEntityBeer/level mod/legendaire45/tile/TileEntityBeer/level
 FD: mod/legendaire45/tile/TileEntityBeer/LevelBeerdose mod/legendaire45/tile/TileEntityBeer/LevelBeerdose

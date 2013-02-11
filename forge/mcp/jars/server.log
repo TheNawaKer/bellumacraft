@@ -196,3 +196,30 @@ Caused by: java.lang.RuntimeException: Attempted to load class net/minecraft/cli
 2013-02-11 20:43:35 [SEVERE] This crash report has been saved to: D:\minecraft modding\bellumacraft\forge\mcp\jars\.\crash-reports\crash-2013-02-11_20.43.35-server.txt
 2013-02-11 20:51:09 [INFO] Stopping server
 2013-02-11 20:51:09 [INFO] Saving worlds
+2013-02-11 23:29:12 [INFO] Starting minecraft server version 1.4.7
+2013-02-11 23:29:17 [INFO] Loading properties
+2013-02-11 23:29:17 [INFO] Default game type: SURVIVAL
+2013-02-11 23:29:17 [INFO] Generating keypair
+2013-02-11 23:29:20 [INFO] Starting Minecraft server on *:25565
+2013-02-11 23:29:20 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-02-11 23:29:20 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-02-11 23:29:20 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-02-11 23:29:20 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-02-11 23:29:21 [INFO] Preparing level "mcpworld"
+2013-02-11 23:29:21 [INFO] Preparing start region for level 0
+2013-02-11 23:29:22 [INFO] Preparing spawn area: 34%
+2013-02-11 23:29:23 [INFO] Preparing spawn area: 84%
+2013-02-11 23:29:23 [INFO] Done (3,193s)! For help, type "help" or "?"
+2013-02-11 23:30:10 [INFO] User Player370 connecting with mods [mod_retrogame]
+2013-02-11 23:30:10 [INFO] Player370[/127.0.0.1:18330] logged in with entity id 334 at (-2.5, 65.62000000476837, 201.5)
+2013-02-11 23:31:14 [INFO] Player370 lost connection: disconnect.quitting
+2013-02-11 23:31:15 [INFO] /127.0.0.1:18357 lost connection
+2013-02-11 23:31:18 [INFO] User Player370 connecting with mods [mod_retrogame]
+2013-02-11 23:31:18 [INFO] Player370[/127.0.0.1:18358] logged in with entity id 874 at (-0.38080292981780883, 65.0, 205.2765767581351)
+2013-02-11 23:33:36 [INFO] Stopping the server
+2013-02-11 23:33:36 [INFO] Stopping server
+2013-02-11 23:33:36 [INFO] Saving players
+2013-02-11 23:33:36 [INFO] Saving worlds
+2013-02-11 23:33:36 [INFO] Saving chunks for level 'mcpworld'/Overworld
+2013-02-11 23:33:36 [INFO] Saving chunks for level 'mcpworld'/Nether
+2013-02-11 23:33:36 [INFO] Saving chunks for level 'mcpworld'/The End

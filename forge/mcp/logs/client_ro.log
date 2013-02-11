@@ -6,7 +6,7 @@
 #
 # RetroGuard MCP v3.6.5
 #
-# Logfile created on Mon Feb 11 23:17:34 CET 2013
+# Logfile created on Mon Feb 11 23:25:30 CET 2013
 #
 # Jar file to be obfuscated:           client_recomp.jar
 # Target Jar file for obfuscated code: client_reobf.jar
@@ -54,7 +54,7 @@
 #      Your class net/minecraftforge/event/ASMEventHandler$ASMClassLoader calls the java/lang/ClassLoader method defineClass(Ljava/lang/String;[BII)Ljava/lang/Class;
 #      Your class net/minecraftforge/event/EventBus calls the java/lang/Class method getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 #
-# Memory in use after class data structure built: 25058712 bytes
+# Memory in use after class data structure built: 25005112 bytes
 # Total memory available                        : 275185664 bytes
 #
 #
@@ -2891,10 +2891,6 @@
 .method_map mod/legendaire45/common/CommonProxy/registerRenderThings ()V registerRenderThings
 .package_map mod/legendaire45/tile tile
 .class_map mod/legendaire45/tile/TileEntityTrampoline TileEntityTrampoline
-.method_map mod/legendaire45/tile/TileEntityTrampoline/openChest ()V openChest
-.method_map mod/legendaire45/tile/TileEntityTrampoline/closeChest ()V closeChest
-.method_map mod/legendaire45/tile/TileEntityTrampoline/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)V b
-.method_map mod/legendaire45/tile/TileEntityTrampoline/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V a
 .class_map mod/legendaire45/tile/TileEntityBeer TileEntityBeer
 .field_map mod/legendaire45/tile/TileEntityBeer/level level
 .field_map mod/legendaire45/tile/TileEntityBeer/LevelBeerdose LevelBeerdose
