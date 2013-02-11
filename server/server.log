@@ -73,3 +73,46 @@
 2013-02-10 18:31:57 [INFO] Saving chunks for level 'world'/Overworld
 2013-02-10 18:31:57 [INFO] Saving chunks for level 'world'/Nether
 2013-02-10 18:31:57 [INFO] Saving chunks for level 'world'/The End
+2013-02-11 20:35:49 [INFO] Starting minecraft server version 1.4.7
+2013-02-11 20:35:52 [SEVERE] Encountered an unexpected exception NoClassDefFoundError
+java.lang.NoClassDefFoundError: bdx
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.constructMod(FMLModContainer.java:416)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventHandler.handleEvent(EventHandler.java:69)
+	at com.google.common.eventbus.SynchronizedEventHandler.handleEvent(SynchronizedEventHandler.java:45)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:317)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:300)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:268)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventHandler.handleEvent(EventHandler.java:69)
+	at com.google.common.eventbus.SynchronizedEventHandler.handleEvent(SynchronizedEventHandler.java:45)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:317)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:300)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:268)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:83)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:479)
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:86)
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:345)
+	at ho.c(DedicatedServer.java:64)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:458)
+	at fy.run(SourceFile:849)
+Caused by: java.lang.ClassNotFoundException: bdx
+	at cpw.mods.fml.relauncher.RelaunchClassLoader.findClass(RelaunchClassLoader.java:185)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 29 more
+Caused by: java.lang.NullPointerException
+	at cpw.mods.fml.relauncher.RelaunchClassLoader.findClass(RelaunchClassLoader.java:174)
+	... 31 more
+2013-02-11 20:35:52 [SEVERE] This crash report has been saved to: D:\minecraft modding\bellumacraft\server\.\crash-reports\crash-2013-02-11_20.35.52-server.txt
+2013-02-11 20:37:04 [INFO] An unknown error occurred while attempting to perform this command
+2013-02-11 20:37:22 [INFO] An unknown error occurred while attempting to perform this command

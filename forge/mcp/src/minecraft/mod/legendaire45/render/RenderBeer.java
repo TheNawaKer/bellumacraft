@@ -1,6 +1,6 @@
 package mod.legendaire45.render;
 
-import mod.legendaire45.mod_iut;
+import mod.legendaire45.mod_retrogame;
 import mod.legendaire45.model.ModelBeer;
 import mod.legendaire45.tile.TileEntityBeer;
 import net.minecraft.block.Block;
@@ -22,7 +22,7 @@ public class RenderBeer extends TileEntitySpecialRenderer{
     
       Block block = tileentity1.getBlockType();
       orientation = tileentity1.getBlockMetadata();     
-      mod_iut.beer.setBlockBounds(0.060F, 0F, 0.060F, 0.940F, 1F, 0.940F);
+      mod_retrogame.beer.setBlockBounds(0.060F, 0F, 0.060F, 0.940F, 1F, 0.940F);
       GL11.glPushMatrix();
       GL11.glTranslatef((float) d + 0.5F, (float) d1 +1.5F, (float) d2 +0.5F );
 

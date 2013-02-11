@@ -2,7 +2,7 @@ package mod.legendaire45.items;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import mod.legendaire45.mod_iut;
+import mod.legendaire45.mod_retrogame;
 import net.minecraft.item.EnumArmorMaterial; 
 import net.minecraft.item.ItemArmor; 
 import net.minecraft.item.ItemStack; 
@@ -17,41 +17,41 @@ public class ArmorBase extends ItemArmor implements IArmorTextureProvider
 
     public String getArmorTextureFile(ItemStack par1Armor)
     { 
-        if(par1Armor.itemID == mod_iut.ArmorE1.itemID || par1Armor.itemID == mod_iut.ArmorE2.itemID || par1Armor.itemID == mod_iut.ArmorE4.itemID) 
+        if(par1Armor.itemID == mod_retrogame.ArmorE1.itemID || par1Armor.itemID == mod_retrogame.ArmorE2.itemID || par1Armor.itemID == mod_retrogame.ArmorE4.itemID) 
         { 
             return "/mod/armor/emerald_1.png"; 
         } 
-        if(par1Armor.itemID == mod_iut.ArmorE3.itemID) 
+        if(par1Armor.itemID == mod_retrogame.ArmorE3.itemID) 
         { 
             return "/mod/armor/emerald_2.png"; 
         }
         
-        if(par1Armor.itemID == mod_iut.ArmorS1.itemID || par1Armor.itemID == mod_iut.ArmorS2.itemID || par1Armor.itemID == mod_iut.ArmorS4.itemID) 
+        if(par1Armor.itemID == mod_retrogame.ArmorS1.itemID || par1Armor.itemID == mod_retrogame.ArmorS2.itemID || par1Armor.itemID == mod_retrogame.ArmorS4.itemID) 
         { 
             return "/mod/armor/saphir_1.png"; 
         } 
-        if(par1Armor.itemID == mod_iut.ArmorS3.itemID) 
+        if(par1Armor.itemID == mod_retrogame.ArmorS3.itemID) 
         { 
             return "/mod/armor/saphir_2.png"; 
         }
         
-        if(par1Armor.itemID == mod_iut.ArmorR1.itemID || par1Armor.itemID == mod_iut.ArmorR2.itemID || par1Armor.itemID == mod_iut.ArmorR4.itemID) 
+        if(par1Armor.itemID == mod_retrogame.ArmorR1.itemID || par1Armor.itemID == mod_retrogame.ArmorR2.itemID || par1Armor.itemID == mod_retrogame.ArmorR4.itemID) 
         { 
             return "/mod/armor/rubis_1.png"; 
         } 
-        if(par1Armor.itemID == mod_iut.ArmorR3.itemID) 
+        if(par1Armor.itemID == mod_retrogame.ArmorR3.itemID) 
         { 
             return "/mod/armor/rubis_2.png"; 
         }
-        if(par1Armor.itemID == mod_iut.lunette1.itemID) 
+        if(par1Armor.itemID == mod_retrogame.lunette1.itemID) 
         { 
             return "/mod/armor/lunette.png"; 
         } 
-        if(par1Armor.itemID == mod_iut.lunette2.itemID) 
+        if(par1Armor.itemID == mod_retrogame.lunette2.itemID) 
         { 
             return "/mod/armor/lunetteb.png"; 
         } 
-        if(par1Armor.itemID == mod_iut.lunette3.itemID) 
+        if(par1Armor.itemID == mod_retrogame.lunette3.itemID) 
         { 
             return "/mod/armor/lunettec.png"; 
         } 

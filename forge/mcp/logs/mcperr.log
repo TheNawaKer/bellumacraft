@@ -144,3 +144,15 @@
 14:37:11 - !! Can not find server md5s !!
 16:20:22 - !! Can not find server sources, try decompiling !!
 16:20:52 - !! Can not find server md5s !!
+19:41:24 - !! Can not find server sources, try decompiling !!
+19:59:53 - !! Can not find server sources, try decompiling !!
+20:01:00 - !! Can not find server md5s !!
+20:13:49 - '"C:\Program Files\Java\jdk1.7.0_06\bin\java" -Xincgc -Xms1024M -Xmx1024M -cp "..\bin\minecraft;..\sr...' failed : 1
+20:13:49 - FATAL ERROR
+Traceback (most recent call last):
+  File "runtime\startclient.py", line 30, in startclient
+  File "D:\minecraft modding\bellumacraft\forge\mcp\runtime\commands.py", line 1087, in startclient
+    self.runmc(forkcmd)
+  File "D:\minecraft modding\bellumacraft\forge\mcp\runtime\commands.py", line 1127, in runmc
+    raise CalledProcessError(process.returncode, forkcmd, output)
+CalledProcessError: Command '"C:\Program Files\Java\jdk1.7.0_06\bin\java" -Xincgc -Xms1024M -Xmx1024M -cp "..\bin\minecraft;..\src\minecraft;..\lib;..\lib\*;..\jars\bin\minecraft.jar;..\jars\bin\jinput.jar;..\jars\bin\lwjgl.jar;..\jars\bin\lwjgl_util.jar" -Djava.library.path=..\jars\bin\natives Start' returned non-zero exit status 1
