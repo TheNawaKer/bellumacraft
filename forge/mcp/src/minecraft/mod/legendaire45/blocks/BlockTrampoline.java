@@ -3,6 +3,9 @@ package mod.legendaire45.blocks;
 import java.util.Iterator;
 import java.util.Random;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
 import mod.legendaire45.tile.TileEntityBeer;
 import mod.legendaire45.tile.TileEntityTrampoline;
 import net.minecraft.block.BlockContainer;
@@ -53,20 +56,22 @@ public class BlockTrampoline extends BlockContainer
     private Entity tentity;	
     private float tblock;
     
-    public void onFallenUpon(World world, int x, int y, int z, Entity entity, float par6) {		
+    public void onFallenUpon(World world, int x, int y, int z, Entity entity, float par6)
+    {		
     	if( tentity == null ) 
     	 {			
     	tentity = entity;			
-    	tblock = entity.fallDistance;		
-    	 } 
+    	tblock = entity.fallDistance;	
+    	System.out.println(tblock); 
+    	} 
     	else world.scheduleBlockUpdate(x, y, z, blockID, 1);
     	entity.fallDistance = 0;	
-    	 }
+    }
     
     public void updateTick(World world, int x, int y, int z, Random random)
     {		
     	if( tentity != null )
-    	{			
+    	{
     	float step = 0;			
     	if( tentity.isSneaking() ) 
     	 step = tblock/6;			
@@ -76,9 +81,11 @@ public class BlockTrampoline extends BlockContainer
     	 step = tblock/15;			
     	if( step > 6 ) 
     	 step = tblock/20;			
-    	 tentity.motionY = 1 + step;			
+    	 tentity.motionY += 1 + step;
+    	 System.out.println(tentity.motionY);
     	 tentity = null;		
     	 }
+    	System.out.println(tentity);
     }
     
     public int getRenderBlockPass() 
