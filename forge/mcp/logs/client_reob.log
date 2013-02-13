@@ -747,11 +747,18 @@ CL: mod/legendaire45/blocks/BlockBeer mod/legendaire45/blocks/BlockBeer
 FD: mod/legendaire45/blocks/BlockBeer/BeerRand mod/legendaire45/blocks/BlockBeer/BeerRand
 FD: mod/legendaire45/blocks/BlockBeer/keepBeerInventory mod/legendaire45/blocks/BlockBeer/keepBeerInventory
 MD: mod/legendaire45/blocks/BlockBeer/idDropped (ILjava/util/Random;)I mod/legendaire45/blocks/BlockBeer/idDropped (ILjava/util/Random;)I
+CL: mod/legendaire45/blocks/BlockStairLog mod/legendaire45/blocks/BlockStairLog
+FD: mod/legendaire45/blocks/BlockStairLog/modelBlock mod/legendaire45/blocks/BlockStairLog/modelBlock
+MD: mod/legendaire45/blocks/BlockStairLog/getOrientation (I)I mod/legendaire45/blocks/BlockStairLog/getOrientation (I)I
 CL: mod/legendaire45/blocks/BlockTrampoline mod/legendaire45/blocks/BlockTrampoline
 FD: mod/legendaire45/blocks/BlockTrampoline/tblock mod/legendaire45/blocks/BlockTrampoline/tblock
 FD: mod/legendaire45/blocks/BlockTrampoline/tentity mod/legendaire45/blocks/BlockTrampoline/tentity
 MD: mod/legendaire45/blocks/BlockTrampoline/idDropped (ILjava/util/Random;)I mod/legendaire45/blocks/BlockTrampoline/idDropped (ILjava/util/Random;)I
 CL: mod/legendaire45/blocks/BlockCarottes mod/legendaire45/blocks/BlockCarottes
+CL: mod/legendaire45/blocks/BlockCropBeer mod/legendaire45/blocks/BlockCropBeer
+MD: mod/legendaire45/blocks/BlockCropBeer/getGrowthRate (Lnet/minecraft/world/World;III)F mod/legendaire45/blocks/BlockCropBeer/getGrowthRate (Lyc;III)F
+MD: mod/legendaire45/blocks/BlockCropBeer/par1dDropped (ILjava/util/Random;I)I mod/legendaire45/blocks/BlockCropBeer/par1dDropped (ILjava/util/Random;I)I
+MD: mod/legendaire45/blocks/BlockCropBeer/fertilize (Lnet/minecraft/world/World;III)V mod/legendaire45/blocks/BlockCropBeer/fertilize (Lyc;III)V
 PK: mod/legendaire45/render mod/legendaire45/render
 CL: mod/legendaire45/render/RenderBeer mod/legendaire45/render/RenderBeer
 FD: mod/legendaire45/render/RenderBeer/distrib mod/legendaire45/render/RenderBeer/distrib
@@ -762,52 +769,56 @@ FD: mod/legendaire45/render/TileEntityTrampolineRenderer/model mod/legendaire45/
 FD: mod/legendaire45/render/TileEntityTrampolineRenderer/trampoline mod/legendaire45/render/TileEntityTrampolineRenderer/trampoline
 MD: mod/legendaire45/render/TileEntityTrampolineRenderer/renderTileEntityTileAt (Lnet/minecraft/tileentity/TileEntity;DDDF)V mod/legendaire45/render/TileEntityTrampolineRenderer/renderTileEntityTileAt (Lany;DDDF)V
 CL: mod/legendaire45/mod_retrogame mod/legendaire45/mod_retrogame
-FD: mod/legendaire45/mod_retrogame/ruby mod/legendaire45/mod_retrogame/ruby
 FD: mod/legendaire45/mod_retrogame/blockTrampoline mod/legendaire45/mod_retrogame/blockTrampoline
 FD: mod/legendaire45/mod_retrogame/guiHandler mod/legendaire45/mod_retrogame/guiHandler
 FD: mod/legendaire45/mod_retrogame/ArmorS4 mod/legendaire45/mod_retrogame/ArmorS4
+FD: mod/legendaire45/mod_retrogame/textureBlock mod/legendaire45/mod_retrogame/textureBlock
+FD: mod/legendaire45/mod_retrogame/beer mod/legendaire45/mod_retrogame/beer
+FD: mod/legendaire45/mod_retrogame/emerald mod/legendaire45/mod_retrogame/emerald
+FD: mod/legendaire45/mod_retrogame/seedBeer mod/legendaire45/mod_retrogame/seedBeer
+FD: mod/legendaire45/mod_retrogame/instance mod/legendaire45/mod_retrogame/instance
+FD: mod/legendaire45/mod_retrogame/Beer mod/legendaire45/mod_retrogame/Beer
+FD: mod/legendaire45/mod_retrogame/IDoutil mod/legendaire45/mod_retrogame/IDoutil
+FD: mod/legendaire45/mod_retrogame/pelleToolE mod/legendaire45/mod_retrogame/pelleToolE
+FD: mod/legendaire45/mod_retrogame/ArmorR3 mod/legendaire45/mod_retrogame/ArmorR3
+FD: mod/legendaire45/mod_retrogame/ArmorR4 mod/legendaire45/mod_retrogame/ArmorR4
+FD: mod/legendaire45/mod_retrogame/ArmorS1 mod/legendaire45/mod_retrogame/ArmorS1
+FD: mod/legendaire45/mod_retrogame/textureItem mod/legendaire45/mod_retrogame/textureItem
+FD: mod/legendaire45/mod_retrogame/ArmorS3 mod/legendaire45/mod_retrogame/ArmorS3
+FD: mod/legendaire45/mod_retrogame/carottes mod/legendaire45/mod_retrogame/carottes
+FD: mod/legendaire45/mod_retrogame/IDblock mod/legendaire45/mod_retrogame/IDblock
+FD: mod/legendaire45/mod_retrogame/ArmorS2 mod/legendaire45/mod_retrogame/ArmorS2
+FD: mod/legendaire45/mod_retrogame/Cup mod/legendaire45/mod_retrogame/Cup
+FD: mod/legendaire45/mod_retrogame/ruby mod/legendaire45/mod_retrogame/ruby
 FD: mod/legendaire45/mod_retrogame/epeeToolS mod/legendaire45/mod_retrogame/epeeToolS
 FD: mod/legendaire45/mod_retrogame/hacheToolR mod/legendaire45/mod_retrogame/hacheToolR
 FD: mod/legendaire45/mod_retrogame/hacheToolS mod/legendaire45/mod_retrogame/hacheToolS
-FD: mod/legendaire45/mod_retrogame/textureBlock mod/legendaire45/mod_retrogame/textureBlock
 FD: mod/legendaire45/mod_retrogame/rubyarmor mod/legendaire45/mod_retrogame/rubyarmor
-FD: mod/legendaire45/mod_retrogame/beer mod/legendaire45/mod_retrogame/beer
+FD: mod/legendaire45/mod_retrogame/cropBeer mod/legendaire45/mod_retrogame/cropBeer
 FD: mod/legendaire45/mod_retrogame/lunette3 mod/legendaire45/mod_retrogame/lunette3
-FD: mod/legendaire45/mod_retrogame/epeeToolR mod/legendaire45/mod_retrogame/epeeToolR
 FD: mod/legendaire45/mod_retrogame/pelleToolR mod/legendaire45/mod_retrogame/pelleToolR
+FD: mod/legendaire45/mod_retrogame/epeeToolR mod/legendaire45/mod_retrogame/epeeToolR
 FD: mod/legendaire45/mod_retrogame/pelleToolS mod/legendaire45/mod_retrogame/pelleToolS
-FD: mod/legendaire45/mod_retrogame/emerald mod/legendaire45/mod_retrogame/emerald
 FD: mod/legendaire45/mod_retrogame/lunette1 mod/legendaire45/mod_retrogame/lunette1
 FD: mod/legendaire45/mod_retrogame/lunette2 mod/legendaire45/mod_retrogame/lunette2
 FD: mod/legendaire45/mod_retrogame/proxy mod/legendaire45/mod_retrogame/proxy
 FD: mod/legendaire45/mod_retrogame/ArmorR1 mod/legendaire45/mod_retrogame/ArmorR1
-FD: mod/legendaire45/mod_retrogame/ArmorR2 mod/legendaire45/mod_retrogame/ArmorR2
 FD: mod/legendaire45/mod_retrogame/epeeToolE mod/legendaire45/mod_retrogame/epeeToolE
-FD: mod/legendaire45/mod_retrogame/instance mod/legendaire45/mod_retrogame/instance
+FD: mod/legendaire45/mod_retrogame/ArmorR2 mod/legendaire45/mod_retrogame/ArmorR2
 FD: mod/legendaire45/mod_retrogame/hacheToolE mod/legendaire45/mod_retrogame/hacheToolE
 FD: mod/legendaire45/mod_retrogame/ArmorE1 mod/legendaire45/mod_retrogame/ArmorE1
+FD: mod/legendaire45/mod_retrogame/stair mod/legendaire45/mod_retrogame/stair
 FD: mod/legendaire45/mod_retrogame/BucketBeer mod/legendaire45/mod_retrogame/BucketBeer
 FD: mod/legendaire45/mod_retrogame/ArmorE4 mod/legendaire45/mod_retrogame/ArmorE4
-FD: mod/legendaire45/mod_retrogame/IDoutil mod/legendaire45/mod_retrogame/IDoutil
-FD: mod/legendaire45/mod_retrogame/pelleToolE mod/legendaire45/mod_retrogame/pelleToolE
-FD: mod/legendaire45/mod_retrogame/ArmorE2 mod/legendaire45/mod_retrogame/ArmorE2
 FD: mod/legendaire45/mod_retrogame/piocheToolS mod/legendaire45/mod_retrogame/piocheToolS
-FD: mod/legendaire45/mod_retrogame/ArmorE3 mod/legendaire45/mod_retrogame/ArmorE3
+FD: mod/legendaire45/mod_retrogame/ArmorE2 mod/legendaire45/mod_retrogame/ArmorE2
 FD: mod/legendaire45/mod_retrogame/piocheToolR mod/legendaire45/mod_retrogame/piocheToolR
-FD: mod/legendaire45/mod_retrogame/ArmorR3 mod/legendaire45/mod_retrogame/ArmorR3
-FD: mod/legendaire45/mod_retrogame/ArmorR4 mod/legendaire45/mod_retrogame/ArmorR4
+FD: mod/legendaire45/mod_retrogame/ArmorE3 mod/legendaire45/mod_retrogame/ArmorE3
 FD: mod/legendaire45/mod_retrogame/saphirarmor mod/legendaire45/mod_retrogame/saphirarmor
-FD: mod/legendaire45/mod_retrogame/ArmorS1 mod/legendaire45/mod_retrogame/ArmorS1
-FD: mod/legendaire45/mod_retrogame/textureItem mod/legendaire45/mod_retrogame/textureItem
 FD: mod/legendaire45/mod_retrogame/piocheToolE mod/legendaire45/mod_retrogame/piocheToolE
-FD: mod/legendaire45/mod_retrogame/ArmorS3 mod/legendaire45/mod_retrogame/ArmorS3
 FD: mod/legendaire45/mod_retrogame/emeraldarmor mod/legendaire45/mod_retrogame/emeraldarmor
-FD: mod/legendaire45/mod_retrogame/ArmorS2 mod/legendaire45/mod_retrogame/ArmorS2
-FD: mod/legendaire45/mod_retrogame/saphir mod/legendaire45/mod_retrogame/saphir
-FD: mod/legendaire45/mod_retrogame/IDblock mod/legendaire45/mod_retrogame/IDblock
 FD: mod/legendaire45/mod_retrogame/lunette mod/legendaire45/mod_retrogame/lunette
-FD: mod/legendaire45/mod_retrogame/carottes mod/legendaire45/mod_retrogame/carottes
-FD: mod/legendaire45/mod_retrogame/Cup mod/legendaire45/mod_retrogame/Cup
+FD: mod/legendaire45/mod_retrogame/saphir mod/legendaire45/mod_retrogame/saphir
 FD: mod/legendaire45/mod_retrogame/CupBeer mod/legendaire45/mod_retrogame/CupBeer
 MD: mod/legendaire45/mod_retrogame/initConfig (Lcpw/mods/fml/common/event/FMLPreInitializationEvent;)V mod/legendaire45/mod_retrogame/initConfig (Lcpw/mods/fml/common/event/FMLPreInitializationEvent;)V
 MD: mod/legendaire45/mod_retrogame/load (Lcpw/mods/fml/common/event/FMLInitializationEvent;)V mod/legendaire45/mod_retrogame/load (Lcpw/mods/fml/common/event/FMLInitializationEvent;)V

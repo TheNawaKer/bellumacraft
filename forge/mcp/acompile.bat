@@ -1,12 +1,10 @@
 @echo off
 runtime\bin\python\python_mcp runtime\recompile.py %*
 runtime\bin\python\python_mcp runtime\reobfuscate.py %*
-cd ressources
-rar a -r mod.zip mod/
-cd ..
-move /Y ressources\mod.zip reobf\minecraft\
-cd reobf/minecraft
-rar a -r mod.zip mod/
-cd ..
-cd ..
-move /Y reobf\minecraft\mod.zip partage\
+rd partage /S /Q
+mkdir partage
+xcopy /E /Y /I reobf\minecraft\mod partage\mod
+xcopy /E /Y /I src\minecraft\mod\legendaire45\texture partage\mod\legendaire45\texture
+cd partage
+rar a -r retrogame.zip mod/
+rd mod /S /Q
