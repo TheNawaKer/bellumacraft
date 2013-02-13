@@ -73,6 +73,8 @@ public class BlockTrampoline extends BlockContainer
     {		
     	if( tentity != null )
     	{
+        System.out.println("Entity(avant null):"); 
+        System.out.println(tentity);
         System.out.println("server tblock:"); 
         System.out.println(tblock);
     	float step = 0;			
@@ -87,6 +89,8 @@ public class BlockTrampoline extends BlockContainer
     	 tentity.motionY = 1 + step;
     	 System.out.println("motiony:"); 
     	 System.out.println(tentity.motionY);
+         System.out.println("Entity(y):"); 
+         System.out.println(tentity);
     	 tentity = null;		
     	 }
     	System.out.println("Entity:"); 

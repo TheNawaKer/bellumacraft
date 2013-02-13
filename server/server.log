@@ -250,3 +250,69 @@ Caused by: java.lang.NullPointerException
 2013-02-13 12:23:13 [INFO] Saving chunks for level 'world'/Nether
 2013-02-13 12:23:13 [INFO] Saving chunks for level 'world'/The End
 2013-02-13 12:23:13 [INFO] Stopping server
+2013-02-13 16:42:44 [INFO] Starting minecraft server version 1.4.7
+2013-02-13 16:42:47 [INFO] Loading properties
+2013-02-13 16:42:47 [INFO] Default game type: CREATIVE
+2013-02-13 16:42:47 [INFO] Generating keypair
+2013-02-13 16:42:48 [INFO] Starting Minecraft server on *:25565
+2013-02-13 16:42:48 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-02-13 16:42:48 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-02-13 16:42:48 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-02-13 16:42:48 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-02-13 16:42:48 [INFO] Preparing level "world"
+2013-02-13 16:42:49 [INFO] Preparing start region for level 0
+2013-02-13 16:42:50 [INFO] Preparing spawn area: 88%
+2013-02-13 16:42:50 [INFO] Done (1,767s)! For help, type "help" or "?"
+2013-02-13 16:44:01 [INFO] User legendaire45 connecting with mods [mod_retrogame]
+2013-02-13 16:44:01 [INFO] legendaire45[/192.168.13.135:52042] logged in with entity id 347 at (-143.50330984402723, 66.0, 252.980285738619)
+2013-02-13 16:44:16 [INFO] legendaire45 lost connection: disconnect.quitting
+2013-02-13 16:45:52 [INFO] Stopping the server
+2013-02-13 16:45:52 [INFO] Stopping server
+2013-02-13 16:45:52 [INFO] Saving players
+2013-02-13 16:45:52 [INFO] Saving worlds
+2013-02-13 16:45:52 [INFO] Saving chunks for level 'world'/Overworld
+2013-02-13 16:45:52 [INFO] Saving chunks for level 'world'/Nether
+2013-02-13 16:45:52 [INFO] Saving chunks for level 'world'/The End
+2013-02-13 16:45:52 [INFO] Stopping server
+2013-02-13 16:45:52 [INFO] Saving players
+2013-02-13 16:45:53 [INFO] Saving worlds
+2013-02-13 16:48:49 [INFO] Starting minecraft server version 1.4.7
+2013-02-13 16:48:50 [INFO] Loading properties
+2013-02-13 16:48:50 [INFO] Default game type: CREATIVE
+2013-02-13 16:48:50 [INFO] Generating keypair
+2013-02-13 16:48:51 [INFO] Starting Minecraft server on *:25565
+2013-02-13 16:48:51 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-02-13 16:48:51 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-02-13 16:48:51 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-02-13 16:48:51 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-02-13 16:48:51 [INFO] Preparing level "world"
+2013-02-13 16:48:52 [INFO] Preparing start region for level 0
+2013-02-13 16:48:52 [INFO] Done (1,379s)! For help, type "help" or "?"
+2013-02-13 16:49:06 [INFO] User legendaire45 connecting with mods [mod_retrogame]
+2013-02-13 16:49:06 [INFO] legendaire45[/192.168.13.135:52073] logged in with entity id 340 at (-143.4436790143959, 66.0, 253.79121372257453)
+2013-02-13 16:52:47 [INFO] Stopping server
+2013-02-13 16:52:47 [INFO] Saving players
+2013-02-13 17:15:56 [INFO] Starting minecraft server version 1.4.7
+2013-02-13 17:15:57 [INFO] Loading properties
+2013-02-13 17:15:57 [INFO] Default game type: CREATIVE
+2013-02-13 17:15:57 [INFO] Generating keypair
+2013-02-13 17:15:58 [INFO] Starting Minecraft server on *:25565
+2013-02-13 17:15:58 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-02-13 17:15:58 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-02-13 17:15:58 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-02-13 17:15:58 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-02-13 17:15:58 [INFO] Preparing level "world"
+2013-02-13 17:15:59 [INFO] Preparing start region for level 0
+2013-02-13 17:16:00 [INFO] Done (1,333s)! For help, type "help" or "?"
+2013-02-13 17:16:13 [INFO] User legendaire45 connecting with mods [mod_retrogame]
+2013-02-13 17:16:13 [INFO] legendaire45[/192.168.13.135:52215] logged in with entity id 322 at (-143.4436790143959, 66.0, 253.79121372257453)
+2013-02-13 17:19:41 [INFO] legendaire45 lost connection: disconnect.quitting
+2013-02-13 17:47:31 [INFO] Stopping server
+2013-02-13 17:47:31 [INFO] Saving players
+2013-02-13 17:47:31 [INFO] Saving worlds
+2013-02-13 17:47:31 [INFO] Saving chunks for level 'world'/Overworld
+2013-02-13 17:47:31 [INFO] Saving chunks for level 'world'/Nether
+2013-02-13 17:47:31 [INFO] Saving chunks for level 'world'/The End
+2013-02-13 17:47:31 [INFO] Stopping server
+2013-02-13 17:47:31 [INFO] Saving players
+2013-02-13 17:47:31 [INFO] Saving worlds

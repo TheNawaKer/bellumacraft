@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="29" version="2.0">
+<workbench progressCount="26" version="2.0">
 <workbenchAdvisor/>
 <window height="1001" maximized="true" width="609" x="357" y="363">
 <fastViewData fastViewLocation="1024"/>
@@ -39,17 +39,14 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
+<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="mod_iut.java" partName="mod_iut.java" path="/mnt/home/furet/Project/bellumacraft/forge/mcp/src/minecraft/mod/legendaire45/mod_iut.java" title="mod_iut.java" tooltip="Minecraft/src/mod/legendaire45/mod_iut.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Minecraft/src/mod/legendaire45/mod_iut.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5279" selectionTopPixel="559"/>
-</editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientProxy.java" partName="ClientProxy.java" path="/mnt/home/furet/Project/bellumacraft/forge/mcp/src/minecraft/mod/legendaire45/client/ClientProxy.java" title="ClientProxy.java" tooltip="Minecraft/src/mod/legendaire45/client/ClientProxy.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Minecraft/src/mod/legendaire45/client/ClientProxy.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="154" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="438" selectionTopPixel="15"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommonProxy.java" partName="CommonProxy.java" path="/mnt/home/furet/Project/bellumacraft/forge/mcp/src/minecraft/mod/legendaire45/common/CommonProxy.java" title="CommonProxy.java" tooltip="Minecraft/src/mod/legendaire45/common/CommonProxy.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Minecraft/src/mod/legendaire45/common/CommonProxy.java"/>
@@ -66,6 +63,14 @@
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ItemToolEpeeMod.java" partName="ItemToolEpeeMod.java" path="/mnt/home/furet/Project/bellumacraft/forge/mcp/src/minecraft/mod/legendaire45/items/ItemToolEpeeMod.java" title="ItemToolEpeeMod.java" tooltip="Minecraft/src/mod/legendaire45/items/ItemToolEpeeMod.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Minecraft/src/mod/legendaire45/items/ItemToolEpeeMod.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="184" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ItemEnderPearl.java" partName="ItemEnderPearl.java" path="/mnt/home/furet/Project/bellumacraft/forge/mcp/src/minecraft/net/minecraft/item/ItemEnderPearl.java" title="ItemEnderPearl.java" tooltip="Minecraft/src/net/minecraft/item/ItemEnderPearl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Minecraft/src/net/minecraft/item/ItemEnderPearl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="816" selectionTopPixel="83"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BlockTrampoline.java" partName="BlockTrampoline.java" path="/mnt/home/furet/Project/bellumacraft/forge/mcp/src/minecraft/mod/legendaire45/blocks/BlockTrampoline.java" title="BlockTrampoline.java" tooltip="Minecraft/src/mod/legendaire45/blocks/BlockTrampoline.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Minecraft/src/mod/legendaire45/blocks/BlockTrampoline.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2435" selectionTopPixel="722"/>
 </editor>
 </editors>
 <views>
@@ -198,6 +203,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/mod/legendaire45/items/ItemToolHacheMod.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/mod/legendaire45/ItemToolEpeeMod.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/mod/legendaire45/items/ItemToolEpeeMod.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/mod/legendaire45/client/ClientProxy.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/net/minecraft/item/ItemEnderPearl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/mod/legendaire45/blocks/BlockTrampoline.java"/>
 </editors>
 <item historyLabel="mod_iut.java" index="0">
 <position info="not_deleted" x="1534" y="0"/>
@@ -283,8 +291,17 @@
 <item historyLabel="ItemToolEpeeMod.java" index="7">
 <position info="not_deleted" x="184" y="0"/>
 </item>
-<item active="true" historyLabel="mod_iut.java" index="0">
-<position info="not_deleted" x="3353" y="0"/>
+<item historyLabel="mod_iut.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ClientProxy.java" index="8">
+<position info="not_deleted" x="438" y="0"/>
+</item>
+<item historyLabel="ItemEnderPearl.java" index="9">
+<position info="not_deleted" x="816" y="0"/>
+</item>
+<item active="true" historyLabel="BlockTrampoline.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -303,6 +320,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BlockTrampoline.java" tooltip="Minecraft/src/mod/legendaire45/blocks/BlockTrampoline.java">
+<persistable path="/Minecraft/src/mod/legendaire45/blocks/BlockTrampoline.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ItemEnderPearl.java" tooltip="Minecraft/src/net/minecraft/item/ItemEnderPearl.java">
+<persistable path="/Minecraft/src/net/minecraft/item/ItemEnderPearl.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ItemToolEpeeMod.java" tooltip="Minecraft/src/mod/legendaire45/ItemToolEpeeMod.java">
 <persistable path="/Minecraft/src/mod/legendaire45/ItemToolEpeeMod.java"/>
 </file>

@@ -26158,3 +26158,1387 @@ based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
 12:24:49 - > Outputted mod/legendaire45/items/ItemToolEpeeMod to reobf/minecraft as mod/legendaire45/items/ItemToolEpeeMod.class
 12:24:49 - - Done in 29.73 seconds
 12:24:49 - !! Can not find server md5s !!
+16:44:47 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+16:44:47 - OS : linux2
+16:44:47 - # VERSION INFO
+16:44:47 - python: 2.7.3 (default, Apr 20 2012, 22:39:59) 
+[GCC 4.6.3]
+16:44:47 - platform: Linux-3.2.0-23-generic-x86_64-with-Ubuntu-12.04-precise
+16:44:47 - # java: '"java" -version'
+16:44:47 - java version "1.7.0_07"
+Java(TM) SE Runtime Environment (build 1.7.0_07-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 23.3-b01, mixed mode)
+16:44:47 - # javac: '"javac" -version'
+16:44:47 - javac 1.7.0_07
+16:44:47 - # javac runtime: '"javac" -J-version'
+16:44:47 - java version "1.7.0_07"
+Java(TM) SE Runtime Environment (build 1.7.0_07-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 23.3-b01, mixed mode)
+16:44:47 - # retroguard: 'runtime/bin/retroguard.jar --version'
+16:44:47 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+16:44:47 - # mcinjector: 'runtime/bin/mcinjector.jar --version'
+16:44:47 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+16:44:47 - # patch: 'patch --version'
+16:44:47 - patch 2.6.1
+16:44:47 - # wine: 'wine --version'
+16:44:47 - # astyle: 'astyle --version'
+16:44:47 - Artistic Style Version 2.01
+16:44:47 - # fernflower: 'runtime/bin/fernflower.jar'
+16:44:47 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+16:44:47 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+16:44:47 - == Recompiling client ==
+16:44:47 - > Cleaning bin
+16:44:48 - > Recompiling
+16:44:49 - runcmd: '"javac" -encoding UTF-8 -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "lib:lib/*:jars/bin/minecraft.jar:jars/bin/jinput.jar:jars/bin/lwjgl.jar:jars/bin/lwjgl_util.jar" -sourcepath src/minecraft -d bin/minecraft src/minecraft/Start.java src/minecraft/mod/legendaire45/mod_retrogame.java src/minecraft/mod/legendaire45/recipe/BeerRecipe.java src/minecraft/mod/legendaire45/model/ModelTrampoline.java src/minecraft/mod/legendaire45/model/ModelBeer.java src/minecraft/mod/legendaire4...'
+16:44:49 - shlex: ['javac', '-encoding', 'UTF-8', '-Xlint:-options', '-deprecation', '-g', '-source', '1.6', '-target', '1.6', '-classpath', 'lib:lib/*:jars/bin/minecraft.jar:jars/bin/jinput.jar:jars/bin/lwjgl.jar:jars/bin/lwjgl_util.jar', '-sourcepath', 'src/minecraft', '-d', 'bin/minecraft', 'src/minecraft/Start.java', 'src/minecraft/mod/legendaire45/mod_retrogame.java', 'src/minecraft/mod/legendaire45/recipe/BeerRecipe.java', 'src/minecraft/mod/legendaire45/model/ModelTrampoline.java', 'src/minecraft/mod/legen...
+16:45:06 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderDispenseHelper.java:8: warning: [deprecation] IDispenseHandler in cpw.mods.fml.common has been deprecated
+16:45:06 - import cpw.mods.fml.common.IDispenseHandler;
+16:45:06 -                           ^
+16:45:06 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderDispenseHelper.java:9: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+16:45:06 - import cpw.mods.fml.common.IDispenserHandler;
+16:45:06 -                           ^
+16:45:06 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderDispenseHelper.java:11: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+16:45:06 - public class ModLoaderDispenseHelper implements IDispenserHandler
+16:45:06 -                                                 ^
+16:45:06 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderHelper.java:39: warning: [deprecation] IDispenseHandler in cpw.mods.fml.common has been deprecated
+16:45:06 - import cpw.mods.fml.common.IDispenseHandler;
+16:45:06 -                           ^
+16:45:06 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderHelper.java:40: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+16:45:06 - import cpw.mods.fml.common.IDispenserHandler;
+16:45:06 -                           ^
+16:45:06 - src/minecraft/cpw/mods/fml/common/registry/GameRegistry.java:39: warning: [deprecation] IDispenseHandler in cpw.mods.fml.common has been deprecated
+16:45:06 - import cpw.mods.fml.common.IDispenseHandler;
+16:45:06 -                           ^
+16:45:06 - src/minecraft/cpw/mods/fml/common/registry/GameRegistry.java:40: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+16:45:06 - import cpw.mods.fml.common.IDispenserHandler;
+16:45:06 -                           ^
+16:45:06 - src/minecraft/net/minecraft/world/SpawnerAnimals.java:27: warning: [deprecation] LivingSpecialSpawnEvent in net.minecraftforge.event.entity.living has been deprecated
+16:45:06 - import net.minecraftforge.event.entity.living.LivingSpecialSpawnEvent;
+16:45:06 -                                              ^
+16:45:06 - src/minecraft/mod/legendaire45/mod_retrogame.java:76: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+16:45:06 - 			GameRegistry.registerBlock(carottes);
+16:45:06 - 			            ^
+16:45:06 - src/minecraft/mod/legendaire45/mod_retrogame.java:77: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+16:45:06 - 			GameRegistry.registerBlock(beer);
+16:45:06 - 			            ^
+16:45:06 - src/minecraft/mod/legendaire45/mod_retrogame.java:78: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+16:45:06 - 			GameRegistry.registerBlock(blockTrampoline);
+16:45:06 - 			            ^
+16:45:06 - src/minecraft/mod/legendaire45/mod_retrogame.java:79: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+16:45:06 - 			GameRegistry.registerBlock(cropBeer);
+16:45:06 - 			            ^
+16:45:06 - src/minecraft/mod/legendaire45/mod_retrogame.java:80: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+16:45:06 - 			GameRegistry.registerBlock(stair);
+16:45:06 - 			            ^
+16:45:06 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderModContainer.java:528: warning: [deprecation] registerDispenserHandler(IDispenserHandler) in GameRegistry has been deprecated
+16:45:06 -             GameRegistry.registerDispenserHandler(ModLoaderHelper.buildDispenseHelper(mod));
+16:45:06 -                         ^
+16:45:06 - src/minecraft/net/minecraft/src/ModLoader.java:638: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+16:45:06 -         GameRegistry.registerBlock(block);
+16:45:06 -                     ^
+16:45:06 - src/minecraft/net/minecraft/src/ModLoader.java:649: warning: [deprecation] registerBlock(Block,Class<? extends ItemBlock>) in GameRegistry has been deprecated
+16:45:06 -         GameRegistry.registerBlock(block, itemclass);
+16:45:06 -                     ^
+16:45:06 - Note: Some input files use unchecked or unsafe operations.
+16:45:06 - Note: Recompile with -Xlint:unchecked for details.
+16:45:06 - 16 warnings
+16:45:06 - - Done in 18.26 seconds
+16:45:06 - !! Can not find server sources, try decompiling !!
+16:45:06 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+16:45:06 - OS : linux2
+16:45:06 - # VERSION INFO
+16:45:06 - python: 2.7.3 (default, Apr 20 2012, 22:39:59) 
+[GCC 4.6.3]
+16:45:06 - platform: Linux-3.2.0-23-generic-x86_64-with-Ubuntu-12.04-precise
+16:45:06 - # java: '"java" -version'
+16:45:06 - java version "1.7.0_07"
+Java(TM) SE Runtime Environment (build 1.7.0_07-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 23.3-b01, mixed mode)
+16:45:06 - # javac: '"javac" -version'
+16:45:06 - javac 1.7.0_07
+16:45:06 - # javac runtime: '"javac" -J-version'
+16:45:06 - java version "1.7.0_07"
+Java(TM) SE Runtime Environment (build 1.7.0_07-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 23.3-b01, mixed mode)
+16:45:06 - # retroguard: 'runtime/bin/retroguard.jar --version'
+16:45:06 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+16:45:06 - # mcinjector: 'runtime/bin/mcinjector.jar --version'
+16:45:06 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+16:45:06 - # patch: 'patch --version'
+16:45:06 - patch 2.6.1
+16:45:06 - # wine: 'wine --version'
+16:45:06 - # astyle: 'astyle --version'
+16:45:06 - Artistic Style Version 2.01
+16:45:06 - # fernflower: 'runtime/bin/fernflower.jar'
+16:45:06 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+16:45:06 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+16:45:06 - > Creating Retroguard config files
+16:45:06 - == Reobfuscating client ==
+16:45:06 - > Cleaning reobf
+16:45:06 - > Generating md5s
+16:45:08 - > Packing jar
+16:45:09 - > Reobfuscating jar
+16:45:09 - runcmd: '"java" -cp "runtime/bin/retroguard.jar:lib:lib/*:jars/bin/minecraft.jar:jars/bin/jinput.jar:jars/bin/lwjgl.jar:jars/bin/lwjgl_util.jar" RetroGuard -notch temp/client_ro.cfg'
+16:45:09 - shlex: ['java', '-cp', 'runtime/bin/retroguard.jar:lib:lib/*:jars/bin/minecraft.jar:jars/bin/jinput.jar:jars/bin/lwjgl.jar:jars/bin/lwjgl_util.jar', 'RetroGuard', '-notch', 'temp/client_ro.cfg']
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Object/shortForm not found in JAR
+16:45:38 - # Warning: method org/bouncycastle/crypto/engines/AESFastEngine/getBlockSize not found in JAR
+16:45:38 - # Warning: method argo/jdom/Functor/shortForm not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71822_b = func_71822_b to b fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/func_71789_b = func_71789_b to b fixed by Script
+16:45:38 - # Warning: method argo/format/CompactJsonFormatter/format not found in JAR
+16:45:38 - # Warning: method argo/saj/JsonListener/endArray not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Array/typeSafeApplyTo not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_String/shortForm not found in JAR
+16:45:38 - # Warning: method org/bouncycastle/asn1/ASN1Primitive/toASN1Primitive not found in JAR
+16:45:38 - # Warning: method argo/format/CompactJsonFormatter/formatJsonNode not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNode/getType not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonConstants/getType not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74679_b = func_74679_b to b fixed by Script
+16:45:38 - # Warning: method argo/saj/SajParser/possibleSign not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Object/matchesNode not found in JAR
+16:45:38 - # Warning: method argo/jdom/ChainedFunctor/matchesNode not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNode/getText = getText to c fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_Field/addField not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonObjectNodeBuilder/buildNode not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/func_71808_c = func_71808_c to c fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_Field/addNode not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/func_74821_a = func_74821_a to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/stringValue not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonStringNode/getFields = getFields to d fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonStringNode/getElements not found in JAR
+16:45:38 - # Warning: method argo/saj/JsonListener/startObject not found in JAR
+16:45:38 - # Warning: method argo/saj/ThingWithPosition/getRow not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeFactories/aJsonTrue not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74682_a = func_74682_a to a fixed by Script
+16:45:38 - # Warning: method org/bouncycastle/crypto/modes/CFBBlockCipher/getBlockSize not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Field/typeSafeApplyTo not found in JAR
+16:45:38 - # Warning: method org/bouncycastle/crypto/StreamCipher/returnByte not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeBuilders/func_74709_c = func_74709_c to c fixed by Script
+16:45:38 - # Warning: method argo/saj/SajParser/hexadecimalNumber not found in JAR
+16:45:38 - # Warning: method argo/saj/JsonListener/numberValue not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/DERObjectIdentifier/func_71608_a = func_71608_a to a fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/func_74818_a = func_74818_a to a fixed by Script
+16:45:38 - # Warning: method argo/saj/PositionTrackingPushbackReader/getRow not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonStringNode/getText = getText to c fixed by Script
+16:45:38 - # Warning: method org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission/calculateMask not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/func_71806_a = func_71806_a to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonArrayNodeBuilder/buildNode not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/func_71790_a = func_71790_a to a fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/func_74819_a = func_74819_a to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonNode/wrapExceptionsFor not found in JAR
+16:45:38 - # Warning: method argo/jdom/Functor/applyTo not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/endDocument not found in JAR
+16:45:38 - # Warning: method argo/saj/SajParser/numberToken not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNode/getArrayNode = getArrayNode to b fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNodeBuilders/func_74712_a = func_74712_a to a fixed by Script
+16:45:38 - # Warning: method argo/saj/ThingWithPosition/getColumn not found in JAR
+16:45:38 - # Warning: method argo/saj/SajParser/stringToken not found in JAR
+16:45:38 - # Warning: method org/bouncycastle/asn1/ASN1Encodable/toASN1Primitive not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeBuilders/func_74710_b = func_74710_b to b fixed by Script
+16:45:38 - # Warning: method argo/saj/SajParser/nonZeroDigitToken not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Array/matchesNode not found in JAR
+16:45:38 - # Warning: method argo/saj/PositionTrackingPushbackReader/unread not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Element/shortForm not found in JAR
+16:45:38 - # Warning: method net/minecraft/block/BlockSkull/dropBlockAsItemWithChance not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BlockCipher/func_71805_a = func_71805_a to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonNodeFactories/aJsonArray not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/ASN1ObjectIdentifier/func_71612_a = func_71612_a to a fixed by Script
+16:45:38 - # Warning: method argo/saj/SajParser/objectString not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_Array/addNode not found in JAR
+16:45:38 - # Warning: method argo/saj/PositionTrackingPushbackReader/updateCharacterAndLineCounts not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74683_b = func_74683_b to b fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/init = init to a fixed by Script
+16:45:38 - # Warning: method argo/saj/PositionTrackingPushbackReader/read not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonObject/getElements not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNumberNodeBuilder/buildNode not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeDoesNotMatchPathElementsException/commaSeparate not found in JAR
+16:45:38 - # Warning: method org/bouncycastle/crypto/params/KeyParameter/getKey not found in JAR
+16:45:38 - # Warning: method argo/saj/SajParser/aFieldToken not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonFieldBuilder/buildValue not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/getDocument not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonObjectNodeBuilder/withFieldBuilder not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeSelectors_Field/func_74641_a = func_74641_a to a fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71806_a = func_71806_a to a fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71819_a = func_71819_a to a fixed by Script
+16:45:38 - # Warning: method org/bouncycastle/jcajce/provider/util/AlgorithmProvider/configure not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonConstants/getFields = getFields to d fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/func_71807_b = func_71807_b to b fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_NodeContainer/addField not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNumberNode/getText = getText to c fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelector/getValue not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71817_a = func_71817_a to a fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JdomParser/parse = parse to a fixed by Script
+16:45:38 - # Warning: method argo/saj/SajParser/arrayString not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74678_a = func_74678_a to a fixed by Script
+16:45:38 - # Warning: method argo/saj/SajParser/escapedStringChar not found in JAR
+16:45:38 - # Warning: method org/bouncycastle/crypto/KeyGenerationParameters/getStrength not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeFactories/aJsonString not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71805_a = func_71805_a to a fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonArray/getFields = getFields to d fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonFieldBuilder/withValue not found in JAR
+16:45:38 - # Warning: method argo/saj/SajParser/digitToken not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonArray/getElements not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonObject/getText = getText to c fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonNodeBuilders_False/buildNode not found in JAR
+16:45:38 - # Warning: method org/bouncycastle/asn1/ASN1Primitive/asn1Equals not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonStringNode/getType not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/endObject not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNode/getFields = getFields to d fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74684_b = func_74684_b to b fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Object/typeSafeApplyTo not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/func_71794_b = func_71794_b to b fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNumberNode/getFields = getFields to d fixed by Script
+16:45:38 - # Warning: method org/bouncycastle/crypto/BlockCipher/getBlockSize not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeFactories/aJsonNumber not found in JAR
+16:45:38 - # Warning: method argo/saj/SajParser/possibleFractionalComponent not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeFactories/aJsonFalse not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors/chainOn not found in JAR
+16:45:38 - # Warning: method argo/saj/JsonListener/falseValue not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNumberNode/getType not found in JAR
+16:45:38 - # Warning: method argo/saj/SajParser/nonNegativeNumberToken not found in JAR
+16:45:38 - # Warning: method org/bouncycastle/asn1/DERObjectIdentifier/asn1Equals not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/endField not found in JAR
+16:45:38 - # Warning: method org/bouncycastle/crypto/params/ParametersWithIV/getParameters not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71821_b = func_71821_b to b fixed by Script
+16:45:38 - # Warning: method org/bouncycastle/crypto/KeyGenerationParameters/getRandom not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonArray/getType not found in JAR
+16:45:38 - # Warning: method org/bouncycastle/asn1/ASN1Object/toASN1Primitive not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Array/shortForm not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Element/typeSafeApplyTo not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonArrayNodeBuilder/withElement not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/StreamCipher/func_74850_a = func_74850_a to a fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74680_a = func_74680_a to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonNodeFactories/aJsonNull not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonStringNode/func_74626_a = func_74626_a to a fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNodeSelectors_String/func_74645_a = func_74645_a to a fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNodeSelectors_Object/func_74640_a = func_74640_a to a fixed by Script
+16:45:38 - # Warning: method argo/saj/JsonListener/endObject not found in JAR
+16:45:38 - # Warning: method argo/saj/SajParser/digitString not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Array/typeSafeApplyTo not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Array/matchesNode_ not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNumberNode/getElements not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeBuilders_Null/buildNode not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors/chainedJsonNodeSelector not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeSelectors_String/func_74644_b = func_74644_b to b fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/nullValue not found in JAR
+16:45:38 - # Warning: method argo/saj/PositionTrackingPushbackReader/getColumn not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/falseValue not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Field/shortForm not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/func_74820_b = func_74820_b to b fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/CipherKeyGenerator/init = init to a fixed by Script
+16:45:38 - # Warning: method argo/saj/SajParser/possibleExponent not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Element/matchesNode_ not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Field/typeSafeApplyTo not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException/func_74701_a = func_74701_a to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException/getShortFormFailPath not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74675_a = func_74675_a to a fixed by Script
+16:45:38 - # Warning: method argo/format/JsonFormatter/format not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeFactories/aJsonObject not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelector/with not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/addValue not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException/func_74699_a = func_74699_a to a fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonObjectNodeBuilder/func_74606_a = func_74606_a to a fixed by Script
+16:45:38 - # Warning: method org/bouncycastle/crypto/engines/AESFastEngine/getAlgorithmName not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/func_71805_a = func_71805_a to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonNodeBuilders/anArrayBuilder not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BlockCipher/func_71803_c = func_71803_c to c fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonConstants/getElements not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_String/typeSafeApplyTo not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71816_a = func_71816_a to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_Array/addField not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Element/typeSafeApplyTo_ not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonArray/asList not found in JAR
+16:45:38 - # Warning: method argo/saj/JsonListener/stringValue not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeBuilders/func_74714_a = func_74714_a to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonNodeBuilder/buildNode not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNode/getStringValue = getStringValue to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/ChainedFunctor/shortForm not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/trueValue not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/func_71791_a = func_71791_a to a fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71823_a = func_71823_a to a fixed by Script
+16:45:38 - # Warning: method argo/saj/PositionTrackingPushbackReader/uncount not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonFieldBuilder/withKey not found in JAR
+16:45:38 - # Warning: method argo/jdom/LeafFunctor/applyTo not found in JAR
+16:45:38 - # Warning: method argo/saj/JsonListener/endField not found in JAR
+16:45:38 - # Warning: method argo/saj/JsonListener/trueValue not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeSelectors_Object/func_74639_b = func_74639_b to b fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonConstants/getText = getText to c fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonObject/getType not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BlockCipher/func_71806_a = func_71806_a to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/Functor/matchesNode not found in JAR
+16:45:38 - # Warning: method org/bouncycastle/crypto/params/ParametersWithIV/getIV not found in JAR
+16:45:38 - # Warning: method argo/saj/JsonListener/nullValue not found in JAR
+16:45:38 - # Warning: method org/bouncycastle/util/Strings/toLowerCase not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeFactories/aJsonArray not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeBuilders/func_74713_b = func_74713_b to b fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/func_74852_a = func_74852_a to a fixed by Script
+16:45:38 - # Warning: method argo/saj/SajParser/aJsonValue not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonStringNodeBuilder/buildNode not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonObjectNodeBuilder/func_74607_a = func_74607_a to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_NodeContainer/addNode not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Element/matchesNode not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/func_71793_a = func_71793_a to a fixed by Script
+16:45:38 - # Warning: method org/bouncycastle/crypto/BlockCipher/getAlgorithmName not found in JAR
+16:45:38 - # Warning: method argo/saj/JsonListener/startArray not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_String/matchesNode not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/numberValue not found in JAR
+16:45:38 - # Warning: method argo/saj/PositionTrackingPushbackReader/read not found in JAR
+16:45:38 - # Warning: method argo/saj/SajParser/parse not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/startArray not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71815_c = func_71815_c to c fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException/func_74698_b = func_74698_b to b fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_Object/addNode not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelector/shortForm not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/func_71803_c = func_71803_c to c fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonStringNodeBuilder/func_74600_a = func_74600_a to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/ChainedFunctor/applyTo not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71818_a = func_71818_a to a fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74681_c = func_74681_c to c fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/startField not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/DERObjectIdentifier/func_71609_b = func_71609_b to b fixed by Script
+16:45:38 - # Warning: method argo/jdom/LeafFunctor/typeSafeApplyTo not found in JAR
+16:45:38 - # Warning: method argo/saj/SajParser/readNextNonWhitespaceChar not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/startDocument not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelector/matches not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/CipherKeyGenerator/generateKey = generateKey to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonNodeSelectors_Field/matchesNode not found in JAR
+16:45:38 - # Warning: method argo/saj/JsonListener/startDocument not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeDoesNotMatchPathElementsException/formatMessage not found in JAR
+16:45:38 - # Warning: method argo/jdom/JdomParser/parse not found in JAR
+16:45:38 - # Warning: method argo/format/CompactJsonFormatter/format not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonObject/getFields = getFields to d fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonFieldBuilder/func_74724_b = func_74724_b to b fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonNode/getElements not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeDoesNotMatchPathElementsException/jsonNodeDoesNotMatchPathElementsException not found in JAR
+16:45:38 - # Warning: method argo/saj/JsonListener/endDocument not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonArrayNodeBuilder/build not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71820_b = func_71820_b to b fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_Object/addField not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonFieldBuilder/aJsonFieldBuilder not found in JAR
+16:45:38 - # Warning: method org/bouncycastle/crypto/modes/CFBBlockCipher/getAlgorithmName not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonArray/getText = getText to c fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/startObject not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71803_c = func_71803_c to c fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/endArray not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonNodeBuilders_True/buildNode not found in JAR
+16:45:38 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/addRootNode not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/func_71792_a = func_71792_a to a fixed by Script
+16:45:38 - # Warning: method argo/jdom/JsonNodeBuilders/anObjectBuilder not found in JAR
+16:45:38 - # Warning: method argo/saj/JsonListener/startField not found in JAR
+16:45:38 - # Warning: field argo/saj/InvalidSyntaxException/column not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71641_d = field_71641_d to d fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71739_ah = field_71739_ah to ah fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/field_74829_h = field_74829_h to h fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71629_T = field_71629_T to T fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/field_71810_d = field_71810_d to d fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71653_i = field_71653_i to i fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71620_L = field_71620_L to L fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonConstants/TRUE not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71618_B = field_71618_B to B fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71675_bp = field_71675_bp to bp fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71825_g = field_71825_g to g fixed by Script
+16:45:38 - # Warning: field argo/jdom/ChainedFunctor/childJsonNodeSelector not found in JAR
+16:45:38 - # Warning: field argo/jdom/JsonObject/fields not found in JAR
+16:45:38 - # Warning: field argo/jdom/JsonFieldBuilder/valueBuilder not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71630_W = field_71630_W to W fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71595_a = field_71595_a to a fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71664_x = field_71664_x to x fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71602_h = field_71602_h to h fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71836_k = field_71836_k to k fixed by Script
+16:45:38 - # Warning: field argo/saj/InvalidSyntaxException/row not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74854_g = field_74854_g to g fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71715_az = field_71715_az to az fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71684_bi = field_71684_bi to bi fixed by Script
+16:45:38 - # Warning: field argo/format/CompactJsonFormatter_JsonNodeType/enumJsonNodeTypeMappingArray not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/field_71800_c = field_71800_c to c fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonArrayNodeBuilder/elementBuilders not found in JAR
+16:45:38 - # Warning: field argo/jdom/JsonListenerToJdomAdapter_Array/listenerToJdomAdapter not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71705_aO = field_71705_aO to aO fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71721_aq = field_71721_aq to aq fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71708_aB = field_71708_aB to aB fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71682_bg = field_71682_bg to bg fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71652_h = field_71652_h to h fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71689_aZ = field_71689_aZ to aZ fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException/failPath not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71642_e = field_71642_e to e fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71628_U = field_71628_U to U fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/field_74822_f = field_74822_f to f fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProvider/keyInfoConverters not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71621_M = field_71621_M to M fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71693_aT = field_71693_aT to aT fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71734_ac = field_71734_ac to ac fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNodeType/NUMBER = NUMBER to d fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71738_ag = field_71738_ag to ag fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71639_f = field_71639_f to f fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71835_j = field_71835_j to j fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71617_A = field_71617_A to A fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71631_V = field_71631_V to V fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71594_c = field_71594_c to c fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71824_f = field_71824_f to f fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71663_y = field_71663_y to y fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71603_i = field_71603_i to i fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71632_Q = field_71632_Q to Q fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74853_f = field_74853_f to f fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71667_by = field_71667_by to by fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/field_71801_a = field_71801_a to a fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71714_aH = field_71714_aH to aH fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonFieldBuilder/key not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71699_aI = field_71699_aI to aI fixed by Script
+16:45:38 - # Warning: field argo/saj/PositionTrackingPushbackReader/pushbackReader not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71736_aa = field_71736_aa to aa fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71680_bm = field_71680_bm to bm fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71643_b = field_71643_b to b fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71700_aJ = field_71700_aJ to aJ fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71827_e = field_71827_e to e fixed by Script
+16:45:38 - # Warning: field argo/saj/PositionTrackingPushbackReader/lineCount not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71840_q = field_71840_q to q fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProvider/PROVIDER_NAME not found in JAR
+16:45:38 - # Warning: field argo/saj/PositionTrackingPushbackReader/characterCount not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71622_N = field_71622_N to N fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/field_71812_b = field_71812_b to b fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71651_k = field_71651_k to k fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonListenerToJdomAdapter_Field/fieldBuilder not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71604_q = field_71604_q to q fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71616_G = field_71616_G to G fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/field_74823_g = field_74823_g to g fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71724_av = field_71724_av to av fixed by Script
+16:45:38 - # Warning: field net/minecraft/server/MinecraftServer/timeOfLastDimensionTick not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71638_Z = field_71638_Z to Z fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71834_m = field_71834_m to m fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74856_e = field_74856_e to e fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71686_bc = field_71686_bc to bc fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException/failedNode not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71593_b = field_71593_b to b fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71711_aE = field_71711_aE to aE fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71695_aV = field_71695_aV to aV fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71707_aA = field_71707_aA to aA fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71644_c = field_71644_c to c fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71666_bv = field_71666_bv to bv fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71716_ay = field_71716_ay to ay fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonNumberNode/value not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71696_aU = field_71696_aU to aU fixed by Script
+16:45:38 - # Warning: field argo/format/JsonEscapedString/escapedString not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71841_p = field_71841_p to p fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonListenerToJdomAdapter/stack not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/field_71811_e = field_71811_e to e fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71623_O = field_71623_O to O fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71659_r = field_71659_r to r fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71650_j = field_71650_j to j fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71637_X = field_71637_X to X fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71706_aP = field_71706_aP to aP fixed by Script
+16:45:38 - # Warning: field argo/jdom/ChainedFunctor/parentJsonNodeSelector not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeType/TRUE = TRUE to e fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71826_d = field_71826_d to d fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNodeType/NULL = NULL to g fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74855_d = field_74855_d to d fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71720_ar = field_71720_ar to ar fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71713_aG = field_71713_aG to aG fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71833_l = field_71833_l to l fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71673_bn = field_71673_bn to bn fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission/permissionMask not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71729_aj = field_71729_aj to aj fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71688_be = field_71688_be to be fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71592_e = field_71592_e to e fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71605_p = field_71605_p to p fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71615_F = field_71615_F to F fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProvider/info not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71665_bw = field_71665_bw to bw fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/crypto/params/KeyParameter/key not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71645_a = field_71645_a to a fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71726_ak = field_71726_ak to ak fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonNodeSelector/valueGetter not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/field_74825_e = field_74825_e to e fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71733_an = field_71733_an to an fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/field_71814_a = field_71814_a to a fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonArray_NodeList/elements not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71658_s = field_71658_s to s fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71694_aS = field_71694_aS to aS fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74857_b = field_74857_b to b fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71692_aQ = field_71692_aQ to aQ fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonListenerToJdomAdapter_Array/nodeBuilder not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71829_c = field_71829_c to c fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71660_q = field_71660_q to q fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonListenerToJdomAdapter/root not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/field_71809_f = field_71809_f to f fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71704_aN = field_71704_aN to aN fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71672_bt = field_71672_bt to bt fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71703_aM = field_71703_aM to aM fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonNodeSelectors_Field/theFieldName not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71730_ao = field_71730_ao to ao fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71646_n = field_71646_n to n fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71625_I = field_71625_I to I fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71678_bk = field_71678_bk to bk fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonStringNode/value not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71668_bx = field_71668_bx to bx fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71737_ab = field_71737_ab to ab fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/io/CipherOutputStream/field_74846_d = field_74846_d to d fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71614_E = field_71614_E to E fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/crypto/KeyGenerationParameters/random not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71679_bl = field_71679_bl to bl fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/field_71796_f = field_71796_f to f fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/crypto/CipherKeyGenerator/strength not found in JAR
+16:45:38 - # Warning: field argo/jdom/JsonNumberNode/PATTERN not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71591_d = field_71591_d to d fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71635_R = field_71635_R to R fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71697_aX = field_71697_aX to aX fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71599_m = field_71599_m to m fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71681_bf = field_71681_bf to bf fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71832_o = field_71832_o to o fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProviderAction/field_74801_a = field_74801_a to a fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71735_ad = field_71735_ad to ad fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNodeType/STRING = STRING to c fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/field_71813_c = field_71813_c to c fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71657_t = field_71657_t to t fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74858_c = field_74858_c to c fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/DERObjectIdentifier/field_71611_a = field_71611_a to a fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71740_ae = field_71740_ae to ae fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonListenerToJdomAdapter_Field/listenerToJdomAdapter not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71828_b = field_71828_b to b fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71727_al = field_71727_al to al fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNodeType/FALSE = FALSE to f fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonArray/elements not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71670_br = field_71670_br to br fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71647_o = field_71647_o to o fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71687_bd = field_71687_bd to bd fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71636_Y = field_71636_Y to Y fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71624_H = field_71624_H to H fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonNumberNodeBuilder/builtNode not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71709_aC = field_71709_aC to aC fixed by Script
+16:45:38 - # Warning: field argo/saj/PositionTrackingPushbackReader/lastCharacterWasCarriageReturn not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71839_r = field_71839_r to r fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/DERObjectIdentifier/field_71610_b = field_71610_b to b fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/field_71797_d = field_71797_d to d fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71702_aL = field_71702_aL to aL fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71831_n = field_71831_n to n fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71613_D = field_71613_D to D fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/io/CipherOutputStream/field_74847_b = field_74847_b to b fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71722_ax = field_71722_ax to ax fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71590_g = field_71590_g to g fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71598_l = field_71598_l to l fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71677_bj = field_71677_bj to bj fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonStringNodeBuilder/builtStringNode not found in JAR
+16:45:38 - # Warning: field argo/jdom/JsonListenerToJdomAdapter_Object/listenerToJdomAdapter not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71671_bu = field_71671_bu to bu fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/crypto/params/ParametersWithIV/parameters not found in JAR
+16:45:38 - # Trying to remap argo/jdom/JsonNodeType/$VALUES = $VALUES to h fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNodeType/ARRAY = ARRAY to b fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/crypto/CipherKeyGenerator/random not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71656_u = field_71656_u to u fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71600_j = field_71600_j to j fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71690_aY = field_71690_aY to aY fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonNodeSelectors_Element/index not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74859_a = field_74859_a to a fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71732_am = field_71732_am to am fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71683_bh = field_71683_bh to bh fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71741_af = field_71741_af to af fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonNodeDoesNotMatchPathElementsException/JSON_FORMATTER not found in JAR
+16:45:38 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration/dhThreadSpec not found in JAR
+16:45:38 - # Warning: field org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission/actions not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71710_aD = field_71710_aD to aD fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71676_bq = field_71676_bq to bq fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71662_z = field_71662_z to z fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonListenerToJdomAdapter_Object/nodeBuilder not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71723_aw = field_71723_aw to aw fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71627_K = field_71627_K to K fixed by Script
+16:45:38 - # Warning: field net/minecraft/client/renderer/WorldRenderer/tessellator not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71719_as = field_71719_as to as fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71597_o = field_71597_o to o fixed by Script
+16:45:38 - # Trying to remap argo/jdom/JsonNodeType/OBJECT = OBJECT to a fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/io/CipherOutputStream/field_74848_c = field_74848_c to c fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71701_aK = field_71701_aK to aK fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71698_aW = field_71698_aW to aW fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71633_P = field_71633_P to P fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/crypto/params/ParametersWithIV/iv not found in JAR
+16:45:38 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration/BC_EC_LOCAL_PERMISSION not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/field_71798_e = field_71798_e to e fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration/BC_DH_PERMISSION not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71648_l = field_71648_l to l fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonConstants/jsonNodeType not found in JAR
+16:45:38 - # Warning: field org/bouncycastle/crypto/KeyGenerationParameters/strength not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71838_i = field_71838_i to i fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonObjectNodeBuilder_List/nodeBuilder not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71830_a = field_71830_a to a fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration/BC_DH_LOCAL_PERMISSION not found in JAR
+16:45:38 - # Warning: field argo/jdom/JsonConstants/FALSE not found in JAR
+16:45:38 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration/BC_EC_PERMISSION not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71655_v = field_71655_v to v fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71691_aR = field_71691_aR to aR fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71601_k = field_71601_k to k fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71731_ap = field_71731_ap to ap fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71589_f = field_71589_f to f fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71685_bb = field_71685_bb to bb fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71712_aF = field_71712_aF to aF fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71661_p = field_71661_p to p fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71717_ba = field_71717_ba to ba fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonObjectNodeBuilder/fieldBuilders not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71725_au = field_71725_au to au fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71674_bo = field_71674_bo to bo fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71837_h = field_71837_h to h fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71626_J = field_71626_J to J fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/crypto/io/CipherOutputStream/field_74849_a = field_74849_a to a fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71669_bs = field_71669_bs to bs fixed by Script
+16:45:38 - # Warning: field argo/jdom/JsonConstants/NULL not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71596_n = field_71596_n to n fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71619_C = field_71619_C to C fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71649_m = field_71649_m to m fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71640_g = field_71640_g to g fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71634_S = field_71634_S to S fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71654_w = field_71654_w to w fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration/ecThreadSpec not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/field_71799_b = field_71799_b to b fixed by Script
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71728_ai = field_71728_ai to ai fixed by Script
+16:45:38 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProvider/CONFIGURATION not found in JAR
+16:45:38 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71718_at = field_71718_at to at fixed by Script
+16:45:38 - > Extracting modified classes
+16:45:38 - > New class found      : mod/legendaire45/items/ItemToolPiocheMod
+16:45:38 - > New class found      : mod/legendaire45/model/ModelTrampoline
+16:45:38 - > New class found      : mod/legendaire45/render/TileEntityTrampolineRenderer
+16:45:38 - > New class found      : mod/legendaire45/gui/GuiHandler
+16:45:38 - > New class found      : mod/legendaire45/gui/SlotBeer
+16:45:38 - > New class found      : mod/legendaire45/blocks/BlockCropBeer
+16:45:38 - > New class found      : mod/legendaire45/items/ItemCup
+16:45:38 - > New class found      : mod/legendaire45/client/ClientPacketHandler
+16:45:38 - > New class found      : mod/legendaire45/gui/GuiBeer
+16:45:38 - > New class found      : mod/legendaire45/model/ModelBeer
+16:45:38 - > New class found      : mod/legendaire45/tile/TileEntityTrampoline
+16:45:38 - > New class found      : mod/legendaire45/blocks/BlockCarottes
+16:45:38 - > New class found      : mod/legendaire45/blocks/BlockBeer
+16:45:38 - > New class found      : mod/legendaire45/recipe/BeerRecipe
+16:45:38 - > New class found      : mod/legendaire45/items/ArmorBase
+16:45:38 - > New class found      : mod/legendaire45/blocks/BlockTrampoline
+16:45:38 - > New class found      : mod/legendaire45/gui/ContainerBeer
+16:45:38 - > New class found      : mod/legendaire45/items/ItemToolPelleMod
+16:45:38 - > New class found      : mod/legendaire45/items/ItemToolHacheMod
+16:45:38 - > New class found      : mod/legendaire45/mod_retrogame
+16:45:38 - > New class found      : mod/legendaire45/blocks/BlockStairLog
+16:45:38 - > New class found      : mod/legendaire45/client/ClientProxy
+16:45:38 - > New class found      : mod/legendaire45/tile/TileEntityBeer
+16:45:38 - > New class found      : mod/legendaire45/common/CommonProxy
+16:45:38 - > New class found      : mod/legendaire45/server/ServerPacketHandler
+16:45:38 - > New class found      : mod/legendaire45/render/RenderBeer
+16:45:38 - > New class found      : mod/legendaire45/items/ItemDrink
+16:45:38 - > New class found      : mod/legendaire45/items/ItemToolEpeeMod
+16:45:38 - > Outputted mod/legendaire45/items/ItemToolPiocheMod to reobf/minecraft as mod/legendaire45/items/ItemToolPiocheMod.class
+16:45:38 - > Outputted mod/legendaire45/model/ModelTrampoline to reobf/minecraft as mod/legendaire45/model/ModelTrampoline.class
+16:45:38 - > Outputted mod/legendaire45/render/TileEntityTrampolineRenderer to reobf/minecraft as mod/legendaire45/render/TileEntityTrampolineRenderer.class
+16:45:38 - > Outputted mod/legendaire45/gui/GuiHandler     to reobf/minecraft as mod/legendaire45/gui/GuiHandler.class
+16:45:38 - > Outputted mod/legendaire45/gui/SlotBeer       to reobf/minecraft as mod/legendaire45/gui/SlotBeer.class
+16:45:38 - > Outputted mod/legendaire45/blocks/BlockCropBeer to reobf/minecraft as mod/legendaire45/blocks/BlockCropBeer.class
+16:45:38 - > Outputted mod/legendaire45/items/ItemCup      to reobf/minecraft as mod/legendaire45/items/ItemCup.class
+16:45:38 - > Outputted mod/legendaire45/client/ClientPacketHandler to reobf/minecraft as mod/legendaire45/client/ClientPacketHandler.class
+16:45:38 - > Outputted mod/legendaire45/gui/GuiBeer        to reobf/minecraft as mod/legendaire45/gui/GuiBeer.class
+16:45:38 - > Outputted mod/legendaire45/model/ModelBeer    to reobf/minecraft as mod/legendaire45/model/ModelBeer.class
+16:45:38 - > Outputted mod/legendaire45/tile/TileEntityTrampoline to reobf/minecraft as mod/legendaire45/tile/TileEntityTrampoline.class
+16:45:38 - > Outputted mod/legendaire45/blocks/BlockCarottes to reobf/minecraft as mod/legendaire45/blocks/BlockCarottes.class
+16:45:38 - > Outputted mod/legendaire45/blocks/BlockBeer   to reobf/minecraft as mod/legendaire45/blocks/BlockBeer.class
+16:45:38 - > Outputted mod/legendaire45/recipe/BeerRecipe  to reobf/minecraft as mod/legendaire45/recipe/BeerRecipe.class
+16:45:38 - > Outputted mod/legendaire45/items/ArmorBase    to reobf/minecraft as mod/legendaire45/items/ArmorBase.class
+16:45:38 - > Outputted mod/legendaire45/blocks/BlockTrampoline to reobf/minecraft as mod/legendaire45/blocks/BlockTrampoline.class
+16:45:38 - > Outputted mod/legendaire45/gui/ContainerBeer  to reobf/minecraft as mod/legendaire45/gui/ContainerBeer.class
+16:45:38 - > Outputted mod/legendaire45/items/ItemToolPelleMod to reobf/minecraft as mod/legendaire45/items/ItemToolPelleMod.class
+16:45:38 - > Outputted mod/legendaire45/items/ItemToolHacheMod to reobf/minecraft as mod/legendaire45/items/ItemToolHacheMod.class
+16:45:38 - > Outputted mod/legendaire45/mod_retrogame      to reobf/minecraft as mod/legendaire45/mod_retrogame.class
+16:45:38 - > Outputted mod/legendaire45/blocks/BlockStairLog to reobf/minecraft as mod/legendaire45/blocks/BlockStairLog.class
+16:45:38 - > Outputted mod/legendaire45/client/ClientProxy to reobf/minecraft as mod/legendaire45/client/ClientProxy.class
+16:45:38 - > Outputted mod/legendaire45/tile/TileEntityBeer to reobf/minecraft as mod/legendaire45/tile/TileEntityBeer.class
+16:45:38 - > Outputted mod/legendaire45/common/CommonProxy to reobf/minecraft as mod/legendaire45/common/CommonProxy.class
+16:45:38 - > Outputted mod/legendaire45/server/ServerPacketHandler to reobf/minecraft as mod/legendaire45/server/ServerPacketHandler.class
+16:45:38 - > Outputted mod/legendaire45/render/RenderBeer  to reobf/minecraft as mod/legendaire45/render/RenderBeer.class
+16:45:38 - > Outputted mod/legendaire45/items/ItemDrink    to reobf/minecraft as mod/legendaire45/items/ItemDrink.class
+16:45:38 - > Outputted mod/legendaire45/items/ItemToolEpeeMod to reobf/minecraft as mod/legendaire45/items/ItemToolEpeeMod.class
+16:45:38 - - Done in 31.51 seconds
+16:45:38 - !! Can not find server md5s !!
+17:12:23 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+17:12:23 - OS : linux2
+17:12:23 - # VERSION INFO
+17:12:23 - python: 2.7.3 (default, Apr 20 2012, 22:39:59) 
+[GCC 4.6.3]
+17:12:23 - platform: Linux-3.2.0-23-generic-x86_64-with-Ubuntu-12.04-precise
+17:12:23 - # java: '"java" -version'
+17:12:23 - java version "1.7.0_07"
+Java(TM) SE Runtime Environment (build 1.7.0_07-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 23.3-b01, mixed mode)
+17:12:23 - # javac: '"javac" -version'
+17:12:23 - javac 1.7.0_07
+17:12:23 - # javac runtime: '"javac" -J-version'
+17:12:23 - java version "1.7.0_07"
+Java(TM) SE Runtime Environment (build 1.7.0_07-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 23.3-b01, mixed mode)
+17:12:23 - # retroguard: 'runtime/bin/retroguard.jar --version'
+17:12:24 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+17:12:24 - # mcinjector: 'runtime/bin/mcinjector.jar --version'
+17:12:24 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+17:12:24 - # patch: 'patch --version'
+17:12:24 - patch 2.6.1
+17:12:24 - # wine: 'wine --version'
+17:12:24 - # astyle: 'astyle --version'
+17:12:24 - Artistic Style Version 2.01
+17:12:24 - # fernflower: 'runtime/bin/fernflower.jar'
+17:12:24 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+17:12:24 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+17:12:24 - == Recompiling client ==
+17:12:24 - > Cleaning bin
+17:12:25 - > Recompiling
+17:12:26 - runcmd: '"javac" -encoding UTF-8 -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "lib:lib/*:jars/bin/minecraft.jar:jars/bin/jinput.jar:jars/bin/lwjgl.jar:jars/bin/lwjgl_util.jar" -sourcepath src/minecraft -d bin/minecraft src/minecraft/Start.java src/minecraft/mod/legendaire45/mod_retrogame.java src/minecraft/mod/legendaire45/recipe/BeerRecipe.java src/minecraft/mod/legendaire45/model/ModelTrampoline.java src/minecraft/mod/legendaire45/model/ModelBeer.java src/minecraft/mod/legendaire4...'
+17:12:26 - shlex: ['javac', '-encoding', 'UTF-8', '-Xlint:-options', '-deprecation', '-g', '-source', '1.6', '-target', '1.6', '-classpath', 'lib:lib/*:jars/bin/minecraft.jar:jars/bin/jinput.jar:jars/bin/lwjgl.jar:jars/bin/lwjgl_util.jar', '-sourcepath', 'src/minecraft', '-d', 'bin/minecraft', 'src/minecraft/Start.java', 'src/minecraft/mod/legendaire45/mod_retrogame.java', 'src/minecraft/mod/legendaire45/recipe/BeerRecipe.java', 'src/minecraft/mod/legendaire45/model/ModelTrampoline.java', 'src/minecraft/mod/legen...
+17:12:41 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderDispenseHelper.java:8: warning: [deprecation] IDispenseHandler in cpw.mods.fml.common has been deprecated
+17:12:41 - import cpw.mods.fml.common.IDispenseHandler;
+17:12:41 -                           ^
+17:12:41 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderDispenseHelper.java:9: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+17:12:41 - import cpw.mods.fml.common.IDispenserHandler;
+17:12:41 -                           ^
+17:12:41 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderDispenseHelper.java:11: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+17:12:41 - public class ModLoaderDispenseHelper implements IDispenserHandler
+17:12:41 -                                                 ^
+17:12:41 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderHelper.java:39: warning: [deprecation] IDispenseHandler in cpw.mods.fml.common has been deprecated
+17:12:41 - import cpw.mods.fml.common.IDispenseHandler;
+17:12:41 -                           ^
+17:12:41 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderHelper.java:40: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+17:12:41 - import cpw.mods.fml.common.IDispenserHandler;
+17:12:41 -                           ^
+17:12:41 - src/minecraft/cpw/mods/fml/common/registry/GameRegistry.java:39: warning: [deprecation] IDispenseHandler in cpw.mods.fml.common has been deprecated
+17:12:41 - import cpw.mods.fml.common.IDispenseHandler;
+17:12:41 -                           ^
+17:12:41 - src/minecraft/cpw/mods/fml/common/registry/GameRegistry.java:40: warning: [deprecation] IDispenserHandler in cpw.mods.fml.common has been deprecated
+17:12:41 - import cpw.mods.fml.common.IDispenserHandler;
+17:12:41 -                           ^
+17:12:41 - src/minecraft/net/minecraft/world/SpawnerAnimals.java:27: warning: [deprecation] LivingSpecialSpawnEvent in net.minecraftforge.event.entity.living has been deprecated
+17:12:41 - import net.minecraftforge.event.entity.living.LivingSpecialSpawnEvent;
+17:12:41 -                                              ^
+17:12:41 - src/minecraft/mod/legendaire45/mod_retrogame.java:76: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+17:12:41 - 			GameRegistry.registerBlock(carottes);
+17:12:41 - 			            ^
+17:12:41 - src/minecraft/mod/legendaire45/mod_retrogame.java:77: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+17:12:41 - 			GameRegistry.registerBlock(beer);
+17:12:41 - 			            ^
+17:12:41 - src/minecraft/mod/legendaire45/mod_retrogame.java:78: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+17:12:41 - 			GameRegistry.registerBlock(blockTrampoline);
+17:12:41 - 			            ^
+17:12:41 - src/minecraft/mod/legendaire45/mod_retrogame.java:79: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+17:12:41 - 			GameRegistry.registerBlock(cropBeer);
+17:12:41 - 			            ^
+17:12:41 - src/minecraft/mod/legendaire45/mod_retrogame.java:80: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+17:12:41 - 			GameRegistry.registerBlock(stair);
+17:12:41 - 			            ^
+17:12:41 - src/minecraft/cpw/mods/fml/common/modloader/ModLoaderModContainer.java:528: warning: [deprecation] registerDispenserHandler(IDispenserHandler) in GameRegistry has been deprecated
+17:12:41 -             GameRegistry.registerDispenserHandler(ModLoaderHelper.buildDispenseHelper(mod));
+17:12:41 -                         ^
+17:12:41 - src/minecraft/net/minecraft/src/ModLoader.java:638: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+17:12:41 -         GameRegistry.registerBlock(block);
+17:12:41 -                     ^
+17:12:41 - src/minecraft/net/minecraft/src/ModLoader.java:649: warning: [deprecation] registerBlock(Block,Class<? extends ItemBlock>) in GameRegistry has been deprecated
+17:12:41 -         GameRegistry.registerBlock(block, itemclass);
+17:12:41 -                     ^
+17:12:41 - Note: Some input files use unchecked or unsafe operations.
+17:12:41 - Note: Recompile with -Xlint:unchecked for details.
+17:12:41 - 16 warnings
+17:12:41 - - Done in 16.93 seconds
+17:12:41 - !! Can not find server sources, try decompiling !!
+17:12:41 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+17:12:41 - OS : linux2
+17:12:41 - # VERSION INFO
+17:12:41 - python: 2.7.3 (default, Apr 20 2012, 22:39:59) 
+[GCC 4.6.3]
+17:12:41 - platform: Linux-3.2.0-23-generic-x86_64-with-Ubuntu-12.04-precise
+17:12:41 - # java: '"java" -version'
+17:12:41 - java version "1.7.0_07"
+Java(TM) SE Runtime Environment (build 1.7.0_07-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 23.3-b01, mixed mode)
+17:12:41 - # javac: '"javac" -version'
+17:12:41 - javac 1.7.0_07
+17:12:41 - # javac runtime: '"javac" -J-version'
+17:12:41 - java version "1.7.0_07"
+Java(TM) SE Runtime Environment (build 1.7.0_07-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 23.3-b01, mixed mode)
+17:12:41 - # retroguard: 'runtime/bin/retroguard.jar --version'
+17:12:41 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+17:12:41 - # mcinjector: 'runtime/bin/mcinjector.jar --version'
+17:12:41 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+17:12:41 - # patch: 'patch --version'
+17:12:41 - patch 2.6.1
+17:12:41 - # wine: 'wine --version'
+17:12:41 - # astyle: 'astyle --version'
+17:12:41 - Artistic Style Version 2.01
+17:12:41 - # fernflower: 'runtime/bin/fernflower.jar'
+17:12:41 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+17:12:41 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+17:12:41 - > Creating Retroguard config files
+17:12:41 - == Reobfuscating client ==
+17:12:41 - > Cleaning reobf
+17:12:41 - > Generating md5s
+17:12:43 - > Packing jar
+17:12:44 - > Reobfuscating jar
+17:12:44 - runcmd: '"java" -cp "runtime/bin/retroguard.jar:lib:lib/*:jars/bin/minecraft.jar:jars/bin/jinput.jar:jars/bin/lwjgl.jar:jars/bin/lwjgl_util.jar" RetroGuard -notch temp/client_ro.cfg'
+17:12:44 - shlex: ['java', '-cp', 'runtime/bin/retroguard.jar:lib:lib/*:jars/bin/minecraft.jar:jars/bin/jinput.jar:jars/bin/lwjgl.jar:jars/bin/lwjgl_util.jar', 'RetroGuard', '-notch', 'temp/client_ro.cfg']
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Object/shortForm not found in JAR
+17:13:11 - # Warning: method org/bouncycastle/crypto/engines/AESFastEngine/getBlockSize not found in JAR
+17:13:11 - # Warning: method argo/jdom/Functor/shortForm not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71822_b = func_71822_b to b fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/func_71789_b = func_71789_b to b fixed by Script
+17:13:11 - # Warning: method argo/format/CompactJsonFormatter/format not found in JAR
+17:13:11 - # Warning: method argo/saj/JsonListener/endArray not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Array/typeSafeApplyTo not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_String/shortForm not found in JAR
+17:13:11 - # Warning: method org/bouncycastle/asn1/ASN1Primitive/toASN1Primitive not found in JAR
+17:13:11 - # Warning: method argo/format/CompactJsonFormatter/formatJsonNode not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNode/getType not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonConstants/getType not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74679_b = func_74679_b to b fixed by Script
+17:13:11 - # Warning: method argo/saj/SajParser/possibleSign not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Object/matchesNode not found in JAR
+17:13:11 - # Warning: method argo/jdom/ChainedFunctor/matchesNode not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNode/getText = getText to c fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_Field/addField not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonObjectNodeBuilder/buildNode not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/func_71808_c = func_71808_c to c fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_Field/addNode not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/func_74821_a = func_74821_a to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/stringValue not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonStringNode/getFields = getFields to d fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonStringNode/getElements not found in JAR
+17:13:11 - # Warning: method argo/saj/JsonListener/startObject not found in JAR
+17:13:11 - # Warning: method argo/saj/ThingWithPosition/getRow not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeFactories/aJsonTrue not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74682_a = func_74682_a to a fixed by Script
+17:13:11 - # Warning: method org/bouncycastle/crypto/modes/CFBBlockCipher/getBlockSize not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Field/typeSafeApplyTo not found in JAR
+17:13:11 - # Warning: method org/bouncycastle/crypto/StreamCipher/returnByte not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeBuilders/func_74709_c = func_74709_c to c fixed by Script
+17:13:11 - # Warning: method argo/saj/SajParser/hexadecimalNumber not found in JAR
+17:13:11 - # Warning: method argo/saj/JsonListener/numberValue not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/DERObjectIdentifier/func_71608_a = func_71608_a to a fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/func_74818_a = func_74818_a to a fixed by Script
+17:13:11 - # Warning: method argo/saj/PositionTrackingPushbackReader/getRow not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonStringNode/getText = getText to c fixed by Script
+17:13:11 - # Warning: method org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission/calculateMask not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/func_71806_a = func_71806_a to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonArrayNodeBuilder/buildNode not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/func_71790_a = func_71790_a to a fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/func_74819_a = func_74819_a to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonNode/wrapExceptionsFor not found in JAR
+17:13:11 - # Warning: method argo/jdom/Functor/applyTo not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/endDocument not found in JAR
+17:13:11 - # Warning: method argo/saj/SajParser/numberToken not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNode/getArrayNode = getArrayNode to b fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNodeBuilders/func_74712_a = func_74712_a to a fixed by Script
+17:13:11 - # Warning: method argo/saj/ThingWithPosition/getColumn not found in JAR
+17:13:11 - # Warning: method argo/saj/SajParser/stringToken not found in JAR
+17:13:11 - # Warning: method org/bouncycastle/asn1/ASN1Encodable/toASN1Primitive not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeBuilders/func_74710_b = func_74710_b to b fixed by Script
+17:13:11 - # Warning: method argo/saj/SajParser/nonZeroDigitToken not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Array/matchesNode not found in JAR
+17:13:11 - # Warning: method argo/saj/PositionTrackingPushbackReader/unread not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Element/shortForm not found in JAR
+17:13:11 - # Warning: method net/minecraft/block/BlockSkull/dropBlockAsItemWithChance not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BlockCipher/func_71805_a = func_71805_a to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonNodeFactories/aJsonArray not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/ASN1ObjectIdentifier/func_71612_a = func_71612_a to a fixed by Script
+17:13:11 - # Warning: method argo/saj/SajParser/objectString not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_Array/addNode not found in JAR
+17:13:11 - # Warning: method argo/saj/PositionTrackingPushbackReader/updateCharacterAndLineCounts not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74683_b = func_74683_b to b fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/init = init to a fixed by Script
+17:13:11 - # Warning: method argo/saj/PositionTrackingPushbackReader/read not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonObject/getElements not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNumberNodeBuilder/buildNode not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeDoesNotMatchPathElementsException/commaSeparate not found in JAR
+17:13:11 - # Warning: method org/bouncycastle/crypto/params/KeyParameter/getKey not found in JAR
+17:13:11 - # Warning: method argo/saj/SajParser/aFieldToken not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonFieldBuilder/buildValue not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/getDocument not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonObjectNodeBuilder/withFieldBuilder not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeSelectors_Field/func_74641_a = func_74641_a to a fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71806_a = func_71806_a to a fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71819_a = func_71819_a to a fixed by Script
+17:13:11 - # Warning: method org/bouncycastle/jcajce/provider/util/AlgorithmProvider/configure not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonConstants/getFields = getFields to d fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/func_71807_b = func_71807_b to b fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_NodeContainer/addField not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNumberNode/getText = getText to c fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelector/getValue not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71817_a = func_71817_a to a fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JdomParser/parse = parse to a fixed by Script
+17:13:11 - # Warning: method argo/saj/SajParser/arrayString not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74678_a = func_74678_a to a fixed by Script
+17:13:11 - # Warning: method argo/saj/SajParser/escapedStringChar not found in JAR
+17:13:11 - # Warning: method org/bouncycastle/crypto/KeyGenerationParameters/getStrength not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeFactories/aJsonString not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71805_a = func_71805_a to a fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonArray/getFields = getFields to d fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonFieldBuilder/withValue not found in JAR
+17:13:11 - # Warning: method argo/saj/SajParser/digitToken not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonArray/getElements not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonObject/getText = getText to c fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonNodeBuilders_False/buildNode not found in JAR
+17:13:11 - # Warning: method org/bouncycastle/asn1/ASN1Primitive/asn1Equals not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonStringNode/getType not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/endObject not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNode/getFields = getFields to d fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74684_b = func_74684_b to b fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Object/typeSafeApplyTo not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/func_71794_b = func_71794_b to b fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNumberNode/getFields = getFields to d fixed by Script
+17:13:11 - # Warning: method org/bouncycastle/crypto/BlockCipher/getBlockSize not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeFactories/aJsonNumber not found in JAR
+17:13:11 - # Warning: method argo/saj/SajParser/possibleFractionalComponent not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeFactories/aJsonFalse not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors/chainOn not found in JAR
+17:13:11 - # Warning: method argo/saj/JsonListener/falseValue not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNumberNode/getType not found in JAR
+17:13:11 - # Warning: method argo/saj/SajParser/nonNegativeNumberToken not found in JAR
+17:13:11 - # Warning: method org/bouncycastle/asn1/DERObjectIdentifier/asn1Equals not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/endField not found in JAR
+17:13:11 - # Warning: method org/bouncycastle/crypto/params/ParametersWithIV/getParameters not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71821_b = func_71821_b to b fixed by Script
+17:13:11 - # Warning: method org/bouncycastle/crypto/KeyGenerationParameters/getRandom not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonArray/getType not found in JAR
+17:13:11 - # Warning: method org/bouncycastle/asn1/ASN1Object/toASN1Primitive not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Array/shortForm not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Element/typeSafeApplyTo not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonArrayNodeBuilder/withElement not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/StreamCipher/func_74850_a = func_74850_a to a fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74680_a = func_74680_a to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonNodeFactories/aJsonNull not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonStringNode/func_74626_a = func_74626_a to a fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNodeSelectors_String/func_74645_a = func_74645_a to a fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNodeSelectors_Object/func_74640_a = func_74640_a to a fixed by Script
+17:13:11 - # Warning: method argo/saj/JsonListener/endObject not found in JAR
+17:13:11 - # Warning: method argo/saj/SajParser/digitString not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Array/typeSafeApplyTo not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Array/matchesNode_ not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNumberNode/getElements not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeBuilders_Null/buildNode not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors/chainedJsonNodeSelector not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeSelectors_String/func_74644_b = func_74644_b to b fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/nullValue not found in JAR
+17:13:11 - # Warning: method argo/saj/PositionTrackingPushbackReader/getColumn not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/falseValue not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Field/shortForm not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/func_74820_b = func_74820_b to b fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/CipherKeyGenerator/init = init to a fixed by Script
+17:13:11 - # Warning: method argo/saj/SajParser/possibleExponent not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Element/matchesNode_ not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Field/typeSafeApplyTo not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException/func_74701_a = func_74701_a to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException/getShortFormFailPath not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74675_a = func_74675_a to a fixed by Script
+17:13:11 - # Warning: method argo/format/JsonFormatter/format not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeFactories/aJsonObject not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelector/with not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/addValue not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException/func_74699_a = func_74699_a to a fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonObjectNodeBuilder/func_74606_a = func_74606_a to a fixed by Script
+17:13:11 - # Warning: method org/bouncycastle/crypto/engines/AESFastEngine/getAlgorithmName not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/func_71805_a = func_71805_a to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonNodeBuilders/anArrayBuilder not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BlockCipher/func_71803_c = func_71803_c to c fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonConstants/getElements not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_String/typeSafeApplyTo not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71816_a = func_71816_a to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_Array/addField not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Element/typeSafeApplyTo_ not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonArray/asList not found in JAR
+17:13:11 - # Warning: method argo/saj/JsonListener/stringValue not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeBuilders/func_74714_a = func_74714_a to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonNodeBuilder/buildNode not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNode/getStringValue = getStringValue to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/ChainedFunctor/shortForm not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/trueValue not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/func_71791_a = func_71791_a to a fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71823_a = func_71823_a to a fixed by Script
+17:13:11 - # Warning: method argo/saj/PositionTrackingPushbackReader/uncount not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonFieldBuilder/withKey not found in JAR
+17:13:11 - # Warning: method argo/jdom/LeafFunctor/applyTo not found in JAR
+17:13:11 - # Warning: method argo/saj/JsonListener/endField not found in JAR
+17:13:11 - # Warning: method argo/saj/JsonListener/trueValue not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeSelectors_Object/func_74639_b = func_74639_b to b fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonConstants/getText = getText to c fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonObject/getType not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BlockCipher/func_71806_a = func_71806_a to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/Functor/matchesNode not found in JAR
+17:13:11 - # Warning: method org/bouncycastle/crypto/params/ParametersWithIV/getIV not found in JAR
+17:13:11 - # Warning: method argo/saj/JsonListener/nullValue not found in JAR
+17:13:11 - # Warning: method org/bouncycastle/util/Strings/toLowerCase not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeFactories/aJsonArray not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeBuilders/func_74713_b = func_74713_b to b fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/func_74852_a = func_74852_a to a fixed by Script
+17:13:11 - # Warning: method argo/saj/SajParser/aJsonValue not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonStringNodeBuilder/buildNode not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonObjectNodeBuilder/func_74607_a = func_74607_a to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_NodeContainer/addNode not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Element/matchesNode not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/func_71793_a = func_71793_a to a fixed by Script
+17:13:11 - # Warning: method org/bouncycastle/crypto/BlockCipher/getAlgorithmName not found in JAR
+17:13:11 - # Warning: method argo/saj/JsonListener/startArray not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_String/matchesNode not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/numberValue not found in JAR
+17:13:11 - # Warning: method argo/saj/PositionTrackingPushbackReader/read not found in JAR
+17:13:11 - # Warning: method argo/saj/SajParser/parse not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/startArray not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71815_c = func_71815_c to c fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException/func_74698_b = func_74698_b to b fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_Object/addNode not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelector/shortForm not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/func_71803_c = func_71803_c to c fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonStringNodeBuilder/func_74600_a = func_74600_a to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/ChainedFunctor/applyTo not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71818_a = func_71818_a to a fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNodeSelectors/func_74681_c = func_74681_c to c fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/startField not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/DERObjectIdentifier/func_71609_b = func_71609_b to b fixed by Script
+17:13:11 - # Warning: method argo/jdom/LeafFunctor/typeSafeApplyTo not found in JAR
+17:13:11 - # Warning: method argo/saj/SajParser/readNextNonWhitespaceChar not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/startDocument not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelector/matches not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/CipherKeyGenerator/generateKey = generateKey to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonNodeSelectors_Field/matchesNode not found in JAR
+17:13:11 - # Warning: method argo/saj/JsonListener/startDocument not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeDoesNotMatchPathElementsException/formatMessage not found in JAR
+17:13:11 - # Warning: method argo/jdom/JdomParser/parse not found in JAR
+17:13:11 - # Warning: method argo/format/CompactJsonFormatter/format not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonObject/getFields = getFields to d fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonFieldBuilder/func_74724_b = func_74724_b to b fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonNode/getElements not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeDoesNotMatchPathElementsException/jsonNodeDoesNotMatchPathElementsException not found in JAR
+17:13:11 - # Warning: method argo/saj/JsonListener/endDocument not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonArrayNodeBuilder/build not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71820_b = func_71820_b to b fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter_Object/addField not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonFieldBuilder/aJsonFieldBuilder not found in JAR
+17:13:11 - # Warning: method org/bouncycastle/crypto/modes/CFBBlockCipher/getAlgorithmName not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonArray/getText = getText to c fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/startObject not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/func_71803_c = func_71803_c to c fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/endArray not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonNodeBuilders_True/buildNode not found in JAR
+17:13:11 - # Warning: method argo/jdom/JsonListenerToJdomAdapter/addRootNode not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/func_71792_a = func_71792_a to a fixed by Script
+17:13:11 - # Warning: method argo/jdom/JsonNodeBuilders/anObjectBuilder not found in JAR
+17:13:11 - # Warning: method argo/saj/JsonListener/startField not found in JAR
+17:13:11 - # Warning: field argo/saj/InvalidSyntaxException/column not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71641_d = field_71641_d to d fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71739_ah = field_71739_ah to ah fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/field_74829_h = field_74829_h to h fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71629_T = field_71629_T to T fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/field_71810_d = field_71810_d to d fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71653_i = field_71653_i to i fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71620_L = field_71620_L to L fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonConstants/TRUE not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71618_B = field_71618_B to B fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71675_bp = field_71675_bp to bp fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71825_g = field_71825_g to g fixed by Script
+17:13:11 - # Warning: field argo/jdom/ChainedFunctor/childJsonNodeSelector not found in JAR
+17:13:11 - # Warning: field argo/jdom/JsonObject/fields not found in JAR
+17:13:11 - # Warning: field argo/jdom/JsonFieldBuilder/valueBuilder not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71630_W = field_71630_W to W fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71595_a = field_71595_a to a fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71664_x = field_71664_x to x fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71602_h = field_71602_h to h fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71836_k = field_71836_k to k fixed by Script
+17:13:11 - # Warning: field argo/saj/InvalidSyntaxException/row not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74854_g = field_74854_g to g fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71715_az = field_71715_az to az fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71684_bi = field_71684_bi to bi fixed by Script
+17:13:11 - # Warning: field argo/format/CompactJsonFormatter_JsonNodeType/enumJsonNodeTypeMappingArray not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/field_71800_c = field_71800_c to c fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonArrayNodeBuilder/elementBuilders not found in JAR
+17:13:11 - # Warning: field argo/jdom/JsonListenerToJdomAdapter_Array/listenerToJdomAdapter not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71705_aO = field_71705_aO to aO fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71721_aq = field_71721_aq to aq fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71708_aB = field_71708_aB to aB fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71682_bg = field_71682_bg to bg fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71652_h = field_71652_h to h fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71689_aZ = field_71689_aZ to aZ fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException/failPath not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71642_e = field_71642_e to e fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71628_U = field_71628_U to U fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/field_74822_f = field_74822_f to f fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProvider/keyInfoConverters not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71621_M = field_71621_M to M fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71693_aT = field_71693_aT to aT fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71734_ac = field_71734_ac to ac fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNodeType/NUMBER = NUMBER to d fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71738_ag = field_71738_ag to ag fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71639_f = field_71639_f to f fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71835_j = field_71835_j to j fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71617_A = field_71617_A to A fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71631_V = field_71631_V to V fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71594_c = field_71594_c to c fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71824_f = field_71824_f to f fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71663_y = field_71663_y to y fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71603_i = field_71603_i to i fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71632_Q = field_71632_Q to Q fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74853_f = field_74853_f to f fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71667_by = field_71667_by to by fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/field_71801_a = field_71801_a to a fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71714_aH = field_71714_aH to aH fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonFieldBuilder/key not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71699_aI = field_71699_aI to aI fixed by Script
+17:13:11 - # Warning: field argo/saj/PositionTrackingPushbackReader/pushbackReader not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71736_aa = field_71736_aa to aa fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71680_bm = field_71680_bm to bm fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71643_b = field_71643_b to b fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71700_aJ = field_71700_aJ to aJ fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71827_e = field_71827_e to e fixed by Script
+17:13:11 - # Warning: field argo/saj/PositionTrackingPushbackReader/lineCount not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71840_q = field_71840_q to q fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProvider/PROVIDER_NAME not found in JAR
+17:13:11 - # Warning: field argo/saj/PositionTrackingPushbackReader/characterCount not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71622_N = field_71622_N to N fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/field_71812_b = field_71812_b to b fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71651_k = field_71651_k to k fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonListenerToJdomAdapter_Field/fieldBuilder not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71604_q = field_71604_q to q fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71616_G = field_71616_G to G fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/field_74823_g = field_74823_g to g fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71724_av = field_71724_av to av fixed by Script
+17:13:11 - # Warning: field net/minecraft/server/MinecraftServer/timeOfLastDimensionTick not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71638_Z = field_71638_Z to Z fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71834_m = field_71834_m to m fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74856_e = field_74856_e to e fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71686_bc = field_71686_bc to bc fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException/failedNode not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71593_b = field_71593_b to b fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71711_aE = field_71711_aE to aE fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71695_aV = field_71695_aV to aV fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71707_aA = field_71707_aA to aA fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71644_c = field_71644_c to c fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71666_bv = field_71666_bv to bv fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71716_ay = field_71716_ay to ay fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonNumberNode/value not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71696_aU = field_71696_aU to aU fixed by Script
+17:13:11 - # Warning: field argo/format/JsonEscapedString/escapedString not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71841_p = field_71841_p to p fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonListenerToJdomAdapter/stack not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/field_71811_e = field_71811_e to e fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71623_O = field_71623_O to O fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71659_r = field_71659_r to r fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71650_j = field_71650_j to j fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71637_X = field_71637_X to X fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71706_aP = field_71706_aP to aP fixed by Script
+17:13:11 - # Warning: field argo/jdom/ChainedFunctor/parentJsonNodeSelector not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeType/TRUE = TRUE to e fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71826_d = field_71826_d to d fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNodeType/NULL = NULL to g fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74855_d = field_74855_d to d fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71720_ar = field_71720_ar to ar fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71713_aG = field_71713_aG to aG fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71833_l = field_71833_l to l fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71673_bn = field_71673_bn to bn fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission/permissionMask not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71729_aj = field_71729_aj to aj fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71688_be = field_71688_be to be fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71592_e = field_71592_e to e fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71605_p = field_71605_p to p fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71615_F = field_71615_F to F fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProvider/info not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71665_bw = field_71665_bw to bw fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/crypto/params/KeyParameter/key not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71645_a = field_71645_a to a fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71726_ak = field_71726_ak to ak fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonNodeSelector/valueGetter not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProvider/field_74825_e = field_74825_e to e fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71733_an = field_71733_an to an fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/field_71814_a = field_71814_a to a fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonArray_NodeList/elements not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71658_s = field_71658_s to s fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71694_aS = field_71694_aS to aS fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74857_b = field_74857_b to b fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71692_aQ = field_71692_aQ to aQ fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonListenerToJdomAdapter_Array/nodeBuilder not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71829_c = field_71829_c to c fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71660_q = field_71660_q to q fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonListenerToJdomAdapter/root not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/field_71809_f = field_71809_f to f fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71704_aN = field_71704_aN to aN fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71672_bt = field_71672_bt to bt fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71703_aM = field_71703_aM to aM fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonNodeSelectors_Field/theFieldName not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71730_ao = field_71730_ao to ao fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71646_n = field_71646_n to n fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71625_I = field_71625_I to I fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71678_bk = field_71678_bk to bk fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonStringNode/value not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71668_bx = field_71668_bx to bx fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71737_ab = field_71737_ab to ab fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/io/CipherOutputStream/field_74846_d = field_74846_d to d fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71614_E = field_71614_E to E fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/crypto/KeyGenerationParameters/random not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71679_bl = field_71679_bl to bl fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/field_71796_f = field_71796_f to f fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/crypto/CipherKeyGenerator/strength not found in JAR
+17:13:11 - # Warning: field argo/jdom/JsonNumberNode/PATTERN not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71591_d = field_71591_d to d fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71635_R = field_71635_R to R fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71697_aX = field_71697_aX to aX fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71599_m = field_71599_m to m fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71681_bf = field_71681_bf to bf fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71832_o = field_71832_o to o fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/jce/provider/BouncyCastleProviderAction/field_74801_a = field_74801_a to a fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71735_ad = field_71735_ad to ad fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNodeType/STRING = STRING to c fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/modes/CFBBlockCipher/field_71813_c = field_71813_c to c fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71657_t = field_71657_t to t fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74858_c = field_74858_c to c fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/DERObjectIdentifier/field_71611_a = field_71611_a to a fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71740_ae = field_71740_ae to ae fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonListenerToJdomAdapter_Field/listenerToJdomAdapter not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71828_b = field_71828_b to b fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71727_al = field_71727_al to al fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNodeType/FALSE = FALSE to f fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonArray/elements not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71670_br = field_71670_br to br fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71647_o = field_71647_o to o fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71687_bd = field_71687_bd to bd fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71636_Y = field_71636_Y to Y fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71624_H = field_71624_H to H fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonNumberNodeBuilder/builtNode not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71709_aC = field_71709_aC to aC fixed by Script
+17:13:11 - # Warning: field argo/saj/PositionTrackingPushbackReader/lastCharacterWasCarriageReturn not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71839_r = field_71839_r to r fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/DERObjectIdentifier/field_71610_b = field_71610_b to b fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/field_71797_d = field_71797_d to d fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71702_aL = field_71702_aL to aL fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71831_n = field_71831_n to n fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71613_D = field_71613_D to D fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/io/CipherOutputStream/field_74847_b = field_74847_b to b fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71722_ax = field_71722_ax to ax fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71590_g = field_71590_g to g fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71598_l = field_71598_l to l fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71677_bj = field_71677_bj to bj fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonStringNodeBuilder/builtStringNode not found in JAR
+17:13:11 - # Warning: field argo/jdom/JsonListenerToJdomAdapter_Object/listenerToJdomAdapter not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71671_bu = field_71671_bu to bu fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/crypto/params/ParametersWithIV/parameters not found in JAR
+17:13:11 - # Trying to remap argo/jdom/JsonNodeType/$VALUES = $VALUES to h fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNodeType/ARRAY = ARRAY to b fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/crypto/CipherKeyGenerator/random not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71656_u = field_71656_u to u fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71600_j = field_71600_j to j fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71690_aY = field_71690_aY to aY fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonNodeSelectors_Element/index not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74859_a = field_74859_a to a fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71732_am = field_71732_am to am fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71683_bh = field_71683_bh to bh fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71741_af = field_71741_af to af fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonNodeDoesNotMatchPathElementsException/JSON_FORMATTER not found in JAR
+17:13:11 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration/dhThreadSpec not found in JAR
+17:13:11 - # Warning: field org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission/actions not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71710_aD = field_71710_aD to aD fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71676_bq = field_71676_bq to bq fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71662_z = field_71662_z to z fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonListenerToJdomAdapter_Object/nodeBuilder not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71723_aw = field_71723_aw to aw fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71627_K = field_71627_K to K fixed by Script
+17:13:11 - # Warning: field net/minecraft/client/renderer/WorldRenderer/tessellator not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71719_as = field_71719_as to as fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71597_o = field_71597_o to o fixed by Script
+17:13:11 - # Trying to remap argo/jdom/JsonNodeType/OBJECT = OBJECT to a fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/io/CipherOutputStream/field_74848_c = field_74848_c to c fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71701_aK = field_71701_aK to aK fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71698_aW = field_71698_aW to aW fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71633_P = field_71633_P to P fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/crypto/params/ParametersWithIV/iv not found in JAR
+17:13:11 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration/BC_EC_LOCAL_PERMISSION not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/field_71798_e = field_71798_e to e fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration/BC_DH_PERMISSION not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71648_l = field_71648_l to l fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonConstants/jsonNodeType not found in JAR
+17:13:11 - # Warning: field org/bouncycastle/crypto/KeyGenerationParameters/strength not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71838_i = field_71838_i to i fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonObjectNodeBuilder_List/nodeBuilder not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71830_a = field_71830_a to a fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration/BC_DH_LOCAL_PERMISSION not found in JAR
+17:13:11 - # Warning: field argo/jdom/JsonConstants/FALSE not found in JAR
+17:13:11 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration/BC_EC_PERMISSION not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71655_v = field_71655_v to v fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71691_aR = field_71691_aR to aR fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71601_k = field_71601_k to k fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71731_ap = field_71731_ap to ap fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71589_f = field_71589_f to f fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71685_bb = field_71685_bb to bb fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71712_aF = field_71712_aF to aF fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71661_p = field_71661_p to p fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71717_ba = field_71717_ba to ba fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonObjectNodeBuilder/fieldBuilders not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71725_au = field_71725_au to au fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71674_bo = field_71674_bo to bo fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71837_h = field_71837_h to h fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71626_J = field_71626_J to J fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/crypto/io/CipherOutputStream/field_74849_a = field_74849_a to a fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71669_bs = field_71669_bs to bs fixed by Script
+17:13:11 - # Warning: field argo/jdom/JsonConstants/NULL not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71596_n = field_71596_n to n fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71619_C = field_71619_C to C fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71649_m = field_71649_m to m fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71640_g = field_71640_g to g fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71634_S = field_71634_S to S fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71654_w = field_71654_w to w fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration/ecThreadSpec not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/field_71799_b = field_71799_b to b fixed by Script
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71728_ai = field_71728_ai to ai fixed by Script
+17:13:11 - # Warning: field org/bouncycastle/jce/provider/BouncyCastleProvider/CONFIGURATION not found in JAR
+17:13:11 - # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71718_at = field_71718_at to at fixed by Script
+17:13:11 - > Extracting modified classes
+17:13:11 - > New class found      : mod/legendaire45/items/ItemToolPiocheMod
+17:13:11 - > New class found      : mod/legendaire45/model/ModelTrampoline
+17:13:11 - > New class found      : mod/legendaire45/render/TileEntityTrampolineRenderer
+17:13:11 - > New class found      : mod/legendaire45/gui/GuiHandler
+17:13:11 - > New class found      : mod/legendaire45/gui/SlotBeer
+17:13:11 - > New class found      : mod/legendaire45/blocks/BlockCropBeer
+17:13:11 - > New class found      : mod/legendaire45/items/ItemCup
+17:13:11 - > New class found      : mod/legendaire45/client/ClientPacketHandler
+17:13:11 - > New class found      : mod/legendaire45/gui/GuiBeer
+17:13:11 - > New class found      : mod/legendaire45/model/ModelBeer
+17:13:11 - > New class found      : mod/legendaire45/tile/TileEntityTrampoline
+17:13:11 - > New class found      : mod/legendaire45/blocks/BlockCarottes
+17:13:11 - > New class found      : mod/legendaire45/blocks/BlockBeer
+17:13:11 - > New class found      : mod/legendaire45/recipe/BeerRecipe
+17:13:11 - > New class found      : mod/legendaire45/items/ArmorBase
+17:13:11 - > New class found      : mod/legendaire45/blocks/BlockTrampoline
+17:13:11 - > New class found      : mod/legendaire45/gui/ContainerBeer
+17:13:11 - > New class found      : mod/legendaire45/items/ItemToolPelleMod
+17:13:11 - > New class found      : mod/legendaire45/items/ItemToolHacheMod
+17:13:11 - > New class found      : mod/legendaire45/mod_retrogame
+17:13:11 - > New class found      : mod/legendaire45/blocks/BlockStairLog
+17:13:11 - > New class found      : mod/legendaire45/client/ClientProxy
+17:13:11 - > New class found      : mod/legendaire45/tile/TileEntityBeer
+17:13:11 - > New class found      : mod/legendaire45/common/CommonProxy
+17:13:11 - > New class found      : mod/legendaire45/server/ServerPacketHandler
+17:13:11 - > New class found      : mod/legendaire45/render/RenderBeer
+17:13:11 - > New class found      : mod/legendaire45/items/ItemDrink
+17:13:11 - > New class found      : mod/legendaire45/items/ItemToolEpeeMod
+17:13:11 - > Outputted mod/legendaire45/items/ItemToolPiocheMod to reobf/minecraft as mod/legendaire45/items/ItemToolPiocheMod.class
+17:13:11 - > Outputted mod/legendaire45/model/ModelTrampoline to reobf/minecraft as mod/legendaire45/model/ModelTrampoline.class
+17:13:11 - > Outputted mod/legendaire45/render/TileEntityTrampolineRenderer to reobf/minecraft as mod/legendaire45/render/TileEntityTrampolineRenderer.class
+17:13:11 - > Outputted mod/legendaire45/gui/GuiHandler     to reobf/minecraft as mod/legendaire45/gui/GuiHandler.class
+17:13:11 - > Outputted mod/legendaire45/gui/SlotBeer       to reobf/minecraft as mod/legendaire45/gui/SlotBeer.class
+17:13:11 - > Outputted mod/legendaire45/blocks/BlockCropBeer to reobf/minecraft as mod/legendaire45/blocks/BlockCropBeer.class
+17:13:11 - > Outputted mod/legendaire45/items/ItemCup      to reobf/minecraft as mod/legendaire45/items/ItemCup.class
+17:13:11 - > Outputted mod/legendaire45/client/ClientPacketHandler to reobf/minecraft as mod/legendaire45/client/ClientPacketHandler.class
+17:13:11 - > Outputted mod/legendaire45/gui/GuiBeer        to reobf/minecraft as mod/legendaire45/gui/GuiBeer.class
+17:13:11 - > Outputted mod/legendaire45/model/ModelBeer    to reobf/minecraft as mod/legendaire45/model/ModelBeer.class
+17:13:11 - > Outputted mod/legendaire45/tile/TileEntityTrampoline to reobf/minecraft as mod/legendaire45/tile/TileEntityTrampoline.class
+17:13:11 - > Outputted mod/legendaire45/blocks/BlockCarottes to reobf/minecraft as mod/legendaire45/blocks/BlockCarottes.class
+17:13:11 - > Outputted mod/legendaire45/blocks/BlockBeer   to reobf/minecraft as mod/legendaire45/blocks/BlockBeer.class
+17:13:11 - > Outputted mod/legendaire45/recipe/BeerRecipe  to reobf/minecraft as mod/legendaire45/recipe/BeerRecipe.class
+17:13:11 - > Outputted mod/legendaire45/items/ArmorBase    to reobf/minecraft as mod/legendaire45/items/ArmorBase.class
+17:13:11 - > Outputted mod/legendaire45/blocks/BlockTrampoline to reobf/minecraft as mod/legendaire45/blocks/BlockTrampoline.class
+17:13:11 - > Outputted mod/legendaire45/gui/ContainerBeer  to reobf/minecraft as mod/legendaire45/gui/ContainerBeer.class
+17:13:11 - > Outputted mod/legendaire45/items/ItemToolPelleMod to reobf/minecraft as mod/legendaire45/items/ItemToolPelleMod.class
+17:13:11 - > Outputted mod/legendaire45/items/ItemToolHacheMod to reobf/minecraft as mod/legendaire45/items/ItemToolHacheMod.class
+17:13:11 - > Outputted mod/legendaire45/mod_retrogame      to reobf/minecraft as mod/legendaire45/mod_retrogame.class
+17:13:11 - > Outputted mod/legendaire45/blocks/BlockStairLog to reobf/minecraft as mod/legendaire45/blocks/BlockStairLog.class
+17:13:11 - > Outputted mod/legendaire45/client/ClientProxy to reobf/minecraft as mod/legendaire45/client/ClientProxy.class
+17:13:11 - > Outputted mod/legendaire45/tile/TileEntityBeer to reobf/minecraft as mod/legendaire45/tile/TileEntityBeer.class
+17:13:11 - > Outputted mod/legendaire45/common/CommonProxy to reobf/minecraft as mod/legendaire45/common/CommonProxy.class
+17:13:11 - > Outputted mod/legendaire45/server/ServerPacketHandler to reobf/minecraft as mod/legendaire45/server/ServerPacketHandler.class
+17:13:11 - > Outputted mod/legendaire45/render/RenderBeer  to reobf/minecraft as mod/legendaire45/render/RenderBeer.class
+17:13:11 - > Outputted mod/legendaire45/items/ItemDrink    to reobf/minecraft as mod/legendaire45/items/ItemDrink.class
+17:13:11 - > Outputted mod/legendaire45/items/ItemToolEpeeMod to reobf/minecraft as mod/legendaire45/items/ItemToolEpeeMod.class
+17:13:11 - - Done in 30.12 seconds
+17:13:11 - !! Can not find server md5s !!

@@ -194,3 +194,7 @@ CalledProcessError: Command '"C:\Program Files\Java\jdk1.7.0_06\bin\java" -Xincg
 12:04:56 - !! Can not find server md5s !!
 12:24:19 - !! Can not find server sources, try decompiling !!
 12:24:49 - !! Can not find server md5s !!
+16:45:06 - !! Can not find server sources, try decompiling !!
+16:45:38 - !! Can not find server md5s !!
+17:12:41 - !! Can not find server sources, try decompiling !!
+17:13:11 - !! Can not find server md5s !!
