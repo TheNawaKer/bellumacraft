@@ -2,6 +2,8 @@ package mod.legendaire45;
 
 import mod.legendaire45.blocks.BlockBeer;
 import mod.legendaire45.blocks.BlockCarottes;
+import mod.legendaire45.blocks.BlockCropBeer;
+import mod.legendaire45.blocks.BlockStairLog;
 import mod.legendaire45.blocks.BlockTrampoline;
 import mod.legendaire45.common.CommonProxy;
 import mod.legendaire45.gui.GuiHandler;
@@ -14,12 +16,14 @@ import mod.legendaire45.items.ItemToolPelleMod;
 import mod.legendaire45.items.ItemToolPiocheMod;
 import mod.legendaire45.tile.TileEntityBeer;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockStairs;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemReed;
+import net.minecraft.item.ItemSeeds;
 import net.minecraft.src.ModLoader;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
@@ -37,6 +41,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import mod.legendaire45.client.ClientPacketHandler;
 import mod.legendaire45.server.ServerPacketHandler;
+import net.minecraft.block.Block;
 
 @Mod(modid = "mod_retrogame", name = "mod retrogame", version = "1.4.0")
 @NetworkMod(clientSideRequired = false, serverSideRequired = true,
@@ -71,6 +76,8 @@ public class mod_retrogame
 			GameRegistry.registerBlock(carottes);
 			GameRegistry.registerBlock(beer);
 			GameRegistry.registerBlock(blockTrampoline);
+			GameRegistry.registerBlock(cropBeer);
+			GameRegistry.registerBlock(stair);
 			
 
 
@@ -107,10 +114,16 @@ public class mod_retrogame
 			
 			LanguageRegistry.addName(carottes, "Bloc Carottes");
 			LanguageRegistry.addName(beer, "Distributeur");
+			LanguageRegistry.addName(blockTrampoline, "Bloc de Slime");
+			LanguageRegistry.addName(cropBeer, "Plante de Houblon");
+			LanguageRegistry.addName(stair, "Escalier en Buche");
+			
 			
 			LanguageRegistry.addName(Cup, "Chope");
 			LanguageRegistry.addName(BucketBeer, "Seau de Houblon");
 			LanguageRegistry.addName(CupBeer, "Chope Pleine");
+			LanguageRegistry.addName(seedBeer, "Graine de Houblon");
+			LanguageRegistry.addName(Beer, "Houblon");
 	    }
 		static int IDoutil = 400;
 		static int IDblock = 170;
@@ -124,13 +137,18 @@ public class mod_retrogame
 		public static EnumArmorMaterial rubyarmor = EnumHelper.addArmorMaterial("RUBY", 29, new int[] {1, 2, 3, 4}, 9);
 		public static EnumArmorMaterial lunette = EnumHelper.addArmorMaterial("PLASTIC", 29, new int[] {1, 2, 3, 4}, 9);
 		
-		public static final Block carottes= (new BlockCarottes(IDblock, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
-		public static final Block beer= (new BlockBeer(IDblock+1, 37, Material.wood)).setTextureFile(textureItem).setBlockName("Distributeur2").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block carottes = (new BlockCarottes(IDblock, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block beer = (new BlockBeer(IDblock+1, 37, Material.wood)).setTextureFile(textureItem).setBlockName("Distributeur2").setCreativeTab(CreativeTabs.tabBlock);
 		public static final Block blockTrampoline = new BlockTrampoline(IDblock+2, 1, Material.cake).setTextureFile(textureBlock).setHardness(.5F).setStepSound(Block.soundSnowFootstep).setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block cropBeer = (new BlockCropBeer(IDblock+3)).setTextureFile(textureBlock).setBlockName("cropBeer").setStepSound(Block.soundGrassFootstep);
+		public static final Block stair = (new BlockStairLog(IDblock+4, net.minecraft.block.Block.wood, 10)).setTextureFile(textureBlock).setBlockName("Escalier en buche").setCreativeTab(CreativeTabs.tabBlock);
 		
-	    public static final Item Cup = (new ItemCup(IDoutil+2)).setTextureFile(textureItem).setIconIndex(0).setItemName("Chope Vide").setCreativeTab(CreativeTabs.tabBlock);
-	    public static final Item BucketBeer = (new ItemCup(IDoutil+3)).setTextureFile(textureItem).setIconIndex(2).setItemName("seau de biere").setCreativeTab(CreativeTabs.tabBlock);
-	    public static final Item CupBeer = (new ItemDrink(IDoutil+4, 10, 0.0F, false)).setAlwaysEdible().setTextureFile(textureItem).setIconIndex(1).setItemName("Chope Pleine").setCreativeTab(CreativeTabs.tabBlock);
+	    public static final Item Cup = (new ItemCup(IDoutil+31)).setTextureFile(textureItem).setIconIndex(0).setItemName("Chope Vide").setCreativeTab(CreativeTabs.tabBlock);
+	    public static final Item BucketBeer = (new ItemCup(IDoutil+32)).setTextureFile(textureItem).setIconIndex(2).setItemName("seau de biere").setCreativeTab(CreativeTabs.tabBlock);
+	    public static final Item CupBeer = (new ItemDrink(IDoutil+33, 10, 0.0F, false)).setAlwaysEdible().setTextureFile(textureItem).setIconIndex(1).setItemName("Chope Pleine").setCreativeTab(CreativeTabs.tabBlock);
+	  
+	    public static Item seedBeer = (new ItemSeeds(IDoutil+34, cropBeer.blockID, Block.tilledField.blockID)).setTextureFile(textureItem).setIconIndex(39).setItemName("seedBeer").setCreativeTab(CreativeTabs.tabBlock);
+	    public static Item Beer = (new Item(IDoutil+35)).setTextureFile(textureItem).setIconIndex(40).setItemName("Beer").setCreativeTab(CreativeTabs.tabBlock);
 	    
 		public static final Item pelleToolE= (new ItemToolPelleMod(IDoutil+5, emerald )).setTextureFile(textureItem).setItemName("tool_pelle_e").setIconIndex(3);
 		public static final Item piocheToolE= (new ItemToolPiocheMod(IDoutil+6, emerald )).setTextureFile(textureItem).setItemName("tool_pioche_e").setIconIndex(4);
