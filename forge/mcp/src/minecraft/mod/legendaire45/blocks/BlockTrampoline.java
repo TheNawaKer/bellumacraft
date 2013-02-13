@@ -73,6 +73,8 @@ public class BlockTrampoline extends BlockContainer
     {		
     	if( tentity != null )
     	{
+        System.out.println("server tblock:"); 
+        System.out.println(tblock);
     	float step = 0;			
     	if( tentity.isSneaking() ) 
     	 step = tblock/6;			
@@ -82,7 +84,7 @@ public class BlockTrampoline extends BlockContainer
     	 step = tblock/15;			
     	if( step > 6 ) 
     	 step = tblock/20;			
-    	 tentity.motionY += 1 + step;
+    	 tentity.motionY = 1 + step;
     	 System.out.println("motiony:"); 
     	 System.out.println(tentity.motionY);
     	 tentity = null;		
