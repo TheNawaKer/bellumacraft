@@ -62,6 +62,7 @@ public class BlockTrampoline extends BlockContainer
     	 {			
     	tentity = entity;			
     	tblock = entity.fallDistance;	
+    	System.out.println("tblock OFU:"); 
     	System.out.println(tblock); 
     	} 
     	else world.scheduleBlockUpdate(x, y, z, blockID, 1);
@@ -82,9 +83,11 @@ public class BlockTrampoline extends BlockContainer
     	if( step > 6 ) 
     	 step = tblock/20;			
     	 tentity.motionY += 1 + step;
+    	 System.out.println("motiony:"); 
     	 System.out.println(tentity.motionY);
     	 tentity = null;		
     	 }
+    	System.out.println("Entity:"); 
     	System.out.println(tentity);
     }
     

@@ -21895,3 +21895,114 @@ based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
 02:38:26 - > Outputted mod/legendaire45/items/ItemToolEpeeMod to reobf\minecraft as mod/legendaire45/items/ItemToolEpeeMod.class
 02:38:26 - - Done in 21.53 seconds
 02:38:26 - !! Can not find server md5s !!
+07:29:23 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+07:29:23 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+07:29:23 - OS : win32
+07:29:23 - OS : win32
+07:29:25 - runmc: '"C:\Program Files\Java\jdk1.7.0_06\bin\java" -Xincgc -Xms1024M -Xmx1024M -cp "..\bin\minecraft;..\src\minecraft;..\lib;..\lib\*;..\jars\bin\minecraft.jar;..\jars\bin\jinput.jar;..\jars\bin\lwjgl.jar;..\jars\bin\lwjgl_util.jar" -Djava.library.path=..\jars\bin\natives Start'
+07:29:25 - shlex: ['C:\\Program Files\\Java\\jdk1.7.0_06\\bin\\java', '-Xincgc', '-Xms1024M', '-Xmx1024M', '-cp', '..\\bin\\minecraft;..\\src\\minecraft;..\\lib;..\\lib\\*;..\\jars\\bin\\minecraft.jar;..\\jars\\bin\\jinput.jar;..\\jars\\bin\\lwjgl.jar;..\\jars\\bin\\lwjgl_util.jar', '-Djava.library.path=..\\jars\\bin\\natives', 'Start']
+07:29:25 - runmc: '"C:\Program Files\Java\jdk1.7.0_06\bin\java" -Xincgc -Xms1024M -Xmx1024M -cp "..\bin\minecraft;..\src\minecraft;..\lib;..\lib\*;..\jars\minecraft_server.jar" net.minecraft.server.MinecraftServer'
+07:29:25 - shlex: ['C:\\Program Files\\Java\\jdk1.7.0_06\\bin\\java', '-Xincgc', '-Xms1024M', '-Xmx1024M', '-cp', '..\\bin\\minecraft;..\\src\\minecraft;..\\lib;..\\lib\\*;..\\jars\\minecraft_server.jar', 'net.minecraft.server.MinecraftServer']
+07:29:30 - 2013-02-13 07:29:30 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
+07:29:43 - 2013-02-13 07:29:43 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
+07:29:45 - 2013-02-13 07:29:45 [INFO] [STDOUT] 210 recipes
+07:29:46 - 2013-02-13 07:29:46 [INFO] [STDOUT] 27 achievements
+07:29:47 - 2013-02-13 07:29:47 [INFO] [STDOUT] 27 achievements
+07:29:47 - 2013-02-13 07:29:47 [INFO] [STDOUT] 210 recipes
+07:29:49 - 2013-02-13 07:29:49 [INFO] [Minecraft] Starting minecraft server version 1.4.7
+07:29:49 - 2013-02-13 07:29:49 [INFO] [STDOUT] Setting user: Player387, -
+07:29:49 - 2013-02-13 07:29:49 [INFO] [STDERR] Client asked for parameter: server
+07:29:49 - 2013-02-13 07:29:49 [INFO] [STDOUT] LWJGL Version: 2.4.2
+07:29:50 - 2013-02-13 07:29:50 [INFO] [ForgeModLoader] Attempting early MinecraftForge initialization
+07:29:50 - 2013-02-13 07:29:50 [INFO] [STDOUT] MinecraftForge v6.6.0.497 Initialized
+07:29:50 - 2013-02-13 07:29:50 [INFO] [ForgeModLoader] MinecraftForge v6.6.0.497 Initialized
+07:29:51 - 2013-02-13 07:29:51 [INFO] [STDOUT] Replaced 84 ore recipies
+07:29:51 - 2013-02-13 07:29:51 [INFO] [ForgeModLoader] Completed early MinecraftForge initialization
+07:29:52 - 2013-02-13 07:29:52 [INFO] [ForgeModLoader] Searching D:\minecraft modding\bellumacraft\forge\mcp\jars\mods for mods
+07:29:52 - 2013-02-13 07:29:52 [INFO] [ForgeModLoader] Attempting early MinecraftForge initialization
+07:29:52 - 2013-02-13 07:29:52 [INFO] [STDOUT] MinecraftForge v6.6.0.497 Initialized
+07:29:52 - 2013-02-13 07:29:52 [INFO] [ForgeModLoader] MinecraftForge v6.6.0.497 Initialized
+07:29:52 - 2013-02-13 07:29:52 [INFO] [STDOUT] Replaced 84 ore recipies
+07:29:52 - 2013-02-13 07:29:52 [INFO] [ForgeModLoader] Completed early MinecraftForge initialization
+07:29:52 - 2013-02-13 07:29:52 [INFO] [ForgeModLoader] Searching D:\minecraft modding\bellumacraft\forge\mcp\jars\mods for mods
+07:29:58 - 2013-02-13 07:29:58 [INFO] [ForgeModLoader] Attempting to reparse the mod container minecraft
+07:29:59 - 2013-02-13 07:29:59 [INFO] [ForgeModLoader] Attempting to reparse the mod container minecraft
+07:30:00 - 2013-02-13 07:30:00 [INFO] [ForgeModLoader] Forge Mod Loader has identified 4 mods to load
+07:30:01 - 2013-02-13 07:30:01 [INFO] [ForgeModLoader] Forge Mod Loader has identified 4 mods to load
+07:30:01 - 2013-02-13 07:30:01 [INFO] [ForgeModLoader] Configured a dormant chunk cache size of 0
+07:30:02 - 2013-02-13 07:30:02 [INFO] [ForgeModLoader] Configured a dormant chunk cache size of 0
+07:30:02 - 2013-02-13 07:30:02 [INFO] [Minecraft] Loading properties
+07:30:02 - 2013-02-13 07:30:02 [INFO] [Minecraft] Default game type: SURVIVAL
+07:30:02 - 2013-02-13 07:30:02 [INFO] [Minecraft] Generating keypair
+07:30:02 - 2013-02-13 07:30:02 [INFO] [STDOUT] Starting up SoundSystem...
+07:30:02 - 2013-02-13 07:30:02 [INFO] [STDOUT] Initializing LWJGL OpenAL
+07:30:02 - 2013-02-13 07:30:02 [INFO] [STDOUT]     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+07:30:03 - 2013-02-13 07:30:03 [INFO] [STDOUT] OpenAL initialized.
+07:30:03 - 2013-02-13 07:30:03 [INFO] [ForgeModLoader] Forge Mod Loader has successfully loaded 4 mods
+07:30:06 - 2013-02-13 07:30:05 [INFO] [Minecraft] Starting Minecraft server on *:25565
+07:30:06 - 2013-02-13 07:30:06 [WARNING] [Minecraft] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+07:30:06 - 2013-02-13 07:30:06 [WARNING] [Minecraft] The server will make no attempt to authenticate usernames. Beware.
+07:30:06 - 2013-02-13 07:30:06 [WARNING] [Minecraft] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+07:30:06 - 2013-02-13 07:30:06 [WARNING] [Minecraft] To change this, set "online-mode" to "true" in the server.properties file.
+07:30:06 - 2013-02-13 07:30:06 [INFO] [ForgeModLoader] Forge Mod Loader has successfully loaded 4 mods
+07:30:06 - 2013-02-13 07:30:06 [INFO] [Minecraft] Preparing level "mcpworld"
+07:30:07 - 2013-02-13 07:30:07 [SEVERE] [ForgeModLoader] FML has detected item discrepancies
+07:30:07 - 2013-02-13 07:30:07 [SEVERE] [ForgeModLoader] Missing items : {660=Item 660, Type mod.legendaire45.items.ItemDrink, owned by mod_retrogame, ordinal 0, name null, claimedModId null, 658=Item 658, Type mod.legendaire45.items.ItemCup, owned by mod_retrogame, ordinal 0, name null, claimedModId null, 659=Item 659, Type mod.legendaire45.items.ItemCup, owned by mod_retrogame, ordinal 1, name null, claimedModId null}
+07:30:07 - 2013-02-13 07:30:07 [SEVERE] [ForgeModLoader] Mismatched items : {}
+07:30:07 - 2013-02-13 07:30:07 [INFO] [ForgeModLoader] Loading dimension 0 (mcpworld) (net.minecraft.server.dedicated.DedicatedServer@631a8d66)
+07:30:07 - 2013-02-13 07:30:07 [INFO] [ForgeModLoader] Loading dimension 1 (mcpworld) (net.minecraft.server.dedicated.DedicatedServer@631a8d66)
+07:30:08 - 2013-02-13 07:30:08 [INFO] [ForgeModLoader] Loading dimension -1 (mcpworld) (net.minecraft.server.dedicated.DedicatedServer@631a8d66)
+07:30:08 - 2013-02-13 07:30:08 [INFO] [Minecraft] Preparing start region for level 0
+07:30:09 - 2013-02-13 07:30:09 [INFO] [Minecraft] Preparing spawn area: 50%
+07:30:10 - 2013-02-13 07:30:10 [INFO] [Minecraft] Done (3,850s)! For help, type "help" or "?"
+07:30:12 - 2013-02-13 07:30:12 [INFO] [STDOUT] Connecting to 127.0.0.1, 25565
+07:30:16 - 2013-02-13 07:30:16 [INFO] [Minecraft] User Player387 connecting with mods [mod_retrogame]
+07:30:16 - 2013-02-13 07:30:16 [INFO] [ForgeModLoader] User Player387 connecting with mods [mod_retrogame]
+07:30:17 - 2013-02-13 07:30:17 [INFO] [Minecraft] Player387[/127.0.0.1:1575] logged in with entity id 303 at (-2.5, 65.62000000476837, 201.5)
+07:30:26 - 2013-02-13 07:30:26 [INFO] [STDOUT] 0.233632
+07:30:26 - 2013-02-13 07:30:26 [INFO] [STDOUT] 0.233632
+07:30:28 - 2013-02-13 07:30:28 [INFO] [STDOUT] 0.9215999984741211
+07:30:28 - 2013-02-13 07:30:28 [INFO] [STDOUT] null
+07:30:32 - 2013-02-13 07:30:32 [INFO] [STDOUT] 1.1451067
+07:30:35 - 2013-02-13 07:30:35 [INFO] [STDOUT] 0.9215999984741211
+07:30:35 - 2013-02-13 07:30:35 [INFO] [STDOUT] null
+07:30:36 - 2013-02-13 07:30:36 [INFO] [STDOUT] 1.1451067
+07:30:37 - 2013-02-13 07:30:37 [INFO] [STDOUT] 0.8447679954833984
+07:30:37 - 2013-02-13 07:30:37 [INFO] [STDOUT] null
+07:30:38 - 2013-02-13 07:30:38 [INFO] [STDOUT] 1.1451067
+07:30:43 - 2013-02-13 07:30:43 [INFO] [STDOUT] 0.8447679954833984
+07:30:43 - 2013-02-13 07:30:43 [INFO] [STDOUT] null
+07:30:49 - 2013-02-13 07:30:49 [INFO] [STDOUT] 1.1451067
+07:30:54 - 2013-02-13 07:30:54 [INFO] [Minecraft] Player387 lost connection: disconnect.quitting
+07:30:56 - 2013-02-13 07:30:56 [INFO] [STDOUT] Stopping!
+07:30:56 - 2013-02-13 07:30:56 [INFO] [STDOUT] SoundSystem shutting down...
+07:30:56 - 2013-02-13 07:30:56 [INFO] [STDOUT]     Author: Paul Lamb, www.paulscode.com
+07:34:00 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+07:34:00 - OS : win32
+07:34:01 - runmc: '"C:\Program Files\Java\jdk1.7.0_06\bin\java" -Xincgc -Xms1024M -Xmx1024M -cp "..\bin\minecraft;..\src\minecraft;..\lib;..\lib\*;..\jars\bin\minecraft.jar;..\jars\bin\jinput.jar;..\jars\bin\lwjgl.jar;..\jars\bin\lwjgl_util.jar" -Djava.library.path=..\jars\bin\natives Start'
+07:34:01 - shlex: ['C:\\Program Files\\Java\\jdk1.7.0_06\\bin\\java', '-Xincgc', '-Xms1024M', '-Xmx1024M', '-cp', '..\\bin\\minecraft;..\\src\\minecraft;..\\lib;..\\lib\\*;..\\jars\\bin\\minecraft.jar;..\\jars\\bin\\jinput.jar;..\\jars\\bin\\lwjgl.jar;..\\jars\\bin\\lwjgl_util.jar', '-Djava.library.path=..\\jars\\bin\\natives', 'Start']
+07:34:05 - 2013-02-13 07:34:05 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
+07:34:15 - 2013-02-13 07:34:15 [INFO] [STDOUT] 27 achievements
+07:34:15 - 2013-02-13 07:34:15 [INFO] [STDOUT] 210 recipes
+07:34:16 - 2013-02-13 07:34:16 [INFO] [STDOUT] Setting user: Player40, -
+07:34:16 - 2013-02-13 07:34:16 [INFO] [STDERR] Client asked for parameter: server
+07:34:16 - 2013-02-13 07:34:16 [INFO] [STDOUT] LWJGL Version: 2.4.2
+07:34:18 - 2013-02-13 07:34:18 [INFO] [ForgeModLoader] Attempting early MinecraftForge initialization
+07:34:18 - 2013-02-13 07:34:18 [INFO] [STDOUT] MinecraftForge v6.6.0.497 Initialized
+07:34:18 - 2013-02-13 07:34:18 [INFO] [ForgeModLoader] MinecraftForge v6.6.0.497 Initialized
+07:34:18 - 2013-02-13 07:34:18 [INFO] [STDOUT] Replaced 84 ore recipies
+07:34:18 - 2013-02-13 07:34:18 [INFO] [ForgeModLoader] Completed early MinecraftForge initialization
+07:34:19 - 2013-02-13 07:34:19 [INFO] [ForgeModLoader] Searching D:\minecraft modding\bellumacraft\forge\mcp\jars\mods for mods
+07:34:35 - 2013-02-13 07:34:35 [INFO] [ForgeModLoader] Attempting to reparse the mod container minecraft
+07:34:37 - 2013-02-13 07:34:37 [INFO] [ForgeModLoader] Forge Mod Loader has identified 4 mods to load
+07:34:38 - 2013-02-13 07:34:38 [INFO] [ForgeModLoader] Configured a dormant chunk cache size of 0
+07:34:39 - 2013-02-13 07:34:39 [INFO] [STDOUT] Starting up SoundSystem...
+07:34:39 - 2013-02-13 07:34:39 [INFO] [STDOUT] Initializing LWJGL OpenAL
+07:34:39 - 2013-02-13 07:34:39 [INFO] [STDOUT]     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+07:34:39 - 2013-02-13 07:34:39 [INFO] [STDOUT] OpenAL initialized.
+07:34:40 - 2013-02-13 07:34:40 [INFO] [ForgeModLoader] Forge Mod Loader has successfully loaded 4 mods
+07:34:45 - 2013-02-13 07:34:45 [INFO] [STDOUT] Connecting to 127.0.0.1, 25565
+07:35:01 - 2013-02-13 07:35:01 [INFO] [STDOUT] 0.233632
+07:38:29 - 2013-02-13 07:38:29 [INFO] [STDOUT] Stopping!
+07:38:29 - 2013-02-13 07:38:29 [INFO] [STDOUT] SoundSystem shutting down...
+07:38:29 - 2013-02-13 07:38:29 [INFO] [STDOUT]     Author: Paul Lamb, www.paulscode.com
