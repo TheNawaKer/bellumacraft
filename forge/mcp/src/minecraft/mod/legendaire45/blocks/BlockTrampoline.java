@@ -18,6 +18,7 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
@@ -55,6 +56,7 @@ public class BlockTrampoline extends BlockContainer
     
     private Entity tentity;	
     private float tblock;
+    private boolean verif;
     
     public void onFallenUpon(World world, int x, int y, int z, Entity entity, float par6)
     {		
@@ -62,23 +64,27 @@ public class BlockTrampoline extends BlockContainer
     	 {			
     	tentity = entity;			
     	tblock = entity.fallDistance;	
-    	System.out.println("tblock OFU:"); 
-    	System.out.println(tblock); 
     	} 
     	else world.scheduleBlockUpdate(x, y, z, blockID, 1);
     	entity.fallDistance = 0;	
     }
     
-    public void updateTick(World world, int x, int y, int z, Random random)
-    {		
-    	if( tentity != null )
-    	{
-        System.out.println("Entity(avant null):"); 
-        System.out.println(tentity);
-        System.out.println("server tblock:"); 
-        System.out.println(tblock);
+    public AxisAlignedBB getCollisionBoundingBoxFromPool(World par1World, int par2, int par3, int par4)
+    {
+        float var5 = 0.125F;
+        return AxisAlignedBB.getAABBPool().addOrModifyAABBInPool((double)par2, (double)par3, (double)par4, (double)(par2 + 1), (double)((float)(par3 + 1) - var5), (double)(par4 + 1));
+    }
+
+    /**
+     * Triggered whenever an entity collides with this block (enters into the block). Args: world, x, y, z, entity
+     */
+    public void onEntityCollidedWithBlock(World par1World, int par2, int par3, int par4, Entity par5Entity)
+    {
+    	
+    	if(tentity!=null) 
+    	{						
     	float step = 0;			
-    	if( tentity.isSneaking() ) 
+    	if( par5Entity.isSneaking() ) 
     	 step = tblock/6;			
     	if( step > 1 ) 
     	 step = tblock/10;			
@@ -86,15 +92,9 @@ public class BlockTrampoline extends BlockContainer
     	 step = tblock/15;			
     	if( step > 6 ) 
     	 step = tblock/20;			
-    	 tentity.motionY = 1 + step;
-    	 System.out.println("motiony:"); 
-    	 System.out.println(tentity.motionY);
-         System.out.println("Entity(y):"); 
-         System.out.println(tentity);
-    	 tentity = null;		
-    	 }
-    	System.out.println("Entity:"); 
-    	System.out.println(tentity);
+    	par5Entity.motionY = 0.5F + step;
+    	tentity=null;
+    	}
     }
     
     public int getRenderBlockPass() 

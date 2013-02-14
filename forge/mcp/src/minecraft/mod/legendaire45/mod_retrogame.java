@@ -15,6 +15,7 @@ import mod.legendaire45.items.ItemToolHacheMod;
 import mod.legendaire45.items.ItemToolPelleMod;
 import mod.legendaire45.items.ItemToolPiocheMod;
 import mod.legendaire45.tile.TileEntityBeer;
+import mod.legendaire45.tile.TileEntityTrampoline;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.block.material.Material;
@@ -39,7 +40,10 @@ import cpw.mods.fml.common.network.NetworkMod.SidedPacketHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import mod.legendaire45.client.ClientPacketHandler;
+import mod.legendaire45.render.TileEntityTrampolineRenderer;
 import mod.legendaire45.server.ServerPacketHandler;
 import net.minecraft.block.Block;
 
@@ -66,6 +70,7 @@ public class mod_retrogame
 			MinecraftForge.setToolClass(this.hacheToolE, "axe", 2);
 		}
 		
+		
 		@Init
 		public void load(FMLInitializationEvent event)
 		{	
@@ -77,8 +82,7 @@ public class mod_retrogame
 			GameRegistry.registerBlock(beer);
 			GameRegistry.registerBlock(blockTrampoline);
 			GameRegistry.registerBlock(cropBeer);
-			GameRegistry.registerBlock(stair);
-			
+			GameRegistry.registerBlock(stair);	
 
 
 			/** D�fini le nom IN-GAME des items/blocs**/
@@ -139,7 +143,7 @@ public class mod_retrogame
 		
 		public static final Block carottes = (new BlockCarottes(IDblock, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
 		public static final Block beer = (new BlockBeer(IDblock+1, 37, Material.wood)).setTextureFile(textureItem).setBlockName("Distributeur2").setCreativeTab(CreativeTabs.tabBlock);
-		public static final Block blockTrampoline = new BlockTrampoline(IDblock+2, 1, Material.cake).setTextureFile(textureBlock).setHardness(.5F).setStepSound(Block.soundSnowFootstep).setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block blockTrampoline = new BlockTrampoline(IDblock+2, 1, Material.cake).setBlockName("Bloc de Slime").setTextureFile(textureBlock).setHardness(.5F).setStepSound(Block.soundSnowFootstep).setCreativeTab(CreativeTabs.tabBlock);
 		public static final Block cropBeer = (new BlockCropBeer(IDblock+3)).setTextureFile(textureBlock).setBlockName("cropBeer").setStepSound(Block.soundGrassFootstep);
 		public static final Block stair = (new BlockStairLog(IDblock+4, net.minecraft.block.Block.wood, 10)).setTextureFile(textureBlock).setBlockName("Escalier en buche").setCreativeTab(CreativeTabs.tabBlock);
 		

@@ -29,9 +29,10 @@ public class ClientProxy extends CommonProxy
     	MinecraftForgeClient.preloadTexture(this.guibeer);
     	MinecraftForgeClient.preloadTexture(this.distributor);
 		RenderBeer renderBeer = new RenderBeer();
-		TileEntityTrampolineRenderer trampolineRender = new TileEntityTrampolineRenderer();
 		ModLoader.registerTileEntity(TileEntityBeer.class, "tile", renderBeer);//ajout
+		TileEntityTrampolineRenderer trampolineRender = new TileEntityTrampolineRenderer();
 		ModLoader.registerTileEntity(TileEntityTrampoline.class, "TileEntitytrampoline", trampolineRender);	
+		
     	
     }
 }

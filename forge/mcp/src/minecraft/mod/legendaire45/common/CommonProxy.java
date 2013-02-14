@@ -1,5 +1,8 @@
 package mod.legendaire45.common;
 
+import mod.legendaire45.tile.TileEntityTrampoline;
+import net.minecraft.src.ModLoader;
+
 public class CommonProxy 
 {
 	public static String textureBlock = "/mod/legendaire45/texture/base/terrain.png"; //On enregistre ici le chemin d'accès vers les fichiers de texture.
@@ -18,7 +21,6 @@ public class CommonProxy
 	public static String distributor = "/mod/legendaire45/texture/design/distrib2.png";
 
 	public void registerRenderThings()
-	{//ici nous enregistrerons tout ce qui concerne la partie "serveur" et commun avec le client (un peu comme le Load() mais ici il n'y aura pas grand chose)}
-	
+	{//ici nous enregistrerons tout ce qui concerne la partie "serveur" et commun avec le client (un peu comme le Load() mais ici il n'y aura pas grand chose)}	
 	}
 }
