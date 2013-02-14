@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.SidedProxy"/>
-<fullyQualifiedTypeName name="mod.legendaire45.common.CommonProxy"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.Block"/>
-<fullyQualifiedTypeName name="mod.legendaire45.blocks.BlockCarottes"/>
-<fullyQualifiedTypeName name="net.minecraft.item.ItemPickaxe"/>
-<fullyQualifiedTypeName name="net.minecraft.item.ItemSword"/>
-<fullyQualifiedTypeName name="net.minecraft.item.EnumToolMaterial"/>
-<fullyQualifiedTypeName name="mod.legendaire45.render.RenderBeer"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer"/>
-<fullyQualifiedTypeName name="mod.legendaire45.model.ModelBeer"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemReed"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.ISidedInventory"/>
 <fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagList"/>
@@ -20,9 +10,7 @@
 <fullyQualifiedTypeName name="net.minecraft.entity.player.InventoryPlayer"/>
 <fullyQualifiedTypeName name="net.minecraft.inventory.Slot"/>
 <fullyQualifiedTypeName name="Bellumacraft.beer.BeerRecipe"/>
-<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemFood"/>
-<fullyQualifiedTypeName name="net.minecraft.item.EnumAction"/>
 <fullyQualifiedTypeName name="net.minecraft.potion.PotionEffect"/>
 <fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
 <fullyQualifiedTypeName name="mod.legendaire45.items.ItemCup"/>
@@ -51,8 +39,6 @@
 <fullyQualifiedTypeName name="net.minecraft.util.MathHelper"/>
 <fullyQualifiedTypeName name="net.minecraft.block.BlockFlower"/>
 <fullyQualifiedTypeName name="net.minecraft.world.World"/>
-<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
-<fullyQualifiedTypeName name="mod.legendaire45.mod_retrogame"/>
 <fullyQualifiedTypeName name="mod.legendaire45.blocks.BlockCropBeer"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemSeeds"/>
 <fullyQualifiedTypeName name="mod.legendaire45.blocks.BlockStairLog"/>
@@ -60,4 +46,18 @@
 <fullyQualifiedTypeName name="net.minecraft.block.BlockStairs"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="net.minecraft.creativetab.CreativeTabs"/>
+<fullyQualifiedTypeName name="mod.legendaire45.tile.TileEntityTrampolineServer"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
+<fullyQualifiedTypeName name="net.minecraft.item.EnumAction"/>
+<fullyQualifiedTypeName name="mod.legendaire45.items.MagicBow"/>
+<fullyQualifiedTypeName name="mod.legendaire45.mod_retrogame"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.client.registry.RenderingRegistry"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.projectile.EntityArrow"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderArrow"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.registry.EntityRegistry"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.Render"/>
+<fullyQualifiedTypeName name="mod.legendaire45.entity.EntityMagicArrow"/>
+<fullyQualifiedTypeName name="mod.legendaire45.render.RenderMagicArrow"/>
 </qualifiedTypeNameHistroy>

@@ -1,7 +1,11 @@
 package mod.legendaire45.client;
 
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import mod.legendaire45.common.CommonProxy;
+import mod.legendaire45.entity.EntityMagicArrow;
 import mod.legendaire45.render.RenderBeer;
+import mod.legendaire45.render.RenderMagicArrow;
 import mod.legendaire45.render.TileEntityTrampolineRenderer;
 import mod.legendaire45.tile.TileEntityBeer;
 import mod.legendaire45.tile.TileEntityTrampoline;
@@ -32,6 +36,9 @@ public class ClientProxy extends CommonProxy
 		ModLoader.registerTileEntity(TileEntityBeer.class, "tile", renderBeer);//ajout
 		TileEntityTrampolineRenderer trampolineRender = new TileEntityTrampolineRenderer();
 		ModLoader.registerTileEntity(TileEntityTrampoline.class, "TileEntitytrampoline", trampolineRender);	
+		ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
+		RenderingRegistry.registerEntityRenderingHandler(EntityMagicArrow.class, new RenderMagicArrow());
+		 
 		
     	
     }

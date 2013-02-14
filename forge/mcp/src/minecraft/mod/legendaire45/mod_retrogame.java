@@ -1,5 +1,9 @@
 package mod.legendaire45;
 
+import static cpw.mods.fml.relauncher.Side.CLIENT;
+
+import java.util.Map;
+
 import mod.legendaire45.blocks.BlockBeer;
 import mod.legendaire45.blocks.BlockCarottes;
 import mod.legendaire45.blocks.BlockCropBeer;
@@ -14,15 +18,18 @@ import mod.legendaire45.items.ItemToolEpeeMod;
 import mod.legendaire45.items.ItemToolHacheMod;
 import mod.legendaire45.items.ItemToolPelleMod;
 import mod.legendaire45.items.ItemToolPiocheMod;
+import mod.legendaire45.items.MagicBow;
 import mod.legendaire45.tile.TileEntityBeer;
 import mod.legendaire45.tile.TileEntityTrampoline;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.entity.RenderArrow;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemReed;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.src.ModLoader;
@@ -38,11 +45,13 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod; 
 import cpw.mods.fml.common.network.NetworkMod.SidedPacketHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import mod.legendaire45.client.ClientPacketHandler;
+import mod.legendaire45.entity.EntityMagicArrow;
 import mod.legendaire45.render.TileEntityTrampolineRenderer;
 import mod.legendaire45.server.ServerPacketHandler;
 import net.minecraft.block.Block;
@@ -70,11 +79,12 @@ public class mod_retrogame
 			MinecraftForge.setToolClass(this.hacheToolE, "axe", 2);
 		}
 		
-		
 		@Init
 		public void load(FMLInitializationEvent event)
 		{	
 			proxy.registerRenderThings(); //Et oui, il faut bien dire de charger les proxy :)
+			EntityRegistry.registerModEntity(EntityMagicArrow.class, "firearrow", 1, this, 250, 5, false);
+			ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
 			NetworkRegistry.instance().registerGuiHandler(this, guiHandler);
 			/**Enregistre le bloc**/
 
@@ -183,4 +193,7 @@ public class mod_retrogame
 		public static final Item lunette1 = new ArmorBase(IDoutil+28, lunette, 0,0).setTextureFile(textureItem).setIconIndex(35).setItemName("lunette");
 		public static final Item lunette2 = new ArmorBase(IDoutil+29, lunette, 0,0).setTextureFile(textureItem).setIconIndex(36).setItemName("lunette2");
 		public static final Item lunette3 = new ArmorBase(IDoutil+30, lunette, 0,0).setTextureFile(textureItem).setIconIndex(38).setItemName("lunette3");
+		
+	    public static Item firebow = (new MagicBow(IDoutil+36)).setIconCoord(5, 1).setItemName("firebow");
+	    public static Item firearrow = (new Item(IDoutil+37)).setIconCoord(5, 2).setItemName("firearrow").setCreativeTab(CreativeTabs.tabCombat);
 }
