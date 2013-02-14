@@ -6,7 +6,7 @@
 #
 # RetroGuard MCP v3.6.5
 #
-# Logfile created on Thu Feb 14 01:59:39 CET 2013
+# Logfile created on Thu Feb 14 23:00:35 CET 2013
 #
 # Jar file to be obfuscated:           client_recomp.jar
 # Target Jar file for obfuscated code: client_reobf.jar
@@ -54,8 +54,8 @@
 #      Your class net/minecraftforge/event/ASMEventHandler$ASMClassLoader calls the java/lang/ClassLoader method defineClass(Ljava/lang/String;[BII)Ljava/lang/Class;
 #      Your class net/minecraftforge/event/EventBus calls the java/lang/Class method getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 #
-# Memory in use after class data structure built: 25019920 bytes
-# Total memory available                        : 275054592 bytes
+# Memory in use after class data structure built: 24978576 bytes
+# Total memory available                        : 274989056 bytes
 #
 #
 # Names reserved from obfuscation:
@@ -2868,16 +2868,34 @@
 .field_map mod/legendaire45/items/ArmorBase/textureEmerald textureEmerald
 .method_map mod/legendaire45/items/ArmorBase/getArmorTextureFile (Lnet/minecraft/item/ItemStack;)Ljava/lang/String; getArmorTextureFile
 .method_map mod/legendaire45/items/ArmorBase/getTextureFile ()Ljava/lang/String; getTextureFile
+.class_map mod/legendaire45/items/MagicBow MagicBow
+.method_map mod/legendaire45/items/MagicBow/onPlayerStoppedUsing (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;I)V a
+.method_map mod/legendaire45/items/MagicBow/getIconIndex (Lnet/minecraft/item/ItemStack;ILnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;I)I getIconIndex
+.method_map mod/legendaire45/items/MagicBow/onFoodEaten (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack; b
+.method_map mod/legendaire45/items/MagicBow/onItemRightClick (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack; a
+.method_map mod/legendaire45/items/MagicBow/getItemEnchantability ()I c
+.method_map mod/legendaire45/items/MagicBow/getItemUseAction (Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/EnumAction; b_
+.method_map mod/legendaire45/items/MagicBow/getMaxItemUseDuration (Lnet/minecraft/item/ItemStack;)I c_
 .class_map mod/legendaire45/items/ItemToolPelleMod ItemToolPelleMod
 .class_map mod/legendaire45/items/ItemCup ItemCup
 .method_map mod/legendaire45/items/ItemCup/addCreativeItems (Ljava/util/ArrayList;)V addCreativeItems
 .class_map mod/legendaire45/items/ItemToolEpeeMod ItemToolEpeeMod
+.class_map mod/legendaire45/items/TeleportBow TeleportBow
+.method_map mod/legendaire45/items/TeleportBow/onPlayerStoppedUsing (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;I)V a
+.method_map mod/legendaire45/items/TeleportBow/getIconIndex (Lnet/minecraft/item/ItemStack;ILnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;I)I getIconIndex
+.method_map mod/legendaire45/items/TeleportBow/onFoodEaten (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack; b
+.method_map mod/legendaire45/items/TeleportBow/onItemRightClick (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack; a
+.method_map mod/legendaire45/items/TeleportBow/getItemEnchantability ()I c
+.method_map mod/legendaire45/items/TeleportBow/getItemUseAction (Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/EnumAction; b_
+.method_map mod/legendaire45/items/TeleportBow/getMaxItemUseDuration (Lnet/minecraft/item/ItemStack;)I c_
 .package_map mod/legendaire45/common common
 .class_map mod/legendaire45/common/CommonProxy CommonProxy
+.field_map mod/legendaire45/common/CommonProxy/firearrowtexture firearrowtexture
 .field_map mod/legendaire45/common/CommonProxy/lunettec lunettec
 .field_map mod/legendaire45/common/CommonProxy/lunettea lunettea
 .field_map mod/legendaire45/common/CommonProxy/lunetteb lunetteb
 .field_map mod/legendaire45/common/CommonProxy/textureRuby2 textureRuby2
+.field_map mod/legendaire45/common/CommonProxy/teleportarrowtexture teleportarrowtexture
 .field_map mod/legendaire45/common/CommonProxy/guibeer guibeer
 .field_map mod/legendaire45/common/CommonProxy/textureBlock textureBlock
 .field_map mod/legendaire45/common/CommonProxy/textureSaphir textureSaphir
@@ -2926,6 +2944,70 @@
 .method_map mod/legendaire45/tile/TileEntityBeer/getStartInventorySide (Lnet/minecraftforge/common/ForgeDirection;)I getStartInventorySide
 .method_map mod/legendaire45/tile/TileEntityBeer/getStackInSlotOnClosing (I)Lnet/minecraft/item/ItemStack; a_
 .method_map mod/legendaire45/tile/TileEntityBeer/Getlevel ()I Getlevel
+.package_map mod/legendaire45/entity entity
+.class_map mod/legendaire45/entity/EntityMagicArrow EntityMagicArrow
+.field_map mod/legendaire45/entity/EntityMagicArrow/canBePickedUp canBePickedUp
+.field_map mod/legendaire45/entity/EntityMagicArrow/yTile yTile
+.field_map mod/legendaire45/entity/EntityMagicArrow/knockbackStrength knockbackStrength
+.field_map mod/legendaire45/entity/EntityMagicArrow/ticksInAir ticksInAir
+.field_map mod/legendaire45/entity/EntityMagicArrow/inGround inGround
+.field_map mod/legendaire45/entity/EntityMagicArrow/damage damage
+.field_map mod/legendaire45/entity/EntityMagicArrow/xTile xTile
+.field_map mod/legendaire45/entity/EntityMagicArrow/zTile zTile
+.field_map mod/legendaire45/entity/EntityMagicArrow/ticksInGround ticksInGround
+.field_map mod/legendaire45/entity/EntityMagicArrow/inData inData
+.field_map mod/legendaire45/entity/EntityMagicArrow/inTile inTile
+.field_map mod/legendaire45/entity/EntityMagicArrow/shootingEntity shootingEntity
+.field_map mod/legendaire45/entity/EntityMagicArrow/arrowShake arrowShake
+.method_map mod/legendaire45/entity/EntityMagicArrow/onCollideWithPlayer (Lnet/minecraft/entity/player/EntityPlayer;)V c_
+.method_map mod/legendaire45/entity/EntityMagicArrow/getDamage ()D getDamage
+.method_map mod/legendaire45/entity/EntityMagicArrow/getShadowSize ()F R
+.method_map mod/legendaire45/entity/EntityMagicArrow/setIsCritical (Z)V setIsCritical
+.method_map mod/legendaire45/entity/EntityMagicArrow/setDamage (D)V setDamage
+.method_map mod/legendaire45/entity/EntityMagicArrow/setThrowableHeading (DDDFF)V c
+.method_map mod/legendaire45/entity/EntityMagicArrow/entityInit ()V a
+.method_map mod/legendaire45/entity/EntityMagicArrow/setPositionAndRotation2 (DDDFFI)V a
+.method_map mod/legendaire45/entity/EntityMagicArrow/canTriggerWalking ()Z f_
+.method_map mod/legendaire45/entity/EntityMagicArrow/canAttackWithItem ()Z aq
+.method_map mod/legendaire45/entity/EntityMagicArrow/readEntityFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V a
+.method_map mod/legendaire45/entity/EntityMagicArrow/onUpdate ()V j_
+.method_map mod/legendaire45/entity/EntityMagicArrow/writeEntityToNBT (Lnet/minecraft/nbt/NBTTagCompound;)V b
+.method_map mod/legendaire45/entity/EntityMagicArrow/setVelocity (DDD)V h
+.method_map mod/legendaire45/entity/EntityMagicArrow/setKnockbackStrength (I)V setKnockbackStrength
+.method_map mod/legendaire45/entity/EntityMagicArrow/causeArrowDamage (Lmod/legendaire45/entity/EntityMagicArrow;Lnet/minecraft/entity/Entity;)Lnet/minecraft/util/DamageSource; causeArrowDamage
+.method_map mod/legendaire45/entity/EntityMagicArrow/getIsCritical ()Z getIsCritical
+.class_map mod/legendaire45/entity/EntityTeleportArrow EntityTeleportArrow
+.field_map mod/legendaire45/entity/EntityTeleportArrow/yTile yTile
+.field_map mod/legendaire45/entity/EntityTeleportArrow/canBePickedUp canBePickedUp
+.field_map mod/legendaire45/entity/EntityTeleportArrow/knockbackStrength knockbackStrength
+.field_map mod/legendaire45/entity/EntityTeleportArrow/inGround inGround
+.field_map mod/legendaire45/entity/EntityTeleportArrow/damage damage
+.field_map mod/legendaire45/entity/EntityTeleportArrow/ticksInGround ticksInGround
+.field_map mod/legendaire45/entity/EntityTeleportArrow/inTile inTile
+.field_map mod/legendaire45/entity/EntityTeleportArrow/shootingEntity shootingEntity
+.field_map mod/legendaire45/entity/EntityTeleportArrow/ticksInAir ticksInAir
+.field_map mod/legendaire45/entity/EntityTeleportArrow/xTile xTile
+.field_map mod/legendaire45/entity/EntityTeleportArrow/zTile zTile
+.field_map mod/legendaire45/entity/EntityTeleportArrow/inData inData
+.field_map mod/legendaire45/entity/EntityTeleportArrow/joueur joueur
+.field_map mod/legendaire45/entity/EntityTeleportArrow/arrowShake arrowShake
+.method_map mod/legendaire45/entity/EntityTeleportArrow/causeArrowDamage (Lmod/legendaire45/entity/EntityTeleportArrow;Lnet/minecraft/entity/Entity;)Lnet/minecraft/util/DamageSource; causeArrowDamage
+.method_map mod/legendaire45/entity/EntityTeleportArrow/onCollideWithPlayer (Lnet/minecraft/entity/player/EntityPlayer;)V c_
+.method_map mod/legendaire45/entity/EntityTeleportArrow/getDamage ()D getDamage
+.method_map mod/legendaire45/entity/EntityTeleportArrow/getShadowSize ()F R
+.method_map mod/legendaire45/entity/EntityTeleportArrow/setIsCritical (Z)V setIsCritical
+.method_map mod/legendaire45/entity/EntityTeleportArrow/setDamage (D)V setDamage
+.method_map mod/legendaire45/entity/EntityTeleportArrow/setThrowableHeading (DDDFF)V c
+.method_map mod/legendaire45/entity/EntityTeleportArrow/entityInit ()V a
+.method_map mod/legendaire45/entity/EntityTeleportArrow/setPositionAndRotation2 (DDDFFI)V a
+.method_map mod/legendaire45/entity/EntityTeleportArrow/canTriggerWalking ()Z f_
+.method_map mod/legendaire45/entity/EntityTeleportArrow/canAttackWithItem ()Z aq
+.method_map mod/legendaire45/entity/EntityTeleportArrow/readEntityFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V a
+.method_map mod/legendaire45/entity/EntityTeleportArrow/onUpdate ()V j_
+.method_map mod/legendaire45/entity/EntityTeleportArrow/writeEntityToNBT (Lnet/minecraft/nbt/NBTTagCompound;)V b
+.method_map mod/legendaire45/entity/EntityTeleportArrow/setVelocity (DDD)V h
+.method_map mod/legendaire45/entity/EntityTeleportArrow/setKnockbackStrength (I)V setKnockbackStrength
+.method_map mod/legendaire45/entity/EntityTeleportArrow/getIsCritical ()Z getIsCritical
 .package_map mod/legendaire45/server server
 .class_map mod/legendaire45/server/ServerPacketHandler ServerPacketHandler
 .method_map mod/legendaire45/server/ServerPacketHandler/onPacketData (Lnet/minecraft/network/INetworkManager;Lnet/minecraft/network/packet/Packet250CustomPayload;Lcpw/mods/fml/common/network/Player;)V onPacketData
@@ -2979,12 +3061,21 @@
 .field_map mod/legendaire45/render/RenderBeer/distributor distributor
 .method_map mod/legendaire45/render/RenderBeer/renderTileEntityAt (Lnet/minecraft/tileentity/TileEntity;DDDF)V a
 .method_map mod/legendaire45/render/RenderBeer/renderAModelAt (Lmod/legendaire45/tile/TileEntityBeer;DDDF)V renderAModelAt
+.class_map mod/legendaire45/render/RenderTeleportArrow RenderTeleportArrow
+.field_map mod/legendaire45/render/RenderTeleportArrow/teleportarrowtexture teleportarrowtexture
+.method_map mod/legendaire45/render/RenderTeleportArrow/doRender (Lnet/minecraft/entity/Entity;DDDFF)V a
+.method_map mod/legendaire45/render/RenderTeleportArrow/renderArrow (Lmod/legendaire45/entity/EntityTeleportArrow;DDDFF)V renderArrow
 .class_map mod/legendaire45/render/TileEntityTrampolineRenderer TileEntityTrampolineRenderer
 .field_map mod/legendaire45/render/TileEntityTrampolineRenderer/model model
 .field_map mod/legendaire45/render/TileEntityTrampolineRenderer/trampoline trampoline
 .method_map mod/legendaire45/render/TileEntityTrampolineRenderer/renderTileEntityTileAt (Lnet/minecraft/tileentity/TileEntity;DDDF)V renderTileEntityTileAt
 .method_map mod/legendaire45/render/TileEntityTrampolineRenderer/renderTileEntityAt (Lnet/minecraft/tileentity/TileEntity;DDDF)V a
+.class_map mod/legendaire45/render/RenderMagicArrow RenderMagicArrow
+.field_map mod/legendaire45/render/RenderMagicArrow/firearrowtexture firearrowtexture
+.method_map mod/legendaire45/render/RenderMagicArrow/renderArrow (Lmod/legendaire45/entity/EntityMagicArrow;DDDFF)V renderArrow
+.method_map mod/legendaire45/render/RenderMagicArrow/doRender (Lnet/minecraft/entity/Entity;DDDFF)V a
 .class_map mod/legendaire45/mod_retrogame mod_retrogame
+.field_map mod/legendaire45/mod_retrogame/teleportarrow teleportarrow
 .field_map mod/legendaire45/mod_retrogame/blockTrampoline blockTrampoline
 .field_map mod/legendaire45/mod_retrogame/guiHandler guiHandler
 .field_map mod/legendaire45/mod_retrogame/ArmorS4 ArmorS4
@@ -3021,15 +3112,18 @@
 .field_map mod/legendaire45/mod_retrogame/ArmorR1 ArmorR1
 .field_map mod/legendaire45/mod_retrogame/epeeToolE epeeToolE
 .field_map mod/legendaire45/mod_retrogame/ArmorR2 ArmorR2
+.field_map mod/legendaire45/mod_retrogame/firebow firebow
 .field_map mod/legendaire45/mod_retrogame/hacheToolE hacheToolE
 .field_map mod/legendaire45/mod_retrogame/ArmorE1 ArmorE1
 .field_map mod/legendaire45/mod_retrogame/stair stair
+.field_map mod/legendaire45/mod_retrogame/firearrow firearrow
 .field_map mod/legendaire45/mod_retrogame/BucketBeer BucketBeer
 .field_map mod/legendaire45/mod_retrogame/ArmorE4 ArmorE4
 .field_map mod/legendaire45/mod_retrogame/piocheToolS piocheToolS
 .field_map mod/legendaire45/mod_retrogame/ArmorE2 ArmorE2
 .field_map mod/legendaire45/mod_retrogame/piocheToolR piocheToolR
 .field_map mod/legendaire45/mod_retrogame/ArmorE3 ArmorE3
+.field_map mod/legendaire45/mod_retrogame/teleportbow teleportbow
 .field_map mod/legendaire45/mod_retrogame/saphirarmor saphirarmor
 .field_map mod/legendaire45/mod_retrogame/piocheToolE piocheToolE
 .field_map mod/legendaire45/mod_retrogame/emeraldarmor emeraldarmor

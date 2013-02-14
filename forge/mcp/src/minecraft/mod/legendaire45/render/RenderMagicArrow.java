@@ -2,6 +2,7 @@ package mod.legendaire45.render;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import mod.legendaire45.common.CommonProxy;
 import mod.legendaire45.entity.EntityMagicArrow;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.entity.Render;
@@ -14,9 +15,10 @@ import org.lwjgl.opengl.GL12;
 @SideOnly(Side.CLIENT)
 public class RenderMagicArrow extends Render
 {
+	private static String firearrowtexture = CommonProxy.firearrowtexture;
     public void renderArrow(EntityMagicArrow par1EntityArrow, double par2, double par4, double par6, float par8, float par9)
     {
-        this.loadTexture("/item/arrows.png");
+        this.loadTexture(firearrowtexture);
         GL11.glPushMatrix();
         GL11.glTranslatef((float)par2, (float)par4, (float)par6);
         GL11.glRotatef(par1EntityArrow.prevRotationYaw + (par1EntityArrow.rotationYaw - par1EntityArrow.prevRotationYaw) * par9 - 90.0F, 0.0F, 1.0F, 0.0F);

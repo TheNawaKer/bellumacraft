@@ -22,19 +22,19 @@ import cpw.mods.fml.common.IDispenserHandler;
 src\minecraft\cpw\mods\fml\common\modloader\ModLoaderModContainer.java:528: warning: [deprecation] registerDispenserHandler(IDispenserHandler) in GameRegistry has been deprecated
             GameRegistry.registerDispenserHandler(ModLoaderHelper.buildDispenseHelper(mod));
                         ^
-src\minecraft\mod\legendaire45\mod_retrogame.java:81: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+src\minecraft\mod\legendaire45\mod_retrogame.java:95: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
 			GameRegistry.registerBlock(carottes);
 			            ^
-src\minecraft\mod\legendaire45\mod_retrogame.java:82: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+src\minecraft\mod\legendaire45\mod_retrogame.java:96: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
 			GameRegistry.registerBlock(beer);
 			            ^
-src\minecraft\mod\legendaire45\mod_retrogame.java:83: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+src\minecraft\mod\legendaire45\mod_retrogame.java:97: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
 			GameRegistry.registerBlock(blockTrampoline);
 			            ^
-src\minecraft\mod\legendaire45\mod_retrogame.java:84: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+src\minecraft\mod\legendaire45\mod_retrogame.java:98: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
 			GameRegistry.registerBlock(cropBeer);
 			            ^
-src\minecraft\mod\legendaire45\mod_retrogame.java:85: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
+src\minecraft\mod\legendaire45\mod_retrogame.java:99: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated
 			GameRegistry.registerBlock(stair);	
 			            ^
 src\minecraft\net\minecraft\src\ModLoader.java:638: warning: [deprecation] registerBlock(Block) in GameRegistry has been deprecated

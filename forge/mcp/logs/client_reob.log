@@ -701,16 +701,20 @@ FD: mod/legendaire45/items/ArmorBase/textureRuby mod/legendaire45/items/ArmorBas
 FD: mod/legendaire45/items/ArmorBase/textureRuby2 mod/legendaire45/items/ArmorBase/textureRuby2
 FD: mod/legendaire45/items/ArmorBase/textureSaphir mod/legendaire45/items/ArmorBase/textureSaphir
 FD: mod/legendaire45/items/ArmorBase/textureEmerald mod/legendaire45/items/ArmorBase/textureEmerald
+CL: mod/legendaire45/items/MagicBow mod/legendaire45/items/MagicBow
 CL: mod/legendaire45/items/ItemToolPelleMod mod/legendaire45/items/ItemToolPelleMod
 CL: mod/legendaire45/items/ItemCup mod/legendaire45/items/ItemCup
 MD: mod/legendaire45/items/ItemCup/addCreativeItems (Ljava/util/ArrayList;)V mod/legendaire45/items/ItemCup/addCreativeItems (Ljava/util/ArrayList;)V
 CL: mod/legendaire45/items/ItemToolEpeeMod mod/legendaire45/items/ItemToolEpeeMod
+CL: mod/legendaire45/items/TeleportBow mod/legendaire45/items/TeleportBow
 PK: mod/legendaire45/common mod/legendaire45/common
 CL: mod/legendaire45/common/CommonProxy mod/legendaire45/common/CommonProxy
+FD: mod/legendaire45/common/CommonProxy/firearrowtexture mod/legendaire45/common/CommonProxy/firearrowtexture
 FD: mod/legendaire45/common/CommonProxy/lunettec mod/legendaire45/common/CommonProxy/lunettec
 FD: mod/legendaire45/common/CommonProxy/lunettea mod/legendaire45/common/CommonProxy/lunettea
 FD: mod/legendaire45/common/CommonProxy/lunetteb mod/legendaire45/common/CommonProxy/lunetteb
 FD: mod/legendaire45/common/CommonProxy/textureRuby2 mod/legendaire45/common/CommonProxy/textureRuby2
+FD: mod/legendaire45/common/CommonProxy/teleportarrowtexture mod/legendaire45/common/CommonProxy/teleportarrowtexture
 FD: mod/legendaire45/common/CommonProxy/guibeer mod/legendaire45/common/CommonProxy/guibeer
 FD: mod/legendaire45/common/CommonProxy/textureBlock mod/legendaire45/common/CommonProxy/textureBlock
 FD: mod/legendaire45/common/CommonProxy/textureSaphir mod/legendaire45/common/CommonProxy/textureSaphir
@@ -742,6 +746,48 @@ MD: mod/legendaire45/tile/TileEntityBeer/getItemBeereTime (Lnet/minecraft/item/I
 MD: mod/legendaire45/tile/TileEntityBeer/isBeering ()Z mod/legendaire45/tile/TileEntityBeer/isBeering ()Z
 MD: mod/legendaire45/tile/TileEntityBeer/getCoolProgressScaled (I)I mod/legendaire45/tile/TileEntityBeer/getCoolProgressScaled (I)I
 MD: mod/legendaire45/tile/TileEntityBeer/Getlevel ()I mod/legendaire45/tile/TileEntityBeer/Getlevel ()I
+PK: mod/legendaire45/entity mod/legendaire45/entity
+CL: mod/legendaire45/entity/EntityMagicArrow mod/legendaire45/entity/EntityMagicArrow
+FD: mod/legendaire45/entity/EntityMagicArrow/canBePickedUp mod/legendaire45/entity/EntityMagicArrow/canBePickedUp
+FD: mod/legendaire45/entity/EntityMagicArrow/yTile mod/legendaire45/entity/EntityMagicArrow/yTile
+FD: mod/legendaire45/entity/EntityMagicArrow/knockbackStrength mod/legendaire45/entity/EntityMagicArrow/knockbackStrength
+FD: mod/legendaire45/entity/EntityMagicArrow/ticksInAir mod/legendaire45/entity/EntityMagicArrow/ticksInAir
+FD: mod/legendaire45/entity/EntityMagicArrow/inGround mod/legendaire45/entity/EntityMagicArrow/inGround
+FD: mod/legendaire45/entity/EntityMagicArrow/damage mod/legendaire45/entity/EntityMagicArrow/damage
+FD: mod/legendaire45/entity/EntityMagicArrow/xTile mod/legendaire45/entity/EntityMagicArrow/xTile
+FD: mod/legendaire45/entity/EntityMagicArrow/zTile mod/legendaire45/entity/EntityMagicArrow/zTile
+FD: mod/legendaire45/entity/EntityMagicArrow/ticksInGround mod/legendaire45/entity/EntityMagicArrow/ticksInGround
+FD: mod/legendaire45/entity/EntityMagicArrow/inData mod/legendaire45/entity/EntityMagicArrow/inData
+FD: mod/legendaire45/entity/EntityMagicArrow/inTile mod/legendaire45/entity/EntityMagicArrow/inTile
+FD: mod/legendaire45/entity/EntityMagicArrow/shootingEntity mod/legendaire45/entity/EntityMagicArrow/shootingEntity
+FD: mod/legendaire45/entity/EntityMagicArrow/arrowShake mod/legendaire45/entity/EntityMagicArrow/arrowShake
+MD: mod/legendaire45/entity/EntityMagicArrow/getDamage ()D mod/legendaire45/entity/EntityMagicArrow/getDamage ()D
+MD: mod/legendaire45/entity/EntityMagicArrow/setIsCritical (Z)V mod/legendaire45/entity/EntityMagicArrow/setIsCritical (Z)V
+MD: mod/legendaire45/entity/EntityMagicArrow/setDamage (D)V mod/legendaire45/entity/EntityMagicArrow/setDamage (D)V
+MD: mod/legendaire45/entity/EntityMagicArrow/setKnockbackStrength (I)V mod/legendaire45/entity/EntityMagicArrow/setKnockbackStrength (I)V
+MD: mod/legendaire45/entity/EntityMagicArrow/causeArrowDamage (Lmod/legendaire45/entity/EntityMagicArrow;Lnet/minecraft/entity/Entity;)Lnet/minecraft/util/DamageSource; mod/legendaire45/entity/EntityMagicArrow/causeArrowDamage (Lmod/legendaire45/entity/EntityMagicArrow;Llq;)Llh;
+MD: mod/legendaire45/entity/EntityMagicArrow/getIsCritical ()Z mod/legendaire45/entity/EntityMagicArrow/getIsCritical ()Z
+CL: mod/legendaire45/entity/EntityTeleportArrow mod/legendaire45/entity/EntityTeleportArrow
+FD: mod/legendaire45/entity/EntityTeleportArrow/yTile mod/legendaire45/entity/EntityTeleportArrow/yTile
+FD: mod/legendaire45/entity/EntityTeleportArrow/canBePickedUp mod/legendaire45/entity/EntityTeleportArrow/canBePickedUp
+FD: mod/legendaire45/entity/EntityTeleportArrow/knockbackStrength mod/legendaire45/entity/EntityTeleportArrow/knockbackStrength
+FD: mod/legendaire45/entity/EntityTeleportArrow/inGround mod/legendaire45/entity/EntityTeleportArrow/inGround
+FD: mod/legendaire45/entity/EntityTeleportArrow/damage mod/legendaire45/entity/EntityTeleportArrow/damage
+FD: mod/legendaire45/entity/EntityTeleportArrow/ticksInGround mod/legendaire45/entity/EntityTeleportArrow/ticksInGround
+FD: mod/legendaire45/entity/EntityTeleportArrow/inTile mod/legendaire45/entity/EntityTeleportArrow/inTile
+FD: mod/legendaire45/entity/EntityTeleportArrow/shootingEntity mod/legendaire45/entity/EntityTeleportArrow/shootingEntity
+FD: mod/legendaire45/entity/EntityTeleportArrow/ticksInAir mod/legendaire45/entity/EntityTeleportArrow/ticksInAir
+FD: mod/legendaire45/entity/EntityTeleportArrow/xTile mod/legendaire45/entity/EntityTeleportArrow/xTile
+FD: mod/legendaire45/entity/EntityTeleportArrow/zTile mod/legendaire45/entity/EntityTeleportArrow/zTile
+FD: mod/legendaire45/entity/EntityTeleportArrow/inData mod/legendaire45/entity/EntityTeleportArrow/inData
+FD: mod/legendaire45/entity/EntityTeleportArrow/joueur mod/legendaire45/entity/EntityTeleportArrow/joueur
+FD: mod/legendaire45/entity/EntityTeleportArrow/arrowShake mod/legendaire45/entity/EntityTeleportArrow/arrowShake
+MD: mod/legendaire45/entity/EntityTeleportArrow/causeArrowDamage (Lmod/legendaire45/entity/EntityTeleportArrow;Lnet/minecraft/entity/Entity;)Lnet/minecraft/util/DamageSource; mod/legendaire45/entity/EntityTeleportArrow/causeArrowDamage (Lmod/legendaire45/entity/EntityTeleportArrow;Llq;)Llh;
+MD: mod/legendaire45/entity/EntityTeleportArrow/getDamage ()D mod/legendaire45/entity/EntityTeleportArrow/getDamage ()D
+MD: mod/legendaire45/entity/EntityTeleportArrow/setIsCritical (Z)V mod/legendaire45/entity/EntityTeleportArrow/setIsCritical (Z)V
+MD: mod/legendaire45/entity/EntityTeleportArrow/setDamage (D)V mod/legendaire45/entity/EntityTeleportArrow/setDamage (D)V
+MD: mod/legendaire45/entity/EntityTeleportArrow/setKnockbackStrength (I)V mod/legendaire45/entity/EntityTeleportArrow/setKnockbackStrength (I)V
+MD: mod/legendaire45/entity/EntityTeleportArrow/getIsCritical ()Z mod/legendaire45/entity/EntityTeleportArrow/getIsCritical ()Z
 PK: mod/legendaire45/server mod/legendaire45/server
 CL: mod/legendaire45/server/ServerPacketHandler mod/legendaire45/server/ServerPacketHandler
 PK: mod/legendaire45/blocks mod/legendaire45/blocks
@@ -767,11 +813,18 @@ CL: mod/legendaire45/render/RenderBeer mod/legendaire45/render/RenderBeer
 FD: mod/legendaire45/render/RenderBeer/distrib mod/legendaire45/render/RenderBeer/distrib
 FD: mod/legendaire45/render/RenderBeer/distributor mod/legendaire45/render/RenderBeer/distributor
 MD: mod/legendaire45/render/RenderBeer/renderAModelAt (Lmod/legendaire45/tile/TileEntityBeer;DDDF)V mod/legendaire45/render/RenderBeer/renderAModelAt (Lmod/legendaire45/tile/TileEntityBeer;DDDF)V
+CL: mod/legendaire45/render/RenderTeleportArrow mod/legendaire45/render/RenderTeleportArrow
+FD: mod/legendaire45/render/RenderTeleportArrow/teleportarrowtexture mod/legendaire45/render/RenderTeleportArrow/teleportarrowtexture
+MD: mod/legendaire45/render/RenderTeleportArrow/renderArrow (Lmod/legendaire45/entity/EntityTeleportArrow;DDDFF)V mod/legendaire45/render/RenderTeleportArrow/renderArrow (Lmod/legendaire45/entity/EntityTeleportArrow;DDDFF)V
 CL: mod/legendaire45/render/TileEntityTrampolineRenderer mod/legendaire45/render/TileEntityTrampolineRenderer
 FD: mod/legendaire45/render/TileEntityTrampolineRenderer/model mod/legendaire45/render/TileEntityTrampolineRenderer/model
 FD: mod/legendaire45/render/TileEntityTrampolineRenderer/trampoline mod/legendaire45/render/TileEntityTrampolineRenderer/trampoline
 MD: mod/legendaire45/render/TileEntityTrampolineRenderer/renderTileEntityTileAt (Lnet/minecraft/tileentity/TileEntity;DDDF)V mod/legendaire45/render/TileEntityTrampolineRenderer/renderTileEntityTileAt (Lany;DDDF)V
+CL: mod/legendaire45/render/RenderMagicArrow mod/legendaire45/render/RenderMagicArrow
+FD: mod/legendaire45/render/RenderMagicArrow/firearrowtexture mod/legendaire45/render/RenderMagicArrow/firearrowtexture
+MD: mod/legendaire45/render/RenderMagicArrow/renderArrow (Lmod/legendaire45/entity/EntityMagicArrow;DDDFF)V mod/legendaire45/render/RenderMagicArrow/renderArrow (Lmod/legendaire45/entity/EntityMagicArrow;DDDFF)V
 CL: mod/legendaire45/mod_retrogame mod/legendaire45/mod_retrogame
+FD: mod/legendaire45/mod_retrogame/teleportarrow mod/legendaire45/mod_retrogame/teleportarrow
 FD: mod/legendaire45/mod_retrogame/blockTrampoline mod/legendaire45/mod_retrogame/blockTrampoline
 FD: mod/legendaire45/mod_retrogame/guiHandler mod/legendaire45/mod_retrogame/guiHandler
 FD: mod/legendaire45/mod_retrogame/ArmorS4 mod/legendaire45/mod_retrogame/ArmorS4
@@ -808,15 +861,18 @@ FD: mod/legendaire45/mod_retrogame/proxy mod/legendaire45/mod_retrogame/proxy
 FD: mod/legendaire45/mod_retrogame/ArmorR1 mod/legendaire45/mod_retrogame/ArmorR1
 FD: mod/legendaire45/mod_retrogame/epeeToolE mod/legendaire45/mod_retrogame/epeeToolE
 FD: mod/legendaire45/mod_retrogame/ArmorR2 mod/legendaire45/mod_retrogame/ArmorR2
+FD: mod/legendaire45/mod_retrogame/firebow mod/legendaire45/mod_retrogame/firebow
 FD: mod/legendaire45/mod_retrogame/hacheToolE mod/legendaire45/mod_retrogame/hacheToolE
 FD: mod/legendaire45/mod_retrogame/ArmorE1 mod/legendaire45/mod_retrogame/ArmorE1
 FD: mod/legendaire45/mod_retrogame/stair mod/legendaire45/mod_retrogame/stair
+FD: mod/legendaire45/mod_retrogame/firearrow mod/legendaire45/mod_retrogame/firearrow
 FD: mod/legendaire45/mod_retrogame/BucketBeer mod/legendaire45/mod_retrogame/BucketBeer
 FD: mod/legendaire45/mod_retrogame/ArmorE4 mod/legendaire45/mod_retrogame/ArmorE4
 FD: mod/legendaire45/mod_retrogame/piocheToolS mod/legendaire45/mod_retrogame/piocheToolS
 FD: mod/legendaire45/mod_retrogame/ArmorE2 mod/legendaire45/mod_retrogame/ArmorE2
 FD: mod/legendaire45/mod_retrogame/piocheToolR mod/legendaire45/mod_retrogame/piocheToolR
 FD: mod/legendaire45/mod_retrogame/ArmorE3 mod/legendaire45/mod_retrogame/ArmorE3
+FD: mod/legendaire45/mod_retrogame/teleportbow mod/legendaire45/mod_retrogame/teleportbow
 FD: mod/legendaire45/mod_retrogame/saphirarmor mod/legendaire45/mod_retrogame/saphirarmor
 FD: mod/legendaire45/mod_retrogame/piocheToolE mod/legendaire45/mod_retrogame/piocheToolE
 FD: mod/legendaire45/mod_retrogame/emeraldarmor mod/legendaire45/mod_retrogame/emeraldarmor

@@ -19,6 +19,7 @@ import mod.legendaire45.items.ItemToolHacheMod;
 import mod.legendaire45.items.ItemToolPelleMod;
 import mod.legendaire45.items.ItemToolPiocheMod;
 import mod.legendaire45.items.MagicBow;
+import mod.legendaire45.items.TeleportBow;
 import mod.legendaire45.tile.TileEntityBeer;
 import mod.legendaire45.tile.TileEntityTrampoline;
 import net.minecraft.block.Block;
@@ -52,6 +53,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import mod.legendaire45.client.ClientPacketHandler;
 import mod.legendaire45.entity.EntityMagicArrow;
+import mod.legendaire45.entity.EntityTeleportArrow;
 import mod.legendaire45.render.TileEntityTrampolineRenderer;
 import mod.legendaire45.server.ServerPacketHandler;
 import net.minecraft.block.Block;
@@ -84,7 +86,9 @@ public class mod_retrogame
 		{	
 			proxy.registerRenderThings(); //Et oui, il faut bien dire de charger les proxy :)
 			EntityRegistry.registerModEntity(EntityMagicArrow.class, "firearrow", 1, this, 250, 5, false);
-			ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
+			//ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
+			EntityRegistry.registerModEntity(EntityTeleportArrow.class, "teleportarrow", 2, this, 250, 5, false);
+			//ModLoader.registerEntityID(EntityTeleportArrow.class, "teleportarrow", ModLoader.getUniqueEntityId());
 			NetworkRegistry.instance().registerGuiHandler(this, guiHandler);
 			/**Enregistre le bloc**/
 
@@ -138,6 +142,11 @@ public class mod_retrogame
 			LanguageRegistry.addName(CupBeer, "Chope Pleine");
 			LanguageRegistry.addName(seedBeer, "Graine de Houblon");
 			LanguageRegistry.addName(Beer, "Houblon");
+			
+			LanguageRegistry.addName(firearrow, "Fleche Eclairante");
+			LanguageRegistry.addName(firebow, "Arc Eclairant");
+			LanguageRegistry.addName(teleportarrow, "Ender Fleche");
+			LanguageRegistry.addName(teleportbow, "Ender Arc");
 	    }
 		static int IDoutil = 400;
 		static int IDblock = 170;
@@ -194,6 +203,8 @@ public class mod_retrogame
 		public static final Item lunette2 = new ArmorBase(IDoutil+29, lunette, 0,0).setTextureFile(textureItem).setIconIndex(36).setItemName("lunette2");
 		public static final Item lunette3 = new ArmorBase(IDoutil+30, lunette, 0,0).setTextureFile(textureItem).setIconIndex(38).setItemName("lunette3");
 		
-	    public static Item firebow = (new MagicBow(IDoutil+36)).setIconCoord(10, 2).setTextureFile(textureItem).setItemName("firebow");
-	    public static Item firearrow = (new Item(IDoutil+37)).setIconCoord(10, 3).setTextureFile(textureItem).setItemName("firearrow").setCreativeTab(CreativeTabs.tabCombat);
+	    public static final Item firebow = (new MagicBow(IDoutil+36)).setIconCoord(10, 2).setTextureFile(textureItem).setItemName("firebow");
+	    public static final Item teleportbow = (new TeleportBow(IDoutil+38)).setIconCoord(12, 2).setTextureFile(textureItem).setItemName("teleportbow");
+	    public static final Item firearrow = (new Item(IDoutil+37)).setIconCoord(10, 3).setTextureFile(textureItem).setItemName("firearrow").setCreativeTab(CreativeTabs.tabCombat);
+	    public static final Item teleportarrow = (new Item(IDoutil+39)).setIconCoord(12, 3).setTextureFile(textureItem).setItemName("teleportarrow").setCreativeTab(CreativeTabs.tabCombat);
 }
