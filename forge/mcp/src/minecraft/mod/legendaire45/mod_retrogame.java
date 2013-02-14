@@ -194,6 +194,6 @@ public class mod_retrogame
 		public static final Item lunette2 = new ArmorBase(IDoutil+29, lunette, 0,0).setTextureFile(textureItem).setIconIndex(36).setItemName("lunette2");
 		public static final Item lunette3 = new ArmorBase(IDoutil+30, lunette, 0,0).setTextureFile(textureItem).setIconIndex(38).setItemName("lunette3");
 		
-	    public static Item firebow = (new MagicBow(IDoutil+36)).setIconCoord(5, 1).setItemName("firebow");
-	    public static Item firearrow = (new Item(IDoutil+37)).setIconCoord(5, 2).setItemName("firearrow").setCreativeTab(CreativeTabs.tabCombat);
+	    public static Item firebow = (new MagicBow(IDoutil+36)).setIconCoord(10, 2).setTextureFile(textureItem).setItemName("firebow");
+	    public static Item firearrow = (new Item(IDoutil+37)).setIconCoord(10, 3).setTextureFile(textureItem).setItemName("firearrow").setCreativeTab(CreativeTabs.tabCombat);
 }

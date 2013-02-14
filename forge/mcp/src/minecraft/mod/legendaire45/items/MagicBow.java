@@ -63,26 +63,7 @@ public class MagicBow extends Item
             {
                 var8.setIsCritical(true);
             }
-
-            int var9 = EnchantmentHelper.getEnchantmentLevel(Enchantment.power.effectId, par1ItemStack);
-
-            if (var9 > 0)
-            {
-                var8.setDamage(var8.getDamage() + (double)var9 * 0.5D + 0.5D);
-            }
-
-            int var10 = EnchantmentHelper.getEnchantmentLevel(Enchantment.punch.effectId, par1ItemStack);
-
-            if (var10 > 0)
-            {
-                var8.setKnockbackStrength(var10);
-            }
-
-            if (true)
-            {
-                var8.setFire(100);
-            }
-
+            var8.setFire(100);
             par1ItemStack.damageItem(1, par3EntityPlayer);
             par2World.playSoundAtEntity(par3EntityPlayer, "random.bow", 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + var7 * 0.5F);
 
@@ -123,6 +104,32 @@ public class MagicBow extends Item
         return EnumAction.bow;
     }
 
+    public int getIconIndex(ItemStack stack, int renderPass, EntityPlayer player, ItemStack usingItem, int useRemaining)
+
+    {
+
+
+
+        if (usingItem != null && usingItem.getItem().itemID == mod_retrogame.firebow.itemID)
+
+        {
+
+            int k = usingItem.getMaxItemUseDuration() - useRemaining;
+
+            if (k >= 18) return 73;
+
+            if (k >  13) return 57;
+
+            if (k >   0) return 41;
+
+        }
+
+         
+
+        return getIconIndex(stack);
+
+    }
+    
     /**
      * Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
      */

@@ -335,16 +335,6 @@ public class EntityMagicArrow extends Entity implements IProjectile
                                 var24.setArrowCountInEntity(var24.getArrowCountInEntity() + 1);
                             }
 
-                            if (this.knockbackStrength > 0)
-                            {
-                                var26 = MathHelper.sqrt_double(this.motionX * this.motionX + this.motionZ * this.motionZ);
-
-                                if (var26 > 0.0F)
-                                {
-                                    var4.entityHit.addVelocity(this.motionX * (double)this.knockbackStrength * 0.6000000238418579D / (double)var26, 0.1D, this.motionZ * (double)this.knockbackStrength * 0.6000000238418579D / (double)var26);
-                                }
-                            }
-
                             if (this.shootingEntity != null)
                             {
                                 EnchantmentThorns.func_92044_a(this.shootingEntity, var24, this.rand);
@@ -375,6 +365,7 @@ public class EntityMagicArrow extends Entity implements IProjectile
                 }
                 else
                 {
+                	
                     this.xTile = var4.blockX;
                     this.yTile = var4.blockY;
                     this.zTile = var4.blockZ;
@@ -391,6 +382,57 @@ public class EntityMagicArrow extends Entity implements IProjectile
                     this.inGround = true;
                     this.arrowShake = 7;
                     this.setIsCritical(false);
+                    
+                    int blockX = var4.blockX;
+                    int blockY = var4.blockY;
+                    int blockZ = var4.blockZ;
+
+                    switch (var4.sideHit) {
+
+                    case 0:
+
+                    	--blockY;
+
+                    	break;
+
+                    case 1:
+
+                    	++blockY;
+
+                    	break;
+
+                    case 2:
+
+                    	--blockZ;
+
+                    	break;
+
+                    case 3:
+
+                    	++blockZ;
+
+                    	break;
+
+                    case 4:
+
+                    	--blockX;
+
+                    	break;
+
+                    case 5:
+
+                    	++blockX;
+
+                    }
+
+
+
+                    if (this.worldObj.isAirBlock(blockX, blockY, blockZ)) {
+
+                    	this.worldObj.setBlockWithNotify(blockX, blockY, blockZ, Block.torchWood.blockID);
+                    	this.setDead();
+
+                    }
 
                     if (this.inTile != 0)
                     {
@@ -591,4 +633,5 @@ public class EntityMagicArrow extends Entity implements IProjectile
         byte var1 = this.dataWatcher.getWatchableObjectByte(16);
         return (var1 & 1) != 0;
     }
+   
 }

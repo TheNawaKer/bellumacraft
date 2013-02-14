@@ -929,3 +929,29 @@ Caused by: java.lang.NoSuchMethodError: mod.legendaire45.mod_retrogame.render()V
 2013-02-14 01:49:29 [INFO] Saving chunks for level 'mcpworld'/Overworld
 2013-02-14 01:49:29 [INFO] Saving chunks for level 'mcpworld'/Nether
 2013-02-14 01:49:29 [INFO] Saving chunks for level 'mcpworld'/The End
+2013-02-14 15:08:16 [INFO] Starting minecraft server version 1.4.7
+2013-02-14 15:08:22 [INFO] Loading properties
+2013-02-14 15:08:22 [INFO] Default game type: SURVIVAL
+2013-02-14 15:08:22 [INFO] Generating keypair
+2013-02-14 15:08:25 [INFO] Starting Minecraft server on *:25565
+2013-02-14 15:08:25 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-02-14 15:08:25 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-02-14 15:08:25 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-02-14 15:08:25 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-02-14 15:08:25 [INFO] Preparing level "mcpworld"
+2013-02-14 15:08:26 [INFO] Preparing start region for level 0
+2013-02-14 15:08:27 [INFO] Preparing spawn area: 11%
+2013-02-14 15:08:28 [INFO] Preparing spawn area: 50%
+2013-02-14 15:08:29 [INFO] Preparing spawn area: 98%
+2013-02-14 15:08:29 [INFO] Done (4,120s)! For help, type "help" or "?"
+2013-02-14 15:08:39 [INFO] User Player720 connecting with mods [mod_retrogame]
+2013-02-14 15:08:40 [INFO] Player720[/127.0.0.1:4557] logged in with entity id 303 at (-2.5, 65.62000000476837, 201.5)
+2013-02-14 15:08:51 [INFO] That player cannot be found
+2013-02-14 15:09:55 [INFO] Player720 lost connection: disconnect.quitting
+2013-02-14 15:10:00 [INFO] Stopping the server
+2013-02-14 15:10:00 [INFO] Stopping server
+2013-02-14 15:10:00 [INFO] Saving players
+2013-02-14 15:10:00 [INFO] Saving worlds
+2013-02-14 15:10:00 [INFO] Saving chunks for level 'mcpworld'/Overworld
+2013-02-14 15:10:00 [INFO] Saving chunks for level 'mcpworld'/Nether
+2013-02-14 15:10:00 [INFO] Saving chunks for level 'mcpworld'/The End
