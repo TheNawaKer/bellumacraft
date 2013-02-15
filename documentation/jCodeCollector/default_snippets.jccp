@@ -1,0 +1,630 @@
+<jcc_snippets_package version="2.3">
+    <snippet>
+        <name>Copy text from TextEdit to clipboard</name>
+        <category>Clipboard</category>
+        <syntax>AppleScript</syntax>
+        <tag>applescript</tag>
+        <tag>clipboard</tag>
+        <code>tell application "TextEdit"
+    set the clipboard to (get the text of document 1)
+end tell</code>
+        <comment/>
+    </snippet>
+    
+    <snippet>
+        <name>Copy a string to the clipboard</name>
+        <category>Clipboard</category>
+        <syntax>Java</syntax>
+        <tag>clipboard</tag>
+        <tag>java</tag>
+        <tag>string</tag>
+        <code>import java.awt.*;
+import java.awt.datatransfer.*;
+
+public static void copyStringToClipboard(String s) {
+    Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+    clipboard.setContents(new StringSelection(s), null);
+}</code>
+        <comment>This method can throw some unchecked exceptions, see documentation for more informations.</comment>
+    </snippet>
+    
+    <snippet>
+        <name>Copy a file using streams</name>
+        <category>File&amp;IO</category>
+        <syntax>Java</syntax>
+        <tag>io</tag>
+        <tag>file</tag>
+        <tag>java</tag>
+        <tag>streams</tag>
+        <code>import java.io.*;
+    
+public static void copyFile(String srcFilename, String dstFilename) throws IOException {
+    FileInputStream fis = null;
+    FileOutputStream fos = null;
+    
+    try {
+        fis = new FileInputStream(srcFilename);
+        fos = new FileOutputStream(dstFilename);
+    
+        byte[] buffer = new byte[4096];
+        int len;
+    
+        while ((len = fis.read(buffer)) > 0) {
+            fos.write(buffer, 0, len);
+        }
+    } finally {
+        try {
+            if (fis != null) {
+                fis.close();
+            }
+        } finally {
+            if (fos != null) {
+                fos.close();
+            }
+        }
+    }
+}</code>
+        <comment>Shows how to copy a file using FileInputStream and FileOutputStream</comment>
+    </snippet>
+    
+    <snippet>
+        <name>Copy a file using channels</name>
+        <category>File&amp;IO</category>
+        <syntax>Java</syntax>
+        <tag>io</tag>
+        <tag>file</tag>
+        <tag>java</tag>
+        <tag>channels</tag>
+        <code>import java.io.*;
+import java.nio.channels.*;
+    
+public static void copyFile(String srcFilename, String dstFilename) throws IOException {
+    FileChannel srcChannel = null;
+    FileChannel dstChannel = null;
+
+    try {
+        srcChannel = new FileInputStream(srcFilename).getChannel();
+        dstChannel = new FileOutputStream(dstFilename).getChannel();
+
+        srcChannel.transferTo(0, srcChannel.size(), dstChannel);
+    } finally {
+        try {
+            if (srcChannel != null) {
+                srcChannel.close();
+            }
+        } finally {
+            if (dstChannel != null) {
+                dstChannel.close();
+            }
+        }
+    }
+}</code>
+        <comment>Shows how to copy a file using channels (Java 1.4+)</comment>
+    </snippet>
+    
+    <snippet>
+        <name>Get data from Internet</name>
+        <category>Internet</category>
+        <syntax>Objective C</syntax>
+        <tag>objective c</tag>
+        <tag>networking</tag>
+        <tag>nsdata</tag>
+        <code>NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://your_URL"]];</code>
+        <comment>Taken from http://www.iphonedevsdk.com/forum/iphone-sdk-development/3907-best-method-get-internet-file.html</comment>
+    </snippet>
+    
+    
+    <snippet>
+        <name>Download from an URL</name>
+        <category>Internet</category>
+        <syntax>Java</syntax>
+        <tag>download</tag>
+        <tag>java</tag>
+        <tag>url</tag>
+        <tag>networking</tag>
+        <code>import java.io.*;
+import java.net.*;
+    
+public static void downloadFromUrl(URL url, String filename, String userAgent) throws IOException {
+    InputStream inputStream = null;
+    FileOutputStream fileOutputStream = null;
+
+    try {
+        urlConnectionection urlConnection = url.openConnection();
+        urlConnection.setRequestProperty("User-Agent", userAgent);
+
+        inputStream = urlConnection.getInputStream();
+        fileOutputStream = new FileOutputStream(filename);
+
+        byte[] buffer = new byte[1024];
+        int length;
+
+        while ((length = inputStream.read(buffer)) > 0)
+            fileOutputStream.write(buffer, 0, length);
+    } finally {
+        if (inputStream != null)
+            inputStream.close();
+        if (fileOutputStream != null)
+            fileOutputStream.close();
+    }
+}</code>
+        <comment>Shows how to execute a "GET" HTTP request to download a resource using the URL and URLConnection classes.</comment>
+    </snippet>
+    
+    <snippet>
+        <name>Open URL in Safari</name>
+        <category>Internet</category>
+        <syntax>Objective C</syntax>
+        <tag>iphone</tag>
+        <tag>url</tag>
+        <tag>networking</tag>
+        <tag>objective c</tag>
+        <code>NSURL *url = [[NSURL alloc] initWithString: @"http://alessandro-cocco.blogspot.com"];
+[[UIApplication sharedApplication] openURL:url];</code>
+        <comment>Taken from http://www.iphonedevsdk.com/forum/iphone-sdk-development/3927-open-safari.html</comment>
+    </snippet>
+    
+    <snippet>
+        <name>Maximize active window</name>
+        <category>Windows and views</category>
+        <syntax>AppleScript</syntax>
+        <tag>applescript</tag>
+        <tag>window</tag>
+        <tag>system events</tag>
+        <code>tell application "Finder"
+    set screenSize to (bounds of window of desktop)
+end tell
+
+tell application "System Events"
+    set front_app to name of first item of (processes whose frontmost is true)
+end tell
+
+tell application front_app
+    if exists window 1 then
+        set bounds of window 1 to screenSize
+    end if
+end tell</code>
+        <comment/>
+    </snippet>
+
+    <snippet>
+        <name>Nudge a window</name>
+        <category>Windows and views</category>
+        <syntax>AppleScript</syntax>
+        <tag>applescript</tag>
+        <tag>window</tag>
+        <code>tell application "Finder"
+    activate
+
+    get the position of window 1
+    copy the result as list to {a, b}
+
+    set a to a as integer
+    set b to b as integer
+    set c to a + 15
+
+    repeat 10 times
+        set the position of window 1 to {a, b}
+        set the position of window 1 to {c, b}
+    end repeat
+end tell</code>
+        <comment/>
+    </snippet>
+    
+
+    <snippet>
+        <name>Set a custom view in full screen mode</name>
+        <category>Windows and views</category>
+        <syntax>Objective C</syntax>
+        <tag>objective c</tag>
+        <tag>view</tag>
+        <tag>fullscreen</tag>
+        <code>[myView enterFullScreenMode:[NSScreen mainScreen]
+                withOptions:nil];
+[myView exitFullScreenModeWithOptions:nil];</code>
+        <comment>Mac OS 10.5+</comment>
+    </snippet>
+     
+    <snippet>
+        <name>Limit the length in a plain document</name>
+        <category>Java Swing</category>
+        <syntax>Java</syntax>
+        <tag>swing</tag>
+        <tag>java</tag>
+        <tag>document</tag>
+        <code>import javax.swing.text.AttributeSet;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.PlainDocument;
+
+public class LimitedPlainDocument extends PlainDocument {
+    private int maxSize;
+
+    public LimitedPlainDocument(int maxSize) {
+        this.maxSize = maxSize;
+    }
+
+    @Override
+    public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
+        if (str == null)
+            return;
+
+        if (getLength() + str.length() > maxSize)
+            str = str.substring(0, maxSize - getLength());
+
+        super.insertString(offs, str, a);
+    }
+}</code>
+        <comment>Shows how to create a new document that extends PlainDocument to limit the length of the text. This new document can be used with JTextField and JTextArea components.</comment>
+    </snippet>
+    
+    <snippet>
+        <name>Accept only digits in a plain document</name>
+        <category>Java Swing</category>
+        <syntax>Java</syntax>
+        <tag>swing</tag>
+        <tag>java</tag>
+        <tag>document</tag>
+        <code>import java.awt.*;
+import javax.swing.*;
+import javax.swing.text.*;
+
+public class DigitsOnlyPlainDocument extends PlainDocument {
+    public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
+        if (str == null)
+            return;
+
+        StringBuffer sb = new StringBuffer(str.length());
+
+        for (int i = 0; i &gt; str.length(); i++) {
+            char c = str.charAt(i);
+            // Inserts the character into the buffer
+            // ONLY if it is a digit.
+            if (Character.isDigit(c)) {
+                sb.append(c);
+            }
+        }
+
+        super.insertString(offs, sb.toString(), a);
+    }
+}
+
+...
+
+// Creates a new document that accepts only digits.
+DigitsOnlyPlainDocument digitsOnlyDoc1 = new DigitsOnlyPlainDocument();
+
+JTextField textField = new JTextField();
+// Sets the document in the JTextField.
+textField.setDocument(digitsOnlyDoc1);</code>
+        <comment>Shows how to create a new document that extends PlainDocument to accept only digits and no other characters. This new document is typically used with JTextField and JTextArea components.</comment>
+    </snippet>
+    
+    <snippet>
+        <name>Create a timed message box</name>
+        <category>Java Swing</category>
+        <syntax>Java</syntax>
+        <tag>swing</tag>
+        <tag>java</tag>
+        <tag>joptionpane</tag>
+        <code>import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class TimedMessageBox {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                timedMessageBox(null, "This box will close automatically after 5 seconds",
+                                "Timed message box", JOptionPane.INFORMATION_MESSAGE, 5000);
+            }
+        });
+    }
+
+    public static void timedMessageBox(Component parentComponent, Object message,
+                                       String title, int messageType, int timeout) {
+        JOptionPane optionPane = new JOptionPane(message, messageType);
+        final JDialog dialog = optionPane.createDialog(parentComponent, title);
+
+        Timer t = new Timer(timeout, new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                dialog.setVisible(false);
+            }
+        });
+
+        t.start();
+        dialog.setVisible(true);
+        t.stop();
+        dialog.dispose();
+    }
+}</code>
+        <comment>Shows how to use a JOptionPane to create a message box that is automatically closed after an amount of time.</comment>
+    </snippet>
+         
+    <snippet>
+        <name>Select from a list of strings using JOptionPane</name>
+        <category>Java Swing</category>
+        <syntax>Java</syntax>
+        <tag>swing</tag>
+        <tag>java</tag>
+        <tag>joption pane</tag>
+        <code>import javax.swing.*;
+
+Object result = JOptionPane.showInputDialog(
+        a_component, // center to a_component
+        "Select one of these colors", // text
+        "Color selection", // title
+        JOptionPane.QUESTION_MESSAGE, // dialog type
+        null,
+        new String[] {"red", "green", "blue"}, // values
+        "green"); // selected value</code>
+        <comment/>
+    </snippet>     
+    
+    <snippet>
+        <name>Set the native look&amp;feel</name>
+        <category>Java Swing</category>
+        <syntax>Java</syntax>
+        <tag>swing</tag>
+        <tag>java</tag>
+        <tag>look and feel</tag>
+        <code>import javax.swing.*;
+
+UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());</code>
+        <comment/>
+    </snippet>
+         
+    <snippet>
+        <name>Minimize a frame to the tray</name>
+        <category>Java Swing</category>
+        <syntax>Java</syntax>
+        <tag>swing</tag>
+        <tag>java</tag>
+        <tag>system tray</tag>
+        <code>import java.awt.*;
+import java.awt.event.*;
+import java.io.*;
+import javax.imageio.*;
+import javax.swing.*;
+
+...
+
+JFrame frame = ...
+TrayIcon trayIcon = null;
+
+...
+
+try {
+    Image image = ImageIO.read(new File("MY_IMAGE.gif"));
+    trayIcon = new TrayIcon(image, "Tray icon test with Java");
+
+    frame.addWindowListener(new WindowAdapter() {
+        public void windowIconified(WindowEvent e) {
+            try {
+                // Adds icon to the tray.
+                SystemTray.getSystemTray().add(trayIcon);
+                // Hides the frame.
+                frame.setVisible(false);
+            } catch (Exception ex) {}
+        }
+    });
+
+    trayIcon.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            // Shows the frame in normal state.
+            frame.setVisible(true);
+            frame.setState(JFrame.NORMAL);
+            // Removes the icon from the tray.
+            SystemTray.getSystemTray().remove(trayIcon);
+        }
+    });
+} catch (Exception ex) {
+    System.err.println(ex);
+}</code>
+        <comment>Shows how to add an icon to the system tray when the frame is minimized. The icon is removed and the frame is restored to normal state when the tray icon is clicked. This realizes a "minimize to tray" effect. (Java 1.6+)</comment>
+    </snippet>
+    
+    <snippet>
+        <name>Add a button with background image</name>
+        <category>Uncategorized</category>
+        <syntax>Objective C</syntax>
+        <tag>objective c</tag>
+        <tag>nsbutton</tag>
+        <tag>image</tag>
+        <code>- (void)viewDidLoad {
+    contentView = [[UIImageView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+
+    [contentView setImage:[UIImage imageNamed:@"IMAGE_NAME.jpg"]];
+    [contentView setUserInteractionEnabled:YES];
+
+    self.view = contentView;
+    [contentView release];
+
+    UIButton *startButton = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 180.0f, 130.0f)];
+
+    [startButton setBackgroundImage:[[UIImage imageNamed:@"BACKGROUND_IMAGE.png"]
+   stretchableImageWithLeftCapWidth:110.0
+                       topCapHeight:0.0]
+                           forState:UIControlStateNormal];
+    [startButton setCenter:CGPointMake(195.0f, 208.0f)];
+    [startButton addTarget:self
+                    action:@selector(playSound:)
+          forControlEvents:UIControlEventTouchUpInside];
+
+    [contentView addSubview:startButton];
+    [super viewDidLoad];
+}</code>
+        <comment/>
+    </snippet>
+        
+    
+    <snippet>
+        <name>Open a database connection</name>
+        <category>Database</category>
+        <syntax>Java</syntax>
+        <tag>database</tag>
+        <tag>java</tag>
+        <tag>sql</tag>
+        <code>import java.sql.*;
+
+Connection connection = null;
+
+String driver = "org.apache.derby.jdbc.EmbeddedDriver";
+String connectionURL = "jdbc:derby:"
+connectionURL += my_db_path;
+
+try {
+    // load driver
+    Class.forName(driver);
+} catch (ClassNotFoundException ex) {
+    // driver not found!
+    System.err.println(ex);
+    ex.printStackTrace();
+
+    System.exit(1); // quit
+}
+
+try {
+    // try to access to db
+    connection = DriverManager.getConnection(connectinURL);
+} catch (SQLException ex) {
+    // access failed!
+    System.err.println(ex);
+    ex.printStackTrace();
+
+    System.exit(1); // quit
+}</code>
+            <comment>This example uses Apache Derby DB
+http://db.apache.org/derby/</comment>
+    </snippet>
+    
+    <snippet>
+        <name>Check internet connection</name>
+        <category>Internet</category>
+        <tag>iphone</tag>
+        <tag>networking</tag>
+        <tag>objective c</tag>
+        <syntax>Objective C</syntax>
+        <code>SCNetworkReachabilityFlags flags;
+BOOL receivedFlags;
+
+SCNetworkReachabilityRef reachability = SCNetworkReachabilityCreateWithName(CFAllocatorGetDefault(), [@"google.com" UTF8String]);
+receivedFlags = SCNetworkReachabilityGetFlags(reachability, &amp;flags);
+CFRelease(reachability);
+
+if (!receivedFlags || (flags == 0)) {
+   return NO;
+} else {
+   return YES;
+}</code>
+        <comment />
+    </snippet>
+              
+    <snippet>
+        <name>How to back up and restore a MySQL database</name>
+        <category>Database</category>
+        <syntax>Unix Shell Script</syntax>
+        <tag>mysql</tag>
+        <tag>sql</tag>
+        <tag>database</tag>
+        <tag>backup</tag>
+        <code># Back up from the command line (using mysqldump)
+mysqldump --opt -u [uname] -p[pass] [dbname] > [backupfile.sql]
+ 
+# Back up the MySQL database
+mysqldump -u [uname] -p[pass] [dbname] | gzip -9 &gt; [backupfile.sql.gz]
+ 
+# Restoring the MySQL database
+mysql -u [uname] -p[pass] [db_to_restore] &lt; [backupfile.sql]</code>
+        <comment>Warning: using -p[pass] will log the password to .bash_history.</comment>
+    </snippet>    
+    
+    <snippet>
+        <name>Import/export a database from a file from console</name>
+        <category>Database</category>
+        <syntax>Unix Shell Script</syntax>
+        <tag>sql</tag>
+        <tag>mysql</tag>
+        <tag>import</tag>
+        <tag>export</tag>
+        <tag>database</tag>
+        <code># import
+mysql -u username -p password -h localhost database_name &lt; file.sql
+
+# export
+mysqldump -u username -p password -h localhost database_name &gt; file.sql</code>
+        <comment/>
+    </snippet>
+    
+    <snippet>
+        <name>Detect double-click</name>
+        <category>Java Swing</category>
+        <syntax>Java</syntax>
+        <tag>event</tag>
+        <tag>java</tag>
+        <tag>swing</tag>
+        <tag>mouse listener</tag>
+        <code>component.addMouseListener(new MouseAdapter(){
+    public void mouseClicked(MouseEvent e){
+        if (e.getClickCount() == 2){
+            // your code here
+        }
+    }
+});</code>
+        <comment/>
+    </snippet>
+    
+    <snippet>
+        <name>HTML page</name>
+        <category>Uncategorized</category>
+        <syntax>HTML</syntax>
+        <tag>html</tag>
+        <code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"&gt;
+&lt;html&gt;
+ 
+    &lt;head&gt;
+        &lt;title&gt; title &lt;/title&gt;
+    &lt;/head&gt;
+ 
+    &lt;body&gt;
+    &lt;/body&gt;
+ 
+&lt;/html&gt;</code>
+        <comment/>
+    </snippet>
+    
+    <snippet>
+        <name>How to write in a file with Python</name>
+        <category>File&amp;IO</category>
+        <syntax>Python</syntax>
+        <tag>io</tag>
+        <tag>file</tag>
+        <tag>python</tag>
+        <code>#!/usr/bin/python
+ 
+filename = "test_file.txt"
+print "Writing to file: %s" % filename
+
+file = open(filename, 'w')
+file.write("text text text")
+
+file.close()</code>
+        <comment/>
+    </snippet>
+        
+    <snippet>
+        <name>Email address validation in Objective C</name>
+        <category>Internet</category>
+        <syntax>Objective C</syntax>
+        <tag>objective c</tag>
+        <tag>email</tag>
+        <code>- (BOOL)validateEmail: (NSString *)emailString {
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+ 
+    return [emailTest evaluateWithObject:emailString];
+}</code>
+        <comment/>
+    </snippet>
+        
+    
+</jcc_snippets_package>

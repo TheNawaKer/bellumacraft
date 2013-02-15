@@ -1,0 +1,5 @@
+Fri Feb 15 12:19:11 CET 2013:Backup started for database located at /mnt/home/furet/.jCodeCollector/jCodeCollector/JCODECOLLECTOR_DB to /mnt/home/furet/Project/bellumacraft/documentation/jCodeCollector/JCODECOLLECTOR_DB.
+Fri Feb 15 12:19:11 CET 2013:Backup of data segment to /mnt/home/furet/Project/bellumacraft/documentation/jCodeCollector/JCODECOLLECTOR_DB/seg0 completed. 
+Fri Feb 15 12:19:11 CET 2013:copied log directory from /mnt/home/furet/.jCodeCollector/jCodeCollector/JCODECOLLECTOR_DB/log to /mnt/home/furet/Project/bellumacraft/documentation/jCodeCollector/JCODECOLLECTOR_DB/log
+Fri Feb 15 12:19:11 CET 2013:Backup completed, log instant at (1,102626) 
+
