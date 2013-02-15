@@ -27,6 +27,11 @@ public class BlockCropBeer extends BlockFlower
     {
         return var1 == Block.tilledField.blockID;
     }
+    
+    public int getMobilityFlag()
+    {
+        return 1;
+    }
 
     /**
      * Ticks the block if it's been scheduled

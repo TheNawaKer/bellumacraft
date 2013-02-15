@@ -27,6 +27,11 @@ public class BlockBeer extends BlockContainer
         super(par1, par2, material);
     }
     
+    public int getMobilityFlag()
+    {
+        return 1;
+    }
+    
     
     
     public int idDropped(int var1, Random var2)

@@ -23,6 +23,11 @@ public class BlockStairLog extends BlockStairs
             return var0 & 7;
         }
         
+        public int getMobilityFlag()
+        {
+            return 0;
+        }
+        
         public int getBlockTextureFromSideAndMetadata(int var1, int var2)
         {
             int var3 = getOrientation(var2);
