@@ -5,7 +5,6 @@ import static cpw.mods.fml.relauncher.Side.CLIENT;
 import java.util.Map;
 
 import mod.legendaire45.blocks.BlockBeer;
-import mod.legendaire45.blocks.BlockCarottes;
 import mod.legendaire45.blocks.BlockCropBeer;
 import mod.legendaire45.blocks.BlockStairLog;
 import mod.legendaire45.blocks.BlockTrampoline;
@@ -92,7 +91,6 @@ public class mod_retrogame
 			NetworkRegistry.instance().registerGuiHandler(this, guiHandler);
 			/**Enregistre le bloc**/
 
-			GameRegistry.registerBlock(carottes);
 			GameRegistry.registerBlock(beer);
 			GameRegistry.registerBlock(blockTrampoline);
 			GameRegistry.registerBlock(cropBeer);
@@ -129,8 +127,7 @@ public class mod_retrogame
 			LanguageRegistry.addName(lunette1, "Lunettes Noir");
 			LanguageRegistry.addName(lunette2, "Lunettes Blanche");
 			LanguageRegistry.addName(lunette3, "Lunettes Violette");
-			
-			LanguageRegistry.addName(carottes, "Bloc Carottes");
+
 			LanguageRegistry.addName(beer, "Distributeur");
 			LanguageRegistry.addName(blockTrampoline, "Bloc de Slime");
 			LanguageRegistry.addName(cropBeer, "Plante de Houblon");
@@ -160,9 +157,8 @@ public class mod_retrogame
 		public static EnumArmorMaterial rubyarmor = EnumHelper.addArmorMaterial("RUBY", 29, new int[] {1, 2, 3, 4}, 9);
 		public static EnumArmorMaterial lunette = EnumHelper.addArmorMaterial("PLASTIC", 29, new int[] {1, 2, 3, 4}, 9);
 		
-		public static final Block carottes = (new BlockCarottes(IDblock, 0, Material.ground)).setTextureFile(textureBlock).setBlockName("Carottes Block").setCreativeTab(CreativeTabs.tabBlock);
-		public static final Block beer = (new BlockBeer(IDblock+1, 37, Material.wood)).setTextureFile(textureItem).setBlockName("Distributeur2").setCreativeTab(CreativeTabs.tabBlock);
-		public static final Block blockTrampoline = new BlockTrampoline(IDblock+2, 1, Material.cake).setBlockName("Bloc de Slime").setTextureFile(textureBlock).setHardness(.5F).setStepSound(Block.soundSnowFootstep).setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block beer = (new BlockBeer(IDblock+1, 37, Material.grass)).setTextureFile(textureItem).setBlockName("Distributeur2").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block blockTrampoline = new BlockTrampoline(IDblock+2, 1, Material.grass).setBlockName("Bloc de Slime").setTextureFile(textureBlock).setHardness(.5F).setStepSound(Block.soundSnowFootstep).setCreativeTab(CreativeTabs.tabBlock);
 		public static final Block cropBeer = (new BlockCropBeer(IDblock+3)).setTextureFile(textureBlock).setBlockName("cropBeer").setStepSound(Block.soundGrassFootstep);
 		public static final Block stair = (new BlockStairLog(IDblock+4, net.minecraft.block.Block.wood, 10)).setTextureFile(textureBlock).setBlockName("Escalier en buche").setCreativeTab(CreativeTabs.tabBlock);
 		

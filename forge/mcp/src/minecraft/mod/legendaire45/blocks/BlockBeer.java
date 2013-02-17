@@ -29,7 +29,7 @@ public class BlockBeer extends BlockContainer
     
     public int getMobilityFlag()
     {
-        return 1;
+        return 0;
     }
     
     
