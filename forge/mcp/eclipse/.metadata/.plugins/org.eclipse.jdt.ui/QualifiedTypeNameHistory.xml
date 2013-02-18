@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.client.gui.inventory.GuiContainer"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.player.InventoryPlayer"/>
 <fullyQualifiedTypeName name="net.minecraft.inventory.Slot"/>
 <fullyQualifiedTypeName name="Bellumacraft.beer.BeerRecipe"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemFood"/>
@@ -38,14 +36,12 @@
 <fullyQualifiedTypeName name="mod.legendaire45.blocks.BlockStairLog"/>
 <fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
 <fullyQualifiedTypeName name="net.minecraft.block.BlockStairs"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="net.minecraft.creativetab.CreativeTabs"/>
 <fullyQualifiedTypeName name="mod.legendaire45.tile.TileEntityTrampolineServer"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
 <fullyQualifiedTypeName name="net.minecraft.item.EnumAction"/>
 <fullyQualifiedTypeName name="mod.legendaire45.items.MagicBow"/>
-<fullyQualifiedTypeName name="mod.legendaire45.mod_retrogame"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.client.registry.RenderingRegistry"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.projectile.EntityArrow"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="java.net.URISyntaxException"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="mod.legendaire45.client.PistonConfiguration"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer"/>
+<fullyQualifiedTypeName name="mod.legendaire45.mod_retrogame"/>
 </qualifiedTypeNameHistroy>

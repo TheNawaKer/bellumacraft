@@ -2,6 +2,8 @@ package net.minecraft.client.renderer.entity;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import mod.legendaire45.mod_retrogame;
+import mod.legendaire45.render.ItemToolEnum;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
@@ -350,7 +352,25 @@ public class RenderPlayer extends RenderLiving
             this.modelBipedMain.renderCloak(0.0625F);
             GL11.glPopMatrix();
         }
-
+        if(par1EntityPlayer.inventory.mainInventory[0] != null)
+        {
+	        if(par1EntityPlayer.inventory.getCurrentItem() != par1EntityPlayer.inventory.mainInventory[0])
+	        {
+		        ItemStack var41 = par1EntityPlayer.inventory.mainInventory[0];
+		        if(ItemToolEnum.isTool(var41))
+		        {
+			        float var40 = 0.625F;
+			        GL11.glPushMatrix();
+			        GL11.glTranslatef(0.1875F, 0.0F, 0.1875F);
+			        GL11.glScalef(var40, -var40, var40);
+			        GL11.glRotatef(-180.0F, 1.0F, 0.0F, 0.0F);//Axe de Rotation X
+			        GL11.glRotatef(310.0F, 0.0F, 1.0F, 0.0F);//Axe Y
+			        GL11.glRotatef(0.0F, 0.0F, 0.0F, 1.0F);//Axe Z
+			        this.renderManager.itemRenderer.renderItem(par1EntityPlayer, var41, 0);
+			        GL11.glPopMatrix();
+		        }
+	        }
+        }
         ItemStack var21 = par1EntityPlayer.inventory.getCurrentItem();
 
         if (var21 != null)
@@ -450,7 +470,6 @@ public class RenderPlayer extends RenderLiving
                 GL11.glColor4f(var8, var28, var10, 1.0F);
                 this.renderManager.itemRenderer.renderItem(par1EntityPlayer, var21, 0);
             }
-
             GL11.glPopMatrix();
         }
     }

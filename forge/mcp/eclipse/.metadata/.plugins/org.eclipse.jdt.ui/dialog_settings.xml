@@ -18,44 +18,8 @@
 	<section name="JavaSearchPage">
 		<item value="false" key="CASE_SENSITIVE"/>
 		<item value="11" key="INCLUDE_MASK"/>
-		<item value="8" key="HISTORY_SIZE"/>
+		<item value="9" key="HISTORY_SIZE"/>
 		<section name="HISTORY2">
-			<item value="11" key="includeMask"/>
-			<item value="2" key="limitTo"/>
-			<item value="0" key="scope"/>
-			<item value="" key="javaElement"/>
-			<item value="version" key="pattern"/>
-			<item value="0" key="matchLocations"/>
-			<item value="1" key="searchFor"/>
-			<item value="false" key="isCaseSensitive"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY3">
-			<item value="11" key="includeMask"/>
-			<item value="2" key="limitTo"/>
-			<item value="0" key="scope"/>
-			<item value="" key="javaElement"/>
-			<item value="url" key="pattern"/>
-			<item value="0" key="matchLocations"/>
-			<item value="1" key="searchFor"/>
-			<item value="false" key="isCaseSensitive"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY0">
-			<item value="11" key="includeMask"/>
-			<item value="2" key="limitTo"/>
-			<item value="0" key="scope"/>
-			<item value="" key="javaElement"/>
-			<item value="getConfig" key="pattern"/>
-			<item value="0" key="matchLocations"/>
-			<item value="1" key="searchFor"/>
-			<item value="false" key="isCaseSensitive"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY1">
 			<item value="11" key="includeMask"/>
 			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
@@ -67,31 +31,43 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY5">
+		<section name="HISTORY3">
 			<item value="11" key="includeMask"/>
-			<item value="3" key="limitTo"/>
+			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
 			<item value="" key="javaElement"/>
-			<item value="AxisAlignedBB" key="pattern"/>
+			<item value="version" key="pattern"/>
 			<item value="0" key="matchLocations"/>
-			<item value="0" key="searchFor"/>
+			<item value="1" key="searchFor"/>
 			<item value="false" key="isCaseSensitive"/>
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY4">
+		<section name="HISTORY0">
 			<item value="11" key="includeMask"/>
-			<item value="3" key="limitTo"/>
+			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
 			<item value="" key="javaElement"/>
-			<item value="folderName" key="pattern"/>
+			<item value="cloak" key="pattern"/>
 			<item value="0" key="matchLocations"/>
-			<item value="0" key="searchFor"/>
+			<item value="1" key="searchFor"/>
 			<item value="false" key="isCaseSensitive"/>
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY7">
+		<section name="HISTORY1">
+			<item value="11" key="includeMask"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="getConfig" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="1" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY8">
 			<item value="11" key="includeMask"/>
 			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
@@ -103,7 +79,31 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY6">
+		<section name="HISTORY5">
+			<item value="11" key="includeMask"/>
+			<item value="3" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="folderName" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY4">
+			<item value="11" key="includeMask"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="url" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="1" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY7">
 			<item value="11" key="includeMask"/>
 			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
@@ -111,6 +111,18 @@
 			<item value="updateTick" key="pattern"/>
 			<item value="0" key="matchLocations"/>
 			<item value="1" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY6">
+			<item value="11" key="includeMask"/>
+			<item value="3" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="AxisAlignedBB" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
 			<item value="false" key="isCaseSensitive"/>
 			<list key="workingSets">
 			</list>
@@ -125,5 +137,11 @@
 	</section>
 	<section name="NewPackageWizardPage">
 		<item value="false" key="create_package_info_java"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
+		<item value="350" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH"/>
+		<item value="300" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT"/>
+		<item value="false" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
+		<item value="true" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE"/>
 	</section>
 </section>

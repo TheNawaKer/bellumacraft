@@ -3,6 +3,9 @@ package net.minecraft.block;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import java.util.List;
+
+import mod.legendaire45.mod_retrogame;
+import mod.legendaire45.client.PistonConfiguration;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
@@ -352,6 +355,10 @@ public class BlockPistonBase extends Block
      */
     private static boolean canPushBlock(int par0, World par1World, int par2, int par3, int par4, boolean par5)
     {
+    	if(PistonConfiguration.allowed(par0) != 2)
+    	{
+    		return PistonConfiguration.allowed(par0) > 0 ? true : false ;
+    	}
         if (par0 == Block.obsidian.blockID)
         {
             return false;
