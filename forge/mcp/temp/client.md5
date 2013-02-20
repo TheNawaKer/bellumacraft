@@ -1399,7 +1399,7 @@ net/minecraft/world/ServerBlockEvent 1a1798432a00e881db9aefedbc0eab5a
 net/minecraft/world/ServerBlockEventList 7aef487d478e0c21456e6d028d899b4b
 net/minecraft/world/SpawnerAnimals a6a1abfdd820285ab43af21ce6411765
 net/minecraft/world/Teleporter 05d3f7821302de1a6cb824658bf25031
-net/minecraft/world/World 136bee102048ecefde53ff896266ca43
+net/minecraft/world/World 0749c42ae031a20fcd023fdf5ada38f4
 net/minecraft/world/WorldManager 615bc962000b879fd6dc1a8b85bfe6dc
 net/minecraft/world/WorldProvider 5c7e6a2426a1b43862b03384f9488765
 net/minecraft/world/WorldProviderEnd e65e2dd89e5c8e07225fca6027c1a70a

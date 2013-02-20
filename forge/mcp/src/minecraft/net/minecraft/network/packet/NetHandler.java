@@ -1,5 +1,7 @@
 package net.minecraft.network.packet;
 
+import mod.legendaire45.network.packet.Packet230Sword;
+import mod.legendaire45.network.packet.Packet94PlayerInfo;
 import net.minecraft.entity.player.EntityPlayer;
 
 public abstract class NetHandler
@@ -410,6 +412,11 @@ public abstract class NetHandler
     {
         this.unexpectedPacket(par1Packet56MapChunks);
     }
+    
+    public void handleNamedEntitySpawn(Packet94PlayerInfo par1Packet94PlayerInfo)
+    {
+    	this.unexpectedPacket(par1Packet94PlayerInfo);
+    }
 
     /**
      * If this returns false, all packets will be queued for the main thread to handle, even if they would otherwise be
@@ -424,4 +431,9 @@ public abstract class NetHandler
     public abstract void handleVanilla250Packet(Packet250CustomPayload payload);
 
     public abstract EntityPlayer getPlayer();
+
+    public void handleSword(Packet230Sword packet)
+    {
+    	this.unexpectedPacket(packet);
+    }
 }

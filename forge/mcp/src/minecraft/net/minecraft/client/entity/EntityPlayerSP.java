@@ -1,7 +1,5 @@
 package net.minecraft.client.entity;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiCommandBlock;
 import net.minecraft.client.gui.GuiEnchantment;
@@ -44,7 +42,6 @@ import net.minecraft.util.Session;
 import net.minecraft.util.StringUtils;
 import net.minecraft.world.World;
 
-@SideOnly(Side.CLIENT)
 public class EntityPlayerSP extends EntityPlayer
 {
     public MovementInput movementInput;
@@ -81,7 +78,7 @@ public class EntityPlayerSP extends EntityPlayer
 
         if (par3Session != null && par3Session.username != null && par3Session.username.length() > 0)
         {
-            this.skinUrl = "http://skins.minecraft.net/MinecraftSkins/" + StringUtils.stripControlCodes(par3Session.username) + ".png";
+            this.skinUrl = "http://minecrack.fr.nf/mc/skinsminecrackd/" + StringUtils.stripControlCodes(par3Session.username) + ".png";
         }
 
         this.username = par3Session.username;
@@ -321,7 +318,7 @@ public class EntityPlayerSP extends EntityPlayer
 
     public void updateCloak()
     {
-        this.playerCloakUrl = "http://skins.minecraft.net/MinecraftCloaks/" + StringUtils.stripControlCodes(this.username) + ".png";
+        this.playerCloakUrl = "http://minecrack.fr.nf/mc/cloaksminecrackd/" + StringUtils.stripControlCodes(this.username) + ".png";
         this.cloakUrl = this.playerCloakUrl;
     }
 
@@ -632,7 +629,7 @@ public class EntityPlayerSP extends EntityPlayer
     }
 
     /**
-     * Return the coordinates for this player as ChunkCoordinates.
+     * Return the position for this command sender.
      */
     public ChunkCoordinates getPlayerCoordinates()
     {

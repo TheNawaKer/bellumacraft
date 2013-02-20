@@ -296,6 +296,7 @@
 # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71663_y = field_71663_y to y fixed by Script
 # Trying to remap org/bouncycastle/asn1/bc/BCObjectIdentifiers/field_71603_i = field_71603_i to i fixed by Script
 # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71632_Q = field_71632_Q to Q fixed by Script
+# Warning: field net/minecraft/client/renderer/ImageBufferDownload/imageWidth not found in JAR
 # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74853_f = field_74853_f to f fixed by Script
 # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71667_by = field_71667_by to by fixed by Script
 # Trying to remap org/bouncycastle/crypto/BufferedBlockCipher/field_71801_a = field_71801_a to a fixed by Script
@@ -410,6 +411,7 @@
 # Trying to remap org/bouncycastle/crypto/io/CipherInputStream/field_74858_c = field_74858_c to c fixed by Script
 # Trying to remap org/bouncycastle/asn1/DERObjectIdentifier/field_71611_a = field_71611_a to a fixed by Script
 # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71740_ae = field_71740_ae to ae fixed by Script
+# Warning: field net/minecraft/client/renderer/ImageBufferDownload/imageHeight not found in JAR
 # Warning: field argo/jdom/JsonListenerToJdomAdapter_Field/listenerToJdomAdapter not found in JAR
 # Trying to remap org/bouncycastle/crypto/engines/AESFastEngine/field_71828_b = field_71828_b to b fixed by Script
 # Trying to remap org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers/field_71727_al = field_71727_al to al fixed by Script
@@ -5588,6 +5590,7 @@ MD: net/minecraft/client/renderer/entity/RenderWolf/shouldRenderPass (Lnet/minec
 CL: net/minecraft/client/renderer/entity/RenderPlayer bco
 FD: net/minecraft/client/renderer/entity/RenderPlayer/modelArmor bco/g
 FD: net/minecraft/client/renderer/entity/RenderPlayer/modelBipedMain bco/a
+FD: net/minecraft/client/renderer/entity/RenderPlayer/mc bco/mc
 FD: net/minecraft/client/renderer/entity/RenderPlayer/NAME_TAG_RANGE bco/NAME_TAG_RANGE
 FD: net/minecraft/client/renderer/entity/RenderPlayer/NAME_TAG_RANGE_SNEAK bco/NAME_TAG_RANGE_SNEAK
 FD: net/minecraft/client/renderer/entity/RenderPlayer/modelArmorChestplate bco/f
@@ -5987,9 +5990,9 @@ FD: net/minecraft/client/renderer/CallableParticlePositionInfo/field_85099_b baw
 MD: net/minecraft/client/renderer/CallableParticlePositionInfo/call ()Ljava/lang/Object; baw/call ()Ljava/lang/Object;
 MD: net/minecraft/client/renderer/CallableParticlePositionInfo/func_85097_a ()Ljava/lang/String; baw/a ()Ljava/lang/String;
 CL: net/minecraft/client/renderer/ImageBufferDownload bax
-FD: net/minecraft/client/renderer/ImageBufferDownload/imageHeight bax/c
 FD: net/minecraft/client/renderer/ImageBufferDownload/imageData bax/a
-FD: net/minecraft/client/renderer/ImageBufferDownload/imageWidth bax/b
+FD: net/minecraft/client/renderer/ImageBufferDownload/h23 bax/h23
+FD: net/minecraft/client/renderer/ImageBufferDownload/w23 bax/w23
 MD: net/minecraft/client/renderer/ImageBufferDownload/setAreaTransparent (IIII)V bax/a (IIII)V
 MD: net/minecraft/client/renderer/ImageBufferDownload/parseUserSkin (Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage; bax/a (Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage;
 MD: net/minecraft/client/renderer/ImageBufferDownload/setAreaOpaque (IIII)V bax/b (IIII)V
@@ -7554,6 +7557,7 @@ MD: net/minecraft/entity/player/InventoryPlayer/writeToNBT (Lnet/minecraft/nbt/N
 MD: net/minecraft/entity/player/InventoryPlayer/armorItemInSlot (I)Lnet/minecraft/item/ItemStack; qw/f (I)Lur;
 MD: net/minecraft/entity/player/InventoryPlayer/getCurrentItem ()Lnet/minecraft/item/ItemStack; qw/g ()Lur;
 MD: net/minecraft/entity/player/InventoryPlayer/getInventorySlotContainItemAndDamage (II)I qw/d (II)I
+MD: net/minecraft/entity/player/InventoryPlayer/getSlot ()Lnet/minecraft/item/ItemStack; qw/getSlot ()Lur;
 MD: net/minecraft/entity/player/InventoryPlayer/consumeInventoryItem (I)Z qw/d (I)Z
 MD: net/minecraft/entity/player/InventoryPlayer/storePartialItemStack (Lnet/minecraft/item/ItemStack;)I qw/e (Lur;)I
 MD: net/minecraft/entity/player/InventoryPlayer/openChest ()V qw/l_ ()V

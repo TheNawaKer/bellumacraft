@@ -20,6 +20,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import javax.crypto.SecretKey;
+
+import mod.legendaire45.network.packet.Packet230Sword;
+import mod.legendaire45.network.packet.Packet94PlayerInfo;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityClientPlayerMP;
 import net.minecraft.client.entity.EntityOtherPlayerMP;
@@ -1523,6 +1526,48 @@ public class NetClientHandler extends NetHandler
                 var7.printStackTrace();
             }
         }
+    }
+    
+    public void handleNamedEntitySpawn(Packet94PlayerInfo packet)
+    {
+    	handleNamedEntitySpawn((Packet20NamedEntitySpawn)packet); //On crée notre entité comme avant
+
+    	EntityOtherPlayerMP var10 = (EntityOtherPlayerMP)this.worldClient.getEntityByID(packet.entityId); // On la récupère une fois créée
+    	var10.select = packet.itemSelect;
+    	var10.tool = packet.item;
+    }
+    
+    public void handleSword(Packet230Sword packet)
+    {
+    	EntityOtherPlayerMP player; //Le joueur qui a envoyé le packet
+    	EntityClientPlayerMP you;
+    	System.out.println("Lancement ...");
+    	System.out.println(packet.playerId);
+    	if (this.mc.thePlayer.entityId != packet.playerId) // On vérifie que ce n'est pas nous
+    	{
+    		player = (EntityOtherPlayerMP)(this.worldClient.getEntityByID(packet.playerId)); // On récupère l'entity du joueur
+    		if (player != null) //Si on a quelque chose, on met les infos à jour
+    		{
+    			System.out.println("Multi");
+    			System.out.println(player.inventory.currentItem);
+    			player.select = player.inventory.currentItem;
+    			player.tool = player.inventory.mainInventory[0];
+    		}
+
+    	}
+    	else
+    	{
+    		you = (EntityClientPlayerMP)(this.worldClient.getEntityByID(packet.playerId));
+    		if (you != null) //Si on a quelque chose, on met les infos à jour
+    		{
+    			System.out.println("Solo");
+    			System.out.println(you.inventory.currentItem);
+    			you.select = you.inventory.currentItem;
+    			you.tool = you.inventory.mainInventory[0];
+    		}
+
+    	}
+
     }
 
     /**

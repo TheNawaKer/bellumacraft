@@ -6,7 +6,7 @@
 #
 # RetroGuard MCP v3.6.5
 #
-# Logfile created on Mon Feb 18 20:29:22 CET 2013
+# Logfile created on Wed Feb 20 14:59:09 CET 2013
 #
 # Jar file to be obfuscated:           client_recomp.jar
 # Target Jar file for obfuscated code: client_reobf.jar
@@ -54,8 +54,8 @@
 #      Your class net/minecraftforge/event/ASMEventHandler$ASMClassLoader calls the java/lang/ClassLoader method defineClass(Ljava/lang/String;[BII)Ljava/lang/Class;
 #      Your class net/minecraftforge/event/EventBus calls the java/lang/Class method getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 #
-# Memory in use after class data structure built: 24969032 bytes
-# Total memory available                        : 274006016 bytes
+# Memory in use after class data structure built: 25063296 bytes
+# Total memory available                        : 274923520 bytes
 #
 #
 # Names reserved from obfuscation:
@@ -7895,6 +7895,7 @@
 .class_map net/minecraft/client/renderer/entity/RenderPlayer bco
 .field_map net/minecraft/client/renderer/entity/RenderPlayer/modelArmor g
 .field_map net/minecraft/client/renderer/entity/RenderPlayer/modelBipedMain a
+.field_map net/minecraft/client/renderer/entity/RenderPlayer/mc mc
 .field_map net/minecraft/client/renderer/entity/RenderPlayer/NAME_TAG_RANGE NAME_TAG_RANGE
 .field_map net/minecraft/client/renderer/entity/RenderPlayer/NAME_TAG_RANGE_SNEAK NAME_TAG_RANGE_SNEAK
 .field_map net/minecraft/client/renderer/entity/RenderPlayer/modelArmorChestplate f
@@ -8302,9 +8303,9 @@
 .method_map net/minecraft/client/renderer/CallableParticlePositionInfo/call ()Ljava/lang/Object; call
 .method_map net/minecraft/client/renderer/CallableParticlePositionInfo/func_85097_a ()Ljava/lang/String; a
 .class_map net/minecraft/client/renderer/ImageBufferDownload bax
-.field_map net/minecraft/client/renderer/ImageBufferDownload/imageHeight c
 .field_map net/minecraft/client/renderer/ImageBufferDownload/imageData a
-.field_map net/minecraft/client/renderer/ImageBufferDownload/imageWidth b
+.field_map net/minecraft/client/renderer/ImageBufferDownload/h23 h23
+.field_map net/minecraft/client/renderer/ImageBufferDownload/w23 w23
 .method_map net/minecraft/client/renderer/ImageBufferDownload/setAreaTransparent (IIII)V a
 .method_map net/minecraft/client/renderer/ImageBufferDownload/parseUserSkin (Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage; a
 .method_map net/minecraft/client/renderer/ImageBufferDownload/setAreaOpaque (IIII)V b
@@ -9864,6 +9865,7 @@
 .method_map net/minecraft/entity/player/InventoryPlayer/armorItemInSlot (I)Lnet/minecraft/item/ItemStack; f
 .method_map net/minecraft/entity/player/InventoryPlayer/getCurrentItem ()Lnet/minecraft/item/ItemStack; g
 .method_map net/minecraft/entity/player/InventoryPlayer/getInventorySlotContainItemAndDamage (II)I d
+.method_map net/minecraft/entity/player/InventoryPlayer/getSlot ()Lnet/minecraft/item/ItemStack; getSlot
 .method_map net/minecraft/entity/player/InventoryPlayer/consumeInventoryItem (I)Z d
 .method_map net/minecraft/entity/player/InventoryPlayer/storePartialItemStack (Lnet/minecraft/item/ItemStack;)I e
 .method_map net/minecraft/entity/player/InventoryPlayer/openChest ()V l_

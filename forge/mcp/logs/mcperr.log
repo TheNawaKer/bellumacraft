@@ -208,3 +208,26 @@ CalledProcessError: Command '"C:\Program Files\Java\jdk1.7.0_06\bin\java" -Xincg
 11:38:47 - !! Can not find server md5s !!
 20:29:08 - !! Can not find server sources, try decompiling !!
 20:29:46 - !! Can not find server md5s !!
+11:55:53 - !! Can not find server sources, try decompiling !!
+11:56:21 - !! Can not find server md5s !!
+12:24:43 - !! Can not find server sources, try decompiling !!
+12:25:06 - !! Can not find server md5s !!
+13:07:50 - !! Can not find server sources, try decompiling !!
+13:07:53 - FATAL ERROR
+Traceback (most recent call last):
+  File "runtime\reobfuscate.py", line 51, in reobfuscate
+    reobfuscate_side(commands, CLIENT, reobf_all=reobf_all)
+  File "D:\minecraft modding\bellumacraft\forge\mcp\runtime\mcp.py", line 152, in reobfuscate_side
+    commands.cleanreobfdir(side)
+  File "D:\minecraft modding\bellumacraft\forge\mcp\runtime\commands.py", line 880, in cleanreobfdir
+    os.makedirs(outpathlk[side])
+  File "os.pyc", line 157, in makedirs
+WindowsError: [Error 5] Accès refus: 'reobf\\minecraft'
+13:08:51 - !! Can not find server sources, try decompiling !!
+13:09:15 - !! Can not find server md5s !!
+14:46:15 - !! Can not find server sources, try decompiling !!
+14:46:51 - !! Can not find server md5s !!
+11:21:09 - !! Can not find server sources, try decompiling !!
+12:01:17 - !! renaming disabled !!
+14:59:01 - !! Can not find server sources, try decompiling !!
+14:59:29 - !! Can not find server md5s !!

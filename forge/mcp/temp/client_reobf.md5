@@ -461,8 +461,8 @@ net/minecraft/client/audio/SoundManager 6611f298fc1eb1b42e818633032fc0f9
 net/minecraft/client/audio/SoundPool 0d9c652aee3a4fb111505fba00849702
 net/minecraft/client/audio/SoundPoolEntry 1a1cf410465b4935fbf495b7a4fbf8dd
 net/minecraft/client/entity/EntityClientPlayerMP db7d21e7efb8a31534f9151a7e1803df
-net/minecraft/client/entity/EntityOtherPlayerMP 85cb6a1c6129fe0194cca5f4b47faf76
-net/minecraft/client/entity/EntityPlayerSP 5eaa35d812e789f49ff352881d9d48fa
+net/minecraft/client/entity/EntityOtherPlayerMP caea4f96f3668f8c3f5cc450bcfec7ee
+net/minecraft/client/entity/EntityPlayerSP 3302fd534956fcd21351ac359b051a96
 net/minecraft/client/gui/ChatClickData eba2fe222a9de4acd61fa1f9d1affbb2
 net/minecraft/client/gui/ChatLine 13a1364aafbe8e5213e17773b25f3bbc
 net/minecraft/client/gui/FontRenderer 03b7618e0fb915b603945cbe56e67aab
@@ -653,7 +653,7 @@ net/minecraft/client/renderer/EntityRenderer 7dc387f3b8da3878ea7d420ad041c662
 net/minecraft/client/renderer/EntitySorter d28dbcbf3472075f2932c3521d75512e
 net/minecraft/client/renderer/GLAllocation 99100b79e9d7f66a75e16c617014b96c
 net/minecraft/client/renderer/IImageBuffer 6a6803ba8cb3de65d2724f00a69ae772
-net/minecraft/client/renderer/ImageBufferDownload a7838ef8b4430216c550385abb9aff50
+net/minecraft/client/renderer/ImageBufferDownload 1ebc306f303618f6cd9dd039cc27ffaf
 net/minecraft/client/renderer/InventoryEffectRenderer 4f15253030272be616458d3f2cc9a68d
 net/minecraft/client/renderer/ItemRenderer cc8aceff7b18aa64235cad6a596a58be
 net/minecraft/client/renderer/OpenGlCapsChecker ab50d6f2fd6b0ec4e6dc4d66984bf045
@@ -701,7 +701,7 @@ net/minecraft/client/renderer/entity/RenderMooshroom 20498e5c35f0cbb9546e9da5f06
 net/minecraft/client/renderer/entity/RenderOcelot 63a6a80834c97da08dd74fe3962c705d
 net/minecraft/client/renderer/entity/RenderPainting 8e239d5ec7465f8cfc7c0512764d1c0d
 net/minecraft/client/renderer/entity/RenderPig 0f6bd6b7aa893083485eac91abcd8ef5
-net/minecraft/client/renderer/entity/RenderPlayer 656675fa2f664b1751b894c1e0c6c0f2
+net/minecraft/client/renderer/entity/RenderPlayer f65308d30535b2e6f5de1c44ee65a675
 net/minecraft/client/renderer/entity/RenderSheep 34d933bbcdef062b26213f168636e221
 net/minecraft/client/renderer/entity/RenderSilverfish acd2f7780b121f5d9686fb573d9153ed
 net/minecraft/client/renderer/entity/RenderSkeleton 7483536ba4ce22c063f1017f355c41a7
@@ -1018,7 +1018,7 @@ net/minecraft/entity/passive/IAnimals 3357ca70eca105a9081a076eddb25173
 net/minecraft/entity/player/EntityPlayer 58574eb2ee0bf961523474dfbb337f20
 net/minecraft/entity/player/EntityPlayerMP 7bca1004f2e973e90d0ade89266d166d
 net/minecraft/entity/player/EnumStatus 97c34e17f74ffa5ae8f2170a2535ac3c
-net/minecraft/entity/player/InventoryPlayer 811aef87649708fe607984361e54de8d
+net/minecraft/entity/player/InventoryPlayer eda3eb1aab194bf8ef5d35fa9b3a51af
 net/minecraft/entity/player/PlayerCapabilities 40a7390412a4f7292b69cd915c96b0f5
 net/minecraft/entity/projectile/EntityArrow 1daef84fb0e2e5e7c4dc8f035456e0d5
 net/minecraft/entity/projectile/EntityEgg 8b0e6b73161578f84271efdda47823b4

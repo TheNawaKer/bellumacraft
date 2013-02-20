@@ -1285,8 +1285,8 @@ public abstract class World implements IBlockAccess {
          try {
             ++var2.field_70173_aa;
             var2.func_70071_h_();
-         } catch (Throwable var8) {
-            var4 = CrashReport.func_85055_a(var8, "Ticking entity");
+         } catch (Throwable var7) {
+            var4 = CrashReport.func_85055_a(var7, "Ticking entity");
             var5 = var4.func_85058_a("Entity being ticked");
             if(var2 == null) {
                var5.func_71507_a("Entity", "~~NULL~~");
@@ -1338,8 +1338,8 @@ public abstract class World implements IBlockAccess {
          if(!var2.field_70128_L) {
             try {
                this.func_72870_g(var2);
-            } catch (Throwable var6) {
-               var4 = CrashReport.func_85055_a(var6, "Ticking entity");
+            } catch (Throwable var8) {
+               var4 = CrashReport.func_85055_a(var8, "Ticking entity");
                var5 = var4.func_85058_a("Entity being ticked");
                if(var2 == null) {
                   var5.func_71507_a("Entity", "~~NULL~~");
@@ -1376,8 +1376,8 @@ public abstract class World implements IBlockAccess {
          if(!var9.func_70320_p() && var9.func_70309_m() && this.func_72899_e(var9.field_70329_l, var9.field_70330_m, var9.field_70327_n)) {
             try {
                var9.func_70316_g();
-            } catch (Throwable var7) {
-               var4 = CrashReport.func_85055_a(var7, "Ticking tile entity");
+            } catch (Throwable var6) {
+               var4 = CrashReport.func_85055_a(var6, "Ticking tile entity");
                var5 = var4.func_85058_a("Tile entity being ticked");
                if(var9 == null) {
                   var5.func_71507_a("Tile entity", "~~NULL~~");

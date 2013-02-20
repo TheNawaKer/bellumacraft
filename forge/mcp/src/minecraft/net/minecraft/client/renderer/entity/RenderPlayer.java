@@ -6,6 +6,7 @@ import mod.legendaire45.mod_retrogame;
 import mod.legendaire45.render.ItemToolEnum;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityClientPlayerMP;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.model.ModelBiped;
@@ -36,6 +37,7 @@ public class RenderPlayer extends RenderLiving
     private ModelBiped modelBipedMain;
     private ModelBiped modelArmorChestplate;
     private ModelBiped modelArmor;
+    private Minecraft mc;
     public static String[] armorFilenamePrefix = new String[] {"cloth", "chain", "iron", "diamond", "gold"};
     public static float NAME_TAG_RANGE = 64.0f;
     public static float NAME_TAG_RANGE_SNEAK = 32.0f;
@@ -352,21 +354,35 @@ public class RenderPlayer extends RenderLiving
             this.modelBipedMain.renderCloak(0.0625F);
             GL11.glPopMatrix();
         }
-        if(par1EntityPlayer.inventory.mainInventory[0] != null)
+        
+        System.out.println("**************************");
+    	System.out.println(par1EntityPlayer);
+    	System.out.println(par1EntityPlayer.select);
+    	System.out.println(par1EntityPlayer.tool);
+        if(par1EntityPlayer.tool != null)
         {
-	        if(par1EntityPlayer.inventory.getCurrentItem() != par1EntityPlayer.inventory.mainInventory[0])
+        	System.out.println("non null");
+	        if(par1EntityPlayer.select != 0)
 	        {
-		        ItemStack var41 = par1EntityPlayer.inventory.mainInventory[0];
+	        	System.out.println("item ok");
+		        ItemStack var41 = par1EntityPlayer.tool;
 		        if(ItemToolEnum.isTool(var41))
 		        {
+		        	System.out.println("rendering");
 			        float var40 = 0.625F;
 			        GL11.glPushMatrix();
 			        GL11.glTranslatef(0.1875F, 0.0F, 0.1875F);
 			        GL11.glScalef(var40, -var40, var40);
-			        GL11.glRotatef(-180.0F, 1.0F, 0.0F, 0.0F);//Axe de Rotation X
+	                if (par1EntityPlayer.isSneaking())
+	                {
+		            GL11.glRotatef(-220.0F, 1.0F, 0.0F, 0.0F);//Axe de Rotation X	
+	                }else
+	                {
+	                GL11.glRotatef(-180.0F, 1.0F, 0.0F, 0.0F);//Axe de Rotation X
+	                }
 			        GL11.glRotatef(310.0F, 0.0F, 1.0F, 0.0F);//Axe Y
 			        GL11.glRotatef(0.0F, 0.0F, 0.0F, 1.0F);//Axe Z
-			        this.renderManager.itemRenderer.renderItem(par1EntityPlayer, var41, 0);
+			        this.renderManager.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, var41, 0);
 			        GL11.glPopMatrix();
 		        }
 	        }

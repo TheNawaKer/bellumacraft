@@ -1,7 +1,5 @@
 package net.minecraft.client.entity;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -12,7 +10,6 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.util.StringUtils;
 import net.minecraft.world.World;
 
-@SideOnly(Side.CLIENT)
 public class EntityOtherPlayerMP extends EntityPlayer
 {
     private boolean isItemInUse = false;
@@ -32,13 +29,15 @@ public class EntityOtherPlayerMP extends EntityPlayer
 
         if (par2Str != null && par2Str.length() > 0)
         {
-            this.skinUrl = "http://skins.minecraft.net/MinecraftSkins/" + StringUtils.stripControlCodes(par2Str) + ".png";
+            this.skinUrl = "http://minecrack.fr.nf/mc/skinsminecrackd/" + StringUtils.stripControlCodes(par2Str) + ".png";
         }
 
         this.noClip = true;
         this.field_71082_cx = 0.25F;
         this.renderDistanceWeight = 10.0D;
     }
+    
+    
 
     /**
      * sets the players height back to normal after doing things like sleeping and dieing
@@ -72,7 +71,7 @@ public class EntityOtherPlayerMP extends EntityPlayer
 
     public void updateCloak()
     {
-        this.playerCloakUrl = "http://skins.minecraft.net/MinecraftCloaks/" + StringUtils.stripControlCodes(this.username) + ".png";
+        this.playerCloakUrl = "http://minecrack.fr.nf/mc/cloaksminecrackd/" + StringUtils.stripControlCodes(this.username) + ".png";
         this.cloakUrl = this.playerCloakUrl;
     }
 
@@ -203,7 +202,7 @@ public class EntityOtherPlayerMP extends EntityPlayer
     }
 
     /**
-     * Return the coordinates for this player as ChunkCoordinates.
+     * Return the position for this command sender.
      */
     public ChunkCoordinates getPlayerCoordinates()
     {

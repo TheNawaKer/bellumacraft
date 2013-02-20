@@ -1,18 +1,15 @@
 package net.minecraft.client.renderer;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
 import java.awt.image.ImageObserver;
 
-@SideOnly(Side.CLIENT)
 public class ImageBufferDownload implements IImageBuffer
 {
     private int[] imageData;
-    private int imageWidth;
-    private int imageHeight;
+    private int w23;
+    private int h23;
 
     public BufferedImage parseUserSkin(BufferedImage par1BufferedImage)
     {
@@ -22,16 +19,39 @@ public class ImageBufferDownload implements IImageBuffer
         }
         else
         {
-            this.imageWidth = 64;
-            this.imageHeight = 32;
-            BufferedImage var2 = new BufferedImage(this.imageWidth, this.imageHeight, 2);
+            this.w23 = par1BufferedImage.getWidth((ImageObserver)null);
+            this.h23 = par1BufferedImage.getHeight((ImageObserver)null);
+            BufferedImage var2 = new BufferedImage(this.w23, this.h23, 2);
             Graphics var3 = var2.getGraphics();
             var3.drawImage(par1BufferedImage, 0, 0, (ImageObserver)null);
             var3.dispose();
             this.imageData = ((DataBufferInt)var2.getRaster().getDataBuffer()).getData();
-            this.setAreaOpaque(0, 0, 32, 16);
-            this.setAreaTransparent(32, 0, 64, 32);
-            this.setAreaOpaque(0, 16, 64, 32);
+
+            if (this.w23 == 128 && this.h23 == 64)
+            {
+                this.setAreaOpaque(0, 0, 0, 0);
+                this.setAreaTransparent(32, 0, 128, 64);
+                this.setAreaOpaque(0, 16, 0, 0);
+            }
+            else if (this.w23 == 256 && this.h23 == 128)
+            {
+                this.setAreaOpaque(0, 0, 0, 0);
+                this.setAreaTransparent(32, 0, 256, 128);
+                this.setAreaOpaque(0, 16, 0, 0);
+            }
+            else if (this.w23 == 512 && this.h23 == 256)
+            {
+                this.setAreaOpaque(0, 0, 32, 16);
+                this.setAreaTransparent(32, 0, 512, 256);
+                this.setAreaOpaque(0, 16, 0, 0);
+            }
+            else
+            {
+                this.setAreaOpaque(0, 0, 32, 16);
+                this.setAreaTransparent(32, 0, 64, 32);
+                this.setAreaOpaque(0, 16, 64, 32);
+            }
+
             boolean var4 = false;
             int var5;
             int var6;
@@ -60,7 +80,7 @@ public class ImageBufferDownload implements IImageBuffer
 
                         if ((var7 >> 24 & 255) < 128)
                         {
-                            var4 = true;
+                            boolean var8 = true;
                         }
                     }
                 }
@@ -83,7 +103,7 @@ public class ImageBufferDownload implements IImageBuffer
             {
                 for (int var6 = par2; var6 < par4; ++var6)
                 {
-                    this.imageData[var5 + var6 * this.imageWidth] &= 16777215;
+                    this.imageData[var5 + var6 * this.w23] &= 16777215;
                 }
             }
         }
@@ -98,7 +118,7 @@ public class ImageBufferDownload implements IImageBuffer
         {
             for (int var6 = par2; var6 < par4; ++var6)
             {
-                this.imageData[var5 + var6 * this.imageWidth] |= -16777216;
+                this.imageData[var5 + var6 * this.w23] |= -16777216;
             }
         }
     }
@@ -112,7 +132,7 @@ public class ImageBufferDownload implements IImageBuffer
         {
             for (int var6 = par2; var6 < par4; ++var6)
             {
-                int var7 = this.imageData[var5 + var6 * this.imageWidth];
+                int var7 = this.imageData[var5 + var6 * this.w23];
 
                 if ((var7 >> 24 & 255) < 128)
                 {

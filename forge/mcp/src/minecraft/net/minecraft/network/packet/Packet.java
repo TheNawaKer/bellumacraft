@@ -9,6 +9,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+
+import mod.legendaire45.network.packet.Packet230Sword;
+import mod.legendaire45.network.packet.Packet94PlayerInfo;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompressedStreamTools;
 import net.minecraft.nbt.NBTTagCompound;
@@ -443,5 +446,7 @@ public abstract class Packet
         addIdClassMapping(253, true, false, Packet253ServerAuthData.class);
         addIdClassMapping(254, false, true, Packet254ServerPing.class);
         addIdClassMapping(255, true, true, Packet255KickDisconnect.class);
+        addIdClassMapping(94, true, true, Packet94PlayerInfo.class);
+        addIdClassMapping(230, true, true, Packet230Sword.class);
     }
 }

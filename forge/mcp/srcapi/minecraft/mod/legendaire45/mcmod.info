@@ -1,0 +1,20 @@
+[
+{
+  "modid": "DynamicLights",
+  "name": "RetroGameFr mod",
+  "description": "Ajout de nombreux items (armures, armes, ....) et de nombreux blocks ( tireuse de biere)",
+  "version": "1.4.0",
+  "credits": "Jimmy Furet aka Legendaire45",
+  "logoFile": "retrogame.fr",
+  "mcversion": "1.4.7",
+  "url": "http://retrogamefr.com/",
+  "updateUrl": "",
+  "authors": [ "legendaire45"],
+  "parent":"",
+  "screenshots": [],
+  "dependencies": [
+     "mod_MinecraftForge"
+     "DynamicLights"
+  ]
+}
+]

@@ -9,8 +9,12 @@ import java.util.Random;
 import java.util.logging.Logger;
 
 import cpw.mods.fml.common.network.FMLNetworkHandler;
+import mod.legendaire45.network.packet.Packet230Sword;
+import mod.legendaire45.network.packet.Packet94PlayerInfo;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -426,6 +430,7 @@ public class NetServerHandler extends NetHandler
         this.playerEntity.playerNetServerHandler.sendPacketToPlayer(new Packet13PlayerLookMove(par1, par3 + 1.6200000047683716D, par3, par5, par7, par8, false));
     }
 
+
     public void handleBlockDig(Packet14BlockDig par1Packet14BlockDig)
     {
         WorldServer var2 = this.mcServer.worldServerForDimension(this.playerEntity.dimension);
@@ -693,7 +698,10 @@ public class NetServerHandler extends NetHandler
     {
         if (par1Packet16BlockItemSwitch.id >= 0 && par1Packet16BlockItemSwitch.id < InventoryPlayer.getHotbarSize())
         {
+        	System.out.println(par1Packet16BlockItemSwitch.id);
             this.playerEntity.inventory.currentItem = par1Packet16BlockItemSwitch.id;
+            this.playerEntity.select = this.playerEntity.inventory.currentItem;
+            this.netManager.addToSendQueue(new Packet230Sword(this.playerEntity));
         }
         else
         {
@@ -774,6 +782,12 @@ public class NetServerHandler extends NetHandler
         {
             this.playerEntity.swingItem();
         }
+    }
+    
+    public void handleSword(Packet230Sword packet)
+    {
+    		// On renvoie le packet à tous les joueurs dès qu'on le reçoit
+    	this.mcServer.getConfigurationManager().sendPacketToAllPlayers(packet);
     }
 
     /**
@@ -940,6 +954,8 @@ public class NetServerHandler extends NetHandler
             this.playerEntity.openContainer.detectAndSendChanges();
         }
     }
+    
+    
 
     /**
      * Handle a creative slot packet.
