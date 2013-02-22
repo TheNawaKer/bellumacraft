@@ -1,0 +1,11 @@
+Render.java ---> aka bbv
+	- protected RenderManager renderManager;
+	+ public RenderManager renderManager;
+	
+EntityPlayer.java ---> aka qx
+	+ public int select = 0;
+    + public ItemStack tool = null;
+	
+NetClientHandler.java ---> aka ayh
+	- private WorldClient worldClient;
+	+ public static WorldClient worldClient;

@@ -231,3 +231,183 @@ WindowsError: [Error 5] Accès refus: 'reobf\\minecraft'
 12:01:17 - !! renaming disabled !!
 14:59:01 - !! Can not find server sources, try decompiling !!
 14:59:29 - !! Can not find server md5s !!
+11:44:53 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+11:44:53 - 
+11:44:53 - == ERRORS FOUND ==
+11:44:53 - 
+11:44:53 - src\minecraft\mod\legendaire45\render\TileEntitySofaRenderer.java:19: error: unmappable character for encoding UTF-8
+11:44:53 -     public TileEntitySofaRenderer(){}// on cr?er un constructeur (vide car on n'as pas besoin de variables particuli?res)
+11:44:53 -                                              ^
+11:44:53 - 
+11:44:53 - src\minecraft\mod\legendaire45\render\TileEntitySofaRenderer.java:19: error: unmappable character for encoding UTF-8
+11:44:53 -     public TileEntitySofaRenderer(){}// on cr?er un constructeur (vide car on n'as pas besoin de variables particuli?res)
+11:44:53 -                                                                                                                     ^
+11:44:53 - 
+11:44:53 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:10: error: unmappable character for encoding UTF-8
+11:44:53 -     public static ItemSofaRenderer instance = new ItemSofaRenderer(); //on cr?er une instance de cette class
+11:44:53 -                                                                              ^
+11:44:53 - 
+11:44:53 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:13: error: unmappable character for encoding UTF-8
+11:44:53 -     private TileEntitySofa theTile = new TileEntitySofa();// on r?cup?re une instance de TileEntityTile
+11:44:53 -                                                                  ^
+11:44:53 - 
+11:44:53 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:13: error: unmappable character for encoding UTF-8
+11:44:53 -     private TileEntitySofa theTile = new TileEntitySofa();// on r?cup?re une instance de TileEntityTile
+11:44:53 -                                                                      ^
+11:44:53 - 
+11:44:53 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:20: error: unmappable character for encoding UTF-8
+11:44:53 -     	TileEntityRenderer.instance.renderTileEntityAt(this.theTile, 0.0D, 0.0D, 0.0D, 0.0F); //on applique le rendu du TileEntityTile ? l'instance de l'item.
+11:44:53 -     	                                                                                                                               ^
+11:44:53 - 
+11:44:53 - 6 errors
+11:44:53 - ==================
+11:44:53 - 
+11:44:53 - !! Can not find server sources, try decompiling !!
+12:39:06 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+12:39:06 - 
+12:39:06 - == ERRORS FOUND ==
+12:39:06 - 
+12:39:06 - src\minecraft\mod\legendaire45\render\TileEntitySofaRenderer.java:19: error: unmappable character for encoding UTF-8
+12:39:06 -     public TileEntitySofaRenderer(){}// on cr?er un constructeur (vide car on n'as pas besoin de variables particuli?res)
+12:39:06 -                                              ^
+12:39:06 - 
+12:39:06 - src\minecraft\mod\legendaire45\render\TileEntitySofaRenderer.java:19: error: unmappable character for encoding UTF-8
+12:39:06 -     public TileEntitySofaRenderer(){}// on cr?er un constructeur (vide car on n'as pas besoin de variables particuli?res)
+12:39:06 -                                                                                                                     ^
+12:39:06 - 
+12:39:06 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:10: error: unmappable character for encoding UTF-8
+12:39:06 -     public static ItemSofaRenderer instance = new ItemSofaRenderer(); //on cr?er une instance de cette class
+12:39:06 -                                                                              ^
+12:39:06 - 
+12:39:06 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:13: error: unmappable character for encoding UTF-8
+12:39:06 -     private TileEntitySofa theTile = new TileEntitySofa();// on r?cup?re une instance de TileEntityTile
+12:39:06 -                                                                  ^
+12:39:06 - 
+12:39:06 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:13: error: unmappable character for encoding UTF-8
+12:39:06 -     private TileEntitySofa theTile = new TileEntitySofa();// on r?cup?re une instance de TileEntityTile
+12:39:06 -                                                                      ^
+12:39:06 - 
+12:39:06 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:20: error: unmappable character for encoding UTF-8
+12:39:06 -     	TileEntityRenderer.instance.renderTileEntityAt(this.theTile, 0.0D, 0.0D, 0.0D, 0.0F); //on applique le rendu du TileEntityTile ? l'instance de l'item.
+12:39:06 -     	                                                                                                                               ^
+12:39:06 - 
+12:39:06 - 6 errors
+12:39:06 - ==================
+12:39:06 - 
+12:39:06 - !! Can not find server sources, try decompiling !!
+12:39:09 - !! Can not find client bins, try recompiling !!
+12:39:09 - !! Can not find server md5s !!
+20:58:49 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+20:58:49 - 
+20:58:49 - == ERRORS FOUND ==
+20:58:49 - 
+20:58:49 - src\minecraft\mod\legendaire45\client\ClientPacketHandler.java:52: error: unmappable character for encoding UTF-8
+20:58:49 -         if (me.entityId != playerId) // On v?rifie que ce n'est pas nous
+20:58:49 -                                             ^
+20:58:49 - 
+20:58:49 - src\minecraft\mod\legendaire45\client\ClientPacketHandler.java:55: error: unmappable character for encoding UTF-8
+20:58:49 - 	        EntityOtherPlayerMP other = (EntityOtherPlayerMP)(NetClientHandler.worldClient.getEntityByID(playerId)); // On r?cup?re l'entity du joueur
+20:58:49 - 	                                                                                                                        ^
+20:58:49 - 
+20:58:49 - src\minecraft\mod\legendaire45\client\ClientPacketHandler.java:55: error: unmappable character for encoding UTF-8
+20:58:49 - 	        EntityOtherPlayerMP other = (EntityOtherPlayerMP)(NetClientHandler.worldClient.getEntityByID(playerId)); // On r?cup?re l'entity du joueur
+20:58:49 - 	                                                                                                                            ^
+20:58:49 - 
+20:58:49 - src\minecraft\mod\legendaire45\client\ClientPacketHandler.java:56: error: unmappable character for encoding UTF-8
+20:58:49 - 	    	if (other != null) //Si on a quelque chose, on met les infos ? jour
+20:58:49 - 	    	                                                             ^
+20:58:49 - 
+20:58:49 - src\minecraft\mod\legendaire45\render\TileEntitySofaRenderer.java:19: error: unmappable character for encoding UTF-8
+20:58:49 -     public TileEntitySofaRenderer(){}// on cr?er un constructeur (vide car on n'as pas besoin de variables particuli?res)
+20:58:49 -                                              ^
+20:58:49 - 
+20:58:49 - src\minecraft\mod\legendaire45\render\TileEntitySofaRenderer.java:19: error: unmappable character for encoding UTF-8
+20:58:49 -     public TileEntitySofaRenderer(){}// on cr?er un constructeur (vide car on n'as pas besoin de variables particuli?res)
+20:58:49 -                                                                                                                     ^
+20:58:49 - 
+20:58:49 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:10: error: unmappable character for encoding UTF-8
+20:58:49 -     public static ItemSofaRenderer instance = new ItemSofaRenderer(); //on cr?er une instance de cette class
+20:58:49 -                                                                              ^
+20:58:49 - 
+20:58:49 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:13: error: unmappable character for encoding UTF-8
+20:58:49 -     private TileEntitySofa theTile = new TileEntitySofa();// on r?cup?re une instance de TileEntityTile
+20:58:49 -                                                                  ^
+20:58:49 - 
+20:58:49 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:13: error: unmappable character for encoding UTF-8
+20:58:49 -     private TileEntitySofa theTile = new TileEntitySofa();// on r?cup?re une instance de TileEntityTile
+20:58:49 -                                                                      ^
+20:58:49 - 
+20:58:49 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:20: error: unmappable character for encoding UTF-8
+20:58:49 -     	TileEntityRenderer.instance.renderTileEntityAt(this.theTile, 0.0D, 0.0D, 0.0D, 0.0F); //on applique le rendu du TileEntityTile ? l'instance de l'item.
+20:58:49 -     	                                                                                                                               ^
+20:58:49 - 
+20:58:49 - 10 errors
+20:58:49 - ==================
+20:58:49 - 
+20:58:49 - !! Can not find server sources, try decompiling !!
+21:30:07 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+21:30:07 - 
+21:30:07 - == ERRORS FOUND ==
+21:30:07 - 
+21:30:07 - src\minecraft\mod\legendaire45\client\ClientPacketHandler.java:52: error: unmappable character for encoding UTF-8
+21:30:07 -         if (me.entityId != playerId) // On v?rifie que ce n'est pas nous
+21:30:07 -                                             ^
+21:30:07 - 
+21:30:07 - src\minecraft\mod\legendaire45\client\ClientPacketHandler.java:55: error: unmappable character for encoding UTF-8
+21:30:07 - 	        EntityOtherPlayerMP other = (EntityOtherPlayerMP)(NetClientHandler.worldClient.getEntityByID(playerId)); // On r?cup?re l'entity du joueur
+21:30:07 - 	                                                                                                                        ^
+21:30:07 - 
+21:30:07 - src\minecraft\mod\legendaire45\client\ClientPacketHandler.java:55: error: unmappable character for encoding UTF-8
+21:30:07 - 	        EntityOtherPlayerMP other = (EntityOtherPlayerMP)(NetClientHandler.worldClient.getEntityByID(playerId)); // On r?cup?re l'entity du joueur
+21:30:07 - 	                                                                                                                            ^
+21:30:07 - 
+21:30:07 - src\minecraft\mod\legendaire45\client\ClientPacketHandler.java:56: error: unmappable character for encoding UTF-8
+21:30:07 - 	    	if (other != null) //Si on a quelque chose, on met les infos ? jour
+21:30:07 - 	    	                                                             ^
+21:30:07 - 
+21:30:07 - src\minecraft\mod\legendaire45\render\TileEntitySofaRenderer.java:19: error: unmappable character for encoding UTF-8
+21:30:07 -     public TileEntitySofaRenderer(){}// on cr?er un constructeur (vide car on n'as pas besoin de variables particuli?res)
+21:30:07 -                                              ^
+21:30:07 - 
+21:30:07 - src\minecraft\mod\legendaire45\render\TileEntitySofaRenderer.java:19: error: unmappable character for encoding UTF-8
+21:30:07 -     public TileEntitySofaRenderer(){}// on cr?er un constructeur (vide car on n'as pas besoin de variables particuli?res)
+21:30:07 -                                                                                                                     ^
+21:30:07 - 
+21:30:07 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:10: error: unmappable character for encoding UTF-8
+21:30:07 -     public static ItemSofaRenderer instance = new ItemSofaRenderer(); //on cr?er une instance de cette class
+21:30:07 -                                                                              ^
+21:30:07 - 
+21:30:07 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:13: error: unmappable character for encoding UTF-8
+21:30:07 -     private TileEntitySofa theTile = new TileEntitySofa();// on r?cup?re une instance de TileEntityTile
+21:30:07 -                                                                  ^
+21:30:07 - 
+21:30:07 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:13: error: unmappable character for encoding UTF-8
+21:30:07 -     private TileEntitySofa theTile = new TileEntitySofa();// on r?cup?re une instance de TileEntityTile
+21:30:07 -                                                                      ^
+21:30:07 - 
+21:30:07 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:20: error: unmappable character for encoding UTF-8
+21:30:07 -     	TileEntityRenderer.instance.renderTileEntityAt(this.theTile, 0.0D, 0.0D, 0.0D, 0.0F); //on applique le rendu du TileEntityTile ? l'instance de l'item.
+21:30:07 -     	                                                                                                                               ^
+21:30:07 - 
+21:30:07 - 10 errors
+21:30:07 - ==================
+21:30:07 - 
+21:30:07 - !! Can not find server sources, try decompiling !!
+21:42:15 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+21:42:15 - 
+21:42:15 - == ERRORS FOUND ==
+21:42:15 - 
+21:42:15 - src\minecraft\mod\legendaire45\render\item\ItemSofaRenderer.java:20: error: unmappable character for encoding UTF-8
+21:42:15 -     	TileEntityRenderer.instance.renderTileEntityAt(this.theTile, 0.0D, 0.0D, 0.0D, 0.0F); //on applique le rendu du TileEntityTile ? l'instance de l item.
+21:42:15 -     	                                                                                                                               ^
+21:42:15 - 
+21:42:15 - 1 error
+21:42:15 - ==================
+21:42:15 - 
+21:42:15 - !! Can not find server sources, try decompiling !!
+21:43:10 - !! Can not find server sources, try decompiling !!
+21:43:59 - !! Can not find server md5s !!
+22:59:06 - !! Can not find server sources, try decompiling !!
+23:00:55 - !! Can not find server md5s !!
+23:04:16 - !! Can not find server sources, try decompiling !!
+23:04:52 - !! Can not find server md5s !!

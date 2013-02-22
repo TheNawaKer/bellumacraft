@@ -4,6 +4,9 @@
     "sessionid":"local"
   },
   "stats-change":[
+    {"1003":1},
+    {"1100":13243},
+    {"1004":1}
   ],
-  "checksum":"f5ddaf0ca7929578b408c909429f68f2"
+  "checksum":"f2b36f8fa6f860286321581d4fafbe4f"
 }

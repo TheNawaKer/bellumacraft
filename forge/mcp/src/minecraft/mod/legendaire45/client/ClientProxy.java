@@ -1,5 +1,7 @@
 package mod.legendaire45.client;
 
+import java.util.Iterator;
+
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import mod.legendaire45.common.CommonProxy;
@@ -8,10 +10,14 @@ import mod.legendaire45.entity.EntityTeleportArrow;
 import mod.legendaire45.render.RenderBeer;
 import mod.legendaire45.render.RenderMagicArrow;
 import mod.legendaire45.render.RenderTeleportArrow;
+import mod.legendaire45.render.TileEntitySofaRenderer;
 import mod.legendaire45.render.TileEntityTrampolineRenderer;
+import mod.legendaire45.render.player.RenderPlayerSword;
 import mod.legendaire45.tile.TileEntityBeer;
+import mod.legendaire45.tile.TileEntitySofa;
 import mod.legendaire45.tile.TileEntityTrampoline;
 import net.minecraft.src.ModLoader;
+import net.minecraft.src.RenderPlayerAPI;
 import net.minecraftforge.client.MinecraftForgeClient;
 
 public class ClientProxy extends CommonProxy 
@@ -36,10 +42,16 @@ public class ClientProxy extends CommonProxy
     	MinecraftForgeClient.preloadTexture(this.distributor);
     	MinecraftForgeClient.preloadTexture(this.firearrowtexture);
     	MinecraftForgeClient.preloadTexture(this.teleportarrowtexture);
+    	
+		TileEntitySofaRenderer renderSofa = new TileEntitySofaRenderer();
+		ModLoader.registerTileEntity(TileEntitySofa.class, "sofa", renderSofa);//ajout
+		
 		RenderBeer renderBeer = new RenderBeer();
-		ModLoader.registerTileEntity(TileEntityBeer.class, "tile", renderBeer);//ajout
+		ModLoader.registerTileEntity(TileEntityBeer.class, "beer", renderBeer);//ajout
+		
 		TileEntityTrampolineRenderer trampolineRender = new TileEntityTrampolineRenderer();
 		ModLoader.registerTileEntity(TileEntityTrampoline.class, "TileEntitytrampoline", trampolineRender);	
+		
 		ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
 		RenderingRegistry.registerEntityRenderingHandler(EntityMagicArrow.class, new RenderMagicArrow());
 		ModLoader.registerEntityID(EntityTeleportArrow.class, "teleportarrow", ModLoader.getUniqueEntityId());

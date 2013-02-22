@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Set;
 
 import cpw.mods.fml.common.network.FMLNetworkHandler;
-import mod.legendaire45.network.packet.Packet94PlayerInfo;
 import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.entity.item.EntityBoat;
 import net.minecraft.entity.item.EntityEnderCrystal;
@@ -471,7 +470,7 @@ public class EntityTrackerEntry
         }
         else if (this.myEntity instanceof EntityPlayerMP)
         {
-            return new Packet94PlayerInfo((EntityPlayer)this.myEntity);
+            return new Packet20NamedEntitySpawn((EntityPlayer)this.myEntity);
         }
         else
         {

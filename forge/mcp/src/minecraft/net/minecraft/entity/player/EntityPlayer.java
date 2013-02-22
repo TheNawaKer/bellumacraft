@@ -85,8 +85,8 @@ public abstract class EntityPlayer extends EntityLiving implements ICommandSende
     /** The player's food stats. (See class FoodStats) */
     protected FoodStats foodStats = new FoodStats();
     
-    public int select = 0; //Item en cours
-    public ItemStack tool = null; //Item a render
+	public int select = 0;
+	public ItemStack tool = null;
 
     /**
      * Used to tell if the player pressed jump twice. If this is at 0 and it's pressed (And they are allowed to fly, as
@@ -272,6 +272,7 @@ public abstract class EntityPlayer extends EntityLiving implements ICommandSende
         if (this.itemInUse != null)
         {
             ItemStack var1 = this.inventory.getCurrentItem();
+
             if (var1 == this.itemInUse)
             {
                 itemInUse.getItem().onUsingItemTick(itemInUse, this, itemInUseCount);

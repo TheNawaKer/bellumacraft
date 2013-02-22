@@ -1,14 +1,17 @@
 package mod.legendaire45;
 
-import static cpw.mods.fml.relauncher.Side.CLIENT;
-
-import java.util.Map;
-
 import mod.legendaire45.blocks.BlockBeer;
 import mod.legendaire45.blocks.BlockCropBeer;
+import mod.legendaire45.blocks.BlockRuby;
+import mod.legendaire45.blocks.BlockSaphir;
+import mod.legendaire45.blocks.BlockSofa;
 import mod.legendaire45.blocks.BlockStairLog;
 import mod.legendaire45.blocks.BlockTrampoline;
+import mod.legendaire45.client.ClientPacketHandler;
 import mod.legendaire45.common.CommonProxy;
+import mod.legendaire45.entity.EntityMagicArrow;
+import mod.legendaire45.entity.EntityTeleportArrow;
+import mod.legendaire45.entity.player.EntityPlayerSword;
 import mod.legendaire45.gui.GuiHandler;
 import mod.legendaire45.items.ArmorBase;
 import mod.legendaire45.items.ItemCup;
@@ -19,22 +22,24 @@ import mod.legendaire45.items.ItemToolPelleMod;
 import mod.legendaire45.items.ItemToolPiocheMod;
 import mod.legendaire45.items.MagicBow;
 import mod.legendaire45.items.TeleportBow;
+import mod.legendaire45.render.player.RenderPlayerSword;
+import mod.legendaire45.server.ServerPacketHandler;
 import mod.legendaire45.tile.TileEntityBeer;
-import mod.legendaire45.tile.TileEntityTrampoline;
+import mod.legendaire45.world.WorldGenOre;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockStairs;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.entity.RenderArrow;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemReed;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.src.ModLoader;
+import net.minecraft.src.PlayerAPI;
+import net.minecraft.src.RenderPlayerAPI;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -42,27 +47,20 @@ import cpw.mods.fml.common.Mod.PreInit;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.network.NetworkMod; 
+import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.network.NetworkMod.SidedPacketHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import mod.legendaire45.client.ClientPacketHandler;
-import mod.legendaire45.entity.EntityMagicArrow;
-import mod.legendaire45.entity.EntityTeleportArrow;
-import mod.legendaire45.render.TileEntityTrampolineRenderer;
-import mod.legendaire45.server.ServerPacketHandler;
-import net.minecraft.block.Block;
 
 @Mod(modid = "mod_retrogame", name = "mod retrogame", version = "1.4.0")
 @NetworkMod(clientSideRequired = false, serverSideRequired = true,
-clientPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame" }, packetHandler = ClientPacketHandler.class),
-serverPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame" }, packetHandler = ServerPacketHandler.class))
+clientPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","generic" }, packetHandler = ClientPacketHandler.class),
+serverPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","generic" }, packetHandler = ServerPacketHandler.class))
 
-public class mod_retrogame
+public class mod_retrogame 
 {	
 	    @Instance
 		public static mod_retrogame instance  = new mod_retrogame();
@@ -75,14 +73,31 @@ public class mod_retrogame
 		@PreInit
 		public void initConfig(FMLPreInitializationEvent event)
 		{
+			Side side = FMLCommonHandler.instance().getEffectiveSide();
+			if(side == side.CLIENT)
+			{
+				PlayerAPI.register("mod_retrogame", EntityPlayerSword.class);
+		    	RenderPlayerAPI.register("mod_retrogame", RenderPlayerSword.class);
+			}
 			MinecraftForge.setToolClass(this.piocheToolE, "pickaxe", 2);
 			MinecraftForge.setToolClass(this.pelleToolE, "shovel", 2);
 			MinecraftForge.setToolClass(this.hacheToolE, "axe", 2);
+			MinecraftForge.setToolClass(this.piocheToolS, "pickaxe", 2);
+			MinecraftForge.setToolClass(this.pelleToolS, "shovel", 2);
+			MinecraftForge.setToolClass(this.hacheToolS, "axe", 2);
+			MinecraftForge.setToolClass(this.piocheToolR, "pickaxe", 2);
+			MinecraftForge.setToolClass(this.pelleToolR, "shovel", 2);
+			MinecraftForge.setToolClass(this.hacheToolR, "axe", 2);
 		}
 		
 		@Init
 		public void load(FMLInitializationEvent event)
 		{	
+			Side side = FMLCommonHandler.instance().getEffectiveSide();
+			if(side == side.SERVER)
+			{
+				ModLoader.registerTileEntity(TileEntityBeer.class, "beer");
+			}
 			proxy.registerRenderThings(); //Et oui, il faut bien dire de charger les proxy :)
 			EntityRegistry.registerModEntity(EntityMagicArrow.class, "firearrow", 1, this, 250, 5, false);
 			//ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
@@ -95,6 +110,10 @@ public class mod_retrogame
 			GameRegistry.registerBlock(blockTrampoline);
 			GameRegistry.registerBlock(cropBeer);
 			GameRegistry.registerBlock(stair);	
+			GameRegistry.registerBlock(sofa);	
+			GameRegistry.registerBlock(rubyOre);
+			GameRegistry.registerBlock(saphirOre);
+			GameRegistry.registerWorldGenerator(new WorldGenOre());
 
 
 			/** D�fini le nom IN-GAME des items/blocs**/
@@ -144,6 +163,10 @@ public class mod_retrogame
 			LanguageRegistry.addName(firebow, "Arc Eclairant");
 			LanguageRegistry.addName(teleportarrow, "Ender Fleche");
 			LanguageRegistry.addName(teleportbow, "Ender Arc");
+			LanguageRegistry.addName(rubyOre, "Minerai de Ruby");
+			LanguageRegistry.addName(saphirOre, "Minerai de Saphir");
+			LanguageRegistry.addName(rubyGem, "Ruby");
+			LanguageRegistry.addName(saphirGem, "Saphir");
 	    }
 		static int IDoutil = 400;
 		static int IDblock = 170;
@@ -162,12 +185,21 @@ public class mod_retrogame
 		public static final Block cropBeer = (new BlockCropBeer(IDblock+3)).setTextureFile(textureBlock).setBlockName("cropBeer").setStepSound(Block.soundGrassFootstep);
 		public static final Block stair = (new BlockStairLog(IDblock+4, net.minecraft.block.Block.wood, 10)).setTextureFile(textureBlock).setBlockName("Escalier en buche").setCreativeTab(CreativeTabs.tabBlock);
 		
-	    public static final Item Cup = (new ItemCup(IDoutil+31)).setTextureFile(textureItem).setIconIndex(0).setItemName("Chope Vide").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block rubyOre = (new BlockRuby(IDblock+6, 14, Material.rock)).setTextureFile(textureBlock).setStepSound(Block.soundStoneFootstep).setBlockName("ruby").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block saphirOre = (new BlockSaphir(IDblock+7, 15, Material.rock)).setTextureFile(textureBlock).setStepSound(Block.soundStoneFootstep).setBlockName("saphir").setCreativeTab(CreativeTabs.tabBlock);
+		
+		public static final Block sofa = (new BlockSofa(IDblock+5)).setStepSound(Block.soundWoodFootstep).setBlockName("sofa").setCreativeTab(CreativeTabs.tabDecorations);
+		public static final Item sofas = (new ItemReed(IDoutil+41,sofa)).setTextureFile(textureItem).setIconIndex(40).setItemName("Beer").setCreativeTab(CreativeTabs.tabBlock);
+	    
+		public static final Item Cup = (new ItemCup(IDoutil+31)).setTextureFile(textureItem).setIconIndex(0).setItemName("Chope Vide").setCreativeTab(CreativeTabs.tabBlock);
 	    public static final Item BucketBeer = (new ItemCup(IDoutil+32)).setTextureFile(textureItem).setIconIndex(2).setItemName("seau de biere").setCreativeTab(CreativeTabs.tabBlock);
 	    public static final Item CupBeer = (new ItemDrink(IDoutil+33, 10, 0.0F, false)).setAlwaysEdible().setTextureFile(textureItem).setIconIndex(1).setItemName("Chope Pleine").setCreativeTab(CreativeTabs.tabBlock);
 	  
 	    public static Item seedBeer = (new ItemSeeds(IDoutil+34, cropBeer.blockID, Block.tilledField.blockID)).setTextureFile(textureItem).setIconIndex(39).setItemName("seedBeer").setCreativeTab(CreativeTabs.tabBlock);
 	    public static Item Beer = (new Item(IDoutil+35)).setTextureFile(textureItem).setIconIndex(40).setItemName("Beer").setCreativeTab(CreativeTabs.tabBlock);
+	    
+	    public static Item rubyGem = (new Item(IDoutil+42)).setTextureFile(textureItem).setIconCoord(13, 2).setItemName("ruby").setCreativeTab(CreativeTabs.tabMaterials);
+	    public static Item saphirGem = (new Item(IDoutil+43)).setTextureFile(textureItem).setIconCoord(14, 2).setItemName("saphir").setCreativeTab(CreativeTabs.tabMaterials);
 	    
 		public static final Item pelleToolE= (new ItemToolPelleMod(IDoutil+5, emerald )).setTextureFile(textureItem).setItemName("tool_pelle_e").setIconIndex(3);
 		public static final Item piocheToolE= (new ItemToolPiocheMod(IDoutil+6, emerald )).setTextureFile(textureItem).setItemName("tool_pioche_e").setIconIndex(4);

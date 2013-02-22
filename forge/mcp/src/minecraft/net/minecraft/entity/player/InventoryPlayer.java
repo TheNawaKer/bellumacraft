@@ -50,11 +50,6 @@ public class InventoryPlayer implements IInventory
     {
         return this.currentItem < 9 && this.currentItem >= 0 ? this.mainInventory[this.currentItem] : null;
     }
-    
-    public ItemStack getSlot()
-    {
-        return this.mainInventory[0];
-    }
 
     /**
      * Get the size of the player hotbar inventory

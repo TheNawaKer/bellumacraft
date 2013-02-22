@@ -234,7 +234,7 @@ public abstract class EntityLiving extends Entity
 
     /** The new yaw rotation to be applied to the entity. */
     protected double newRotationPitch;
-    float field_70706_bo = 0.0F;
+    protected float field_70706_bo = 0.0F;
 
     /** Amount of damage taken in last hit, in half-hearts */
     protected int lastDamage = 0;
