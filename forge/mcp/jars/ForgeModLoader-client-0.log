@@ -1,946 +1,489 @@
-2013-02-22 21:27:00 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
-2013-02-22 21:27:00 [FINEST] [ForgeModLoader] All core mods are successfully located
-2013-02-22 21:27:00 [FINEST] [ForgeModLoader] Discovering coremods
-2013-02-22 21:27:00 [FINEST] [ForgeModLoader] Found library file argo-2.25.jar present and correct in lib dir
-2013-02-22 21:27:00 [FINEST] [ForgeModLoader] Found library file guava-12.0.1.jar present and correct in lib dir
-2013-02-22 21:27:00 [FINEST] [ForgeModLoader] Found library file asm-all-4.0.jar present and correct in lib dir
-2013-02-22 21:27:00 [FINEST] [ForgeModLoader] Found library file bcprov-jdk15on-147.jar present and correct in lib dir
-2013-02-22 21:27:01 [FINEST] [ForgeModLoader] Running coremod plugins
-2013-02-22 21:27:01 [FINEST] [ForgeModLoader] Running coremod plugin FMLCorePlugin
-2013-02-22 21:27:01 [FINEST] [ForgeModLoader] Coremod plugin FMLCorePlugin run successfully
-2013-02-22 21:27:01 [FINEST] [ForgeModLoader] Running coremod plugin FMLForgePlugin
-2013-02-22 21:27:01 [FINEST] [ForgeModLoader] Coremod plugin FMLForgePlugin run successfully
-2013-02-22 21:27:01 [FINEST] [ForgeModLoader] Validating minecraft
-2013-02-22 21:27:01 [FINEST] [ForgeModLoader] Minecraft validated, launching...
-2013-02-22 21:27:04 [INFO] [STDOUT] 27 achievements
-2013-02-22 21:27:04 [INFO] [STDOUT] 210 recipes
-2013-02-22 21:27:04 [INFO] [STDOUT] Setting user: Player507, -
-2013-02-22 21:27:04 [INFO] [STDERR] Client asked for parameter: server
-2013-02-22 21:27:04 [INFO] [STDOUT] LWJGL Version: 2.4.2
-2013-02-22 21:27:05 [INFO] [ForgeModLoader] Attempting early MinecraftForge initialization
-2013-02-22 21:27:05 [INFO] [STDOUT] MinecraftForge v6.6.0.497 Initialized
-2013-02-22 21:27:05 [INFO] [ForgeModLoader] MinecraftForge v6.6.0.497 Initialized
-2013-02-22 21:27:05 [INFO] [STDOUT] Replaced 84 ore recipies
-2013-02-22 21:27:05 [INFO] [ForgeModLoader] Completed early MinecraftForge initialization
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Building injected Mod Containers [cpw.mods.fml.common.FMLDummyContainer, net.minecraftforge.common.ForgeDummyContainer]
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Attempting to load mods contained in the minecraft jar file and associated classes
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Found a minecraft related directory at D:\minecraft modding\bellumacraft\forge\mcp\eclipse\Minecraft\bin, examining for mod candidates
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\jinput.jar
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\lwjgl_util.jar
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\lwjgl.jar
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Found a minecraft related file at D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\minecraft.jar, examining for mod candidates
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\argo-2.25.jar
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\bcprov-jdk15on-147.jar
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\asm-all-4.0.jar
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\guava-12.0.1.jar
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\argo-2.25.jar
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\guava-12.0.1.jar
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\asm-all-4.0.jar
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\bcprov-jdk15on-147.jar
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Minecraft jar mods loaded successfully
-2013-02-22 21:27:05 [INFO] [ForgeModLoader] Searching D:\minecraft modding\bellumacraft\forge\mcp\jars\mods for mods
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] Examining directory bin for potential mods
-2013-02-22 21:27:05 [FINE] [ForgeModLoader] No mcmod.info file found in directory bin
-2013-02-22 21:27:05 [FINEST] [ForgeModLoader] Recursing into package cpw
-2013-02-22 21:27:05 [FINEST] [ForgeModLoader] Recursing into package cpw.mods
-2013-02-22 21:27:05 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml
-2013-02-22 21:27:05 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.modloader
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.registry
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm.transformers
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery.asm
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.event
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.functions
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.modloader
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.network
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.registry
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.toposort
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.versioning
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.relauncher
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.server
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package ibxm
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.blocks
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.client
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.common
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.player
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.gui
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.items
-2013-02-22 21:27:06 [FINE] [ForgeModLoader] Identified a class mod.legendaire45.mod_retrogame following modloader naming convention but not directly a BaseMod or currently seen subclass
-2013-02-22 21:27:06 [FINE] [ForgeModLoader] Identified an FMLMod type mod mod.legendaire45.mod_retrogame
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Parsed dependency info : [] [] []
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.model
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network.player
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.recipe
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.item
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.player
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.server
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.armor
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.base
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.design
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.gui
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.item
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.tile
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.world
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block.material
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.audio
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.entity
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.achievement
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.inventory
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.model
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.multiplayer
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.particle
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.culling
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.entity
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.texturefx
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.tileentity
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.settings
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.texturepacks
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.command
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.crash
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.creativetab
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.dispenser
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.enchantment
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.ai
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.boss
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.effect
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.item
-2013-02-22 21:27:06 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.monster
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.passive
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.player
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.projectile
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.inventory
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item.crafting
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.nbt
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.packet
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.rcon
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.pathfinding
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.potion
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.profiler
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.dedicated
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.gui
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.integrated
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.management
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.src
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.stats
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.tileentity
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.util
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.village
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.biome
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk.storage
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.demo
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.feature
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.layer
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.structure
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.storage
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.classloading
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event.sound
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.common
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.item
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.living
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.minecart
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.player
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.terraingen
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.world
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.liquids
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.oredict
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.transformers
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package paulscode
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound.codecs
-2013-02-22 21:27:07 [INFO] [ForgeModLoader] Attempting to reparse the mod container bin
-2013-02-22 21:27:07 [FINE] [ForgeModLoader] Examining directory bin for potential mods
-2013-02-22 21:27:07 [FINE] [ForgeModLoader] No mcmod.info file found in directory bin
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.modloader
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.registry
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm.transformers
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery.asm
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.event
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.functions
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.modloader
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.network
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.registry
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.toposort
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.versioning
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.relauncher
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.server
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package ibxm
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.blocks
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.client
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.common
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.player
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.gui
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.items
-2013-02-22 21:27:07 [FINE] [ForgeModLoader] Identified a class mod.legendaire45.mod_retrogame following modloader naming convention but not directly a BaseMod or currently seen subclass
-2013-02-22 21:27:07 [FINE] [ForgeModLoader] Identified an FMLMod type mod mod.legendaire45.mod_retrogame
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Parsed dependency info : [] [] []
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.model
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network.player
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.recipe
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.item
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.player
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.server
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.armor
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.base
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.design
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.gui
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.item
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.tile
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.world
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block.material
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.audio
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.entity
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui
-2013-02-22 21:27:07 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.achievement
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.inventory
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.model
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.multiplayer
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.particle
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.culling
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.entity
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.texturefx
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.tileentity
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.settings
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.texturepacks
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.command
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.crash
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.creativetab
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.dispenser
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.enchantment
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.ai
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.boss
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.effect
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.item
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.monster
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.passive
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.player
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.projectile
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.inventory
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item.crafting
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.nbt
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.packet
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.rcon
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.pathfinding
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.potion
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.profiler
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.dedicated
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.gui
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.integrated
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.management
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.src
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.stats
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.tileentity
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.util
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.village
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.biome
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk.storage
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.demo
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.feature
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.layer
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.structure
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.storage
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.classloading
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event.sound
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.common
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.item
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.living
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.minecart
-2013-02-22 21:27:08 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.player
-2013-02-22 21:27:09 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.terraingen
-2013-02-22 21:27:09 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.world
-2013-02-22 21:27:09 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.liquids
-2013-02-22 21:27:09 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.oredict
-2013-02-22 21:27:09 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.transformers
-2013-02-22 21:27:09 [FINEST] [ForgeModLoader] Recursing into package paulscode
-2013-02-22 21:27:09 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound
-2013-02-22 21:27:09 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound.codecs
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] Examining file minecraft.jar for potential mods
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] The mod container minecraft.jar appears to be missing an mcmod.info file
-2013-02-22 21:27:09 [INFO] [ForgeModLoader] Forge Mod Loader has identified 4 mods to load
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] Received a system property request ''
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] System property request managing the state of 0 mods
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] After merging, found state information for 0 mods
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] Activating mod mcp
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] Activating mod FML
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] Activating mod Forge
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] Enabling mod mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] Activating mod mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] Verifying mod requirements are satisfied
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] All mod requirements are satisfied
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] Sorting mods into an ordered list
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] Mod sorting completed successfully
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] Mod sorting data:
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] 	mod_retrogame(mod retrogame:1.4.0): bin ()
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod mcp
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod mcp
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod FML
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod FML
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod Forge
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod Forge
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemReed(697) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemCup(687) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemCup(688) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemDrink(689) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemSeeds(690) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(691) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(698) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(699) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPelleMod(661) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPiocheMod(662) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolHacheMod(663) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolEpeeMod(664) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPelleMod(657) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPiocheMod(665) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolHacheMod(666) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolEpeeMod(667) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPelleMod(668) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPiocheMod(669) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolHacheMod(670) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolEpeeMod(671) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(672) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(673) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(674) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(675) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(676) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(677) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(678) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(679) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(680) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(681) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(682) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(683) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(684) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(685) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(686) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.MagicBow(692) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.TeleportBow(694) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(693) owned by mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(695) owned by mod_retrogame
-2013-02-22 21:27:09 [FINEST] [ForgeModLoader] Testing mod mod_retrogame to verify it accepts its own version in a remote connection
-2013-02-22 21:27:09 [FINEST] [ForgeModLoader] The mod mod_retrogame accepts its own version (1.4.0)
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] Attempting to inject @SidedProxy classes into mod_retrogame
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod mod_retrogame
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] Mod signature data:
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] 	mcp(Minecraft Coder Pack:7.26): minecraft.jar (NO VALID CERTIFICATE FOUND)
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] 	FML(Forge Mod Loader:4.7.4.520): coremods (NO VALID CERTIFICATE FOUND)
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] 	Forge(Minecraft Forge:6.6.0.497): coremods (NO VALID CERTIFICATE FOUND)
-2013-02-22 21:27:09 [FINE] [ForgeModLoader] 	mod_retrogame(mod retrogame:1.4.0): bin (NO VALID CERTIFICATE FOUND)
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod mcp
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod mcp
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod FML
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod FML
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod Forge
-2013-02-22 21:27:09 [INFO] [ForgeModLoader] Configured a dormant chunk cache size of 0
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod Forge
-2013-02-22 21:27:09 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod mod_retrogame
-2013-02-22 21:27:10 [INFO] [STDOUT] PlayerAPI 1.6 Created
-2013-02-22 21:27:10 [INFO] [STDOUT] PlayerAPI: registered mod_retrogame
-2013-02-22 21:27:10 [INFO] [STDOUT] RenderPlayerAPI 1.1 Created
-2013-02-22 21:27:10 [INFO] [STDOUT] RenderPlayerAPI: registered mod_retrogame
-2013-02-22 21:27:10 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod mod_retrogame
-2013-02-22 21:27:11 [INFO] [STDOUT] Starting up SoundSystem...
-2013-02-22 21:27:11 [INFO] [STDOUT] Initializing LWJGL OpenAL
-2013-02-22 21:27:11 [INFO] [STDOUT]     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-2013-02-22 21:27:11 [INFO] [STDOUT] OpenAL initialized.
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod mcp
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod mcp
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod FML
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod FML
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod Forge
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod Forge
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod mod_retrogame
-2013-02-22 21:27:12 [FINE] [ForgeModLoader] Skipping automatic mod mod_retrogame entity registration for already registered class mod.legendaire45.entity.EntityMagicArrow
-2013-02-22 21:27:12 [FINE] [ForgeModLoader] Skipping automatic mod mod_retrogame entity registration for already registered class mod.legendaire45.entity.EntityTeleportArrow
-2013-02-22 21:27:12 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(171) owned by mod_retrogame
-2013-02-22 21:27:12 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(172) owned by mod_retrogame
-2013-02-22 21:27:12 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(173) owned by mod_retrogame
-2013-02-22 21:27:12 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(174) owned by mod_retrogame
-2013-02-22 21:27:12 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(175) owned by mod_retrogame
-2013-02-22 21:27:12 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(176) owned by mod_retrogame
-2013-02-22 21:27:12 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(177) owned by mod_retrogame
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod mod_retrogame
-2013-02-22 21:27:12 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod mcp
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event IMCEvent to mod mcp
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event IMCEvent to mod mcp
-2013-02-22 21:27:12 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod FML
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event IMCEvent to mod FML
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event IMCEvent to mod FML
-2013-02-22 21:27:12 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod Forge
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event IMCEvent to mod Forge
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event IMCEvent to mod Forge
-2013-02-22 21:27:12 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod mod_retrogame
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event IMCEvent to mod mod_retrogame
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event IMCEvent to mod mod_retrogame
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod mcp
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod mcp
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod FML
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod FML
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod Forge
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod Forge
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod mod_retrogame
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod mod_retrogame
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod mcp
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod mcp
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod FML
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod FML
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod Forge
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod Forge
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod mod_retrogame
-2013-02-22 21:27:12 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod mod_retrogame
-2013-02-22 21:27:12 [INFO] [ForgeModLoader] Forge Mod Loader has successfully loaded 4 mods
-2013-02-22 21:27:14 [INFO] [STDERR] java.io.IOException: Server returned HTTP response code: 503 for URL: http://s3.amazonaws.com/MinecraftResources/
-2013-02-22 21:27:14 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615)
-2013-02-22 21:27:14 [INFO] [STDERR] 	at net.minecraft.util.ThreadDownloadResources.run(ThreadDownloadResources.java:57)
-2013-02-22 21:27:17 [INFO] [STDOUT] Connecting to 127.0.0.1, 25565
-2013-02-22 21:27:19 [FINE] [ForgeModLoader] The server has compatibility level 2
-2013-02-22 21:27:20 [FINE] [ForgeModLoader] The difference set is equal
-2013-02-22 21:28:10 [INFO] [STDOUT] rendering
-2013-02-22 21:28:11 [INFO] [STDOUT] rendering
-2013-02-22 21:28:11 [INFO] [STDOUT] rendering
-2013-02-22 21:28:11 [INFO] [STDOUT] rendering
-2013-02-22 21:28:11 [INFO] [STDOUT] rendering
-2013-02-22 21:28:12 [INFO] [STDOUT] rendering
-2013-02-22 21:28:12 [INFO] [STDOUT] rendering
-2013-02-22 21:28:12 [INFO] [STDOUT] rendering
-2013-02-22 21:28:12 [INFO] [STDOUT] rendering
-2013-02-22 21:28:12 [INFO] [STDOUT] rendering
-2013-02-22 21:28:13 [INFO] [STDOUT] rendering
-2013-02-22 21:28:13 [INFO] [STDOUT] rendering
-2013-02-22 21:28:13 [INFO] [STDOUT] rendering
-2013-02-22 21:28:13 [INFO] [STDOUT] rendering
-2013-02-22 21:28:14 [INFO] [STDOUT] rendering
-2013-02-22 21:28:14 [INFO] [STDOUT] rendering
-2013-02-22 21:28:14 [INFO] [STDOUT] rendering
-2013-02-22 21:28:17 [INFO] [STDOUT] rendering
-2013-02-22 21:28:17 [INFO] [STDOUT] rendering
-2013-02-22 21:28:17 [INFO] [STDOUT] rendering
-2013-02-22 21:28:17 [INFO] [STDOUT] rendering
-2013-02-22 21:28:17 [INFO] [STDOUT] rendering
-2013-02-22 21:28:18 [INFO] [STDOUT] rendering
-2013-02-22 21:28:18 [INFO] [STDOUT] rendering
-2013-02-22 21:28:18 [INFO] [STDOUT] rendering
-2013-02-22 21:28:18 [INFO] [STDOUT] rendering
-2013-02-22 21:28:18 [INFO] [STDOUT] rendering
-2013-02-22 21:28:18 [INFO] [STDOUT] rendering
-2013-02-22 21:28:19 [INFO] [STDOUT] rendering
-2013-02-22 21:28:19 [INFO] [STDOUT] rendering
-2013-02-22 21:28:19 [INFO] [STDOUT] rendering
-2013-02-22 21:28:19 [INFO] [STDOUT] rendering
-2013-02-22 21:28:19 [INFO] [STDOUT] rendering
-2013-02-22 21:28:20 [INFO] [STDOUT] rendering
-2013-02-22 21:28:20 [INFO] [STDOUT] rendering
-2013-02-22 21:28:20 [INFO] [STDOUT] rendering
-2013-02-22 21:28:20 [INFO] [STDOUT] rendering
-2013-02-22 21:28:21 [INFO] [STDOUT] rendering
-2013-02-22 21:28:21 [INFO] [STDOUT] rendering
-2013-02-22 21:28:21 [INFO] [STDOUT] rendering
-2013-02-22 21:28:21 [INFO] [STDOUT] rendering
-2013-02-22 21:28:21 [INFO] [STDOUT] rendering
-2013-02-22 21:28:22 [INFO] [STDOUT] rendering
-2013-02-22 21:28:22 [INFO] [STDOUT] rendering
-2013-02-22 21:28:22 [INFO] [STDOUT] rendering
-2013-02-22 21:28:22 [INFO] [STDOUT] rendering
-2013-02-22 21:28:23 [INFO] [STDOUT] rendering
-2013-02-22 21:28:23 [INFO] [STDOUT] rendering
-2013-02-22 21:28:23 [INFO] [STDOUT] rendering
-2013-02-22 21:28:23 [INFO] [STDOUT] rendering
-2013-02-22 21:28:23 [INFO] [STDOUT] rendering
-2013-02-22 21:28:24 [INFO] [STDOUT] rendering
-2013-02-22 21:28:24 [INFO] [STDOUT] rendering
-2013-02-22 21:28:24 [INFO] [STDOUT] rendering
-2013-02-22 21:28:24 [INFO] [STDOUT] rendering
-2013-02-22 21:28:24 [INFO] [STDOUT] rendering
-2013-02-22 21:28:24 [INFO] [STDOUT] rendering
-2013-02-22 21:28:25 [INFO] [STDOUT] rendering
-2013-02-22 21:28:25 [INFO] [STDOUT] rendering
-2013-02-22 21:28:25 [INFO] [STDOUT] rendering
-2013-02-22 21:28:25 [INFO] [STDOUT] rendering
-2013-02-22 21:28:25 [INFO] [STDOUT] rendering
-2013-02-22 21:28:25 [INFO] [STDOUT] rendering
-2013-02-22 21:28:26 [INFO] [STDOUT] rendering
-2013-02-22 21:28:26 [INFO] [STDOUT] rendering
-2013-02-22 21:28:26 [INFO] [STDOUT] rendering
-2013-02-22 21:28:26 [INFO] [STDOUT] rendering
-2013-02-22 21:28:26 [INFO] [STDOUT] rendering
-2013-02-22 21:28:26 [INFO] [STDOUT] rendering
-2013-02-22 21:28:27 [INFO] [STDOUT] rendering
-2013-02-22 21:28:27 [INFO] [STDOUT] rendering
-2013-02-22 21:28:27 [INFO] [STDOUT] rendering
-2013-02-22 21:28:27 [INFO] [STDOUT] rendering
-2013-02-22 21:28:27 [INFO] [STDOUT] rendering
-2013-02-22 21:28:27 [INFO] [STDOUT] rendering
-2013-02-22 21:28:27 [INFO] [STDOUT] rendering
-2013-02-22 21:28:27 [INFO] [STDOUT] rendering
-2013-02-22 21:28:27 [INFO] [STDOUT] rendering
-2013-02-22 21:28:27 [INFO] [STDOUT] rendering
-2013-02-22 21:28:27 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:28 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:29 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:30 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:31 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:32 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:33 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:34 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:35 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:36 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:37 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:38 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:39 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:40 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:41 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:42 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:43 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:44 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:45 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:46 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:47 [INFO] [STDOUT] rendering
-2013-02-22 21:28:58 [INFO] [STDOUT] rendering
-2013-02-22 21:28:58 [INFO] [STDOUT] rendering
-2013-02-22 21:28:58 [INFO] [STDOUT] rendering
-2013-02-22 21:28:58 [INFO] [STDOUT] rendering
-2013-02-22 21:28:58 [INFO] [STDOUT] rendering
-2013-02-22 21:28:58 [INFO] [STDOUT] rendering
-2013-02-22 21:28:58 [INFO] [STDOUT] rendering
-2013-02-22 21:28:58 [INFO] [STDOUT] rendering
-2013-02-22 21:28:58 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:28:59 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:01 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:02 [INFO] [STDOUT] rendering
-2013-02-22 21:29:03 [INFO] [STDOUT] rendering
-2013-02-22 21:29:03 [INFO] [STDOUT] rendering
-2013-02-22 21:29:04 [INFO] [STDOUT] Stopping!
-2013-02-22 21:29:04 [INFO] [STDOUT] SoundSystem shutting down...
-2013-02-22 21:29:04 [INFO] [STDOUT]     Author: Paul Lamb, www.paulscode.com
+2013-02-23 19:19:06 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
+2013-02-23 19:19:06 [FINEST] [ForgeModLoader] All core mods are successfully located
+2013-02-23 19:19:06 [FINEST] [ForgeModLoader] Discovering coremods
+2013-02-23 19:19:06 [FINEST] [ForgeModLoader] Found library file argo-2.25.jar present and correct in lib dir
+2013-02-23 19:19:06 [FINEST] [ForgeModLoader] Found library file guava-12.0.1.jar present and correct in lib dir
+2013-02-23 19:19:06 [FINEST] [ForgeModLoader] Found library file asm-all-4.0.jar present and correct in lib dir
+2013-02-23 19:19:06 [FINEST] [ForgeModLoader] Found library file bcprov-jdk15on-147.jar present and correct in lib dir
+2013-02-23 19:19:06 [FINEST] [ForgeModLoader] Running coremod plugins
+2013-02-23 19:19:06 [FINEST] [ForgeModLoader] Running coremod plugin FMLCorePlugin
+2013-02-23 19:19:06 [FINEST] [ForgeModLoader] Coremod plugin FMLCorePlugin run successfully
+2013-02-23 19:19:06 [FINEST] [ForgeModLoader] Running coremod plugin FMLForgePlugin
+2013-02-23 19:19:06 [FINEST] [ForgeModLoader] Coremod plugin FMLForgePlugin run successfully
+2013-02-23 19:19:06 [FINEST] [ForgeModLoader] Validating minecraft
+2013-02-23 19:19:07 [FINEST] [ForgeModLoader] Minecraft validated, launching...
+2013-02-23 19:19:09 [INFO] [STDOUT] 27 achievements
+2013-02-23 19:19:09 [INFO] [STDOUT] 210 recipes
+2013-02-23 19:19:09 [INFO] [STDOUT] Setting user: Player985, -
+2013-02-23 19:19:09 [INFO] [STDERR] Client asked for parameter: server
+2013-02-23 19:19:09 [INFO] [STDOUT] LWJGL Version: 2.4.2
+2013-02-23 19:19:10 [INFO] [ForgeModLoader] Attempting early MinecraftForge initialization
+2013-02-23 19:19:10 [INFO] [STDOUT] MinecraftForge v6.6.0.497 Initialized
+2013-02-23 19:19:10 [INFO] [ForgeModLoader] MinecraftForge v6.6.0.497 Initialized
+2013-02-23 19:19:11 [INFO] [STDOUT] Replaced 84 ore recipies
+2013-02-23 19:19:11 [INFO] [ForgeModLoader] Completed early MinecraftForge initialization
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Building injected Mod Containers [cpw.mods.fml.common.FMLDummyContainer, net.minecraftforge.common.ForgeDummyContainer]
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Attempting to load mods contained in the minecraft jar file and associated classes
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Found a minecraft related directory at D:\minecraft modding\bellumacraft\forge\mcp\eclipse\Minecraft\bin, examining for mod candidates
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\jinput.jar
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\lwjgl_util.jar
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\lwjgl.jar
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Found a minecraft related file at D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\minecraft.jar, examining for mod candidates
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\argo-2.25.jar
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\bcprov-jdk15on-147.jar
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\asm-all-4.0.jar
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\guava-12.0.1.jar
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\argo-2.25.jar
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\guava-12.0.1.jar
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\asm-all-4.0.jar
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\bcprov-jdk15on-147.jar
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Minecraft jar mods loaded successfully
+2013-02-23 19:19:11 [INFO] [ForgeModLoader] Searching D:\minecraft modding\bellumacraft\forge\mcp\jars\mods for mods
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Examining directory bin for potential mods
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] No mcmod.info file found in directory bin
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.modloader
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.registry
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm.transformers
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery.asm
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.event
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.functions
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.modloader
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.network
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.registry
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.toposort
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.versioning
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.relauncher
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.server
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package ibxm
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.blocks
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.client
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.common
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.player
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.gui
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.items
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Identified a class mod.legendaire45.mod_retrogame following modloader naming convention but not directly a BaseMod or currently seen subclass
+2013-02-23 19:19:11 [FINE] [ForgeModLoader] Identified an FMLMod type mod mod.legendaire45.mod_retrogame
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Parsed dependency info : [] [] []
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.model
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network.player
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.recipe
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.item
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.player
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.server
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.armor
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.base
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.design
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.gui
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.item
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.tile
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.world
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package net
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package net.minecraft
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block.material
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.audio
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.entity
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.achievement
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.inventory
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.model
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.multiplayer
+2013-02-23 19:19:11 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.particle
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.culling
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.entity
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.texturefx
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.tileentity
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.settings
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.texturepacks
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.command
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.crash
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.creativetab
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.dispenser
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.enchantment
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.ai
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.boss
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.effect
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.item
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.monster
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.passive
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.player
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.projectile
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.inventory
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item.crafting
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.nbt
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.packet
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.rcon
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.pathfinding
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.potion
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.profiler
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.dedicated
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.gui
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.integrated
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.management
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.src
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.stats
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.tileentity
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.util
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.village
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.biome
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk.storage
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.demo
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.feature
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.layer
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.structure
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.storage
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.classloading
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event.sound
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.common
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.item
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.living
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.minecart
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.player
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.terraingen
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.world
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.liquids
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.oredict
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.transformers
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package paulscode
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound.codecs
+2013-02-23 19:19:12 [INFO] [ForgeModLoader] Attempting to reparse the mod container bin
+2013-02-23 19:19:12 [FINE] [ForgeModLoader] Examining directory bin for potential mods
+2013-02-23 19:19:12 [FINE] [ForgeModLoader] No mcmod.info file found in directory bin
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package cpw
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package cpw.mods
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.modloader
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.registry
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm.transformers
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery.asm
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.event
+2013-02-23 19:19:12 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.functions
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.modloader
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.network
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.registry
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.toposort
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.versioning
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.relauncher
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.server
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package ibxm
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.blocks
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.client
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.common
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.player
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.gui
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.items
+2013-02-23 19:19:13 [FINE] [ForgeModLoader] Identified a class mod.legendaire45.mod_retrogame following modloader naming convention but not directly a BaseMod or currently seen subclass
+2013-02-23 19:19:13 [FINE] [ForgeModLoader] Identified an FMLMod type mod mod.legendaire45.mod_retrogame
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Parsed dependency info : [] [] []
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.model
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network.player
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.recipe
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.item
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.player
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.server
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.armor
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.base
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.design
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.gui
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.item
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.tile
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.world
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block.material
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.audio
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.entity
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.achievement
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.inventory
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.model
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.multiplayer
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.particle
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.culling
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.entity
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.texturefx
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.tileentity
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.settings
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.texturepacks
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.command
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.crash
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.creativetab
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.dispenser
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.enchantment
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.ai
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.boss
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.effect
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.item
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.monster
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.passive
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.player
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.projectile
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.inventory
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item.crafting
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.nbt
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.packet
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.rcon
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.pathfinding
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.potion
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.profiler
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.dedicated
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.gui
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.integrated
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.management
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.src
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.stats
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.tileentity
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.util
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.village
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world
+2013-02-23 19:19:13 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.biome
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk.storage
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.demo
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.feature
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.layer
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.structure
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.storage
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.classloading
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event.sound
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.common
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.item
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.living
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.minecart
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.player
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.terraingen
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.world
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.liquids
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.oredict
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.transformers
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package paulscode
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound.codecs
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] Examining file minecraft.jar for potential mods
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] The mod container minecraft.jar appears to be missing an mcmod.info file
+2013-02-23 19:19:14 [INFO] [ForgeModLoader] Forge Mod Loader has identified 4 mods to load
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] Received a system property request ''
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] System property request managing the state of 0 mods
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] After merging, found state information for 0 mods
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] Activating mod mcp
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] Activating mod FML
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] Activating mod Forge
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] Enabling mod mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] Activating mod mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] Verifying mod requirements are satisfied
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] All mod requirements are satisfied
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] Sorting mods into an ordered list
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] Mod sorting completed successfully
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] Mod sorting data:
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] 	mod_retrogame(mod retrogame:1.4.0): bin ()
+2013-02-23 19:19:14 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod mcp
+2013-02-23 19:19:14 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod mcp
+2013-02-23 19:19:14 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod FML
+2013-02-23 19:19:14 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod FML
+2013-02-23 19:19:14 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod Forge
+2013-02-23 19:19:14 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod Forge
+2013-02-23 19:19:14 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemReed(697) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemCup(687) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemCup(688) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemDrink(689) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemSeeds(690) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(691) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(698) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(699) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPelleMod(661) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPiocheMod(662) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolHacheMod(663) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolEpeeMod(664) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPelleMod(657) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPiocheMod(665) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolHacheMod(666) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolEpeeMod(667) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPelleMod(668) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPiocheMod(669) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolHacheMod(670) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolEpeeMod(671) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(672) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(673) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(674) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(675) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(676) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(677) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(678) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(679) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(680) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(681) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(682) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(683) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(684) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(685) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(686) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.MagicBow(692) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.TeleportBow(694) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(693) owned by mod_retrogame
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(695) owned by mod_retrogame
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] Testing mod mod_retrogame to verify it accepts its own version in a remote connection
+2013-02-23 19:19:14 [FINEST] [ForgeModLoader] The mod mod_retrogame accepts its own version (1.4.0)
+2013-02-23 19:19:14 [FINE] [ForgeModLoader] Attempting to inject @SidedProxy classes into mod_retrogame
+2013-02-23 19:19:15 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod mod_retrogame
+2013-02-23 19:19:15 [FINE] [ForgeModLoader] Mod signature data:
+2013-02-23 19:19:15 [FINE] [ForgeModLoader] 	mcp(Minecraft Coder Pack:7.26): minecraft.jar (NO VALID CERTIFICATE FOUND)
+2013-02-23 19:19:15 [FINE] [ForgeModLoader] 	FML(Forge Mod Loader:4.7.4.520): coremods (NO VALID CERTIFICATE FOUND)
+2013-02-23 19:19:15 [FINE] [ForgeModLoader] 	Forge(Minecraft Forge:6.6.0.497): coremods (NO VALID CERTIFICATE FOUND)
+2013-02-23 19:19:15 [FINE] [ForgeModLoader] 	mod_retrogame(mod retrogame:1.4.0): bin (NO VALID CERTIFICATE FOUND)
+2013-02-23 19:19:15 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod mcp
+2013-02-23 19:19:15 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod mcp
+2013-02-23 19:19:15 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod FML
+2013-02-23 19:19:15 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod FML
+2013-02-23 19:19:15 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod Forge
+2013-02-23 19:19:15 [INFO] [ForgeModLoader] Configured a dormant chunk cache size of 0
+2013-02-23 19:19:15 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod Forge
+2013-02-23 19:19:15 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod mod_retrogame
+2013-02-23 19:19:15 [INFO] [STDOUT] PlayerAPI 1.6 Created
+2013-02-23 19:19:15 [INFO] [STDOUT] PlayerAPI: registered mod_retrogame
+2013-02-23 19:19:15 [INFO] [STDOUT] RenderPlayerAPI 1.1 Created
+2013-02-23 19:19:15 [INFO] [STDOUT] RenderPlayerAPI: registered mod_retrogame
+2013-02-23 19:19:15 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod mod_retrogame
+2013-02-23 19:19:15 [INFO] [STDOUT] Starting up SoundSystem...
+2013-02-23 19:19:16 [INFO] [STDOUT] Initializing LWJGL OpenAL
+2013-02-23 19:19:16 [INFO] [STDOUT]     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+2013-02-23 19:19:16 [INFO] [STDOUT] OpenAL initialized.
+2013-02-23 19:19:16 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod mcp
+2013-02-23 19:19:16 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod mcp
+2013-02-23 19:19:16 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod FML
+2013-02-23 19:19:16 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod FML
+2013-02-23 19:19:16 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod Forge
+2013-02-23 19:19:16 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod Forge
+2013-02-23 19:19:16 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod mod_retrogame
+2013-02-23 19:19:17 [FINE] [ForgeModLoader] Skipping automatic mod mod_retrogame entity registration for already registered class mod.legendaire45.entity.EntityMagicArrow
+2013-02-23 19:19:17 [FINE] [ForgeModLoader] Skipping automatic mod mod_retrogame entity registration for already registered class mod.legendaire45.entity.EntityTeleportArrow
+2013-02-23 19:19:17 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(171) owned by mod_retrogame
+2013-02-23 19:19:17 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(172) owned by mod_retrogame
+2013-02-23 19:19:17 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(173) owned by mod_retrogame
+2013-02-23 19:19:17 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(174) owned by mod_retrogame
+2013-02-23 19:19:17 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(175) owned by mod_retrogame
+2013-02-23 19:19:17 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(176) owned by mod_retrogame
+2013-02-23 19:19:17 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(177) owned by mod_retrogame
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod mod_retrogame
+2013-02-23 19:19:17 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod mcp
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sending event IMCEvent to mod mcp
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sent event IMCEvent to mod mcp
+2013-02-23 19:19:17 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod FML
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sending event IMCEvent to mod FML
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sent event IMCEvent to mod FML
+2013-02-23 19:19:17 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod Forge
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sending event IMCEvent to mod Forge
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sent event IMCEvent to mod Forge
+2013-02-23 19:19:17 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod mod_retrogame
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sending event IMCEvent to mod mod_retrogame
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sent event IMCEvent to mod mod_retrogame
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod mcp
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod mcp
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod FML
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod FML
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod Forge
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod Forge
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod mod_retrogame
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod mod_retrogame
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod mcp
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod mcp
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod FML
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod FML
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod Forge
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod Forge
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod mod_retrogame
+2013-02-23 19:19:17 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod mod_retrogame
+2013-02-23 19:19:17 [INFO] [ForgeModLoader] Forge Mod Loader has successfully loaded 4 mods
+2013-02-23 19:19:22 [FINE] [ForgeModLoader] The difference set is equal
+2013-02-23 19:19:23 [INFO] [ForgeModLoader] Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@26f6fdf0)
+2013-02-23 19:19:23 [INFO] [ForgeModLoader] Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@26f6fdf0)
+2013-02-23 19:19:23 [INFO] [ForgeModLoader] Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@26f6fdf0)
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod mcp
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod mcp
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod FML
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod FML
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod Forge
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod Forge
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod mod_retrogame
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod mod_retrogame
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod mcp
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod mcp
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod FML
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod FML
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod Forge
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod Forge
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod mod_retrogame
+2013-02-23 19:19:24 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod mod_retrogame
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sending event FMLServerStoppingEvent to mod mcp
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sent event FMLServerStoppingEvent to mod mcp
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sending event FMLServerStoppingEvent to mod FML
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sent event FMLServerStoppingEvent to mod FML
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sending event FMLServerStoppingEvent to mod Forge
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sent event FMLServerStoppingEvent to mod Forge
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sending event FMLServerStoppingEvent to mod mod_retrogame
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sent event FMLServerStoppingEvent to mod mod_retrogame
+2013-02-23 19:19:55 [INFO] [ForgeModLoader] Unloading dimension 0
+2013-02-23 19:19:55 [INFO] [ForgeModLoader] Unloading dimension -1
+2013-02-23 19:19:55 [INFO] [ForgeModLoader] Unloading dimension 1
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod mcp
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod mcp
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod FML
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod FML
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod Forge
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod Forge
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod mod_retrogame
+2013-02-23 19:19:55 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod mod_retrogame
+2013-02-23 19:19:56 [INFO] [STDOUT] Stopping!
+2013-02-23 19:19:56 [INFO] [STDOUT] SoundSystem shutting down...
+2013-02-23 19:19:56 [INFO] [STDOUT]     Author: Paul Lamb, www.paulscode.com

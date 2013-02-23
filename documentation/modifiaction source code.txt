@@ -9,3 +9,5 @@ EntityPlayer.java ---> aka qx
 NetClientHandler.java ---> aka ayh
 	- private WorldClient worldClient;
 	+ public static WorldClient worldClient;
+
+EntityPlayerSP,EntityPlyerMP --> aka bag,iq --> playerAPI

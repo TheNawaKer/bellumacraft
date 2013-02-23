@@ -34,6 +34,7 @@ import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemReed;
 import net.minecraft.item.ItemSeeds;
+import net.minecraft.item.ItemStack;
 import net.minecraft.src.ModLoader;
 import net.minecraft.src.PlayerAPI;
 import net.minecraft.src.RenderPlayerAPI;
@@ -43,9 +44,11 @@ import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.Mod.PostInit;
 import cpw.mods.fml.common.Mod.PreInit;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.network.NetworkMod.SidedPacketHandler;
@@ -70,104 +73,6 @@ public class mod_retrogame
 		private static String textureBlock = CommonProxy.textureBlock; //Ici une façon d'appeler une texture par exemple afin de plus bas pouvoir écrire "textureblock"
 		private static String textureItem = CommonProxy.textureItem;
 		
-		@PreInit
-		public void initConfig(FMLPreInitializationEvent event)
-		{
-			Side side = FMLCommonHandler.instance().getEffectiveSide();
-			if(side == side.CLIENT)
-			{
-				PlayerAPI.register("mod_retrogame", EntityPlayerSword.class);
-		    	RenderPlayerAPI.register("mod_retrogame", RenderPlayerSword.class);
-			}
-			MinecraftForge.setToolClass(this.piocheToolE, "pickaxe", 2);
-			MinecraftForge.setToolClass(this.pelleToolE, "shovel", 2);
-			MinecraftForge.setToolClass(this.hacheToolE, "axe", 2);
-			MinecraftForge.setToolClass(this.piocheToolS, "pickaxe", 2);
-			MinecraftForge.setToolClass(this.pelleToolS, "shovel", 2);
-			MinecraftForge.setToolClass(this.hacheToolS, "axe", 2);
-			MinecraftForge.setToolClass(this.piocheToolR, "pickaxe", 2);
-			MinecraftForge.setToolClass(this.pelleToolR, "shovel", 2);
-			MinecraftForge.setToolClass(this.hacheToolR, "axe", 2);
-		}
-		
-		@Init
-		public void load(FMLInitializationEvent event)
-		{	
-			Side side = FMLCommonHandler.instance().getEffectiveSide();
-			if(side == side.SERVER)
-			{
-				ModLoader.registerTileEntity(TileEntityBeer.class, "beer");
-			}
-			proxy.registerRenderThings(); //Et oui, il faut bien dire de charger les proxy :)
-			EntityRegistry.registerModEntity(EntityMagicArrow.class, "firearrow", 1, this, 250, 5, false);
-			//ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
-			EntityRegistry.registerModEntity(EntityTeleportArrow.class, "teleportarrow", 2, this, 250, 5, false);
-			//ModLoader.registerEntityID(EntityTeleportArrow.class, "teleportarrow", ModLoader.getUniqueEntityId());
-			NetworkRegistry.instance().registerGuiHandler(this, guiHandler);
-			/**Enregistre le bloc**/
-
-			GameRegistry.registerBlock(beer);
-			GameRegistry.registerBlock(blockTrampoline);
-			GameRegistry.registerBlock(cropBeer);
-			GameRegistry.registerBlock(stair);	
-			GameRegistry.registerBlock(sofa);	
-			GameRegistry.registerBlock(rubyOre);
-			GameRegistry.registerBlock(saphirOre);
-			GameRegistry.registerWorldGenerator(new WorldGenOre());
-
-
-			/** D�fini le nom IN-GAME des items/blocs**/
-
-			LanguageRegistry.addName(pelleToolE, "Pelle en Emeraude");
-			LanguageRegistry.addName(piocheToolE, "Pioche en Emeraude");
-			LanguageRegistry.addName(hacheToolE, "Hache en Emeraude");
-			LanguageRegistry.addName(epeeToolE, "Epée en Emeraude");
-			LanguageRegistry.addName(pelleToolS, "Pelle en Saphir");
-			LanguageRegistry.addName(piocheToolS, "Pioche en Saphir");
-			LanguageRegistry.addName(hacheToolS, "Hache en Saphir");
-			LanguageRegistry.addName(epeeToolS, "Epée en Saphir");
-			LanguageRegistry.addName(pelleToolR, "Pelle en Ruby");
-			LanguageRegistry.addName(piocheToolR, "Pioche en Ruby");
-			LanguageRegistry.addName(hacheToolR, "Hache en Ruby");
-			LanguageRegistry.addName(epeeToolR, "Epée en Ruby");
-			
-			LanguageRegistry.addName(ArmorE1, "Casque en Emeraude");
-			LanguageRegistry.addName(ArmorE2, "Torse en Emeraude");
-			LanguageRegistry.addName(ArmorE3, "Jambiere en Emeraude");
-			LanguageRegistry.addName(ArmorE4, "Bottes en Emeraude");
-			LanguageRegistry.addName(ArmorS1, "Casque en Saphir");
-			LanguageRegistry.addName(ArmorS2, "Torse en Saphir");
-			LanguageRegistry.addName(ArmorS3, "Jambiere en Saphir");
-			LanguageRegistry.addName(ArmorS4, "Bottes en Saphir");
-			LanguageRegistry.addName(ArmorR1, "Casque en Ruby");
-			LanguageRegistry.addName(ArmorR2, "Torse en Ruby");
-			LanguageRegistry.addName(ArmorR3, "Jambiere en Ruby");
-			LanguageRegistry.addName(ArmorR4, "Bottes en Ruby");
-			LanguageRegistry.addName(lunette1, "Lunettes Noir");
-			LanguageRegistry.addName(lunette2, "Lunettes Blanche");
-			LanguageRegistry.addName(lunette3, "Lunettes Violette");
-
-			LanguageRegistry.addName(beer, "Distributeur");
-			LanguageRegistry.addName(blockTrampoline, "Bloc de Slime");
-			LanguageRegistry.addName(cropBeer, "Plante de Houblon");
-			LanguageRegistry.addName(stair, "Escalier en Buche");
-			
-			
-			LanguageRegistry.addName(Cup, "Chope");
-			LanguageRegistry.addName(BucketBeer, "Seau de Houblon");
-			LanguageRegistry.addName(CupBeer, "Chope Pleine");
-			LanguageRegistry.addName(seedBeer, "Graine de Houblon");
-			LanguageRegistry.addName(Beer, "Houblon");
-			
-			LanguageRegistry.addName(firearrow, "Fleche Eclairante");
-			LanguageRegistry.addName(firebow, "Arc Eclairant");
-			LanguageRegistry.addName(teleportarrow, "Ender Fleche");
-			LanguageRegistry.addName(teleportbow, "Ender Arc");
-			LanguageRegistry.addName(rubyOre, "Minerai de Ruby");
-			LanguageRegistry.addName(saphirOre, "Minerai de Saphir");
-			LanguageRegistry.addName(rubyGem, "Ruby");
-			LanguageRegistry.addName(saphirGem, "Saphir");
-	    }
 		static int IDoutil = 400;
 		static int IDblock = 170;
 
@@ -235,4 +140,137 @@ public class mod_retrogame
 	    public static final Item teleportbow = (new TeleportBow(IDoutil+38)).setIconCoord(12, 2).setTextureFile(textureItem).setItemName("teleportbow");
 	    public static final Item firearrow = (new Item(IDoutil+37)).setIconCoord(10, 3).setTextureFile(textureItem).setItemName("firearrow").setCreativeTab(CreativeTabs.tabCombat);
 	    public static final Item teleportarrow = (new Item(IDoutil+39)).setIconCoord(12, 3).setTextureFile(textureItem).setItemName("teleportarrow").setCreativeTab(CreativeTabs.tabCombat);
+	 
+	    
+		@PreInit
+		public void initConfig(FMLPreInitializationEvent event)
+		{
+			Side side = FMLCommonHandler.instance().getEffectiveSide();
+			if(side == side.CLIENT)
+			{
+				PlayerAPI.register("mod_retrogame", EntityPlayerSword.class);
+		    	RenderPlayerAPI.register("mod_retrogame", RenderPlayerSword.class);
+			}
+			MinecraftForge.setToolClass(this.piocheToolE, "pickaxe", 2);
+			MinecraftForge.setToolClass(this.pelleToolE, "shovel", 2);
+			MinecraftForge.setToolClass(this.hacheToolE, "axe", 2);
+			MinecraftForge.setToolClass(this.piocheToolS, "pickaxe", 2);
+			MinecraftForge.setToolClass(this.pelleToolS, "shovel", 2);
+			MinecraftForge.setToolClass(this.hacheToolS, "axe", 2);
+			MinecraftForge.setToolClass(this.piocheToolR, "pickaxe", 2);
+			MinecraftForge.setToolClass(this.pelleToolR, "shovel", 2);
+			MinecraftForge.setToolClass(this.hacheToolR, "axe", 2);
+		}
+		
+		@Init
+		public void load(FMLInitializationEvent event)
+		{	
+			Side side = FMLCommonHandler.instance().getEffectiveSide();
+			if(side == side.SERVER)
+			{
+				ModLoader.registerTileEntity(TileEntityBeer.class, "beer");
+			}
+			proxy.registerRenderThings(); //Et oui, il faut bien dire de charger les proxy :)
+			EntityRegistry.registerModEntity(EntityMagicArrow.class, "firearrow", 1, this, 250, 5, false);
+			//ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
+			EntityRegistry.registerModEntity(EntityTeleportArrow.class, "teleportarrow", 2, this, 250, 5, false);
+			//ModLoader.registerEntityID(EntityTeleportArrow.class, "teleportarrow", ModLoader.getUniqueEntityId());
+			NetworkRegistry.instance().registerGuiHandler(this, guiHandler);
+			
+			register();
+			name();
+	    }
+		
+		@PostInit
+		private void craft(FMLPostInitializationEvent event)
+		{
+			GameRegistry.addRecipe(new ItemStack(blockTrampoline), new Object[]	{"XXX", "XXX", "XXX", 'X', Item.slimeBall});
+			GameRegistry.addRecipe(new ItemStack(pelleToolR), new Object[]	{" 0 ", " X ", " X ", 'X', Item.stick, '0', rubyGem});
+			GameRegistry.addRecipe(new ItemStack(piocheToolR), new Object[]	{"000", " X ", " X ", 'X', Item.stick, '0', rubyGem});
+			GameRegistry.addRecipe(new ItemStack(hacheToolR), new Object[]	{"000", "0X0", " X ", 'X', Item.stick, '0', rubyGem});
+			GameRegistry.addRecipe(new ItemStack(epeeToolR), new Object[]	{" 0 ", " 0 ", " X ",  'X', Item.stick, '0', rubyGem});
+			
+			GameRegistry.addRecipe(new ItemStack(pelleToolS), new Object[]	{" 0 ", " X ", " X ", 'X', Item.stick, '0', saphirGem});
+			GameRegistry.addRecipe(new ItemStack(piocheToolS), new Object[]	{"000", " X ", " X ", 'X', Item.stick, '0', saphirGem});
+			GameRegistry.addRecipe(new ItemStack(hacheToolS), new Object[]	{"000", "0X0", " X ", 'X', Item.stick, '0', saphirGem});
+			GameRegistry.addRecipe(new ItemStack(epeeToolS), new Object[]	{" 0 ", " 0 ", " X ",  'X', Item.stick, '0', saphirGem});
+		
+			GameRegistry.addRecipe(new ItemStack(pelleToolE), new Object[]	{" 0 ", " X ", " X ", 'X', Item.stick, '0', Item.emerald});
+			GameRegistry.addRecipe(new ItemStack(piocheToolE), new Object[]	{"000", " X ", " X ", 'X', Item.stick, '0', Item.emerald});
+			GameRegistry.addRecipe(new ItemStack(hacheToolE), new Object[]	{"000", "0X0", " X ", 'X', Item.stick, '0', Item.emerald});
+			GameRegistry.addRecipe(new ItemStack(epeeToolE), new Object[]	{" 0 ", " 0 ", " X ",  'X', Item.stick, '0', Item.emerald});
+		}   
+
+		
+		
+		private void register() {
+			GameRegistry.registerBlock(beer);
+			GameRegistry.registerBlock(blockTrampoline);
+			GameRegistry.registerBlock(cropBeer);
+			GameRegistry.registerBlock(stair);	
+			GameRegistry.registerBlock(sofa);	
+			GameRegistry.registerBlock(rubyOre);
+			GameRegistry.registerBlock(saphirOre);
+			GameRegistry.registerWorldGenerator(new WorldGenOre());
+		}
+		
+	    private void name() {
+			/** D�fini le nom IN-GAME des items/blocs**/
+
+			LanguageRegistry.addName(pelleToolE, "Pelle en Emeraude");
+			LanguageRegistry.addName(piocheToolE, "Pioche en Emeraude");
+			LanguageRegistry.addName(hacheToolE, "Hache en Emeraude");
+			LanguageRegistry.addName(epeeToolE, "Epée en Emeraude");
+			LanguageRegistry.addName(pelleToolS, "Pelle en Saphir");
+			LanguageRegistry.addName(piocheToolS, "Pioche en Saphir");
+			LanguageRegistry.addName(hacheToolS, "Hache en Saphir");
+			LanguageRegistry.addName(epeeToolS, "Epée en Saphir");
+			LanguageRegistry.addName(pelleToolR, "Pelle en Ruby");
+			LanguageRegistry.addName(piocheToolR, "Pioche en Ruby");
+			LanguageRegistry.addName(hacheToolR, "Hache en Ruby");
+			LanguageRegistry.addName(epeeToolR, "Epée en Ruby");
+			
+			LanguageRegistry.addName(ArmorE1, "Casque en Emeraude");
+			LanguageRegistry.addName(ArmorE2, "Torse en Emeraude");
+			LanguageRegistry.addName(ArmorE3, "Jambiere en Emeraude");
+			LanguageRegistry.addName(ArmorE4, "Bottes en Emeraude");
+			LanguageRegistry.addName(ArmorS1, "Casque en Saphir");
+			LanguageRegistry.addName(ArmorS2, "Torse en Saphir");
+			LanguageRegistry.addName(ArmorS3, "Jambiere en Saphir");
+			LanguageRegistry.addName(ArmorS4, "Bottes en Saphir");
+			LanguageRegistry.addName(ArmorR1, "Casque en Ruby");
+			LanguageRegistry.addName(ArmorR2, "Torse en Ruby");
+			LanguageRegistry.addName(ArmorR3, "Jambiere en Ruby");
+			LanguageRegistry.addName(ArmorR4, "Bottes en Ruby");
+			LanguageRegistry.addName(lunette1, "Lunettes Noir");
+			LanguageRegistry.addName(lunette2, "Lunettes Blanche");
+			LanguageRegistry.addName(lunette3, "Lunettes Violette");
+
+			LanguageRegistry.addName(beer, "Distributeur");
+			LanguageRegistry.addName(blockTrampoline, "Bloc de Slime");
+			LanguageRegistry.addName(cropBeer, "Plante de Houblon");
+			LanguageRegistry.addName(stair, "Escalier en Buche");
+			
+			
+			LanguageRegistry.addName(Cup, "Chope");
+			LanguageRegistry.addName(BucketBeer, "Seau de Houblon");
+			LanguageRegistry.addName(CupBeer, "Chope Pleine");
+			LanguageRegistry.addName(seedBeer, "Graine de Houblon");
+			LanguageRegistry.addName(Beer, "Houblon");
+			
+			LanguageRegistry.addName(firearrow, "Fleche Eclairante");
+			LanguageRegistry.addName(firebow, "Arc Eclairant");
+			LanguageRegistry.addName(teleportarrow, "Ender Fleche");
+			LanguageRegistry.addName(teleportbow, "Ender Arc");
+			LanguageRegistry.addName(rubyOre, "Minerai de Ruby");
+			LanguageRegistry.addName(saphirOre, "Minerai de Saphir");
+			LanguageRegistry.addName(rubyGem, "Ruby");
+			LanguageRegistry.addName(saphirGem, "Saphir");
+			
+		}
+	    
+
+
+
+
 }
