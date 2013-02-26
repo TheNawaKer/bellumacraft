@@ -83,14 +83,14 @@ public class mod_retrogame
 		static int IDoutil = 400;
 		static int IDblock = 170;
 
-		static EnumToolMaterial emerald= EnumHelper.addToolMaterial("EMERALD", 2, 500, 7F, 3, 9);
-		static EnumToolMaterial saphir= EnumHelper.addToolMaterial("SAPHIR", 2, 500, 7F, 3, 9);
-		static EnumToolMaterial ruby= EnumHelper.addToolMaterial("RUBY", 2, 500, 7F, 3, 9);		
+		static EnumToolMaterial emerald= EnumHelper.addToolMaterial("EMERALD", 2, 1800, 8.5F, 4, 22);
+		static EnumToolMaterial saphir= EnumHelper.addToolMaterial("SAPHIR", 2, 1800, 9F, 3, 22);
+		static EnumToolMaterial ruby= EnumHelper.addToolMaterial("RUBY", 2, 1800, 10F, 2, 22);		
 		
-		public static EnumArmorMaterial emeraldarmor = EnumHelper.addArmorMaterial("EMERALD", 29, new int[] {1, 2, 3, 4}, 9);
-		public static EnumArmorMaterial saphirarmor = EnumHelper.addArmorMaterial("SAPHIR", 29, new int[] {1, 2, 3, 4}, 9);
-		public static EnumArmorMaterial rubyarmor = EnumHelper.addArmorMaterial("RUBY", 29, new int[] {1, 2, 3, 4}, 9);
-		public static EnumArmorMaterial lunette = EnumHelper.addArmorMaterial("PLASTIC", 29, new int[] {1, 2, 3, 4}, 9);
+		public static EnumArmorMaterial emeraldarmor = EnumHelper.addArmorMaterial("EMERALD", 33, new int[] {5, 10, 8, 5}, 25);
+		public static EnumArmorMaterial saphirarmor = EnumHelper.addArmorMaterial("SAPHIR", 33, new int[] {4, 9, 7, 4}, 25);
+		public static EnumArmorMaterial rubyarmor = EnumHelper.addArmorMaterial("RUBY", 33, new int[] {4, 9, 7, 4}, 25);
+		public static EnumArmorMaterial lunette = EnumHelper.addArmorMaterial("PLASTIC", 5, new int[] {1, 2, 3, 4}, 9);
 		
 		public static final Block beer = (new BlockBeer(IDblock+1, 37, Material.grass)).setTextureFile(textureItem).setBlockName("Distributeur2").setCreativeTab(CreativeTabs.tabBlock);
 		public static final Block blockTrampoline = new BlockTrampoline(IDblock+2, 1, Material.grass).setBlockName("Bloc de Slime").setTextureFile(textureBlock).setHardness(.5F).setStepSound(Block.soundSnowFootstep).setCreativeTab(CreativeTabs.tabBlock);
@@ -182,8 +182,8 @@ public class mod_retrogame
 				ModLoader.registerTileEntity(TileEntityBeer.class, "beer");
 				ModLoader.registerTileEntity(TileEntityTrampoline.class, "trampoline");
 			}
-			ModLoader.registerEntityID(EntityCheval.class, "Cheval", ModLoader.getUniqueEntityId());   // Donne une ID au mob			 
-		    ModLoader.addSpawn(EntityCheval.class, 100, 10, 10,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawnés et choix des biomes pour le spawn 
+			//ModLoader.registerEntityID(EntityCheval.class, "Cheval", ModLoader.getUniqueEntityId());   // Donne une ID au mob			 
+		    //ModLoader.addSpawn(EntityCheval.class, 100, 10, 10,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawnés et choix des biomes pour le spawn 
 			proxy.registerRenderThings(); //Et oui, il faut bien dire de charger les proxy :)
 			EntityRegistry.registerModEntity(EntityMagicArrow.class, "firearrow", 1, this, 250, 5, false);
 			//ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());

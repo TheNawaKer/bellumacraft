@@ -32,6 +32,6 @@ public class BlockSaphir extends Block
     
     public void onBlockDestroyedByPlayer(World world, int x, int y, int z, int meta)
     {
-    	this.dropXpOnBlockBreak(world, x, y, z, 100);
+    	this.dropXpOnBlockBreak(world, x, y, z, 25);
     }
 }

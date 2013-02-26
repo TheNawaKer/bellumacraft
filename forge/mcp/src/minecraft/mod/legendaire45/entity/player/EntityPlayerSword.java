@@ -18,13 +18,18 @@ public class EntityPlayerSword extends PlayerBase
     
     public void afterOnUpdate()
     {
+    	System.out.println("error ...");
 		 boolean var = false;
+		 System.out.println(this.mc.thePlayer);
+		 System.out.println(this.mc.thePlayer.inventory.currentItem);
+		 System.out.println(this.mc.thePlayer.select);
 		 if(this.mc.thePlayer.inventory.currentItem != this.mc.thePlayer.select)
 		 {
 			 var=true;
 		 }
 		 else if(this.mc.thePlayer.inventory.mainInventory[0].itemID == this.mc.thePlayer.tool.itemID)
 		 {
+			 System.out.println("error 3...");
 			 var=false;
 		 }
 		 else if(this.mc.thePlayer.inventory.mainInventory[1].itemID == this.mc.thePlayer.tool2.itemID)

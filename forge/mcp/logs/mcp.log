@@ -45970,3 +45970,185 @@ based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
 18:03:34 - > Outputted mod/legendaire45/items/ItemToolEpeeMod to reobf\minecraft as mod/legendaire45/items/ItemToolEpeeMod.class
 18:03:34 - - Done in 29.19 seconds
 18:03:34 - !! Can not find server md5s !!
+15:30:06 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+15:30:06 - OS : win32
+15:30:09 - # VERSION INFO
+15:30:09 - python: 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
+15:30:09 - platform: Windows-7-6.1.7601-SP1
+15:30:09 - # java: '"C:\Program Files\Java\jdk1.7.0_06\bin\java" -version'
+15:30:10 - java version "1.7.0_06"
+Java(TM) SE Runtime Environment (build 1.7.0_06-b24)
+Java HotSpot(TM) 64-Bit Server VM (build 23.2-b09, mixed mode)
+15:30:10 - # javac: '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -version'
+15:30:11 - javac 1.7.0_06
+15:30:11 - # javac runtime: '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -J-version'
+15:30:11 - java version "1.7.0_06"
+Java(TM) SE Runtime Environment (build 1.7.0_06-b24)
+Java HotSpot(TM) 64-Bit Server VM (build 23.2-b09, mixed mode)
+15:30:11 - # retroguard: 'runtime\bin\retroguard.jar --version'
+15:30:11 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+15:30:11 - # mcinjector: 'runtime\bin\mcinjector.jar --version'
+15:30:12 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+15:30:12 - # patch: 'runtime\bin\applydiff.exe --version'
+15:30:12 - patch 2.5.4
+15:30:12 - # astyle: 'runtime\bin\astyle.exe --version'
+15:30:14 - Artistic Style Version 2.02.1
+15:30:14 - # jadretro: 'runtime\bin\jadretro.jar'
+15:30:14 - Error: Unable to access jarfile runtime\bin\jadretro.jar
+15:30:14 - # jad: 'runtime\bin\jad.exe'
+15:30:14 - # fernflower: 'runtime\bin\fernflower.jar'
+15:30:14 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+15:30:14 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+15:30:14 - == Recompiling client ==
+15:30:14 - > Cleaning bin
+15:30:16 - > Recompiling
+15:30:17 - runcmd: '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "lib;lib\*;jars\bin\minecraft.jar;jars\bin\jinput.jar;jars\bin\lwjgl.jar;jars\bin\lwjgl_util.jar" -sourcepath src\minecraft -d bin\minecraft src\minecraft\*.java src\minecraft\cpw\mods\fml\client\*.java src\minecraft\cpw\mods\fml\client\modloader\*.java src\minecraft\cpw\mods\fml\client\registry\*.java src\minecraft\cpw\mods\fml\common\*.java src\minecraft\cpw\mods\fml...'
+15:30:17 - shlex: ['C:\\Program Files\\Java\\jdk1.7.0_06\\bin\\javac', '-encoding', 'UTF-8', '-Xlint:-options', '-deprecation', '-g', '-source', '1.6', '-target', '1.6', '-classpath', 'lib;lib\\*;jars\\bin\\minecraft.jar;jars\\bin\\jinput.jar;jars\\bin\\lwjgl.jar;jars\\bin\\lwjgl_util.jar', '-sourcepath', 'src\\minecraft', '-d', 'bin\\minecraft', 'src\\minecraft\\*.java', 'src\\minecraft\\cpw\\mods\\fml\\client\\*.java', 'src\\minecraft\\cpw\\mods\\fml\\client\\modloader\\*.java', 'src\\minecraft\\cpw\\mods\\fml\...
+15:30:24 - src\minecraft\mod\legendaire45\mod_retrogame.java:186: error: unmappable character for encoding UTF-8
+15:30:24 - 		    ModLoader.addSpawn(EntityCheval.class, 100, 10, 10,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawn?s et choix des biomes pour le spawn 
+15:30:24 - 		                                                                                                                                                                                                                   ^
+15:30:24 - src\minecraft\mod\legendaire45\entity\mobs\EntityCheval.java:19: error: unmappable character for encoding UTF-8
+15:30:24 -         moveSpeed = 1.0F;                   // r?glez ca vitesse ici
+15:30:24 -                                                 ^
+15:30:24 - 2 errors
+15:30:24 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+15:30:24 - 
+15:30:24 - == ERRORS FOUND ==
+15:30:24 - 
+15:30:24 - src\minecraft\mod\legendaire45\mod_retrogame.java:186: error: unmappable character for encoding UTF-8
+15:30:24 - 		    ModLoader.addSpawn(EntityCheval.class, 100, 10, 10,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawn?s et choix des biomes pour le spawn 
+15:30:24 - 		                                                                                                                                                                                                                   ^
+15:30:24 - 
+15:30:24 - src\minecraft\mod\legendaire45\entity\mobs\EntityCheval.java:19: error: unmappable character for encoding UTF-8
+15:30:24 -         moveSpeed = 1.0F;                   // r?glez ca vitesse ici
+15:30:24 -                                                 ^
+15:30:24 - 
+15:30:24 - 2 errors
+15:30:24 - ==================
+15:30:24 - 
+15:30:24 - !! Can not find server sources, try decompiling !!
+15:30:25 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+15:30:25 - OS : win32
+15:30:25 - # VERSION INFO
+15:30:25 - python: 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
+15:30:25 - platform: Windows-7-6.1.7601-SP1
+15:30:25 - # java: '"C:\Program Files\Java\jdk1.7.0_06\bin\java" -version'
+15:30:25 - java version "1.7.0_06"
+Java(TM) SE Runtime Environment (build 1.7.0_06-b24)
+Java HotSpot(TM) 64-Bit Server VM (build 23.2-b09, mixed mode)
+15:30:25 - # javac: '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -version'
+15:30:26 - javac 1.7.0_06
+15:30:26 - # javac runtime: '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -J-version'
+15:30:26 - java version "1.7.0_06"
+Java(TM) SE Runtime Environment (build 1.7.0_06-b24)
+Java HotSpot(TM) 64-Bit Server VM (build 23.2-b09, mixed mode)
+15:30:26 - # retroguard: 'runtime\bin\retroguard.jar --version'
+15:30:26 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+15:30:26 - # mcinjector: 'runtime\bin\mcinjector.jar --version'
+15:30:27 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+15:30:27 - # patch: 'runtime\bin\applydiff.exe --version'
+15:30:27 - patch 2.5.4
+15:30:27 - # astyle: 'runtime\bin\astyle.exe --version'
+15:30:27 - Artistic Style Version 2.02.1
+15:30:27 - # jadretro: 'runtime\bin\jadretro.jar'
+15:30:27 - Error: Unable to access jarfile runtime\bin\jadretro.jar
+15:30:27 - # jad: 'runtime\bin\jad.exe'
+15:30:27 - # fernflower: 'runtime\bin\fernflower.jar'
+15:30:27 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+15:30:27 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+15:30:27 - > Creating Retroguard config files
+15:30:27 - !! Can not find client bins, try recompiling !!
+15:30:27 - !! Can not find server md5s !!
+15:33:06 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+15:33:06 - OS : win32
+15:33:06 - # VERSION INFO
+15:33:06 - python: 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
+15:33:06 - platform: Windows-7-6.1.7601-SP1
+15:33:06 - # java: '"C:\Program Files\Java\jdk1.7.0_06\bin\java" -version'
+15:33:06 - java version "1.7.0_06"
+Java(TM) SE Runtime Environment (build 1.7.0_06-b24)
+Java HotSpot(TM) 64-Bit Server VM (build 23.2-b09, mixed mode)
+15:33:06 - # javac: '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -version'
+15:33:07 - javac 1.7.0_06
+15:33:07 - # javac runtime: '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -J-version'
+15:33:07 - java version "1.7.0_06"
+Java(TM) SE Runtime Environment (build 1.7.0_06-b24)
+Java HotSpot(TM) 64-Bit Server VM (build 23.2-b09, mixed mode)
+15:33:07 - # retroguard: 'runtime\bin\retroguard.jar --version'
+15:33:07 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+15:33:07 - # mcinjector: 'runtime\bin\mcinjector.jar --version'
+15:33:07 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+15:33:07 - # patch: 'runtime\bin\applydiff.exe --version'
+15:33:07 - patch 2.5.4
+15:33:07 - # astyle: 'runtime\bin\astyle.exe --version'
+15:33:07 - Artistic Style Version 2.02.1
+15:33:07 - # jadretro: 'runtime\bin\jadretro.jar'
+15:33:07 - Error: Unable to access jarfile runtime\bin\jadretro.jar
+15:33:07 - # jad: 'runtime\bin\jad.exe'
+15:33:07 - # fernflower: 'runtime\bin\fernflower.jar'
+15:33:08 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+15:33:08 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+15:33:08 - == Recompiling client ==
+15:33:08 - > Cleaning bin
+15:33:08 - > Recompiling
+15:33:08 - runcmd: '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "lib;lib\*;jars\bin\minecraft.jar;jars\bin\jinput.jar;jars\bin\lwjgl.jar;jars\bin\lwjgl_util.jar" -sourcepath src\minecraft -d bin\minecraft src\minecraft\*.java src\minecraft\cpw\mods\fml\client\*.java src\minecraft\cpw\mods\fml\client\modloader\*.java src\minecraft\cpw\mods\fml\client\registry\*.java src\minecraft\cpw\mods\fml\common\*.java src\minecraft\cpw\mods\fml...'
+15:33:08 - shlex: ['C:\\Program Files\\Java\\jdk1.7.0_06\\bin\\javac', '-encoding', 'UTF-8', '-Xlint:-options', '-deprecation', '-g', '-source', '1.6', '-target', '1.6', '-classpath', 'lib;lib\\*;jars\\bin\\minecraft.jar;jars\\bin\\jinput.jar;jars\\bin\\lwjgl.jar;jars\\bin\\lwjgl_util.jar', '-sourcepath', 'src\\minecraft', '-d', 'bin\\minecraft', 'src\\minecraft\\*.java', 'src\\minecraft\\cpw\\mods\\fml\\client\\*.java', 'src\\minecraft\\cpw\\mods\\fml\\client\\modloader\\*.java', 'src\\minecraft\\cpw\\mods\\fml\...
+15:33:13 - src\minecraft\mod\legendaire45\mod_retrogame.java:186: error: unmappable character for encoding UTF-8
+15:33:13 - 		    ModLoader.addSpawn(EntityCheval.class, 100, 10, 10,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawn?s et choix des biomes pour le spawn 
+15:33:13 - 		                                                                                                                                                                                                                   ^
+15:33:13 - src\minecraft\mod\legendaire45\entity\mobs\EntityCheval.java:19: error: unmappable character for encoding UTF-8
+15:33:13 -         moveSpeed = 1.0F;                   // r?glez ca vitesse ici
+15:33:13 -                                                 ^
+15:33:13 - 2 errors
+15:33:13 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+15:33:13 - 
+15:33:13 - == ERRORS FOUND ==
+15:33:13 - 
+15:33:13 - src\minecraft\mod\legendaire45\mod_retrogame.java:186: error: unmappable character for encoding UTF-8
+15:33:13 - 		    ModLoader.addSpawn(EntityCheval.class, 100, 10, 10,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawn?s et choix des biomes pour le spawn 
+15:33:13 - 		                                                                                                                                                                                                                   ^
+15:33:13 - 
+15:33:13 - src\minecraft\mod\legendaire45\entity\mobs\EntityCheval.java:19: error: unmappable character for encoding UTF-8
+15:33:13 -         moveSpeed = 1.0F;                   // r?glez ca vitesse ici
+15:33:13 -                                                 ^
+15:33:13 - 
+15:33:13 - 2 errors
+15:33:13 - ==================
+15:33:13 - 
+15:33:13 - !! Can not find server sources, try decompiling !!
+15:33:13 - == MCP 7.26 (data: 7.26, client: 1.4.7, server: 1.4.7) ==
+15:33:13 - OS : win32
+15:33:13 - # VERSION INFO
+15:33:13 - python: 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
+15:33:14 - platform: Windows-7-6.1.7601-SP1
+15:33:14 - # java: '"C:\Program Files\Java\jdk1.7.0_06\bin\java" -version'
+15:33:14 - java version "1.7.0_06"
+Java(TM) SE Runtime Environment (build 1.7.0_06-b24)
+Java HotSpot(TM) 64-Bit Server VM (build 23.2-b09, mixed mode)
+15:33:14 - # javac: '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -version'
+15:33:14 - javac 1.7.0_06
+15:33:14 - # javac runtime: '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -J-version'
+15:33:14 - java version "1.7.0_06"
+Java(TM) SE Runtime Environment (build 1.7.0_06-b24)
+Java HotSpot(TM) 64-Bit Server VM (build 23.2-b09, mixed mode)
+15:33:14 - # retroguard: 'runtime\bin\retroguard.jar --version'
+15:33:15 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+15:33:15 - # mcinjector: 'runtime\bin\mcinjector.jar --version'
+15:33:15 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+15:33:15 - # patch: 'runtime\bin\applydiff.exe --version'
+15:33:15 - patch 2.5.4
+15:33:15 - # astyle: 'runtime\bin\astyle.exe --version'
+15:33:15 - Artistic Style Version 2.02.1
+15:33:15 - # jadretro: 'runtime\bin\jadretro.jar'
+15:33:15 - Error: Unable to access jarfile runtime\bin\jadretro.jar
+15:33:15 - # jad: 'runtime\bin\jad.exe'
+15:33:15 - # fernflower: 'runtime\bin\fernflower.jar'
+15:33:15 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+15:33:15 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+15:33:15 - > Creating Retroguard config files
+15:33:15 - !! Can not find client bins, try recompiling !!
+15:33:15 - !! Can not find server md5s !!

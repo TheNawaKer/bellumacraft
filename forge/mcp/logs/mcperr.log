@@ -442,3 +442,39 @@ Traceback (most recent call last):
 WindowsError: [Error 5] Accès refus: 'reobf\\minecraft'
 18:03:02 - !! Can not find server sources, try decompiling !!
 18:03:34 - !! Can not find server md5s !!
+15:30:24 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+15:30:24 - 
+15:30:24 - == ERRORS FOUND ==
+15:30:24 - 
+15:30:24 - src\minecraft\mod\legendaire45\mod_retrogame.java:186: error: unmappable character for encoding UTF-8
+15:30:24 - 		    ModLoader.addSpawn(EntityCheval.class, 100, 10, 10,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawn?s et choix des biomes pour le spawn 
+15:30:24 - 		                                                                                                                                                                                                                   ^
+15:30:24 - 
+15:30:24 - src\minecraft\mod\legendaire45\entity\mobs\EntityCheval.java:19: error: unmappable character for encoding UTF-8
+15:30:24 -         moveSpeed = 1.0F;                   // r?glez ca vitesse ici
+15:30:24 -                                                 ^
+15:30:24 - 
+15:30:24 - 2 errors
+15:30:24 - ==================
+15:30:24 - 
+15:30:24 - !! Can not find server sources, try decompiling !!
+15:30:27 - !! Can not find client bins, try recompiling !!
+15:30:27 - !! Can not find server md5s !!
+15:33:13 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+15:33:13 - 
+15:33:13 - == ERRORS FOUND ==
+15:33:13 - 
+15:33:13 - src\minecraft\mod\legendaire45\mod_retrogame.java:186: error: unmappable character for encoding UTF-8
+15:33:13 - 		    ModLoader.addSpawn(EntityCheval.class, 100, 10, 10,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawn?s et choix des biomes pour le spawn 
+15:33:13 - 		                                                                                                                                                                                                                   ^
+15:33:13 - 
+15:33:13 - src\minecraft\mod\legendaire45\entity\mobs\EntityCheval.java:19: error: unmappable character for encoding UTF-8
+15:33:13 -         moveSpeed = 1.0F;                   // r?glez ca vitesse ici
+15:33:13 -                                                 ^
+15:33:13 - 
+15:33:13 - 2 errors
+15:33:13 - ==================
+15:33:13 - 
+15:33:13 - !! Can not find server sources, try decompiling !!
+15:33:15 - !! Can not find client bins, try recompiling !!
+15:33:15 - !! Can not find server md5s !!
