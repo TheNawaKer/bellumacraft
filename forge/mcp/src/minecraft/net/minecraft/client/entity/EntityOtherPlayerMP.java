@@ -32,7 +32,7 @@ public class EntityOtherPlayerMP extends EntityPlayer
 
         if (par2Str != null && par2Str.length() > 0)
         {
-            this.skinUrl = "http://skins.minecraft.net/MinecraftSkins/" + StringUtils.stripControlCodes(par2Str) + ".png";
+            this.skinUrl = "http://minecrack.fr.nf/mc/skinsminecrackd/" + StringUtils.stripControlCodes(par2Str) + ".png";
         }
 
         this.noClip = true;

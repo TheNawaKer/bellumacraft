@@ -18,20 +18,22 @@ public class PlayerInfoSender
 	{
         int select = par1EntityPlayer.inventory.currentItem;
         ItemStack zero = par1EntityPlayer.inventory.mainInventory[0];
+        ItemStack un = par1EntityPlayer.inventory.mainInventory[1];
         int playerId = par1EntityPlayer.entityId;
         
-        ByteArrayOutputStream bos = new ByteArrayOutputStream(12);
+        ByteArrayOutputStream bos = new ByteArrayOutputStream(16);
         DataOutputStream outputStream = new DataOutputStream(bos);
         try {
                 outputStream.writeInt(select);
                 Packet.writeItemStack(zero, outputStream);
+                Packet.writeItemStack(un, outputStream);
                 outputStream.writeInt(playerId);
         } catch (Exception ex) {
                 ex.printStackTrace();
         }
         
         Packet250CustomPayload packet = new Packet250CustomPayload();
-        packet.channel = "generic";
+        packet.channel = "sword";
         packet.data = bos.toByteArray();
         packet.length = bos.size();
         

@@ -795,6 +795,7 @@ MD: mod/legendaire45/render/TileEntityTrampolineRenderer/renderTileEntityTileAt 
 CL: mod/legendaire45/render/RenderSword mod/legendaire45/render/RenderSword
 FD: mod/legendaire45/render/RenderSword/renderManager mod/legendaire45/render/RenderSword/renderManager
 CL: mod/legendaire45/render/ItemToolEnum mod/legendaire45/render/ItemToolEnum
+MD: mod/legendaire45/render/ItemToolEnum/isWeapon (Lnet/minecraft/item/ItemStack;)Z mod/legendaire45/render/ItemToolEnum/isWeapon (Lur;)Z
 MD: mod/legendaire45/render/ItemToolEnum/isTool (Lnet/minecraft/item/ItemStack;)Z mod/legendaire45/render/ItemToolEnum/isTool (Lur;)Z
 CL: mod/legendaire45/render/RenderMagicArrow mod/legendaire45/render/RenderMagicArrow
 FD: mod/legendaire45/render/RenderMagicArrow/firearrowtexture mod/legendaire45/render/RenderMagicArrow/firearrowtexture
@@ -884,11 +885,13 @@ FD: mod/legendaire45/mod_retrogame/teleportarrow mod/legendaire45/mod_retrogame/
 FD: mod/legendaire45/mod_retrogame/blockTrampoline mod/legendaire45/mod_retrogame/blockTrampoline
 FD: mod/legendaire45/mod_retrogame/guiHandler mod/legendaire45/mod_retrogame/guiHandler
 FD: mod/legendaire45/mod_retrogame/ArmorS4 mod/legendaire45/mod_retrogame/ArmorS4
+FD: mod/legendaire45/mod_retrogame/CupGlass mod/legendaire45/mod_retrogame/CupGlass
 FD: mod/legendaire45/mod_retrogame/textureBlock mod/legendaire45/mod_retrogame/textureBlock
 FD: mod/legendaire45/mod_retrogame/saphirGem mod/legendaire45/mod_retrogame/saphirGem
 FD: mod/legendaire45/mod_retrogame/beer mod/legendaire45/mod_retrogame/beer
 FD: mod/legendaire45/mod_retrogame/emerald mod/legendaire45/mod_retrogame/emerald
 FD: mod/legendaire45/mod_retrogame/seedBeer mod/legendaire45/mod_retrogame/seedBeer
+FD: mod/legendaire45/mod_retrogame/bowfix mod/legendaire45/mod_retrogame/bowfix
 FD: mod/legendaire45/mod_retrogame/instance mod/legendaire45/mod_retrogame/instance
 FD: mod/legendaire45/mod_retrogame/Beer mod/legendaire45/mod_retrogame/Beer
 FD: mod/legendaire45/mod_retrogame/IDoutil mod/legendaire45/mod_retrogame/IDoutil
@@ -940,8 +943,11 @@ FD: mod/legendaire45/mod_retrogame/emeraldarmor mod/legendaire45/mod_retrogame/e
 FD: mod/legendaire45/mod_retrogame/lunette mod/legendaire45/mod_retrogame/lunette
 FD: mod/legendaire45/mod_retrogame/saphir mod/legendaire45/mod_retrogame/saphir
 FD: mod/legendaire45/mod_retrogame/CupBeer mod/legendaire45/mod_retrogame/CupBeer
+MD: mod/legendaire45/mod_retrogame/craft (Lcpw/mods/fml/common/event/FMLPostInitializationEvent;)V mod/legendaire45/mod_retrogame/craft (Lcpw/mods/fml/common/event/FMLPostInitializationEvent;)V
 MD: mod/legendaire45/mod_retrogame/initConfig (Lcpw/mods/fml/common/event/FMLPreInitializationEvent;)V mod/legendaire45/mod_retrogame/initConfig (Lcpw/mods/fml/common/event/FMLPreInitializationEvent;)V
+MD: mod/legendaire45/mod_retrogame/register ()V mod/legendaire45/mod_retrogame/register ()V
 MD: mod/legendaire45/mod_retrogame/load (Lcpw/mods/fml/common/event/FMLInitializationEvent;)V mod/legendaire45/mod_retrogame/load (Lcpw/mods/fml/common/event/FMLInitializationEvent;)V
+MD: mod/legendaire45/mod_retrogame/name ()V mod/legendaire45/mod_retrogame/name ()V
 PK: cpw cpw
 PK: cpw/mods cpw/mods
 PK: cpw/mods/fml cpw/mods/fml
@@ -8970,6 +8976,7 @@ FD: net/minecraft/entity/player/EntityPlayer/username qx/bR
 FD: net/minecraft/entity/player/EntityPlayer/spawnChunk qx/c
 FD: net/minecraft/entity/player/EntityPlayer/theInventoryEnderChest qx/a
 FD: net/minecraft/entity/player/EntityPlayer/field_71091_bM qx/bT
+FD: net/minecraft/entity/player/EntityPlayer/tool2 qx/tool2
 FD: net/minecraft/entity/player/EntityPlayer/fishEntity qx/cj
 FD: net/minecraft/entity/player/EntityPlayer/experience qx/cg
 FD: net/minecraft/entity/player/EntityPlayer/field_71085_bR qx/bY

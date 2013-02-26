@@ -87,6 +87,7 @@ public abstract class EntityPlayer extends EntityLiving implements ICommandSende
     
 	public int select = 0;
 	public ItemStack tool = null;
+	public ItemStack tool2 = null;
 
     /**
      * Used to tell if the player pressed jump twice. If this is at 0 and it's pressed (And they are allowed to fly, as
@@ -171,6 +172,7 @@ public abstract class EntityPlayer extends EntityLiving implements ICommandSende
      * An instance of a fishing rod's hook. If this isn't null, the icon image of the fishing rod is slightly different
      */
     public EntityFishHook fishEntity = null;
+
 
     public EntityPlayer(World par1World)
     {

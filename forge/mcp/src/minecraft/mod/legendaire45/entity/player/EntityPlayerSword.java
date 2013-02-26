@@ -23,19 +23,35 @@ public class EntityPlayerSword extends PlayerBase
 		 {
 			 var=true;
 		 }
-		 else if (this.mc.thePlayer.inventory.mainInventory[0] == null &&  this.mc.thePlayer.tool == null)
+		 else if(this.mc.thePlayer.inventory.mainInventory[0].itemID == this.mc.thePlayer.tool.itemID)
 		 {
 			 var=false;
 		 }
-		 else if (this.mc.thePlayer.inventory.mainInventory[0] != this.mc.thePlayer.tool)
+		 else if(this.mc.thePlayer.inventory.mainInventory[1].itemID == this.mc.thePlayer.tool2.itemID)
+		 {
+			 var=false;
+		 }
+		 else
 		 {
 			 var=true;
 		 }
-
+		 if(this.mc.thePlayer.inventory.mainInventory[1] == null && this.mc.thePlayer.tool2 != null)
+		 {
+			 var=true;
+		 }
+		 else if(this.mc.thePlayer.inventory.mainInventory[0] == null && this.mc.thePlayer.tool != null)
+		 {
+			 var=true;
+		 }
 		 
 		 if(var)
 		 {
 			 PlayerInfoSender.sendInfo(this.mc.thePlayer); 
 		 }
+    }
+    
+    public void afterCloseScreen()
+    {
+    	 PlayerInfoSender.sendInfo(this.mc.thePlayer); 
     }
 }

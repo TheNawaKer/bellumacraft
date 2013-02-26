@@ -8,10 +8,13 @@ import mod.legendaire45.blocks.BlockSofa;
 import mod.legendaire45.blocks.BlockStairLog;
 import mod.legendaire45.blocks.BlockTrampoline;
 import mod.legendaire45.client.ClientPacketHandler;
+import mod.legendaire45.client.KeyHandlerBow;
 import mod.legendaire45.common.CommonProxy;
 import mod.legendaire45.entity.EntityMagicArrow;
 import mod.legendaire45.entity.EntityTeleportArrow;
+import mod.legendaire45.entity.mobs.EntityCheval;
 import mod.legendaire45.entity.player.EntityPlayerSword;
+import mod.legendaire45.event.BoneMealEvent;
 import mod.legendaire45.gui.GuiHandler;
 import mod.legendaire45.items.ArmorBase;
 import mod.legendaire45.items.ItemCup;
@@ -25,10 +28,12 @@ import mod.legendaire45.items.TeleportBow;
 import mod.legendaire45.render.player.RenderPlayerSword;
 import mod.legendaire45.server.ServerPacketHandler;
 import mod.legendaire45.tile.TileEntityBeer;
+import mod.legendaire45.tile.TileEntityTrampoline;
 import mod.legendaire45.world.WorldGenOre;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
@@ -38,8 +43,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.src.ModLoader;
 import net.minecraft.src.PlayerAPI;
 import net.minecraft.src.RenderPlayerAPI;
+import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
+import cpw.mods.fml.client.registry.KeyBindingRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
@@ -60,8 +67,8 @@ import cpw.mods.fml.relauncher.Side;
 
 @Mod(modid = "mod_retrogame", name = "mod retrogame", version = "1.4.0")
 @NetworkMod(clientSideRequired = false, serverSideRequired = true,
-clientPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","generic" }, packetHandler = ClientPacketHandler.class),
-serverPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","generic" }, packetHandler = ServerPacketHandler.class))
+clientPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","sword" }, packetHandler = ClientPacketHandler.class),
+serverPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","sword" }, packetHandler = ServerPacketHandler.class))
 
 public class mod_retrogame 
 {	
@@ -97,11 +104,12 @@ public class mod_retrogame
 		public static final Item sofas = (new ItemReed(IDoutil+41,sofa)).setTextureFile(textureItem).setIconIndex(40).setItemName("Beer").setCreativeTab(CreativeTabs.tabBlock);
 	    
 		public static final Item Cup = (new ItemCup(IDoutil+31)).setTextureFile(textureItem).setIconIndex(0).setItemName("Chope Vide").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Item CupGlass = (new Item(IDoutil+44)).setTextureFile(textureItem).setIconCoord(15, 2).setItemName("Chope de Tireuse").setCreativeTab(CreativeTabs.tabBlock);
 	    public static final Item BucketBeer = (new ItemCup(IDoutil+32)).setTextureFile(textureItem).setIconIndex(2).setItemName("seau de biere").setCreativeTab(CreativeTabs.tabBlock);
 	    public static final Item CupBeer = (new ItemDrink(IDoutil+33, 10, 0.0F, false)).setAlwaysEdible().setTextureFile(textureItem).setIconIndex(1).setItemName("Chope Pleine").setCreativeTab(CreativeTabs.tabBlock);
 	  
 	    public static Item seedBeer = (new ItemSeeds(IDoutil+34, cropBeer.blockID, Block.tilledField.blockID)).setTextureFile(textureItem).setIconIndex(39).setItemName("seedBeer").setCreativeTab(CreativeTabs.tabBlock);
-	    public static Item Beer = (new Item(IDoutil+35)).setTextureFile(textureItem).setIconIndex(40).setItemName("Beer").setCreativeTab(CreativeTabs.tabBlock);
+	    public static Item wheatBeer = (new Item(IDoutil+35)).setTextureFile(textureItem).setIconIndex(40).setItemName("Beer").setCreativeTab(CreativeTabs.tabBlock);
 	    
 	    public static Item rubyGem = (new Item(IDoutil+42)).setTextureFile(textureItem).setIconCoord(13, 2).setItemName("ruby").setCreativeTab(CreativeTabs.tabMaterials);
 	    public static Item saphirGem = (new Item(IDoutil+43)).setTextureFile(textureItem).setIconCoord(14, 2).setItemName("saphir").setCreativeTab(CreativeTabs.tabMaterials);
@@ -141,6 +149,7 @@ public class mod_retrogame
 	    public static final Item firearrow = (new Item(IDoutil+37)).setIconCoord(10, 3).setTextureFile(textureItem).setItemName("firearrow").setCreativeTab(CreativeTabs.tabCombat);
 	    public static final Item teleportarrow = (new Item(IDoutil+39)).setIconCoord(12, 3).setTextureFile(textureItem).setItemName("teleportarrow").setCreativeTab(CreativeTabs.tabCombat);
 	 
+	    public static final Item bowfix = (new Item(IDoutil+45)).setIconCoord(5, 1).setItemName("arc render");
 	    
 		@PreInit
 		public void initConfig(FMLPreInitializationEvent event)
@@ -148,9 +157,11 @@ public class mod_retrogame
 			Side side = FMLCommonHandler.instance().getEffectiveSide();
 			if(side == side.CLIENT)
 			{
-				PlayerAPI.register("mod_retrogame", EntityPlayerSword.class);
-		    	RenderPlayerAPI.register("mod_retrogame", RenderPlayerSword.class);
+				PlayerAPI.register("mod_retrogame_sword", EntityPlayerSword.class);
+		    	RenderPlayerAPI.register("mod_retrogame_sword", RenderPlayerSword.class);
 			}
+			MinecraftForge.addGrassSeed(new ItemStack(cropBeer), 10);
+			MinecraftForge.EVENT_BUS.register(new BoneMealEvent());
 			MinecraftForge.setToolClass(this.piocheToolE, "pickaxe", 2);
 			MinecraftForge.setToolClass(this.pelleToolE, "shovel", 2);
 			MinecraftForge.setToolClass(this.hacheToolE, "axe", 2);
@@ -169,7 +180,10 @@ public class mod_retrogame
 			if(side == side.SERVER)
 			{
 				ModLoader.registerTileEntity(TileEntityBeer.class, "beer");
+				ModLoader.registerTileEntity(TileEntityTrampoline.class, "trampoline");
 			}
+			ModLoader.registerEntityID(EntityCheval.class, "Cheval", ModLoader.getUniqueEntityId());   // Donne une ID au mob			 
+		    ModLoader.addSpawn(EntityCheval.class, 100, 10, 10,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawn�s et choix des biomes pour le spawn 
 			proxy.registerRenderThings(); //Et oui, il faut bien dire de charger les proxy :)
 			EntityRegistry.registerModEntity(EntityMagicArrow.class, "firearrow", 1, this, 250, 5, false);
 			//ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
@@ -185,6 +199,7 @@ public class mod_retrogame
 		private void craft(FMLPostInitializationEvent event)
 		{
 			GameRegistry.addRecipe(new ItemStack(blockTrampoline), new Object[]	{"XXX", "XXX", "XXX", 'X', Item.slimeBall});
+			
 			GameRegistry.addRecipe(new ItemStack(pelleToolR), new Object[]	{" 0 ", " X ", " X ", 'X', Item.stick, '0', rubyGem});
 			GameRegistry.addRecipe(new ItemStack(piocheToolR), new Object[]	{"000", " X ", " X ", 'X', Item.stick, '0', rubyGem});
 			GameRegistry.addRecipe(new ItemStack(hacheToolR), new Object[]	{"000", "0X0", " X ", 'X', Item.stick, '0', rubyGem});
@@ -199,9 +214,34 @@ public class mod_retrogame
 			GameRegistry.addRecipe(new ItemStack(piocheToolE), new Object[]	{"000", " X ", " X ", 'X', Item.stick, '0', Item.emerald});
 			GameRegistry.addRecipe(new ItemStack(hacheToolE), new Object[]	{"000", "0X0", " X ", 'X', Item.stick, '0', Item.emerald});
 			GameRegistry.addRecipe(new ItemStack(epeeToolE), new Object[]	{" 0 ", " 0 ", " X ",  'X', Item.stick, '0', Item.emerald});
-		}   
+			
+			GameRegistry.addRecipe(new ItemStack(ArmorE1), new Object[]	{"XXX", "X X", 'X', Item.emerald});
+			GameRegistry.addRecipe(new ItemStack(ArmorE2), new Object[]	{"X X", "XXX", "XXX", 'X', Item.emerald});
+			GameRegistry.addRecipe(new ItemStack(ArmorE3), new Object[]	{"XXX", "X X", "X X", 'X', Item.emerald});
+			GameRegistry.addRecipe(new ItemStack(ArmorE4), new Object[]	{"X X", "X X", 'X', Item.emerald});
+			
+			GameRegistry.addRecipe(new ItemStack(ArmorS1), new Object[]	{"XXX", "X X", 'X', saphirGem});
+			GameRegistry.addRecipe(new ItemStack(ArmorS2), new Object[]	{"X X", "XXX", "XXX", 'X', saphirGem});
+			GameRegistry.addRecipe(new ItemStack(ArmorS3), new Object[]	{"XXX", "X X", "X X", 'X', saphirGem});
+			GameRegistry.addRecipe(new ItemStack(ArmorS4), new Object[]	{"X X", "X X", 'X', saphirGem});
 
-		
+			GameRegistry.addRecipe(new ItemStack(ArmorR1), new Object[]	{"XXX", "X X", 'X', rubyGem});
+			GameRegistry.addRecipe(new ItemStack(ArmorR2), new Object[]	{"X X", "XXX", "XXX", 'X', rubyGem});
+			GameRegistry.addRecipe(new ItemStack(ArmorR3), new Object[]	{"XXX", "X X", "X X", 'X', rubyGem});
+			GameRegistry.addRecipe(new ItemStack(ArmorR4), new Object[]	{"X X", "X X", 'X', rubyGem});
+			
+			GameRegistry.addRecipe(new ItemStack(lunette2), new Object[] {"GWG", "W W", 'W', new ItemStack(Block.cloth, 1, 0), 'G', Block.glass});
+			GameRegistry.addRecipe(new ItemStack(lunette1), new Object[] {"GWG", "W W", 'W', new ItemStack(Block.cloth, 1, 15), 'G', Block.glass});
+			GameRegistry.addRecipe(new ItemStack(lunette3), new Object[] {"GWG", "W W", 'W', new ItemStack(Block.cloth, 1, 2), 'G', Block.glass});
+			
+			GameRegistry.addShapelessRecipe(new ItemStack(lunette1), new Object[] {lunette2, new ItemStack(Item.dyePowder, 1, 0)});
+			GameRegistry.addShapelessRecipe(new ItemStack(lunette3), new Object[] {lunette2, new ItemStack(Item.dyePowder, 1, 13)});
+			
+			GameRegistry.addRecipe(new ItemStack(Cup), new Object[]	{"   ", "X X", " X ",  'X', Block.planks});
+			GameRegistry.addRecipe(new ItemStack(CupGlass, 3), new Object[] {"X X", "X X", " X ",  'X', Block.glass});
+			
+			GameRegistry.addRecipe(new ItemStack(beer), new Object[] {"VVV", "VPV", "OOO",  'O', Block.obsidian, 'V', Block.glass, 'P', CupGlass});
+		}   		
 		
 		private void register() {
 			GameRegistry.registerBlock(beer);
@@ -246,21 +286,22 @@ public class mod_retrogame
 			LanguageRegistry.addName(lunette2, "Lunettes Blanche");
 			LanguageRegistry.addName(lunette3, "Lunettes Violette");
 
-			LanguageRegistry.addName(beer, "Distributeur");
+			LanguageRegistry.addName(beer, "Tireuse de Bière");
 			LanguageRegistry.addName(blockTrampoline, "Bloc de Slime");
 			LanguageRegistry.addName(cropBeer, "Plante de Houblon");
 			LanguageRegistry.addName(stair, "Escalier en Buche");
 			
 			
 			LanguageRegistry.addName(Cup, "Chope");
+			LanguageRegistry.addName(CupGlass, "Chope de Tireuse");
 			LanguageRegistry.addName(BucketBeer, "Seau de Houblon");
 			LanguageRegistry.addName(CupBeer, "Chope Pleine");
 			LanguageRegistry.addName(seedBeer, "Graine de Houblon");
-			LanguageRegistry.addName(Beer, "Houblon");
+			LanguageRegistry.addName(wheatBeer, "Houblon");
 			
-			LanguageRegistry.addName(firearrow, "Fleche Eclairante");
+			LanguageRegistry.addName(firearrow, "Flèche Eclairante");
 			LanguageRegistry.addName(firebow, "Arc Eclairant");
-			LanguageRegistry.addName(teleportarrow, "Ender Fleche");
+			LanguageRegistry.addName(teleportarrow, "Ender Flèche");
 			LanguageRegistry.addName(teleportbow, "Ender Arc");
 			LanguageRegistry.addName(rubyOre, "Minerai de Ruby");
 			LanguageRegistry.addName(saphirOre, "Minerai de Saphir");

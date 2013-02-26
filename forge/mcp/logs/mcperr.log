@@ -411,3 +411,34 @@ WindowsError: [Error 5] Accès refus: 'reobf\\minecraft'
 23:00:55 - !! Can not find server md5s !!
 23:04:16 - !! Can not find server sources, try decompiling !!
 23:04:52 - !! Can not find server md5s !!
+17:30:44 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+17:30:44 - 
+17:30:44 - == ERRORS FOUND ==
+17:30:44 - 
+17:30:44 - src\minecraft\mod\legendaire45\mod_retrogame.java:281: error: unmappable character for encoding UTF-8
+17:30:44 - 			LanguageRegistry.addName(beer, "Tireuse de Bi?re");
+17:30:44 - 			                                             ^
+17:30:44 - 
+17:30:44 - 1 error
+17:30:44 - ==================
+17:30:44 - 
+17:30:44 - !! Can not find server sources, try decompiling !!
+17:30:46 - !! Can not find client bins, try recompiling !!
+17:30:46 - !! Can not find server md5s !!
+17:34:26 - !! Can not find server sources, try decompiling !!
+17:35:06 - !! Can not find server md5s !!
+17:46:14 - !! Can not find server sources, try decompiling !!
+17:46:47 - !! Can not find server md5s !!
+17:59:03 - !! Can not find server sources, try decompiling !!
+17:59:05 - FATAL ERROR
+Traceback (most recent call last):
+  File "runtime\reobfuscate.py", line 51, in reobfuscate
+    reobfuscate_side(commands, CLIENT, reobf_all=reobf_all)
+  File "D:\minecraft modding\bellumacraft\forge\mcp\runtime\mcp.py", line 152, in reobfuscate_side
+    commands.cleanreobfdir(side)
+  File "D:\minecraft modding\bellumacraft\forge\mcp\runtime\commands.py", line 880, in cleanreobfdir
+    os.makedirs(outpathlk[side])
+  File "os.pyc", line 157, in makedirs
+WindowsError: [Error 5] Accès refus: 'reobf\\minecraft'
+18:03:02 - !! Can not find server sources, try decompiling !!
+18:03:34 - !! Can not find server md5s !!

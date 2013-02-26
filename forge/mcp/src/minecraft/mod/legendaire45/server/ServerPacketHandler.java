@@ -25,7 +25,7 @@ public class ServerPacketHandler implements IPacketHandler
 	{
 		DataInputStream data = new DataInputStream(new ByteArrayInputStream(payload.data));
 		EntityPlayer sender = (EntityPlayer) player;	
-	    if (payload.channel.equals("generic"))
+	    if (payload.channel.equals("sword"))
 	    {
 	    	handleSword(payload,player);
 	    }

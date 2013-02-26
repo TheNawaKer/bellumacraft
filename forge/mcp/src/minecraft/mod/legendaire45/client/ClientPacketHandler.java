@@ -25,7 +25,7 @@ public class ClientPacketHandler implements IPacketHandler
 	{
 		DataInputStream data = new DataInputStream(new ByteArrayInputStream(payload.data));
 		
-	    if (payload.channel.equals("generic"))
+	    if (payload.channel.equals("sword"))
 	    {
 	        handleSword(payload,player);
 	    }
@@ -38,11 +38,13 @@ public class ClientPacketHandler implements IPacketHandler
         
         int select;
         ItemStack zero;
+        ItemStack un;
         int playerId;
         
         try {
                 select = inputStream.readInt();
                 zero = Packet.readItemStack(inputStream);
+                un = Packet.readItemStack(inputStream);
                 playerId = inputStream.readInt();
         } catch (IOException e) {
                 e.printStackTrace();
@@ -57,12 +59,14 @@ public class ClientPacketHandler implements IPacketHandler
 	    	{
 	    		other.select = select;
 	    		other.tool = zero;
+	    		other.tool2 = un;
 	    	}
     	}
         else
         {
     		me.select = select;
     		me.tool = zero;
+    		me.tool2 = un;
         }
     	
     }

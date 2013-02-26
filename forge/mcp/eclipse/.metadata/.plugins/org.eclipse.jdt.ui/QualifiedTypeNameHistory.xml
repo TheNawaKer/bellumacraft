@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.client.gui.inventory.GuiEditSign"/>
-<fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntityCommandBlock"/>
-<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiCommandBlock"/>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiEnchantment"/>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.inventory.GuiFurnace"/>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.inventory.GuiCrafting"/>
@@ -27,7 +24,6 @@
 <fullyQualifiedTypeName name="net.minecraft.entity.EntityLiving"/>
 <fullyQualifiedTypeName name="net.minecraft.client.model.ModelPlayerAPI"/>
 <fullyQualifiedTypeName name="mod.legendaire45.render.RenderSword"/>
-<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.io.DataInputStream"/>
@@ -37,7 +33,6 @@
 <fullyQualifiedTypeName name="net.minecraft.network.packet.NetHandler"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 <fullyQualifiedTypeName name="mod.legendaire45.tile.TileEntitySofa"/>
 <fullyQualifiedTypeName name="mod.legendaire45.render.TileEntitySofaRenderer"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
@@ -45,7 +40,6 @@
 <fullyQualifiedTypeName name="mod.legendaire45.blocks.BlockSofa"/>
 <fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenMinable"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
-<fullyQualifiedTypeName name="mod.legendaire45.mod_retrogame"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderPlayer"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderPlayerAPI"/>
 <fullyQualifiedTypeName name="mod.legendaire45.render.player.RenderPlayerSword"/>
@@ -60,4 +54,10 @@
 <fullyQualifiedTypeName name="mod.legendaire45.network.player.PlayerInfoSender"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderManager"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.PostInit"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="mod.legendaire45.event.BoneMealEvent"/>
+<fullyQualifiedTypeName name="mod.legendaire45.blocks.BlockCropBeer"/>
+<fullyQualifiedTypeName name="mod.legendaire45.mod_retrogame"/>
+<fullyQualifiedTypeName name="net.minecraft.block.BlockCrops"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 </qualifiedTypeNameHistroy>

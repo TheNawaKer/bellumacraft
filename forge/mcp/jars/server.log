@@ -2141,3 +2141,32 @@ Caused by: java.lang.RuntimeException: Attempted to load class net/minecraft/cli
 2013-02-22 21:53:58 [INFO] Saving chunks for level 'mcpworld'/Overworld
 2013-02-22 21:53:58 [INFO] Saving chunks for level 'mcpworld'/Nether
 2013-02-22 21:53:58 [INFO] Saving chunks for level 'mcpworld'/The End
+2013-02-25 14:46:47 [INFO] Starting minecraft server version 1.4.7
+2013-02-25 14:46:58 [INFO] Loading properties
+2013-02-25 14:46:58 [INFO] Default game type: SURVIVAL
+2013-02-25 14:46:58 [INFO] Generating keypair
+2013-02-25 14:47:03 [INFO] Starting Minecraft server on *:25565
+2013-02-25 14:47:03 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-02-25 14:47:03 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-02-25 14:47:03 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-02-25 14:47:03 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-02-25 14:47:04 [INFO] Preparing level "mcpworld"
+2013-02-25 14:47:04 [INFO] Preparing start region for level 0
+2013-02-25 14:47:05 [INFO] Preparing spawn area: 13%
+2013-02-25 14:47:06 [INFO] Preparing spawn area: 49%
+2013-02-25 14:47:07 [INFO] Preparing spawn area: 84%
+2013-02-25 14:47:08 [INFO] Done (4,506s)! For help, type "help" or "?"
+2013-02-25 14:47:13 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2013-02-25 14:47:14 [INFO] User Player716 connecting with mods [mod_retrogame]
+2013-02-25 14:47:15 [INFO] Player716[/127.0.0.1:19023] logged in with entity id 146 at (-2.5, 65.62000000476837, 201.5)
+2013-02-25 14:47:17 [INFO] User Player763 connecting with mods [mod_retrogame]
+2013-02-25 14:47:17 [INFO] Player763[/127.0.0.1:19031] logged in with entity id 176 at (3.5, 65.62000000476837, 194.5)
+2013-02-25 14:48:13 [INFO] Player763 lost connection: disconnect.quitting
+2013-02-25 14:48:15 [INFO] Player716 lost connection: disconnect.quitting
+2013-02-25 14:51:19 [INFO] Stopping the server
+2013-02-25 14:51:19 [INFO] Stopping server
+2013-02-25 14:51:19 [INFO] Saving players
+2013-02-25 14:51:19 [INFO] Saving worlds
+2013-02-25 14:51:19 [INFO] Saving chunks for level 'mcpworld'/Overworld
+2013-02-25 14:51:19 [INFO] Saving chunks for level 'mcpworld'/Nether
+2013-02-25 14:51:19 [INFO] Saving chunks for level 'mcpworld'/The End
