@@ -44,6 +44,7 @@ public class PlayerInfoSender
                 
         } else if (side == Side.CLIENT) {
                 // We are on the client side.
+        	System.out.println("envoi ...");
                 EntityClientPlayerMP player = (EntityClientPlayerMP) par1EntityPlayer;
                 player.sendQueue.addToSendQueue(packet);
         } else {

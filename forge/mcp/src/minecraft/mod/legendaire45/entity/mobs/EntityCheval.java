@@ -1,5 +1,7 @@
 package mod.legendaire45.entity.mobs;
 
+import mod.legendaire45.common.CommonProxy;
+import mod.legendaire45.tools.SoundPlayer;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.ai.EntityAIControlledByPlayer;
 import net.minecraft.entity.ai.EntityAIFollowParent;
@@ -23,13 +25,15 @@ import net.minecraft.world.World;
 
 public class EntityCheval extends EntityAnimal
 {
+	
+	private static String cheval = CommonProxy.cheval;
     /** AI task for player control. */
     private final EntityAIControlledByPlayer aiControlledByPlayer;
     
     public EntityCheval(World world)
     {
         super(world);
-        texture = "/mod/Raptor.png";
+        texture = cheval;
         this.getNavigator().setAvoidsWater(true);
         float var2 = 0.25F;
         this.tasks.addTask(0, new EntityAISwimming(this));
@@ -162,6 +166,30 @@ public class EntityCheval extends EntityAnimal
     protected void playStepSound(int par1, int par2, int par3, int par4)
     {
         this.playSound("mob.cow.step", 0.15F, 1.0F);
+    }
+    
+    /**
+     * Returns the sound this mob makes while it's alive.
+     */
+    protected String getLivingSound()
+    {
+    	return "mob.horse.horsegrunt";
+    }
+
+    /**
+     * Returns the sound this mob makes when it is hurt.
+     */
+    protected String getHurtSound()
+    {
+    	return "mob.horse.hurt";
+    }
+
+    /**
+     * Returns the sound this mob makes on death.
+     */
+    protected String getDeathSound()
+    {
+    	return "mob.horse.hurt";
     }
 
 

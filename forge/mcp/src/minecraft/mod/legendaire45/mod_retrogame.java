@@ -29,6 +29,7 @@ import mod.legendaire45.render.player.RenderPlayerSword;
 import mod.legendaire45.server.ServerPacketHandler;
 import mod.legendaire45.tile.TileEntityBeer;
 import mod.legendaire45.tile.TileEntityTrampoline;
+import mod.legendaire45.tools.NewSound;
 import mod.legendaire45.world.WorldGenOre;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -162,6 +163,7 @@ public class mod_retrogame
 			}
 			MinecraftForge.addGrassSeed(new ItemStack(cropBeer), 10);
 			MinecraftForge.EVENT_BUS.register(new BoneMealEvent());
+			MinecraftForge.EVENT_BUS.register(new NewSound());
 			MinecraftForge.setToolClass(this.piocheToolE, "pickaxe", 2);
 			MinecraftForge.setToolClass(this.pelleToolE, "shovel", 2);
 			MinecraftForge.setToolClass(this.hacheToolE, "axe", 2);
@@ -182,9 +184,10 @@ public class mod_retrogame
 				ModLoader.registerTileEntity(TileEntityBeer.class, "beer");
 				ModLoader.registerTileEntity(TileEntityTrampoline.class, "trampoline");
 			}
-			//ModLoader.registerEntityID(EntityCheval.class, "Cheval", ModLoader.getUniqueEntityId());   // Donne une ID au mob			 
-		    //ModLoader.addSpawn(EntityCheval.class, 100, 10, 10,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawnés et choix des biomes pour le spawn 
-			proxy.registerRenderThings(); //Et oui, il faut bien dire de charger les proxy :)
+			ModLoader.registerEntityID(EntityCheval.class, "Cheval", ModLoader.getUniqueEntityId());   // Donne une ID au mob			 
+		    ModLoader.addSpawn(EntityCheval.class, 100, 10, 10,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawnés et choix des biomes pour le spawn 
+		    //ModLoader.addSpawn(EntityCheval.class, 12, 4, 4,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawnés et choix des biomes pour le spawn 
+		    proxy.registerRenderThings(); //Et oui, il faut bien dire de charger les proxy :)
 			EntityRegistry.registerModEntity(EntityMagicArrow.class, "firearrow", 1, this, 250, 5, false);
 			//ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
 			EntityRegistry.registerModEntity(EntityTeleportArrow.class, "teleportarrow", 2, this, 250, 5, false);

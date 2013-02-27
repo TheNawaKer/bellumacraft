@@ -111,8 +111,10 @@ public class ModelCheval extends ModelBase
   
   public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5,Entity entity)
   {
-	  this.patte2.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1 * 0.5F;
-      this.patte1.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1 * 0.5F;
+      this.patte1.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
+      this.patte2.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
+      this.patte3.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
+      this.patte4.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
   }
 
 }
