@@ -478,3 +478,27 @@ WindowsError: [Error 5] Accès refus: 'reobf\\minecraft'
 15:33:13 - !! Can not find server sources, try decompiling !!
 15:33:15 - !! Can not find client bins, try recompiling !!
 15:33:15 - !! Can not find server md5s !!
+17:21:44 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+17:21:44 - 
+17:21:44 - == ERRORS FOUND ==
+17:21:44 - 
+17:21:44 - src\minecraft\mod\legendaire45\mod_retrogame.java:188: error: unmappable character for encoding UTF-8
+17:21:44 - 		    ModLoader.addSpawn(EntityCheval.class, 100, 10, 10,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawn?s et choix des biomes pour le spawn 
+17:21:44 - 		                                                                                                                                                                                                                   ^
+17:21:44 - 
+17:21:44 - src\minecraft\mod\legendaire45\mod_retrogame.java:189: error: unmappable character for encoding UTF-8
+17:21:44 - 		    //ModLoader.addSpawn(EntityCheval.class, 12, 4, 4,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawn?s et choix des biomes pour le spawn 
+17:21:44 - 		                                                                                                                                                                                                                  ^
+17:21:44 - 
+17:21:44 - 2 errors
+17:21:44 - ==================
+17:21:44 - 
+17:21:44 - !! Can not find server sources, try decompiling !!
+17:21:47 - !! Can not find client bins, try recompiling !!
+17:21:47 - !! Can not find server md5s !!
+17:24:49 - !! Can not find server sources, try decompiling !!
+17:25:35 - !! Can not find server md5s !!
+17:26:03 - !! Can not find server sources, try decompiling !!
+17:26:39 - !! Can not find server md5s !!
+18:00:42 - !! Can not find server sources, try decompiling !!
+18:01:23 - !! Can not find server md5s !!

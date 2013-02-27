@@ -160,10 +160,10 @@ public class mod_retrogame
 			{
 				PlayerAPI.register("mod_retrogame_sword", EntityPlayerSword.class);
 		    	RenderPlayerAPI.register("mod_retrogame_sword", RenderPlayerSword.class);
+				MinecraftForge.EVENT_BUS.register(new NewSound());
 			}
 			MinecraftForge.addGrassSeed(new ItemStack(cropBeer), 10);
 			MinecraftForge.EVENT_BUS.register(new BoneMealEvent());
-			MinecraftForge.EVENT_BUS.register(new NewSound());
 			MinecraftForge.setToolClass(this.piocheToolE, "pickaxe", 2);
 			MinecraftForge.setToolClass(this.pelleToolE, "shovel", 2);
 			MinecraftForge.setToolClass(this.hacheToolE, "axe", 2);
@@ -185,8 +185,7 @@ public class mod_retrogame
 				ModLoader.registerTileEntity(TileEntityTrampoline.class, "trampoline");
 			}
 			ModLoader.registerEntityID(EntityCheval.class, "Cheval", ModLoader.getUniqueEntityId());   // Donne une ID au mob			 
-		    ModLoader.addSpawn(EntityCheval.class, 100, 10, 10,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawnés et choix des biomes pour le spawn 
-		    //ModLoader.addSpawn(EntityCheval.class, 12, 4, 4,EnumCreatureType.creature,new BiomeGenBase[] {BiomeGenBase.desert,  BiomeGenBase.beach, BiomeGenBase.plains, BiomeGenBase.forest }); // nombre de mobs spawnés et choix des biomes pour le spawn 
+		    ModLoader.addSpawn(EntityCheval.class, 10, 4, 6,EnumCreatureType.creature);
 		    proxy.registerRenderThings(); //Et oui, il faut bien dire de charger les proxy :)
 			EntityRegistry.registerModEntity(EntityMagicArrow.class, "firearrow", 1, this, 250, 5, false);
 			//ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
@@ -244,6 +243,8 @@ public class mod_retrogame
 			GameRegistry.addRecipe(new ItemStack(CupGlass, 3), new Object[] {"X X", "X X", " X ",  'X', Block.glass});
 			
 			GameRegistry.addRecipe(new ItemStack(beer), new Object[] {"VVV", "VPV", "OOO",  'O', Block.obsidian, 'V', Block.glass, 'P', CupGlass});
+			
+			GameRegistry.addRecipe(new ItemStack(BucketBeer), new Object[] {"H", "B", "S",  'H', wheatBeer, 'B', new ItemStack(Item.dyePowder, 1, 15), 'S', Item.bucketWater});
 		}   		
 		
 		private void register() {

@@ -6,7 +6,7 @@
 #
 # RetroGuard MCP v3.6.5
 #
-# Logfile created on Mon Feb 25 18:03:07 CET 2013
+# Logfile created on Wed Feb 27 18:00:52 CET 2013
 #
 # Jar file to be obfuscated:           client_recomp.jar
 # Target Jar file for obfuscated code: client_reobf.jar
@@ -65,8 +65,8 @@
 #      Your class net/minecraftforge/event/ASMEventHandler$ASMClassLoader calls the java/lang/ClassLoader method defineClass(Ljava/lang/String;[BII)Ljava/lang/Class;
 #      Your class net/minecraftforge/event/EventBus calls the java/lang/Class method getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 #
-# Memory in use after class data structure built: 27486712 bytes
-# Total memory available                        : 276037632 bytes
+# Memory in use after class data structure built: 27329976 bytes
+# Total memory available                        : 276168704 bytes
 #
 #
 # Names reserved from obfuscation:
@@ -2841,6 +2841,13 @@
 .method_map mod/legendaire45/client/PistonConfiguration/allowed (I)I allowed
 .class_map mod/legendaire45/client/ClientProxy ClientProxy
 .method_map mod/legendaire45/client/ClientProxy/registerRenderThings ()V registerRenderThings
+.class_map mod/legendaire45/client/KeyHandlerBow KeyHandlerBow
+.field_map mod/legendaire45/client/KeyHandlerBow/mc mc
+.field_map mod/legendaire45/client/KeyHandlerBow/bow bow
+.method_map mod/legendaire45/client/KeyHandlerBow/getLabel ()Ljava/lang/String; getLabel
+.method_map mod/legendaire45/client/KeyHandlerBow/keyDown (Ljava/util/EnumSet;Lnet/minecraft/client/settings/KeyBinding;ZZ)V keyDown
+.method_map mod/legendaire45/client/KeyHandlerBow/ticks ()Ljava/util/EnumSet; ticks
+.method_map mod/legendaire45/client/KeyHandlerBow/keyUp (Ljava/util/EnumSet;Lnet/minecraft/client/settings/KeyBinding;Z)V keyUp
 .class_map mod/legendaire45/client/ClientPacketHandler ClientPacketHandler
 .method_map mod/legendaire45/client/ClientPacketHandler/handleSword (Lnet/minecraft/network/packet/Packet250CustomPayload;Lcpw/mods/fml/common/network/Player;)V handleSword
 .method_map mod/legendaire45/client/ClientPacketHandler/onPacketData (Lnet/minecraft/network/INetworkManager;Lnet/minecraft/network/packet/Packet250CustomPayload;Lcpw/mods/fml/common/network/Player;)V onPacketData
@@ -2850,6 +2857,7 @@
 .field_map mod/legendaire45/common/CommonProxy/lunettec lunettec
 .field_map mod/legendaire45/common/CommonProxy/lunettea lunettea
 .field_map mod/legendaire45/common/CommonProxy/lunetteb lunetteb
+.field_map mod/legendaire45/common/CommonProxy/cheval cheval
 .field_map mod/legendaire45/common/CommonProxy/textureRuby2 textureRuby2
 .field_map mod/legendaire45/common/CommonProxy/teleportarrowtexture teleportarrowtexture
 .field_map mod/legendaire45/common/CommonProxy/guibeer guibeer
@@ -2864,10 +2872,50 @@
 .field_map mod/legendaire45/common/CommonProxy/textureEmerald textureEmerald
 .method_map mod/legendaire45/common/CommonProxy/registerRenderThings ()V registerRenderThings
 .package_map mod/legendaire45/entity entity
+.package_map mod/legendaire45/entity/model model
+.class_map mod/legendaire45/entity/model/ModelCheval ModelCheval
+.field_map mod/legendaire45/entity/model/ModelCheval/queue queue
+.field_map mod/legendaire45/entity/model/ModelCheval/oreille2 oreille2
+.field_map mod/legendaire45/entity/model/ModelCheval/oreille1 oreille1
+.field_map mod/legendaire45/entity/model/ModelCheval/patte1 patte1
+.field_map mod/legendaire45/entity/model/ModelCheval/tete tete
+.field_map mod/legendaire45/entity/model/ModelCheval/patte2 patte2
+.field_map mod/legendaire45/entity/model/ModelCheval/patte3 patte3
+.field_map mod/legendaire45/entity/model/ModelCheval/cou cou
+.field_map mod/legendaire45/entity/model/ModelCheval/patte4 patte4
+.field_map mod/legendaire45/entity/model/ModelCheval/corps corps
+.method_map mod/legendaire45/entity/model/ModelCheval/setRotation (Lnet/minecraft/client/model/ModelRenderer;FFF)V setRotation
+.method_map mod/legendaire45/entity/model/ModelCheval/render (Lnet/minecraft/entity/Entity;FFFFFF)V a
+.method_map mod/legendaire45/entity/model/ModelCheval/setRotationAngles (FFFFFFLnet/minecraft/entity/Entity;)V a
+.package_map mod/legendaire45/entity/mobs mobs
+.class_map mod/legendaire45/entity/mobs/EntityCheval EntityCheval
+.field_map mod/legendaire45/entity/mobs/EntityCheval/cheval cheval
+.field_map mod/legendaire45/entity/mobs/EntityCheval/aiControlledByPlayer aiControlledByPlayer
+.method_map mod/legendaire45/entity/mobs/EntityCheval/getMaxHealth ()I aT
+.method_map mod/legendaire45/entity/mobs/EntityCheval/setSaddled (Z)V setSaddled
+.method_map mod/legendaire45/entity/mobs/EntityCheval/getDeathSound ()Ljava/lang/String; ba
+.method_map mod/legendaire45/entity/mobs/EntityCheval/isAIEnabled ()Z be
+.method_map mod/legendaire45/entity/mobs/EntityCheval/canBeSteered ()Z bI
+.method_map mod/legendaire45/entity/mobs/EntityCheval/fall (F)V a
+.method_map mod/legendaire45/entity/mobs/EntityCheval/createChild (Lnet/minecraft/entity/EntityAgeable;)Lnet/minecraft/entity/EntityAgeable; a
+.method_map mod/legendaire45/entity/mobs/EntityCheval/getLivingSound ()Ljava/lang/String; aY
+.method_map mod/legendaire45/entity/mobs/EntityCheval/entityInit ()V a
+.method_map mod/legendaire45/entity/mobs/EntityCheval/getSaddled ()Z getSaddled
+.method_map mod/legendaire45/entity/mobs/EntityCheval/readEntityFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V a
+.method_map mod/legendaire45/entity/mobs/EntityCheval/getAIControlledByPlayer ()Lnet/minecraft/entity/ai/EntityAIControlledByPlayer; getAIControlledByPlayer
+.method_map mod/legendaire45/entity/mobs/EntityCheval/getBlockPathWeight (III)F a
+.method_map mod/legendaire45/entity/mobs/EntityCheval/writeEntityToNBT (Lnet/minecraft/nbt/NBTTagCompound;)V b
+.method_map mod/legendaire45/entity/mobs/EntityCheval/playStepSound (IIII)V a
+.method_map mod/legendaire45/entity/mobs/EntityCheval/getHurtSound ()Ljava/lang/String; aZ
+.method_map mod/legendaire45/entity/mobs/EntityCheval/spawnBabyAnimal (Lnet/minecraft/entity/EntityAgeable;)Lmod/legendaire45/entity/mobs/EntityCheval; spawnBabyAnimal
+.method_map mod/legendaire45/entity/mobs/EntityCheval/updateAITasks ()V bl
+.method_map mod/legendaire45/entity/mobs/EntityCheval/interact (Lnet/minecraft/entity/player/EntityPlayer;)Z a
 .package_map mod/legendaire45/entity/player player
 .class_map mod/legendaire45/entity/player/EntityPlayerSword EntityPlayerSword
 .field_map mod/legendaire45/entity/player/EntityPlayerSword/mc mc
+.method_map mod/legendaire45/entity/player/EntityPlayerSword/afterCloseScreen ()V afterCloseScreen
 .method_map mod/legendaire45/entity/player/EntityPlayerSword/afterOnUpdate ()V afterOnUpdate
+.method_map mod/legendaire45/entity/player/EntityPlayerSword/afterDropOneItem (Z)V afterDropOneItem
 .class_map mod/legendaire45/entity/EntityMagicArrow EntityMagicArrow
 .field_map mod/legendaire45/entity/EntityMagicArrow/canBePickedUp canBePickedUp
 .field_map mod/legendaire45/entity/EntityMagicArrow/yTile yTile
@@ -2983,16 +3031,15 @@
 .method_map mod/legendaire45/blocks/BlockRuby/onBlockDestroyedByPlayer (Lnet/minecraft/world/World;IIII)V c
 .method_map mod/legendaire45/blocks/BlockRuby/quantityDropped (Ljava/util/Random;)I a
 .class_map mod/legendaire45/blocks/BlockCropBeer BlockCropBeer
-.method_map mod/legendaire45/blocks/BlockCropBeer/canThisPlantGrowOnThisBlockID (I)Z d_
 .method_map mod/legendaire45/blocks/BlockCropBeer/updateTick (Lnet/minecraft/world/World;IIILjava/util/Random;)V b
-.method_map mod/legendaire45/blocks/BlockCropBeer/getGrowthRate (Lnet/minecraft/world/World;III)F getGrowthRate
+.method_map mod/legendaire45/blocks/BlockCropBeer/idPicked (Lnet/minecraft/world/World;III)I a
+.method_map mod/legendaire45/blocks/BlockCropBeer/idDropped (ILjava/util/Random;I)I a
+.method_map mod/legendaire45/blocks/BlockCropBeer/isOpaqueCube ()Z c
 .method_map mod/legendaire45/blocks/BlockCropBeer/getRenderType ()I d
-.method_map mod/legendaire45/blocks/BlockCropBeer/par1dDropped (ILjava/util/Random;I)I par1dDropped
-.method_map mod/legendaire45/blocks/BlockCropBeer/getBlockDropped (Lnet/minecraft/world/World;IIIII)Ljava/util/ArrayList; getBlockDropped
+.method_map mod/legendaire45/blocks/BlockCropBeer/canBlockStay (Lnet/minecraft/world/World;III)Z d
+.method_map mod/legendaire45/blocks/BlockCropBeer/onNeighborBlockChange (Lnet/minecraft/world/World;IIII)V a
+.method_map mod/legendaire45/blocks/BlockCropBeer/getCollisionBoundingBoxFromPool (Lnet/minecraft/world/World;III)Lnet/minecraft/util/AxisAlignedBB; e
 .method_map mod/legendaire45/blocks/BlockCropBeer/getBlockTextureFromSideAndMetadata (II)I a
-.method_map mod/legendaire45/blocks/BlockCropBeer/fertilize (Lnet/minecraft/world/World;III)V fertilize
-.method_map mod/legendaire45/blocks/BlockCropBeer/getMobilityFlag ()I q_
-.method_map mod/legendaire45/blocks/BlockCropBeer/quantityDropped (Ljava/util/Random;)I a
 .package_map mod/legendaire45/network network
 .package_map mod/legendaire45/network/player player
 .class_map mod/legendaire45/network/player/PlayerInfoSender PlayerInfoSender
@@ -3006,6 +3053,11 @@
 .field_map mod/legendaire45/render/item/ItemSofaRenderer/theTile theTile
 .field_map mod/legendaire45/render/item/ItemSofaRenderer/instance instance
 .method_map mod/legendaire45/render/item/ItemSofaRenderer/renderTile (Lnet/minecraft/block/Block;IF)V renderTile
+.package_map mod/legendaire45/render/entity entity
+.class_map mod/legendaire45/render/entity/RenderCheval RenderCheval
+.method_map mod/legendaire45/render/entity/RenderCheval/doRender (Lnet/minecraft/entity/Entity;DDDFF)V a
+.method_map mod/legendaire45/render/entity/RenderCheval/doRenderLiving (Lnet/minecraft/entity/EntityLiving;DDDFF)V a
+.method_map mod/legendaire45/render/entity/RenderCheval/renderCow (Lmod/legendaire45/entity/mobs/EntityCheval;DDDFF)V renderCow
 .class_map mod/legendaire45/render/RenderBeer RenderBeer
 .field_map mod/legendaire45/render/RenderBeer/distrib distrib
 .field_map mod/legendaire45/render/RenderBeer/distributor distributor
@@ -3035,6 +3087,12 @@
 .field_map mod/legendaire45/render/RenderMagicArrow/firearrowtexture firearrowtexture
 .method_map mod/legendaire45/render/RenderMagicArrow/renderArrow (Lmod/legendaire45/entity/EntityMagicArrow;DDDFF)V renderArrow
 .method_map mod/legendaire45/render/RenderMagicArrow/doRender (Lnet/minecraft/entity/Entity;DDDFF)V a
+.package_map mod/legendaire45/tools tools
+.class_map mod/legendaire45/tools/SoundPlayer SoundPlayer
+.method_map mod/legendaire45/tools/SoundPlayer/playCustomSound (Lnet/minecraft/entity/Entity;Ljava/lang/String;Lnet/minecraft/world/World;)V playCustomSound
+.method_map mod/legendaire45/tools/SoundPlayer/playCustomSound (Lnet/minecraft/entity/Entity;Ljava/lang/String;Lnet/minecraft/world/World;F)V playCustomSound
+.class_map mod/legendaire45/tools/NewSound NewSound
+.method_map mod/legendaire45/tools/NewSound/onSound (Lnet/minecraftforge/client/event/sound/SoundLoadEvent;)V onSound
 .package_map mod/legendaire45/gui gui
 .class_map mod/legendaire45/gui/GuiHandler GuiHandler
 .method_map mod/legendaire45/gui/GuiHandler/getClientGuiElement (ILnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;III)Ljava/lang/Object; getClientGuiElement
@@ -3106,6 +3164,9 @@
 .method_map mod/legendaire45/items/TeleportBow/getItemEnchantability ()I c
 .method_map mod/legendaire45/items/TeleportBow/getItemUseAction (Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/EnumAction; b_
 .method_map mod/legendaire45/items/TeleportBow/getMaxItemUseDuration (Lnet/minecraft/item/ItemStack;)I c_
+.package_map mod/legendaire45/event event
+.class_map mod/legendaire45/event/BoneMealEvent BoneMealEvent
+.method_map mod/legendaire45/event/BoneMealEvent/onUseBonemeal (Lnet/minecraftforge/event/entity/player/BonemealEvent;)V onUseBonemeal
 .package_map mod/legendaire45/tile tile
 .class_map mod/legendaire45/tile/TileEntityTrampoline TileEntityTrampoline
 .method_map mod/legendaire45/tile/TileEntityTrampoline/openChest ()V openChest
@@ -3179,12 +3240,12 @@
 .field_map mod/legendaire45/mod_retrogame/seedBeer seedBeer
 .field_map mod/legendaire45/mod_retrogame/bowfix bowfix
 .field_map mod/legendaire45/mod_retrogame/instance instance
-.field_map mod/legendaire45/mod_retrogame/Beer Beer
 .field_map mod/legendaire45/mod_retrogame/IDoutil IDoutil
 .field_map mod/legendaire45/mod_retrogame/pelleToolE pelleToolE
 .field_map mod/legendaire45/mod_retrogame/saphirOre saphirOre
 .field_map mod/legendaire45/mod_retrogame/ArmorR3 ArmorR3
 .field_map mod/legendaire45/mod_retrogame/ArmorR4 ArmorR4
+.field_map mod/legendaire45/mod_retrogame/wheatBeer wheatBeer
 .field_map mod/legendaire45/mod_retrogame/rubyGem rubyGem
 .field_map mod/legendaire45/mod_retrogame/ArmorS1 ArmorS1
 .field_map mod/legendaire45/mod_retrogame/textureItem textureItem

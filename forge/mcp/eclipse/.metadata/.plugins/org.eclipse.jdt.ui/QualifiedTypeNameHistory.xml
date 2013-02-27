@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.client.gui.inventory.GuiCrafting"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.item.EntityItem"/>
-<fullyQualifiedTypeName name="net.minecraft.client.entity.EntityPlayerSP"/>
 <fullyQualifiedTypeName name="net.minecraft.util.DamageSource"/>
 <fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntityBrewingStand"/>
 <fullyQualifiedTypeName name="net.minecraft.inventory.IInventory"/>
@@ -27,7 +24,6 @@
 <fullyQualifiedTypeName name="java.io.DataInputStream"/>
 <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
 <fullyQualifiedTypeName name="mod.legendaire45.network.packet.Packet94PlayerInfo"/>
-<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
 <fullyQualifiedTypeName name="net.minecraft.network.packet.NetHandler"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
@@ -58,6 +54,10 @@
 <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="mod.legendaire45.mod_retrogame"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 <fullyQualifiedTypeName name="net.minecraft.util.MathHelper"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="mod.legendaire45.tools.SoundPlayer"/>
+<fullyQualifiedTypeName name="mod.legendaire45.tools.NewSound"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="java.io.File"/>
 </qualifiedTypeNameHistroy>

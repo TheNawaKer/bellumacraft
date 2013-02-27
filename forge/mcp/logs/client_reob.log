@@ -677,6 +677,9 @@ PK: mod/legendaire45/client mod/legendaire45/client
 CL: mod/legendaire45/client/PistonConfiguration mod/legendaire45/client/PistonConfiguration
 MD: mod/legendaire45/client/PistonConfiguration/allowed (I)I mod/legendaire45/client/PistonConfiguration/allowed (I)I
 CL: mod/legendaire45/client/ClientProxy mod/legendaire45/client/ClientProxy
+CL: mod/legendaire45/client/KeyHandlerBow mod/legendaire45/client/KeyHandlerBow
+FD: mod/legendaire45/client/KeyHandlerBow/mc mod/legendaire45/client/KeyHandlerBow/mc
+FD: mod/legendaire45/client/KeyHandlerBow/bow mod/legendaire45/client/KeyHandlerBow/bow
 CL: mod/legendaire45/client/ClientPacketHandler mod/legendaire45/client/ClientPacketHandler
 MD: mod/legendaire45/client/ClientPacketHandler/handleSword (Lnet/minecraft/network/packet/Packet250CustomPayload;Lcpw/mods/fml/common/network/Player;)V mod/legendaire45/client/ClientPacketHandler/handleSword (Ldi;Lcpw/mods/fml/common/network/Player;)V
 PK: mod/legendaire45/common mod/legendaire45/common
@@ -685,6 +688,7 @@ FD: mod/legendaire45/common/CommonProxy/firearrowtexture mod/legendaire45/common
 FD: mod/legendaire45/common/CommonProxy/lunettec mod/legendaire45/common/CommonProxy/lunettec
 FD: mod/legendaire45/common/CommonProxy/lunettea mod/legendaire45/common/CommonProxy/lunettea
 FD: mod/legendaire45/common/CommonProxy/lunetteb mod/legendaire45/common/CommonProxy/lunetteb
+FD: mod/legendaire45/common/CommonProxy/cheval mod/legendaire45/common/CommonProxy/cheval
 FD: mod/legendaire45/common/CommonProxy/textureRuby2 mod/legendaire45/common/CommonProxy/textureRuby2
 FD: mod/legendaire45/common/CommonProxy/teleportarrowtexture mod/legendaire45/common/CommonProxy/teleportarrowtexture
 FD: mod/legendaire45/common/CommonProxy/guibeer mod/legendaire45/common/CommonProxy/guibeer
@@ -699,6 +703,27 @@ FD: mod/legendaire45/common/CommonProxy/trampoline mod/legendaire45/common/Commo
 FD: mod/legendaire45/common/CommonProxy/textureEmerald mod/legendaire45/common/CommonProxy/textureEmerald
 MD: mod/legendaire45/common/CommonProxy/registerRenderThings ()V mod/legendaire45/common/CommonProxy/registerRenderThings ()V
 PK: mod/legendaire45/entity mod/legendaire45/entity
+PK: mod/legendaire45/entity/model mod/legendaire45/entity/model
+CL: mod/legendaire45/entity/model/ModelCheval mod/legendaire45/entity/model/ModelCheval
+FD: mod/legendaire45/entity/model/ModelCheval/queue mod/legendaire45/entity/model/ModelCheval/queue
+FD: mod/legendaire45/entity/model/ModelCheval/oreille2 mod/legendaire45/entity/model/ModelCheval/oreille2
+FD: mod/legendaire45/entity/model/ModelCheval/oreille1 mod/legendaire45/entity/model/ModelCheval/oreille1
+FD: mod/legendaire45/entity/model/ModelCheval/patte1 mod/legendaire45/entity/model/ModelCheval/patte1
+FD: mod/legendaire45/entity/model/ModelCheval/tete mod/legendaire45/entity/model/ModelCheval/tete
+FD: mod/legendaire45/entity/model/ModelCheval/patte2 mod/legendaire45/entity/model/ModelCheval/patte2
+FD: mod/legendaire45/entity/model/ModelCheval/patte3 mod/legendaire45/entity/model/ModelCheval/patte3
+FD: mod/legendaire45/entity/model/ModelCheval/cou mod/legendaire45/entity/model/ModelCheval/cou
+FD: mod/legendaire45/entity/model/ModelCheval/patte4 mod/legendaire45/entity/model/ModelCheval/patte4
+FD: mod/legendaire45/entity/model/ModelCheval/corps mod/legendaire45/entity/model/ModelCheval/corps
+MD: mod/legendaire45/entity/model/ModelCheval/setRotation (Lnet/minecraft/client/model/ModelRenderer;FFF)V mod/legendaire45/entity/model/ModelCheval/setRotation (Layf;FFF)V
+PK: mod/legendaire45/entity/mobs mod/legendaire45/entity/mobs
+CL: mod/legendaire45/entity/mobs/EntityCheval mod/legendaire45/entity/mobs/EntityCheval
+FD: mod/legendaire45/entity/mobs/EntityCheval/cheval mod/legendaire45/entity/mobs/EntityCheval/cheval
+FD: mod/legendaire45/entity/mobs/EntityCheval/aiControlledByPlayer mod/legendaire45/entity/mobs/EntityCheval/aiControlledByPlayer
+MD: mod/legendaire45/entity/mobs/EntityCheval/setSaddled (Z)V mod/legendaire45/entity/mobs/EntityCheval/setSaddled (Z)V
+MD: mod/legendaire45/entity/mobs/EntityCheval/getSaddled ()Z mod/legendaire45/entity/mobs/EntityCheval/getSaddled ()Z
+MD: mod/legendaire45/entity/mobs/EntityCheval/getAIControlledByPlayer ()Lnet/minecraft/entity/ai/EntityAIControlledByPlayer; mod/legendaire45/entity/mobs/EntityCheval/getAIControlledByPlayer ()Lmv;
+MD: mod/legendaire45/entity/mobs/EntityCheval/spawnBabyAnimal (Lnet/minecraft/entity/EntityAgeable;)Lmod/legendaire45/entity/mobs/EntityCheval; mod/legendaire45/entity/mobs/EntityCheval/spawnBabyAnimal (Lln;)Lmod/legendaire45/entity/mobs/EntityCheval;
 PK: mod/legendaire45/entity/player mod/legendaire45/entity/player
 CL: mod/legendaire45/entity/player/EntityPlayerSword mod/legendaire45/entity/player/EntityPlayerSword
 FD: mod/legendaire45/entity/player/EntityPlayerSword/mc mod/legendaire45/entity/player/EntityPlayerSword/mc
@@ -762,9 +787,6 @@ MD: mod/legendaire45/blocks/BlockSofa/unifyAdjacentSofas (Lnet/minecraft/world/W
 MD: mod/legendaire45/blocks/BlockSofa/idDropped (ILjava/util/Random;)I mod/legendaire45/blocks/BlockSofa/idDropped (ILjava/util/Random;)I
 CL: mod/legendaire45/blocks/BlockRuby mod/legendaire45/blocks/BlockRuby
 CL: mod/legendaire45/blocks/BlockCropBeer mod/legendaire45/blocks/BlockCropBeer
-MD: mod/legendaire45/blocks/BlockCropBeer/getGrowthRate (Lnet/minecraft/world/World;III)F mod/legendaire45/blocks/BlockCropBeer/getGrowthRate (Lyc;III)F
-MD: mod/legendaire45/blocks/BlockCropBeer/par1dDropped (ILjava/util/Random;I)I mod/legendaire45/blocks/BlockCropBeer/par1dDropped (ILjava/util/Random;I)I
-MD: mod/legendaire45/blocks/BlockCropBeer/fertilize (Lnet/minecraft/world/World;III)V mod/legendaire45/blocks/BlockCropBeer/fertilize (Lyc;III)V
 PK: mod/legendaire45/network mod/legendaire45/network
 PK: mod/legendaire45/network/player mod/legendaire45/network/player
 CL: mod/legendaire45/network/player/PlayerInfoSender mod/legendaire45/network/player/PlayerInfoSender
@@ -777,6 +799,9 @@ CL: mod/legendaire45/render/item/ItemSofaRenderer mod/legendaire45/render/item/I
 FD: mod/legendaire45/render/item/ItemSofaRenderer/theTile mod/legendaire45/render/item/ItemSofaRenderer/theTile
 FD: mod/legendaire45/render/item/ItemSofaRenderer/instance mod/legendaire45/render/item/ItemSofaRenderer/instance
 MD: mod/legendaire45/render/item/ItemSofaRenderer/renderTile (Lnet/minecraft/block/Block;IF)V mod/legendaire45/render/item/ItemSofaRenderer/renderTile (Lamq;IF)V
+PK: mod/legendaire45/render/entity mod/legendaire45/render/entity
+CL: mod/legendaire45/render/entity/RenderCheval mod/legendaire45/render/entity/RenderCheval
+MD: mod/legendaire45/render/entity/RenderCheval/renderCow (Lmod/legendaire45/entity/mobs/EntityCheval;DDDFF)V mod/legendaire45/render/entity/RenderCheval/renderCow (Lmod/legendaire45/entity/mobs/EntityCheval;DDDFF)V
 CL: mod/legendaire45/render/RenderBeer mod/legendaire45/render/RenderBeer
 FD: mod/legendaire45/render/RenderBeer/distrib mod/legendaire45/render/RenderBeer/distrib
 FD: mod/legendaire45/render/RenderBeer/distributor mod/legendaire45/render/RenderBeer/distributor
@@ -800,6 +825,12 @@ MD: mod/legendaire45/render/ItemToolEnum/isTool (Lnet/minecraft/item/ItemStack;)
 CL: mod/legendaire45/render/RenderMagicArrow mod/legendaire45/render/RenderMagicArrow
 FD: mod/legendaire45/render/RenderMagicArrow/firearrowtexture mod/legendaire45/render/RenderMagicArrow/firearrowtexture
 MD: mod/legendaire45/render/RenderMagicArrow/renderArrow (Lmod/legendaire45/entity/EntityMagicArrow;DDDFF)V mod/legendaire45/render/RenderMagicArrow/renderArrow (Lmod/legendaire45/entity/EntityMagicArrow;DDDFF)V
+PK: mod/legendaire45/tools mod/legendaire45/tools
+CL: mod/legendaire45/tools/SoundPlayer mod/legendaire45/tools/SoundPlayer
+MD: mod/legendaire45/tools/SoundPlayer/playCustomSound (Lnet/minecraft/entity/Entity;Ljava/lang/String;Lnet/minecraft/world/World;)V mod/legendaire45/tools/SoundPlayer/playCustomSound (Llq;Ljava/lang/String;Lyc;)V
+MD: mod/legendaire45/tools/SoundPlayer/playCustomSound (Lnet/minecraft/entity/Entity;Ljava/lang/String;Lnet/minecraft/world/World;F)V mod/legendaire45/tools/SoundPlayer/playCustomSound (Llq;Ljava/lang/String;Lyc;F)V
+CL: mod/legendaire45/tools/NewSound mod/legendaire45/tools/NewSound
+MD: mod/legendaire45/tools/NewSound/onSound (Lnet/minecraftforge/client/event/sound/SoundLoadEvent;)V mod/legendaire45/tools/NewSound/onSound (Lnet/minecraftforge/client/event/sound/SoundLoadEvent;)V
 PK: mod/legendaire45/gui mod/legendaire45/gui
 CL: mod/legendaire45/gui/GuiHandler mod/legendaire45/gui/GuiHandler
 CL: mod/legendaire45/gui/ContainerBeer mod/legendaire45/gui/ContainerBeer
@@ -842,6 +873,9 @@ CL: mod/legendaire45/items/ItemCup mod/legendaire45/items/ItemCup
 MD: mod/legendaire45/items/ItemCup/addCreativeItems (Ljava/util/ArrayList;)V mod/legendaire45/items/ItemCup/addCreativeItems (Ljava/util/ArrayList;)V
 CL: mod/legendaire45/items/ItemToolEpeeMod mod/legendaire45/items/ItemToolEpeeMod
 CL: mod/legendaire45/items/TeleportBow mod/legendaire45/items/TeleportBow
+PK: mod/legendaire45/event mod/legendaire45/event
+CL: mod/legendaire45/event/BoneMealEvent mod/legendaire45/event/BoneMealEvent
+MD: mod/legendaire45/event/BoneMealEvent/onUseBonemeal (Lnet/minecraftforge/event/entity/player/BonemealEvent;)V mod/legendaire45/event/BoneMealEvent/onUseBonemeal (Lnet/minecraftforge/event/entity/player/BonemealEvent;)V
 PK: mod/legendaire45/tile mod/legendaire45/tile
 CL: mod/legendaire45/tile/TileEntityTrampoline mod/legendaire45/tile/TileEntityTrampoline
 MD: mod/legendaire45/tile/TileEntityTrampoline/openChest ()V mod/legendaire45/tile/TileEntityTrampoline/openChest ()V
@@ -893,12 +927,12 @@ FD: mod/legendaire45/mod_retrogame/emerald mod/legendaire45/mod_retrogame/emeral
 FD: mod/legendaire45/mod_retrogame/seedBeer mod/legendaire45/mod_retrogame/seedBeer
 FD: mod/legendaire45/mod_retrogame/bowfix mod/legendaire45/mod_retrogame/bowfix
 FD: mod/legendaire45/mod_retrogame/instance mod/legendaire45/mod_retrogame/instance
-FD: mod/legendaire45/mod_retrogame/Beer mod/legendaire45/mod_retrogame/Beer
 FD: mod/legendaire45/mod_retrogame/IDoutil mod/legendaire45/mod_retrogame/IDoutil
 FD: mod/legendaire45/mod_retrogame/pelleToolE mod/legendaire45/mod_retrogame/pelleToolE
 FD: mod/legendaire45/mod_retrogame/saphirOre mod/legendaire45/mod_retrogame/saphirOre
 FD: mod/legendaire45/mod_retrogame/ArmorR3 mod/legendaire45/mod_retrogame/ArmorR3
 FD: mod/legendaire45/mod_retrogame/ArmorR4 mod/legendaire45/mod_retrogame/ArmorR4
+FD: mod/legendaire45/mod_retrogame/wheatBeer mod/legendaire45/mod_retrogame/wheatBeer
 FD: mod/legendaire45/mod_retrogame/rubyGem mod/legendaire45/mod_retrogame/rubyGem
 FD: mod/legendaire45/mod_retrogame/ArmorS1 mod/legendaire45/mod_retrogame/ArmorS1
 FD: mod/legendaire45/mod_retrogame/textureItem mod/legendaire45/mod_retrogame/textureItem
