@@ -787,6 +787,7 @@ MD: mod/legendaire45/blocks/BlockSofa/unifyAdjacentSofas (Lnet/minecraft/world/W
 MD: mod/legendaire45/blocks/BlockSofa/idDropped (ILjava/util/Random;)I mod/legendaire45/blocks/BlockSofa/idDropped (ILjava/util/Random;)I
 CL: mod/legendaire45/blocks/BlockRuby mod/legendaire45/blocks/BlockRuby
 CL: mod/legendaire45/blocks/BlockCropBeer mod/legendaire45/blocks/BlockCropBeer
+MD: mod/legendaire45/blocks/BlockCropBeer/getGrowthRate (Lnet/minecraft/world/World;III)F mod/legendaire45/blocks/BlockCropBeer/getGrowthRate (Lyc;III)F
 PK: mod/legendaire45/network mod/legendaire45/network
 PK: mod/legendaire45/network/player mod/legendaire45/network/player
 CL: mod/legendaire45/network/player/PlayerInfoSender mod/legendaire45/network/player/PlayerInfoSender
@@ -826,9 +827,6 @@ CL: mod/legendaire45/render/RenderMagicArrow mod/legendaire45/render/RenderMagic
 FD: mod/legendaire45/render/RenderMagicArrow/firearrowtexture mod/legendaire45/render/RenderMagicArrow/firearrowtexture
 MD: mod/legendaire45/render/RenderMagicArrow/renderArrow (Lmod/legendaire45/entity/EntityMagicArrow;DDDFF)V mod/legendaire45/render/RenderMagicArrow/renderArrow (Lmod/legendaire45/entity/EntityMagicArrow;DDDFF)V
 PK: mod/legendaire45/tools mod/legendaire45/tools
-CL: mod/legendaire45/tools/SoundPlayer mod/legendaire45/tools/SoundPlayer
-MD: mod/legendaire45/tools/SoundPlayer/playCustomSound (Lnet/minecraft/entity/Entity;Ljava/lang/String;Lnet/minecraft/world/World;)V mod/legendaire45/tools/SoundPlayer/playCustomSound (Llq;Ljava/lang/String;Lyc;)V
-MD: mod/legendaire45/tools/SoundPlayer/playCustomSound (Lnet/minecraft/entity/Entity;Ljava/lang/String;Lnet/minecraft/world/World;F)V mod/legendaire45/tools/SoundPlayer/playCustomSound (Llq;Ljava/lang/String;Lyc;F)V
 CL: mod/legendaire45/tools/NewSound mod/legendaire45/tools/NewSound
 MD: mod/legendaire45/tools/NewSound/onSound (Lnet/minecraftforge/client/event/sound/SoundLoadEvent;)V mod/legendaire45/tools/NewSound/onSound (Lnet/minecraftforge/client/event/sound/SoundLoadEvent;)V
 PK: mod/legendaire45/gui mod/legendaire45/gui
@@ -869,6 +867,8 @@ FD: mod/legendaire45/items/ArmorBase/textureSaphir mod/legendaire45/items/ArmorB
 FD: mod/legendaire45/items/ArmorBase/textureEmerald mod/legendaire45/items/ArmorBase/textureEmerald
 CL: mod/legendaire45/items/MagicBow mod/legendaire45/items/MagicBow
 CL: mod/legendaire45/items/ItemToolPelleMod mod/legendaire45/items/ItemToolPelleMod
+CL: mod/legendaire45/items/ItemDisc mod/legendaire45/items/ItemDisc
+FD: mod/legendaire45/items/ItemDisc/recordName mod/legendaire45/items/ItemDisc/recordName
 CL: mod/legendaire45/items/ItemCup mod/legendaire45/items/ItemCup
 MD: mod/legendaire45/items/ItemCup/addCreativeItems (Ljava/util/ArrayList;)V mod/legendaire45/items/ItemCup/addCreativeItems (Ljava/util/ArrayList;)V
 CL: mod/legendaire45/items/ItemToolEpeeMod mod/legendaire45/items/ItemToolEpeeMod
@@ -948,9 +948,11 @@ FD: mod/legendaire45/mod_retrogame/hacheToolS mod/legendaire45/mod_retrogame/hac
 FD: mod/legendaire45/mod_retrogame/rubyarmor mod/legendaire45/mod_retrogame/rubyarmor
 FD: mod/legendaire45/mod_retrogame/cropBeer mod/legendaire45/mod_retrogame/cropBeer
 FD: mod/legendaire45/mod_retrogame/sofa mod/legendaire45/mod_retrogame/sofa
+FD: mod/legendaire45/mod_retrogame/disc2 mod/legendaire45/mod_retrogame/disc2
 FD: mod/legendaire45/mod_retrogame/lunette3 mod/legendaire45/mod_retrogame/lunette3
 FD: mod/legendaire45/mod_retrogame/pelleToolR mod/legendaire45/mod_retrogame/pelleToolR
 FD: mod/legendaire45/mod_retrogame/epeeToolR mod/legendaire45/mod_retrogame/epeeToolR
+FD: mod/legendaire45/mod_retrogame/disc1 mod/legendaire45/mod_retrogame/disc1
 FD: mod/legendaire45/mod_retrogame/pelleToolS mod/legendaire45/mod_retrogame/pelleToolS
 FD: mod/legendaire45/mod_retrogame/lunette1 mod/legendaire45/mod_retrogame/lunette1
 FD: mod/legendaire45/mod_retrogame/lunette2 mod/legendaire45/mod_retrogame/lunette2
