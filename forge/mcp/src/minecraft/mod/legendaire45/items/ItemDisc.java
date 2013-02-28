@@ -53,7 +53,7 @@ public class ItemDisc extends ItemRecord
 		{
 			par3List.add("M.I.A - " + "Paper Planes");
 		}
-		if (this.recordName == "skrillex")
+		else if (this.recordName == "skrillex")
 		{
 			par3List.add("Skrillex" + " - " + this.recordName);
 		}

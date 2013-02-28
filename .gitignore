@@ -9,3 +9,5 @@
 /forge/mcp/eclipse/**/*
 /forge/mcp/eclipse/.metadata/**
 /forge/mcp/eclipse/.metadata/*
+eclipse/
+/forge/mcp/eclipse/

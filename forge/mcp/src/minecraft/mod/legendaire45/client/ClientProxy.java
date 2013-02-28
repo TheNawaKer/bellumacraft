@@ -7,11 +7,13 @@ import mod.legendaire45.entity.mobs.EntityCheval;
 import mod.legendaire45.entity.model.ModelCheval;
 import mod.legendaire45.render.RenderBeer;
 import mod.legendaire45.render.RenderMagicArrow;
+import mod.legendaire45.render.RenderMoule;
 import mod.legendaire45.render.RenderTeleportArrow;
 import mod.legendaire45.render.TileEntitySofaRenderer;
 import mod.legendaire45.render.TileEntityTrampolineRenderer;
 import mod.legendaire45.render.entity.RenderCheval;
 import mod.legendaire45.tile.TileEntityBeer;
+import mod.legendaire45.tile.TileEntityMoule;
 import mod.legendaire45.tile.TileEntitySofa;
 import mod.legendaire45.tile.TileEntityTrampoline;
 import net.minecraft.src.ModLoader;
@@ -50,6 +52,9 @@ public class ClientProxy extends CommonProxy
 		
 		TileEntityTrampolineRenderer trampolineRender = new TileEntityTrampolineRenderer();
 		ModLoader.registerTileEntity(TileEntityTrampoline.class, "TileEntitytrampoline", trampolineRender);	
+
+		RenderMoule renderMoule = new RenderMoule();
+		ModLoader.registerTileEntity(TileEntityMoule.class, "CheeseMoule", renderMoule);	
 		
 		ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
 		RenderingRegistry.registerEntityRenderingHandler(EntityMagicArrow.class, new RenderMagicArrow());

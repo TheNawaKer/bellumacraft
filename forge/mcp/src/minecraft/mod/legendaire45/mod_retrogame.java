@@ -2,13 +2,13 @@ package mod.legendaire45;
 
 import mod.legendaire45.blocks.BlockBeer;
 import mod.legendaire45.blocks.BlockCropBeer;
+import mod.legendaire45.blocks.BlockMoule;
 import mod.legendaire45.blocks.BlockRuby;
 import mod.legendaire45.blocks.BlockSaphir;
 import mod.legendaire45.blocks.BlockSofa;
 import mod.legendaire45.blocks.BlockStairLog;
 import mod.legendaire45.blocks.BlockTrampoline;
 import mod.legendaire45.client.ClientPacketHandler;
-import mod.legendaire45.client.KeyHandlerBow;
 import mod.legendaire45.common.CommonProxy;
 import mod.legendaire45.entity.EntityMagicArrow;
 import mod.legendaire45.entity.EntityTeleportArrow;
@@ -39,18 +39,15 @@ import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemRecord;
 import net.minecraft.item.ItemReed;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemStack;
 import net.minecraft.src.ModLoader;
 import net.minecraft.src.PlayerAPI;
 import net.minecraft.src.RenderPlayerAPI;
-import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.client.event.sound.SoundEvent;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
-import cpw.mods.fml.client.registry.KeyBindingRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
@@ -86,16 +83,25 @@ public class mod_retrogame
 		
 		static int IDoutil = 400;
 		static int IDblock = 170;
-
+		
+		/*
+		 * Material Outils
+		 */
 		static EnumToolMaterial emerald= EnumHelper.addToolMaterial("EMERALD", 2, 1800, 8.5F, 4, 22);
 		static EnumToolMaterial saphir= EnumHelper.addToolMaterial("SAPHIR", 2, 1800, 9F, 3, 22);
 		static EnumToolMaterial ruby= EnumHelper.addToolMaterial("RUBY", 2, 1800, 10F, 2, 22);		
 		
+		/*
+		 * Material Armures + lunettes
+		 */
 		public static EnumArmorMaterial emeraldarmor = EnumHelper.addArmorMaterial("EMERALD", 33, new int[] {5, 10, 8, 5}, 25);
 		public static EnumArmorMaterial saphirarmor = EnumHelper.addArmorMaterial("SAPHIR", 33, new int[] {4, 9, 7, 4}, 25);
 		public static EnumArmorMaterial rubyarmor = EnumHelper.addArmorMaterial("RUBY", 33, new int[] {4, 9, 7, 4}, 25);
 		public static EnumArmorMaterial lunette = EnumHelper.addArmorMaterial("PLASTIC", 5, new int[] {1, 2, 3, 4}, 9);
 		
+		/*
+		 * Block
+		 */
 		public static final Block beer = (new BlockBeer(IDblock+1, 37, Material.grass)).setTextureFile(textureItem).setBlockName("Distributeur2").setCreativeTab(CreativeTabs.tabBlock);
 		public static final Block blockTrampoline = new BlockTrampoline(IDblock+2, 1, Material.grass).setBlockName("Bloc de Slime").setTextureFile(textureBlock).setHardness(.5F).setStepSound(Block.soundSnowFootstep).setCreativeTab(CreativeTabs.tabBlock);
 		public static final Block cropBeer = (new BlockCropBeer(IDblock+3)).setTextureFile(textureBlock).setBlockName("cropBeer").setStepSound(Block.soundGrassFootstep);
@@ -105,6 +111,11 @@ public class mod_retrogame
 		public static final Block saphirOre = (new BlockSaphir(IDblock+7, 15, Material.rock)).setTextureFile(textureBlock).setStepSound(Block.soundStoneFootstep).setBlockName("saphir").setCreativeTab(CreativeTabs.tabBlock);
 		
 		public static final Block sofa = (new BlockSofa(IDblock+5)).setStepSound(Block.soundWoodFootstep).setBlockName("sofa").setCreativeTab(CreativeTabs.tabDecorations);
+		
+		public static final Block moule = (new BlockMoule(IDblock+8, 4, Material.wood)).setStepSound(Block.soundWoodFootstep).setBlockName("moule").setCreativeTab(CreativeTabs.tabDecorations);
+		/*
+		 * Item
+		 */
 		public static final Item sofas = (new ItemReed(IDoutil+41,sofa)).setTextureFile(textureItem).setIconIndex(40).setItemName("Beer").setCreativeTab(CreativeTabs.tabBlock);
 	    
 		public static final Item Cup = (new ItemCup(IDoutil+31)).setTextureFile(textureItem).setIconIndex(0).setItemName("Chope Vide").setCreativeTab(CreativeTabs.tabBlock);
@@ -118,6 +129,9 @@ public class mod_retrogame
 	    public static Item rubyGem = (new Item(IDoutil+42)).setTextureFile(textureItem).setIconCoord(13, 2).setItemName("ruby").setCreativeTab(CreativeTabs.tabMaterials);
 	    public static Item saphirGem = (new Item(IDoutil+43)).setTextureFile(textureItem).setIconCoord(14, 2).setItemName("saphir").setCreativeTab(CreativeTabs.tabMaterials);
 	    
+	    /*
+	     * Outils
+	     */
 		public static final Item pelleToolE= (new ItemToolPelleMod(IDoutil+5, emerald )).setTextureFile(textureItem).setItemName("tool_pelle_e").setIconIndex(3);
 		public static final Item piocheToolE= (new ItemToolPiocheMod(IDoutil+6, emerald )).setTextureFile(textureItem).setItemName("tool_pioche_e").setIconIndex(4);
 		public static final Item hacheToolE= (new ItemToolHacheMod(IDoutil+7, emerald )).setTextureFile(textureItem).setItemName("tool_hache_e").setIconIndex(5);
@@ -131,6 +145,9 @@ public class mod_retrogame
 		public static final Item hacheToolR= (new ItemToolHacheMod(IDoutil+14, ruby )).setTextureFile(textureItem).setItemName("tool_hache_r").setIconIndex(13);
 		public static final Item epeeToolR= (new ItemToolEpeeMod(IDoutil+15, ruby )).setTextureFile(textureItem).setItemName("tool_epee_r").setIconIndex(14);
 
+		/*
+		 * Armures + lunettes
+		 */
 		public static final Item ArmorE1 = new ArmorBase(IDoutil+16, emeraldarmor, 0,0).setTextureFile(textureItem).setIconIndex(19).setItemName("armor_head_e");
 		public static final Item ArmorE2 = new ArmorBase(IDoutil+17, emeraldarmor, 1,1).setTextureFile(textureItem).setIconIndex(20).setItemName("armor_plate_e");
 		public static final Item ArmorE3= new ArmorBase(IDoutil+18, emeraldarmor, 2,2).setTextureFile(textureItem).setIconIndex(21).setItemName("armor_legs_e");
@@ -148,6 +165,9 @@ public class mod_retrogame
 		public static final Item lunette2 = new ArmorBase(IDoutil+29, lunette, 0,0).setTextureFile(textureItem).setIconIndex(36).setItemName("lunette2");
 		public static final Item lunette3 = new ArmorBase(IDoutil+30, lunette, 0,0).setTextureFile(textureItem).setIconIndex(38).setItemName("lunette3");
 		
+		/*
+		 * Arc + fleche
+		 */
 	    public static final Item firebow = (new MagicBow(IDoutil+36)).setIconCoord(10, 2).setTextureFile(textureItem).setItemName("firebow");
 	    public static final Item teleportbow = (new TeleportBow(IDoutil+38)).setIconCoord(12, 2).setTextureFile(textureItem).setItemName("teleportbow");
 	    public static final Item firearrow = (new Item(IDoutil+37)).setIconCoord(10, 3).setTextureFile(textureItem).setItemName("firearrow").setCreativeTab(CreativeTabs.tabCombat);
@@ -155,6 +175,9 @@ public class mod_retrogame
 	 
 	    public static final Item bowfix = (new Item(IDoutil+45)).setIconCoord(5, 1).setItemName("arc render");
 	    
+	    /*
+	     * Disc
+	     */
 	    public static Item disc1 = (new ItemDisc(2012, "mia")).setIconCoord(0, 15).setItemName("mia");
 	    public static Item disc2 = (new ItemDisc(2013, "skrillex")).setIconCoord(0, 15).setItemName("skrillex");
 	    
@@ -258,6 +281,7 @@ public class mod_retrogame
 			GameRegistry.registerBlock(cropBeer);
 			GameRegistry.registerBlock(stair);	
 			GameRegistry.registerBlock(sofa);	
+			GameRegistry.registerBlock(moule);
 			GameRegistry.registerBlock(rubyOre);
 			GameRegistry.registerBlock(saphirOre);
 			GameRegistry.registerWorldGenerator(new WorldGenOre());
@@ -319,6 +343,8 @@ public class mod_retrogame
 			
 			LanguageRegistry.addName(disc1, "New Disc");
 			LanguageRegistry.addName(disc2, "New Disc 2");
+			
+			LanguageRegistry.addName(moule, "Moule a Fromage");
 			
 		}
 	    
