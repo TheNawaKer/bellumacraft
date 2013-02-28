@@ -5,80 +5,145 @@ import java.util.Random;
 import mod.legendaire45.mod_retrogame;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
-import net.minecraft.block.material.Material;
-import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeDirection;
-import net.minecraftforge.common.IPlantable;
 
-public class BlockCropBeer extends BlockCrops {
-
-    public BlockCropBeer (int id) {
-        super(id, 2);
-        setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
-        setTickRandomly(true);
+public class BlockCropBeer extends BlockCrops
+{
+    public BlockCropBeer(int par1)
+    {
+        super(par1, 2);
+        this.setTickRandomly(true);
+        float var3 = 0.5F;
+        this.setBlockBounds(0.5F - var3, 0.0F, 0.5F - var3, 0.5F + var3, 0.25F, 0.5F + var3);
+        this.setCreativeTab((CreativeTabs)null);
+        this.setHardness(0.0F);
+        this.setStepSound(soundGrassFootstep);
+        this.disableStats();
+        this.setRequiresSelfNotify();
     }
 
-    public AxisAlignedBB getCollisionBoundingBoxFromPool (World world, int x,
-            int y, int z) {
-        return null;
+    /**
+     * Gets passed in the blockID of the block below and supposed to return true if its allowed to grow on the type of
+     * blockID passed in. Args: blockID
+     */
+    protected boolean canThisPlantGrowOnThisBlockID(int par1)
+    {
+        return par1 == Block.tilledField.blockID;
     }
-
-    public int getRenderType () {
-        return 6;
-    }
-
-    public boolean isOpaqueCube () {
-        return false;
-    }
-
-    public int getBlockTextureFromSideAndMetadata (int side, int metadata) {
-        return 2 + metadata;
-    }
-
-    public void updateTick (World world, int x, int y, int z, Random random) {
-        if (world.getBlockMetadata(x, y, z) == 1) {
-            return;
+    
+    /**
+     * From the specified side and block metadata retrieves the blocks texture. Args: side, metadata
+     */
+    public int getBlockTextureFromSideAndMetadata(int par1, int par2)
+    {
+        if (par2 < 0)
+        {
+            par2 = 8;
         }
 
-        if (random.nextInt(isFertile(world, x, y - 1, z) ? 12 : 25) != 0) {
-            return;
-        }
-
-        world.setBlockMetadataWithNotify(x, y, z, 1);
+        return this.blockIndexInTexture + par2;
+    }
+    
+    /**
+     * Apply bonemeal to the crops.
+     */
+    public void fertilize(World par1World, int par2, int par3, int par4)
+    {
+        par1World.setBlockMetadataWithNotify(par2, par3, par4, 7);
     }
 
-    @Override
-    public void onNeighborBlockChange (World world, int x, int y, int z,
-            int neighborId) {
-        if (!canBlockStay(world, x, y, z)) {
-            dropBlockAsItem(world, x, y, z, world.getBlockMetadata(x, y, z), 0);
-            world.setBlockWithNotify(x, y, z, 0);
-        }
-    }
+    /**
+     * Ticks the block if it's been scheduled
+     */
+    public void updateTick(World par1World, int par2, int par3, int par4, Random par5Random)
+    {
+        super.updateTick(par1World, par2, par3, par4, par5Random);
 
-    @Override
-    public boolean canBlockStay (World world, int x, int y, int z) {
-        Block soil = blocksList[world.getBlockId(x, y - 1, z)];
-        return (world.getFullBlockLightValue(x, y, z) >= 8 || world
-                .canBlockSeeTheSky(x, y, z))
-                && (soil != null && soil.canSustainPlant(world, x, y - 1, z,
-                        ForgeDirection.UP, (IPlantable) mod_retrogame.seedBeer));
-    }
+        if (par1World.getBlockLightValue(par2, par3 + 1, par4) >= 9)
+        {
+            int var6 = par1World.getBlockMetadata(par2, par3, par4);
 
-    public int idDropped (int metadata, Random random, int par2) {
-        switch (metadata) {
-        case 0:
-            return mod_retrogame.seedBeer.itemID;
-        case 1:
-            return mod_retrogame.wheatBeer.itemID;
-        default:
-            // Error case!
-            return -1; // air
+            if (var6 < 7)
+            {
+                float var7 = this.getGrowthRate(par1World, par2, par3, par4);
+
+                if (par5Random.nextInt((int)(25.0F / var7) + 1) == 0)
+                {
+                    ++var6;
+                    par1World.setBlockMetadataWithNotify(par2, par3, par4, var6);
+                }
+            }
         }
     }
+    
+    /**
+     * Gets the growth rate for the crop. Setup to encourage rows by halving growth rate if there is diagonals, crops on
+     * different sides that aren't opposing, and by adding growth for every crop next to this one (and for crop below
+     * this one). Args: x, y, z
+     */
+    private float getGrowthRate(World par1World, int par2, int par3, int par4)
+    {
+        float var5 = 1.0F;
+        int var6 = par1World.getBlockId(par2, par3, par4 - 1);
+        int var7 = par1World.getBlockId(par2, par3, par4 + 1);
+        int var8 = par1World.getBlockId(par2 - 1, par3, par4);
+        int var9 = par1World.getBlockId(par2 + 1, par3, par4);
+        int var10 = par1World.getBlockId(par2 - 1, par3, par4 - 1);
+        int var11 = par1World.getBlockId(par2 + 1, par3, par4 - 1);
+        int var12 = par1World.getBlockId(par2 + 1, par3, par4 + 1);
+        int var13 = par1World.getBlockId(par2 - 1, par3, par4 + 1);
+        boolean var14 = var8 == this.blockID || var9 == this.blockID;
+        boolean var15 = var6 == this.blockID || var7 == this.blockID;
+        boolean var16 = var10 == this.blockID || var11 == this.blockID || var12 == this.blockID || var13 == this.blockID;
 
-    public int idPicked (World world, int x, int y, int z) {
+        for (int var17 = par2 - 1; var17 <= par2 + 1; ++var17)
+        {
+            for (int var18 = par4 - 1; var18 <= par4 + 1; ++var18)
+            {
+                int var19 = par1World.getBlockId(var17, par3 - 1, var18);
+                float var20 = 0.0F;
+
+                if (blocksList[var19] != null && blocksList[var19].canSustainPlant(par1World, var17, par3 - 1, var18, ForgeDirection.UP, this))
+                {
+                    var20 = 1.0F;
+
+                    if (blocksList[var19].isFertile(par1World, var17, par3 - 1, var18))
+                    {
+                        var20 = 3.0F;
+                    }
+                }
+
+                if (var17 != par2 || var18 != par4)
+                {
+                    var20 /= 4.0F;
+                }
+
+                var5 += var20;
+            }
+        }
+
+        if (var16 || var14 && var15)
+        {
+            var5 /= 2.0F;
+        }
+
+        return var5;
+    }
+    /**
+     * Generate a seed ItemStack for this crop.
+     */
+    protected int getSeedItem()
+    {
         return mod_retrogame.seedBeer.itemID;
+    }
+
+    /**
+     * Generate a crop produce ItemStack for this crop.
+     */
+    protected int getCropItem()
+    {
+        return mod_retrogame.wheatBeer.itemID;
     }
 }

@@ -24,6 +24,29 @@ public class EntityPlayerSword extends PlayerBase
 		 {
 			 var=true;
 		 }
+		 if(this.mc.thePlayer.inventory.mainInventory[0] != null && var!=true)
+		 {
+			 if(this.mc.thePlayer.tool == null)
+			 {
+				 var=true;
+			 }
+			 else if(this.mc.thePlayer.inventory.mainInventory[0].itemID != this.mc.thePlayer.tool.itemID)
+			 {
+				 var=true;
+			 }
+		 }
+		 if(this.mc.thePlayer.inventory.mainInventory[1] != null && var!=true)
+		 {
+			 if(this.mc.thePlayer.tool2 == null)
+			 {
+				 var=true;
+			 }
+			 else if(this.mc.thePlayer.inventory.mainInventory[1].itemID != this.mc.thePlayer.tool2.itemID)
+			 {
+				 var=true;
+			 }
+		 }
+		 
 		 if(var)
 		 {
 			 PlayerInfoSender.sendInfo(this.mc.thePlayer); 
@@ -34,9 +57,4 @@ public class EntityPlayerSword extends PlayerBase
     {
     	 PlayerInfoSender.sendInfo(this.mc.thePlayer); 
     } 
-    
-    public void afterDropOneItem(boolean var1)
-    {
-    	System.out.println("aDOI");
-    }
 }

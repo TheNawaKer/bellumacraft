@@ -52,12 +52,12 @@
 <fullyQualifiedTypeName name="mod.legendaire45.blocks.BlockCropBeer"/>
 <fullyQualifiedTypeName name="net.minecraft.block.BlockCrops"/>
 <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
-<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
-<fullyQualifiedTypeName name="mod.legendaire45.mod_retrogame"/>
 <fullyQualifiedTypeName name="net.minecraft.util.MathHelper"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 <fullyQualifiedTypeName name="mod.legendaire45.tools.SoundPlayer"/>
 <fullyQualifiedTypeName name="mod.legendaire45.tools.NewSound"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
 <fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="mod.legendaire45.mod_retrogame"/>
 </qualifiedTypeNameHistroy>

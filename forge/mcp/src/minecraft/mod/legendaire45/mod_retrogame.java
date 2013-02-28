@@ -18,6 +18,7 @@ import mod.legendaire45.event.BoneMealEvent;
 import mod.legendaire45.gui.GuiHandler;
 import mod.legendaire45.items.ArmorBase;
 import mod.legendaire45.items.ItemCup;
+import mod.legendaire45.items.ItemDisc;
 import mod.legendaire45.items.ItemDrink;
 import mod.legendaire45.items.ItemToolEpeeMod;
 import mod.legendaire45.items.ItemToolHacheMod;
@@ -38,6 +39,7 @@ import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemRecord;
 import net.minecraft.item.ItemReed;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemStack;
@@ -45,6 +47,7 @@ import net.minecraft.src.ModLoader;
 import net.minecraft.src.PlayerAPI;
 import net.minecraft.src.RenderPlayerAPI;
 import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraftforge.client.event.sound.SoundEvent;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.client.registry.KeyBindingRegistry;
@@ -152,6 +155,9 @@ public class mod_retrogame
 	 
 	    public static final Item bowfix = (new Item(IDoutil+45)).setIconCoord(5, 1).setItemName("arc render");
 	    
+	    public static Item disc1 = (new ItemDisc(2012, "mia")).setIconCoord(0, 15).setItemName("mia");
+	    public static Item disc2 = (new ItemDisc(2013, "skrillex")).setIconCoord(0, 15).setItemName("skrillex");
+	    
 		@PreInit
 		public void initConfig(FMLPreInitializationEvent event)
 		{
@@ -161,8 +167,9 @@ public class mod_retrogame
 				PlayerAPI.register("mod_retrogame_sword", EntityPlayerSword.class);
 		    	RenderPlayerAPI.register("mod_retrogame_sword", RenderPlayerSword.class);
 				MinecraftForge.EVENT_BUS.register(new NewSound());
+				MinecraftForge.EVENT_BUS.register(new SoundEvent());			
 			}
-			MinecraftForge.addGrassSeed(new ItemStack(cropBeer), 10);
+			MinecraftForge.addGrassSeed(new ItemStack(seedBeer), 10);
 			MinecraftForge.EVENT_BUS.register(new BoneMealEvent());
 			MinecraftForge.setToolClass(this.piocheToolE, "pickaxe", 2);
 			MinecraftForge.setToolClass(this.pelleToolE, "shovel", 2);
@@ -188,9 +195,7 @@ public class mod_retrogame
 		    ModLoader.addSpawn(EntityCheval.class, 10, 4, 6,EnumCreatureType.creature);
 		    proxy.registerRenderThings(); //Et oui, il faut bien dire de charger les proxy :)
 			EntityRegistry.registerModEntity(EntityMagicArrow.class, "firearrow", 1, this, 250, 5, false);
-			//ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
 			EntityRegistry.registerModEntity(EntityTeleportArrow.class, "teleportarrow", 2, this, 250, 5, false);
-			//ModLoader.registerEntityID(EntityTeleportArrow.class, "teleportarrow", ModLoader.getUniqueEntityId());
 			NetworkRegistry.instance().registerGuiHandler(this, guiHandler);
 			
 			register();
@@ -311,6 +316,9 @@ public class mod_retrogame
 			LanguageRegistry.addName(saphirOre, "Minerai de Saphir");
 			LanguageRegistry.addName(rubyGem, "Ruby");
 			LanguageRegistry.addName(saphirGem, "Saphir");
+			
+			LanguageRegistry.addName(disc1, "New Disc");
+			LanguageRegistry.addName(disc2, "New Disc 2");
 			
 		}
 	    

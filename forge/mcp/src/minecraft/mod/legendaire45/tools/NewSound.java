@@ -12,6 +12,9 @@ public class NewSound
     public void onSound(SoundLoadEvent event)
     {
     	Minecraft mc = Minecraft.getMinecraft();
+    	/**
+    	 * Effet Sonore Horses
+    	 */
     	File file = new File(mc.mcDataDir, "resources/sound3/mob/horse/hurt1.ogg");
     	File h1 = new File(mc.mcDataDir, "resources/sound3/mob/horse/horsegrunt1.ogg");
     	File h2 = new File(mc.mcDataDir, "resources/sound3/mob/horse/horsegrunt2.ogg");

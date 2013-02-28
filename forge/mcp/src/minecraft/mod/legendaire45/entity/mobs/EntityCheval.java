@@ -1,7 +1,6 @@
 package mod.legendaire45.entity.mobs;
 
 import mod.legendaire45.common.CommonProxy;
-import mod.legendaire45.tools.SoundPlayer;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.ai.EntityAIControlledByPlayer;
 import net.minecraft.entity.ai.EntityAIFollowParent;
