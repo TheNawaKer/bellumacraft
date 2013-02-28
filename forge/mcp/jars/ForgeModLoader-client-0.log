@@ -500,3 +500,6 @@
 2013-02-28 13:13:37 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod Forge
 2013-02-28 13:13:37 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod mod_retrogame
 2013-02-28 13:13:37 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod mod_retrogame
+2013-02-28 13:16:24 [INFO] [STDOUT] Stopping!
+2013-02-28 13:16:24 [INFO] [STDOUT] SoundSystem shutting down...
+2013-02-28 13:16:25 [INFO] [STDOUT]     Author: Paul Lamb, www.paulscode.com
