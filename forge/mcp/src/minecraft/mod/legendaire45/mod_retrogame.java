@@ -20,11 +20,14 @@ import mod.legendaire45.items.ArmorBase;
 import mod.legendaire45.items.ItemCup;
 import mod.legendaire45.items.ItemDisc;
 import mod.legendaire45.items.ItemDrink;
+import mod.legendaire45.items.ItemMoule;
+import mod.legendaire45.items.ItemSelle;
 import mod.legendaire45.items.ItemToolEpeeMod;
 import mod.legendaire45.items.ItemToolHacheMod;
 import mod.legendaire45.items.ItemToolPelleMod;
 import mod.legendaire45.items.ItemToolPiocheMod;
 import mod.legendaire45.items.MagicBow;
+import mod.legendaire45.items.SpawnEgg;
 import mod.legendaire45.items.TeleportBow;
 import mod.legendaire45.render.player.RenderPlayerSword;
 import mod.legendaire45.server.ServerPacketHandler;
@@ -73,6 +76,8 @@ serverPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","sword
 
 public class mod_retrogame 
 {	
+	
+		public static int horseID;
 	    @Instance
 		public static mod_retrogame instance  = new mod_retrogame();
 		private GuiHandler guiHandler = new GuiHandler();
@@ -107,12 +112,12 @@ public class mod_retrogame
 		public static final Block cropBeer = (new BlockCropBeer(IDblock+3)).setTextureFile(textureBlock).setBlockName("cropBeer").setStepSound(Block.soundGrassFootstep);
 		public static final Block stair = (new BlockStairLog(IDblock+4, net.minecraft.block.Block.wood, 10)).setTextureFile(textureBlock).setBlockName("Escalier en buche").setCreativeTab(CreativeTabs.tabBlock);
 		
-		public static final Block rubyOre = (new BlockRuby(IDblock+6, 14, Material.rock)).setTextureFile(textureBlock).setStepSound(Block.soundStoneFootstep).setBlockName("ruby").setCreativeTab(CreativeTabs.tabBlock);
-		public static final Block saphirOre = (new BlockSaphir(IDblock+7, 15, Material.rock)).setTextureFile(textureBlock).setStepSound(Block.soundStoneFootstep).setBlockName("saphir").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block rubyOre = (new BlockRuby(IDblock+6, 14, Material.rock)).setTextureFile(textureBlock).setStepSound(Block.soundStoneFootstep).setHardness(3.0F).setResistance(5.0F).setBlockName("ruby").setCreativeTab(CreativeTabs.tabBlock);
+		public static final Block saphirOre = (new BlockSaphir(IDblock+7, 15, Material.rock)).setTextureFile(textureBlock).setStepSound(Block.soundStoneFootstep).setHardness(3.0F).setResistance(5.0F).setBlockName("saphir").setCreativeTab(CreativeTabs.tabBlock);
 		
 		public static final Block sofa = (new BlockSofa(IDblock+5)).setStepSound(Block.soundWoodFootstep).setBlockName("sofa").setCreativeTab(CreativeTabs.tabDecorations);
 		
-		public static final Block moule = (new BlockMoule(IDblock+8, 4, Material.wood)).setStepSound(Block.soundWoodFootstep).setBlockName("moule").setCreativeTab(CreativeTabs.tabDecorations);
+		public static final Block moule = (new BlockMoule(IDblock+8, 4, Material.wood)).setStepSound(Block.soundWoodFootstep).setBlockName("moule").setCreativeTab(CreativeTabs.tabDecorations).setRequiresSelfNotify();;
 		/*
 		 * Item
 		 */
@@ -181,9 +186,20 @@ public class mod_retrogame
 	    public static Item disc1 = (new ItemDisc(2012, "mia")).setIconCoord(0, 15).setItemName("mia");
 	    public static Item disc2 = (new ItemDisc(2013, "skrillex")).setIconCoord(0, 15).setItemName("skrillex");
 	    
+	    /*
+	     * Selle
+	     */
+	    public static Item selle;
+	    
+	    /*
+	     * Oeuf de Spawn
+	     */
+	    public static Item horseEgg;
+	    
 		@PreInit
 		public void initConfig(FMLPreInitializationEvent event)
 		{
+
 			Side side = FMLCommonHandler.instance().getEffectiveSide();
 			if(side == side.CLIENT)
 			{
@@ -194,28 +210,34 @@ public class mod_retrogame
 			}
 			MinecraftForge.addGrassSeed(new ItemStack(seedBeer), 10);
 			MinecraftForge.EVENT_BUS.register(new BoneMealEvent());
-			MinecraftForge.setToolClass(this.piocheToolE, "pickaxe", 2);
-			MinecraftForge.setToolClass(this.pelleToolE, "shovel", 2);
-			MinecraftForge.setToolClass(this.hacheToolE, "axe", 2);
-			MinecraftForge.setToolClass(this.piocheToolS, "pickaxe", 2);
-			MinecraftForge.setToolClass(this.pelleToolS, "shovel", 2);
-			MinecraftForge.setToolClass(this.hacheToolS, "axe", 2);
-			MinecraftForge.setToolClass(this.piocheToolR, "pickaxe", 2);
-			MinecraftForge.setToolClass(this.pelleToolR, "shovel", 2);
-			MinecraftForge.setToolClass(this.hacheToolR, "axe", 2);
+			MinecraftForge.setToolClass(this.piocheToolE, "pickaxe", 3);
+			MinecraftForge.setToolClass(this.pelleToolE, "shovel", 3);
+			MinecraftForge.setToolClass(this.hacheToolE, "axe", 3);
+			MinecraftForge.setToolClass(this.piocheToolS, "pickaxe", 3);
+			MinecraftForge.setToolClass(this.pelleToolS, "shovel", 3);
+			MinecraftForge.setToolClass(this.hacheToolS, "axe", 3);
+			MinecraftForge.setToolClass(this.piocheToolR, "pickaxe", 3);
+			MinecraftForge.setToolClass(this.pelleToolR, "shovel", 3);
+			MinecraftForge.setToolClass(this.hacheToolR, "axe", 3);
 		}
 		
 		@Init
 		public void load(FMLInitializationEvent event)
 		{	
+			Item.itemsList[73] = null;
+			selle = (new ItemSelle(73)).setIconCoord(8, 6).setItemName("selle");
 			Side side = FMLCommonHandler.instance().getEffectiveSide();
 			if(side == side.SERVER)
 			{
 				ModLoader.registerTileEntity(TileEntityBeer.class, "beer");
 				ModLoader.registerTileEntity(TileEntityTrampoline.class, "trampoline");
 			}
-			ModLoader.registerEntityID(EntityCheval.class, "Cheval", ModLoader.getUniqueEntityId());   // Donne une ID au mob			 
+			
+			this.horseID = ModLoader.getUniqueEntityId();//<---- ID du cheval
+			horseEgg = (new SpawnEgg(IDoutil+48, horseID)).setItemName("selle").setIconCoord(8, 6);//declaration oeuf de spawn cheval
+			ModLoader.registerEntityID(EntityCheval.class, "Cheval", this.horseID);   // Donne une ID au mob			 
 		    ModLoader.addSpawn(EntityCheval.class, 10, 4, 6,EnumCreatureType.creature);
+		    
 		    proxy.registerRenderThings(); //Et oui, il faut bien dire de charger les proxy :)
 			EntityRegistry.registerModEntity(EntityMagicArrow.class, "firearrow", 1, this, 250, 5, false);
 			EntityRegistry.registerModEntity(EntityTeleportArrow.class, "teleportarrow", 2, this, 250, 5, false);
@@ -281,7 +303,7 @@ public class mod_retrogame
 			GameRegistry.registerBlock(cropBeer);
 			GameRegistry.registerBlock(stair);	
 			GameRegistry.registerBlock(sofa);	
-			GameRegistry.registerBlock(moule);
+			GameRegistry.registerBlock(moule, ItemMoule.class);
 			GameRegistry.registerBlock(rubyOre);
 			GameRegistry.registerBlock(saphirOre);
 			GameRegistry.registerWorldGenerator(new WorldGenOre());
@@ -345,6 +367,8 @@ public class mod_retrogame
 			LanguageRegistry.addName(disc2, "New Disc 2");
 			
 			LanguageRegistry.addName(moule, "Moule a Fromage");
+			
+			LanguageRegistry.addName(selle, "Selle");
 			
 		}
 	    

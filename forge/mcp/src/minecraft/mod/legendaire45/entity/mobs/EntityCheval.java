@@ -1,7 +1,9 @@
 package mod.legendaire45.entity.mobs;
 
 import mod.legendaire45.common.CommonProxy;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityAgeable;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.ai.EntityAIControlledByPlayer;
 import net.minecraft.entity.ai.EntityAIFollowParent;
 import net.minecraft.entity.ai.EntityAILookIdle;
@@ -12,10 +14,8 @@ import net.minecraft.entity.ai.EntityAITempt;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.passive.EntityAnimal;
-import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.stats.AchievementList;
 import net.minecraft.world.World;
@@ -26,8 +26,8 @@ public class EntityCheval extends EntityAnimal
 {
 	
 	private static String cheval = CommonProxy.cheval;
-    /** AI task for player control. */
-    private final EntityAIControlledByPlayer aiControlledByPlayer;
+    
+    int tempsSaut; //déclaration de notre fonction pour le temps entre deux saut
     
     public EntityCheval(World world)
     {
@@ -37,13 +37,13 @@ public class EntityCheval extends EntityAnimal
         float var2 = 0.25F;
         this.tasks.addTask(0, new EntityAISwimming(this));
         this.tasks.addTask(1, new EntityAIPanic(this, 0.38F));
-        this.tasks.addTask(2, this.aiControlledByPlayer = new EntityAIControlledByPlayer(this, 0.34F));
+        this.tasks.addTask(2, new EntityAILookIdle(this));
         this.tasks.addTask(3, new EntityAIMate(this, var2));
         this.tasks.addTask(4, new EntityAITempt(this, 0.3F, Item.wheat.itemID, false));
         this.tasks.addTask(5, new EntityAIFollowParent(this, 0.28F));
         this.tasks.addTask(6, new EntityAIWander(this, var2));
         this.tasks.addTask(7, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
-        this.tasks.addTask(8, new EntityAILookIdle(this));
+
     }
     
     public int getMaxHealth()
@@ -54,15 +54,6 @@ public class EntityCheval extends EntityAnimal
     protected void updateAITasks()
     {
         super.updateAITasks();
-    }
-
-    /**
-     * returns true if all the conditions for steering the entity are met. For pigs, this is true if it is being ridden
-     * by a player and the player is holding a carrot-on-a-stick
-     */
-    public boolean canBeSteered()
-    {
-    	return true;
     }
 
     protected void entityInit()
@@ -108,6 +99,61 @@ public class EntityCheval extends EntityAnimal
             return false;
         }
     }
+    
+    public void jump(Boolean flag) {
+
+		if (onGround && tempsSaut == 0) {
+			super.jump();
+
+			if (flag) {
+				motionY += 0.1; //Permet de régler la hauteur du saut !
+			}
+			tempsSaut = 10;
+		}
+	}
+	
+	public void onLivingUpdate() {
+
+		super.onLivingUpdate();
+
+		if (tempsSaut > 0) {
+			tempsSaut--;
+		}
+
+		if (riddenByEntity != null) {
+			EntityPlayer entityPlayer = (EntityPlayer) riddenByEntity; //fonctions diverses améliorant le maniabilité du mob
+			rotationYaw = prevRotationYaw = entityPlayer.rotationYaw;
+			EntityLiving par1EntityLiving = (EntityLiving) riddenByEntity;
+                        this.isJumping = Minecraft.getMinecraft().thePlayer.movementInput.jump; // Fonction initiant le saut lorsque on appuie sur espace	
+		}
+	}
+
+	public void updateEntityActionState(){
+
+		if (riddenByEntity != null && (riddenByEntity instanceof EntityLiving)) {
+
+			EntityLiving par1EntityLiving = (EntityLiving) riddenByEntity;
+			this.rotationPitch = 0;
+			this.rotationYaw = prevRotationYaw = par1EntityLiving.rotationYaw;
+			this.moveEntity(motionX, motionY, motionZ);
+
+			if (inWater) {
+				motionY -= riddenByEntity.motionY;
+			}
+
+			else if (onGround) {
+				motionX += riddenByEntity.motionX * 8.5D; //vitesse du mob, changez à votre guise
+				motionZ += riddenByEntity.motionZ * 8.5D;
+			} else {
+				motionX += riddenByEntity.motionX;
+				motionZ += riddenByEntity.motionZ;
+			}
+			return;
+		} else {
+			super.updateEntityActionState();
+			return;
+		}
+	}
 
 
     /**
@@ -133,18 +179,9 @@ public class EntityCheval extends EntityAnimal
         }
     }
     
-    protected boolean isAIEnabled()  
-    {
-    	return true;
-    }
-    
-    /**
-     * Return the AI task for player control.
-     */
-    public EntityAIControlledByPlayer getAIControlledByPlayer()
-    {
-        return this.aiControlledByPlayer;
-    }
+    public boolean isAIEnabled(){
+    	   return this.riddenByEntity == null ? true : false;
+    	}
     
     /**
      * Called when the mob is falling. Calculates and applies fall damage.

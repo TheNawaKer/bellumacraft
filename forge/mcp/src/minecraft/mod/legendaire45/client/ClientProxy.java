@@ -43,6 +43,12 @@ public class ClientProxy extends CommonProxy
     	MinecraftForgeClient.preloadTexture(this.distributor);
     	MinecraftForgeClient.preloadTexture(this.firearrowtexture);
     	MinecraftForgeClient.preloadTexture(this.teleportarrowtexture);
+    	MinecraftForgeClient.preloadTexture(this.cheval);
+    	MinecraftForgeClient.preloadTexture(this.moule1);
+    	MinecraftForgeClient.preloadTexture(this.moule2);
+    	MinecraftForgeClient.preloadTexture(this.moule3);
+    	MinecraftForgeClient.preloadTexture(this.moule4);
+    	
     	
 		TileEntitySofaRenderer renderSofa = new TileEntitySofaRenderer();
 		ModLoader.registerTileEntity(TileEntitySofa.class, "sofa", renderSofa);//ajout
@@ -60,7 +66,7 @@ public class ClientProxy extends CommonProxy
 		RenderingRegistry.registerEntityRenderingHandler(EntityMagicArrow.class, new RenderMagicArrow());
 		ModLoader.registerEntityID(EntityTeleportArrow.class, "teleportarrow", ModLoader.getUniqueEntityId());
 		RenderingRegistry.registerEntityRenderingHandler(EntityTeleportArrow.class, new RenderTeleportArrow());
-		RenderingRegistry.registerEntityRenderingHandler(EntityCheval.class, new RenderCheval(new ModelCheval(), 0.5F)); 
+		RenderingRegistry.registerEntityRenderingHandler(EntityCheval.class, new RenderCheval(new ModelCheval(), new ModelCheval() , 0.7F)); 
 		KeyBindingRegistry.registerKeyBinding(new KeyHandlerBow());
 		 
 		

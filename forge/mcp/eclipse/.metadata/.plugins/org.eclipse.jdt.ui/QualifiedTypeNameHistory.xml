@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.util.DamageSource"/>
-<fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntityBrewingStand"/>
-<fullyQualifiedTypeName name="net.minecraft.inventory.IInventory"/>
-<fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntityDispenser"/>
-<fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntity"/>
-<fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntityFurnace"/>
-<fullyQualifiedTypeName name="net.minecraft.stats.StatBase"/>
-<fullyQualifiedTypeName name="net.minecraft.util.Session"/>
-<fullyQualifiedTypeName name="net.minecraft.world.World"/>
 <fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
 <fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagCompound"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.effect.EntityLightningBolt"/>
@@ -26,14 +17,12 @@
 <fullyQualifiedTypeName name="mod.legendaire45.network.packet.Packet94PlayerInfo"/>
 <fullyQualifiedTypeName name="net.minecraft.network.packet.NetHandler"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="mod.legendaire45.tile.TileEntitySofa"/>
 <fullyQualifiedTypeName name="mod.legendaire45.render.TileEntitySofaRenderer"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="mod.legendaire45.network.packet.Packet230Sword"/>
 <fullyQualifiedTypeName name="mod.legendaire45.blocks.BlockSofa"/>
 <fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenMinable"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderPlayer"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderPlayerAPI"/>
 <fullyQualifiedTypeName name="mod.legendaire45.render.player.RenderPlayerSword"/>
@@ -53,11 +42,22 @@
 <fullyQualifiedTypeName name="net.minecraft.block.BlockCrops"/>
 <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
 <fullyQualifiedTypeName name="net.minecraft.util.MathHelper"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 <fullyQualifiedTypeName name="mod.legendaire45.tools.SoundPlayer"/>
 <fullyQualifiedTypeName name="mod.legendaire45.tools.NewSound"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
 <fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="net.minecraftforge.client.event.sound.SoundEvent"/>
+<fullyQualifiedTypeName name="mod.legendaire45.tile.TileEntity3D"/>
+<fullyQualifiedTypeName name="mod.legendaire45.tile.TileEntityMoule"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="mod.legendaire45.items.ItemMoule"/>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderLiving"/>
+<fullyQualifiedTypeName name="mod.legendaire45.entity.mobs.EntityCheval"/>
+<fullyQualifiedTypeName name="mod.legendaire45.items.ItemSelle"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="mod.legendaire45.mod_retrogame"/>
+<fullyQualifiedTypeName name="mod.legendaire45.items.SpawnEgg"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

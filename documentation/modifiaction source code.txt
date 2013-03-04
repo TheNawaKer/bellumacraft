@@ -16,5 +16,4 @@ EntityPlayerSP
 	+ this.skinUrl = "http://minecrack.fr.nf/mc/skinsminecrackd/" + StringUtils.stripControlCodes(par3Session.username) + ".png";
 	
 	
-	
 EntityPlayerSP,EntityPlyerMP --> aka bag,iq --> playerAPI --> minecrack

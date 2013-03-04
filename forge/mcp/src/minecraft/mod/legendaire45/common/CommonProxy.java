@@ -22,6 +22,12 @@ public class CommonProxy
 	public static String firearrowtexture = "/mod/legendaire45/texture/item/arrowfire.png";
 	public static String teleportarrowtexture = "/mod/legendaire45/texture/item/arrowteleport.png";
 	public static String cheval = "/mod/legendaire45/texture/mobs/cheval.png";
+	public static String chevalselle = "/mod/legendaire45/texture/mobs/chevalselle.png";
+	
+	public static String moule1 = "/mod/legendaire45/texture/design/moule/Moule1.png";
+	public static String moule2 = "/mod/legendaire45/texture/design/moule/Moule2.png";
+	public static String moule3 = "/mod/legendaire45/texture/design/moule/Moule3.png";
+	public static String moule4 = "/mod/legendaire45/texture/design/moule/Moule4.png";
 
 	public void registerRenderThings()
 	{//ici nous enregistrerons tout ce qui concerne la partie "serveur" et commun avec le client (un peu comme le Load() mais ici il n'y aura pas grand chose)}	
