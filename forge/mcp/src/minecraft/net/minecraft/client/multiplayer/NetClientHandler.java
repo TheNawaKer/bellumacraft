@@ -179,7 +179,7 @@ public class NetClientHandler extends NetHandler
 
     /** Reference to the Minecraft object. */
     public static Minecraft mc;
-    public static WorldClient worldClient;
+    private WorldClient worldClient;
 
     /**
      * True if the client has finished downloading terrain and may spawn. Set upon receipt of a player position packet,

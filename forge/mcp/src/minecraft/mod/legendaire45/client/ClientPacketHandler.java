@@ -19,8 +19,10 @@ import cpw.mods.fml.common.network.Player;
 
 
 public class ClientPacketHandler implements IPacketHandler
-
 {
+	
+	private Minecraft mc = FMLClientHandler.instance().getClient();
+	
 	public void onPacketData(INetworkManager manager, Packet250CustomPayload payload, Player player)
 	{
 		DataInputStream data = new DataInputStream(new ByteArrayInputStream(payload.data));
@@ -28,6 +30,10 @@ public class ClientPacketHandler implements IPacketHandler
 	    if (payload.channel.equals("sword"))
 	    {
 	        handleSword(payload,player);
+	    }
+	    if (payload.channel.equals("field"))
+	    {
+	        handleField(payload,player);
 	    }
 
 	}
@@ -54,7 +60,7 @@ public class ClientPacketHandler implements IPacketHandler
         if (me.entityId != playerId) // On verifie que ce n'est pas nous
     	{
         
-	        EntityOtherPlayerMP other = (EntityOtherPlayerMP)(NetClientHandler.worldClient.getEntityByID(playerId)); // On recupere l entity du joueur
+	        EntityOtherPlayerMP other = (EntityOtherPlayerMP)(this.mc.theWorld.getEntityByID(playerId)); // On recupere l entity du joueur
 	    	if (other != null) //Si on a quelque chose, on met les infos a jour
 	    	{
 	    		other.select = select;
@@ -69,5 +75,11 @@ public class ClientPacketHandler implements IPacketHandler
     		me.tool2 = un;
         }
     	
+    }
+    
+    private void handleField(Packet250CustomPayload packet, Player player)
+    {
+    	EntityPlayer play = (EntityPlayer) player;
+    	play.getDataWatcher().addObject(25, new Integer(0));
     }
 }

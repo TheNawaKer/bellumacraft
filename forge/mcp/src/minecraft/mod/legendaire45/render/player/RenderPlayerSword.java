@@ -2,6 +2,7 @@ package mod.legendaire45.render.player;
 
 import mod.legendaire45.mod_retrogame;
 import mod.legendaire45.render.ItemToolEnum;
+import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -12,7 +13,7 @@ import net.minecraft.src.RenderPlayerBase;
 import org.lwjgl.opengl.GL11;
 
 public class RenderPlayerSword extends RenderPlayerBase
-{	
+{			
 	public RenderPlayerSword(RenderPlayerAPI renderPlayerAPI)
 	{
 		super(renderPlayerAPI);
@@ -20,6 +21,7 @@ public class RenderPlayerSword extends RenderPlayerBase
 	
 	public final void beforeRenderSpecialItemInHand(EntityPlayer par1EntityPlayer, float var2)
     {
+		System.out.println(par1EntityPlayer.getDataWatcher().getWatchableObjectInt(25));
         if(par1EntityPlayer.tool != null)
         {
 	        if(par1EntityPlayer.select != 0)
@@ -42,11 +44,11 @@ public class RenderPlayerSword extends RenderPlayerBase
 			        GL11.glRotatef(0.0F, 0.0F, 0.0F, 1.0F);//Axe Z
 			        if(var41.itemID==Item.bow.itemID)
 			        {
-			        	this.renderPlayer.renderManager.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, new ItemStack(mod_retrogame.bowfix, 1), 0);
+			        	RenderManager.instance.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, new ItemStack(mod_retrogame.bowfix, 1), 0);
 			        }
 			        else
 			        {
-			        	this.renderPlayer.renderManager.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, var41, 0);
+			        	RenderManager.instance.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, var41, 0);
 			        }
 			        GL11.glPopMatrix();
 		        }
@@ -74,11 +76,11 @@ public class RenderPlayerSword extends RenderPlayerBase
 			        GL11.glRotatef(0.0F, 0.0F, 0.0F, 1.0F);//Axe Z
 			        if(var41.itemID==Item.bow.itemID)
 			        {
-			        	this.renderPlayer.renderManager.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, new ItemStack(mod_retrogame.bowfix, 1), 0);
+			        	RenderManager.instance.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, new ItemStack(mod_retrogame.bowfix, 1), 0);
 			        }
 			        else
 			        {
-			        	this.renderPlayer.renderManager.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, var41, 0);
+			        	RenderManager.instance.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, var41, 0);
 			        }
 			        GL11.glPopMatrix();
 		        }

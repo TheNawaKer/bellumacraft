@@ -21,7 +21,8 @@ import net.minecraft.world.World;
 
 public class BlockMoule extends BlockContainer
 {
-	private int time = 1200;
+	final int timer = 1200; 
+	private int time = timer;
 	
     public BlockMoule (int par1, int par2, Material material)
     {
@@ -74,7 +75,7 @@ public class BlockMoule extends BlockContainer
                 if(this.time == 0)
                 {
                     world.setBlockMetadataWithNotify(i, j, k, var7+1);   
-                    this.time = 30;
+                    this.time = timer;
                 }
                 this.time--;
                 world.scheduleBlockUpdate(i, j, k, this.blockID, this.tickRate());
@@ -84,7 +85,7 @@ public class BlockMoule extends BlockContainer
                 if(this.time == 0)
                 {
                     world.setBlockMetadataWithNotify(i, j, k, var7+1);   
-                    this.time = 1200;
+                    this.time = timer;
                 }
                 this.time--;
                 world.scheduleBlockUpdate(i, j, k, this.blockID, this.tickRate());

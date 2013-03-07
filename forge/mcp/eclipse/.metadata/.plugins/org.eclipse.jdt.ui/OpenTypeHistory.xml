@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=Minecraft/src&lt;cpw.mods.fml.relauncher{IFMLLoadingPlugin.java[IFMLLoadingPlugin" modifiers="513" timestamp="1361358197217"/>
+<typeInfo handle="=Minecraft/src&lt;cpw.mods.fml.common.asm.transformers{AccessTransformer.java[AccessTransformer" modifiers="1" timestamp="1361358196729"/>
+<typeInfo handle="=Minecraft/src&lt;cpw.mods.fml.common{DummyModContainer.java[DummyModContainer" modifiers="1" timestamp="1361358196533"/>
+</typeInfoHistroy>

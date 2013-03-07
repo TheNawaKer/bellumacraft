@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
-<fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagCompound"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.effect.EntityLightningBolt"/>
-<fullyQualifiedTypeName name="net.minecraft.src.PlayerBase"/>
-<fullyQualifiedTypeName name="net.minecraft.src.PlayerAPI"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderPlayerBase"/>
-<fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.EntityLiving"/>
-<fullyQualifiedTypeName name="net.minecraft.client.model.ModelPlayerAPI"/>
-<fullyQualifiedTypeName name="mod.legendaire45.render.RenderSword"/>
-<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.io.DataInputStream"/>
 <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
 <fullyQualifiedTypeName name="mod.legendaire45.network.packet.Packet94PlayerInfo"/>
-<fullyQualifiedTypeName name="net.minecraft.network.packet.NetHandler"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 <fullyQualifiedTypeName name="mod.legendaire45.tile.TileEntitySofa"/>
 <fullyQualifiedTypeName name="mod.legendaire45.render.TileEntitySofaRenderer"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
@@ -35,7 +21,6 @@
 <fullyQualifiedTypeName name="net.minecraft.entity.EntityList"/>
 <fullyQualifiedTypeName name="net.minecraft.client.multiplayer.NetClientHandler"/>
 <fullyQualifiedTypeName name="mod.legendaire45.network.player.PlayerInfoSender"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderManager"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.PostInit"/>
 <fullyQualifiedTypeName name="mod.legendaire45.event.BoneMealEvent"/>
 <fullyQualifiedTypeName name="mod.legendaire45.blocks.BlockCropBeer"/>
@@ -46,11 +31,9 @@
 <fullyQualifiedTypeName name="mod.legendaire45.tools.NewSound"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
 <fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="net.minecraftforge.client.event.sound.SoundEvent"/>
 <fullyQualifiedTypeName name="mod.legendaire45.tile.TileEntity3D"/>
 <fullyQualifiedTypeName name="mod.legendaire45.tile.TileEntityMoule"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 <fullyQualifiedTypeName name="mod.legendaire45.items.ItemMoule"/>
 <fullyQualifiedTypeName name="net.minecraft.world.World"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderLiving"/>
@@ -60,4 +43,21 @@
 <fullyQualifiedTypeName name="mod.legendaire45.mod_retrogame"/>
 <fullyQualifiedTypeName name="mod.legendaire45.items.SpawnEgg"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.net.UnknownHostException"/>
+<fullyQualifiedTypeName name="java.net.SocketTimeoutException"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="mod.legendaire45.blocks.BlockCheese"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.relauncher.IFMLLoadingPlugin.TransformerExclusions"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLInitializationEvent"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.relauncher.FMLRelauncher"/>
+<fullyQualifiedTypeName name="org.objectweb.asm.tree.ClassNode"/>
+<fullyQualifiedTypeName name="org.objectweb.asm.ClassReader"/>
+<fullyQualifiedTypeName name="org.objectweb.asm.tree.FieldNode"/>
+<fullyQualifiedTypeName name="org.objectweb.asm.ClassWriter"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderManager"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.DataWatcher"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="net.minecraft.network.packet.NetHandler"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.network.IConnectionHandler"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 </qualifiedTypeNameHistroy>

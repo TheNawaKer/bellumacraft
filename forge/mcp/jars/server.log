@@ -2336,3 +2336,111 @@ Caused by: java.lang.RuntimeException: Attempted to load class net/minecraft/cli
 2013-02-27 17:56:49 [INFO] Saving chunks for level 'mcpworld'/Nether
 2013-02-27 17:56:49 [INFO] Saving chunks for level 'mcpworld'/The End
 2013-02-27 17:56:49 [INFO] Stopping server
+2013-03-07 00:45:28 [INFO] Starting minecraft server version 1.4.7
+2013-03-07 00:45:33 [INFO] Loading properties
+2013-03-07 00:45:33 [INFO] Default game type: SURVIVAL
+2013-03-07 00:45:33 [INFO] Generating keypair
+2013-03-07 00:45:36 [INFO] Starting Minecraft server on *:25565
+2013-03-07 00:45:36 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-03-07 00:45:36 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-03-07 00:45:36 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-03-07 00:45:36 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-03-07 00:45:36 [INFO] Preparing level "mcpworld"
+2013-03-07 00:45:37 [INFO] Preparing start region for level 0
+2013-03-07 00:45:38 [INFO] Preparing spawn area: 38%
+2013-03-07 00:45:39 [INFO] Preparing spawn area: 90%
+2013-03-07 00:45:40 [INFO] Done (3,313s)! For help, type "help" or "?"
+2013-03-07 00:46:01 [INFO] User Player925 connecting with mods [mod_retrogame]
+2013-03-07 00:46:01 [INFO] User Player850 connecting with mods [mod_retrogame]
+2013-03-07 00:46:02 [INFO] Player925[/127.0.0.1:15175] logged in with entity id 139 at (-3.5, 65.62000000476837, 194.5)
+2013-03-07 00:46:02 [INFO] Player850[/127.0.0.1:15171] logged in with entity id 169 at (-10.5, 63.62000000476837, 200.5)
+2013-03-07 00:47:35 [INFO] Player850 lost connection: disconnect.quitting
+2013-03-07 00:47:37 [INFO] Player925 lost connection: disconnect.quitting
+2013-03-07 00:49:25 [INFO] Stopping server
+2013-03-07 00:49:25 [INFO] Saving players
+2013-03-07 00:49:25 [INFO] Saving worlds
+2013-03-07 00:49:25 [INFO] Saving chunks for level 'mcpworld'/Overworld
+2013-03-07 00:49:25 [INFO] Saving chunks for level 'mcpworld'/Nether
+2013-03-07 00:49:25 [INFO] Saving chunks for level 'mcpworld'/The End
+2013-03-07 01:50:09 [INFO] Starting minecraft server version 1.4.7
+2013-03-07 01:50:11 [INFO] Loading properties
+2013-03-07 01:50:11 [INFO] Default game type: SURVIVAL
+2013-03-07 01:50:11 [INFO] Generating keypair
+2013-03-07 01:50:12 [INFO] Starting Minecraft server on *:25565
+2013-03-07 01:50:12 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-03-07 01:50:12 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-03-07 01:50:12 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-03-07 01:50:12 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-03-07 01:50:13 [INFO] Preparing level "mcpworld"
+2013-03-07 01:50:13 [INFO] Preparing start region for level 0
+2013-03-07 01:50:14 [INFO] Done (1,007s)! For help, type "help" or "?"
+2013-03-07 01:50:19 [INFO] User Player335 connecting with mods [mod_retrogame]
+2013-03-07 01:50:19 [INFO] Player335[/127.0.0.1:18359] logged in with entity id 135 at (-2.5, 65.62000000476837, 201.5)
+2013-03-07 01:50:33 [INFO] Player335 lost connection: disconnect.quitting
+2013-03-07 01:50:36 [INFO] Stopping server
+2013-03-07 01:50:36 [INFO] Saving players
+2013-03-07 01:50:36 [INFO] Saving worlds
+2013-03-07 01:50:36 [INFO] Saving chunks for level 'mcpworld'/Overworld
+2013-03-07 01:50:36 [INFO] Saving chunks for level 'mcpworld'/Nether
+2013-03-07 01:50:36 [INFO] Saving chunks for level 'mcpworld'/The End
+2013-03-07 02:00:57 [INFO] Starting minecraft server version 1.4.7
+2013-03-07 02:00:58 [INFO] Loading properties
+2013-03-07 02:00:58 [INFO] Default game type: SURVIVAL
+2013-03-07 02:00:58 [INFO] Generating keypair
+2013-03-07 02:00:59 [INFO] Starting Minecraft server on *:25565
+2013-03-07 02:00:59 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-03-07 02:00:59 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-03-07 02:00:59 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-03-07 02:00:59 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-03-07 02:01:00 [INFO] Preparing level "mcpworld"
+2013-03-07 02:01:00 [INFO] Preparing start region for level 0
+2013-03-07 02:01:01 [INFO] Done (0,963s)! For help, type "help" or "?"
+2013-03-07 02:01:08 [INFO] Stopping server
+2013-03-07 02:01:08 [INFO] Saving players
+2013-03-07 02:01:08 [INFO] Saving worlds
+2013-03-07 02:01:08 [INFO] Saving chunks for level 'mcpworld'/Overworld
+2013-03-07 02:01:08 [INFO] Saving chunks for level 'mcpworld'/Nether
+2013-03-07 02:01:08 [INFO] Saving chunks for level 'mcpworld'/The End
+2013-03-07 02:03:21 [INFO] Starting minecraft server version 1.4.7
+2013-03-07 02:03:24 [INFO] Loading properties
+2013-03-07 02:03:24 [INFO] Default game type: SURVIVAL
+2013-03-07 02:03:24 [INFO] Generating keypair
+2013-03-07 02:03:25 [INFO] Starting Minecraft server on *:25565
+2013-03-07 02:03:25 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-03-07 02:03:25 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-03-07 02:03:25 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-03-07 02:03:25 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-03-07 02:03:25 [INFO] Preparing level "mcpworld"
+2013-03-07 02:03:25 [INFO] Preparing start region for level 0
+2013-03-07 02:03:26 [INFO] Done (0,933s)! For help, type "help" or "?"
+2013-03-07 02:03:31 [INFO] User Player496 connecting with mods [mod_retrogame]
+2013-03-07 02:03:31 [INFO] Player496[/127.0.0.1:19077] logged in with entity id 138 at (4.5, 64.0, 206.4187988837896)
+2013-03-07 02:03:47 [INFO] Stopping server
+2013-03-07 02:03:47 [INFO] Saving players
+2013-03-07 02:03:47 [INFO] Saving worlds
+2013-03-07 02:03:47 [INFO] Saving chunks for level 'mcpworld'/Overworld
+2013-03-07 02:03:47 [INFO] Saving chunks for level 'mcpworld'/Nether
+2013-03-07 02:03:47 [INFO] Saving chunks for level 'mcpworld'/The End
+2013-03-07 02:15:51 [INFO] Starting minecraft server version 1.4.7
+2013-03-07 02:15:52 [INFO] Loading properties
+2013-03-07 02:15:52 [INFO] Default game type: SURVIVAL
+2013-03-07 02:15:52 [INFO] Generating keypair
+2013-03-07 02:15:53 [INFO] Starting Minecraft server on *:25565
+2013-03-07 02:15:53 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-03-07 02:15:53 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-03-07 02:15:53 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-03-07 02:15:53 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-03-07 02:15:54 [INFO] Preparing level "mcpworld"
+2013-03-07 02:15:54 [INFO] Preparing start region for level 0
+2013-03-07 02:15:55 [INFO] Done (1,052s)! For help, type "help" or "?"
+2013-03-07 02:16:10 [INFO] User Player387 connecting with mods [mod_retrogame]
+2013-03-07 02:16:10 [INFO] Player387[/127.0.0.1:19703] logged in with entity id 139 at (-0.3350663648521248, 65.0, 205.1712568553701)
+2013-03-07 02:16:12 [INFO] User Player847 connecting with mods [mod_retrogame]
+2013-03-07 02:16:13 [INFO] Player847[/127.0.0.1:19710] logged in with entity id 140 at (-9.5, 76.62000000476837, 192.5)
+2013-03-07 02:16:36 [INFO] Player387 lost connection: disconnect.genericReason
+2013-03-07 02:27:41 [INFO] Stopping server
+2013-03-07 02:27:41 [INFO] Saving players
+2013-03-07 02:27:41 [INFO] Saving worlds
+2013-03-07 02:27:41 [INFO] Saving chunks for level 'mcpworld'/Overworld
+2013-03-07 02:27:41 [INFO] Saving chunks for level 'mcpworld'/Nether
+2013-03-07 02:27:41 [INFO] Saving chunks for level 'mcpworld'/The End

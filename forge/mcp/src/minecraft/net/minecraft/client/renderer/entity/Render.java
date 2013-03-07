@@ -19,7 +19,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 public abstract class Render
 {
-    public RenderManager renderManager;
+    protected RenderManager renderManager;
     private ModelBase modelBase = new ModelBiped();
     protected RenderBlocks renderBlocks = new RenderBlocks();
     protected float shadowSize = 0.0F;

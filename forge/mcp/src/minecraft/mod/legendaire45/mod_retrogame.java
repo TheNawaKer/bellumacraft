@@ -1,6 +1,7 @@
 package mod.legendaire45;
 
 import mod.legendaire45.blocks.BlockBeer;
+import mod.legendaire45.blocks.BlockCheese;
 import mod.legendaire45.blocks.BlockCropBeer;
 import mod.legendaire45.blocks.BlockMoule;
 import mod.legendaire45.blocks.BlockRuby;
@@ -30,6 +31,7 @@ import mod.legendaire45.items.MagicBow;
 import mod.legendaire45.items.SpawnEgg;
 import mod.legendaire45.items.TeleportBow;
 import mod.legendaire45.render.player.RenderPlayerSword;
+import mod.legendaire45.server.ConnectionHandler;
 import mod.legendaire45.server.ServerPacketHandler;
 import mod.legendaire45.tile.TileEntityBeer;
 import mod.legendaire45.tile.TileEntityTrampoline;
@@ -37,6 +39,7 @@ import mod.legendaire45.tools.NewSound;
 import mod.legendaire45.world.WorldGenOre;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.item.EnumArmorMaterial;
@@ -48,6 +51,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.src.ModLoader;
 import net.minecraft.src.PlayerAPI;
 import net.minecraft.src.RenderPlayerAPI;
+import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.client.event.sound.SoundEvent;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
@@ -68,11 +72,13 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 @Mod(modid = "mod_retrogame", name = "mod retrogame", version = "1.4.0")
 @NetworkMod(clientSideRequired = false, serverSideRequired = true,
-clientPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","sword" }, packetHandler = ClientPacketHandler.class),
-serverPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","sword" }, packetHandler = ServerPacketHandler.class))
+clientPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","sword","field" }, packetHandler = ClientPacketHandler.class),
+serverPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","sword","field" }, packetHandler = ServerPacketHandler.class),
+connectionHandler = ConnectionHandler.class)
 
 public class mod_retrogame 
 {	
@@ -117,7 +123,10 @@ public class mod_retrogame
 		
 		public static final Block sofa = (new BlockSofa(IDblock+5)).setStepSound(Block.soundWoodFootstep).setBlockName("sofa").setCreativeTab(CreativeTabs.tabDecorations);
 		
-		public static final Block moule = (new BlockMoule(IDblock+8, 4, Material.wood)).setStepSound(Block.soundWoodFootstep).setBlockName("moule").setCreativeTab(CreativeTabs.tabDecorations).setRequiresSelfNotify();;
+		public static final Block moule = (new BlockMoule(IDblock+8, 4, Material.wood)).setStepSound(Block.soundWoodFootstep).setBlockName("moule").setCreativeTab(CreativeTabs.tabDecorations).setRequiresSelfNotify();
+		public static final Block cheese = (new BlockCheese(IDblock+9, 4)).setStepSound(Block.soundSnowFootstep).setBlockName("cheese").setCreativeTab(CreativeTabs.tabDecorations).setRequiresSelfNotify();
+
+		
 		/*
 		 * Item
 		 */
@@ -306,6 +315,7 @@ public class mod_retrogame
 			GameRegistry.registerBlock(moule, ItemMoule.class);
 			GameRegistry.registerBlock(rubyOre);
 			GameRegistry.registerBlock(saphirOre);
+			GameRegistry.registerBlock(cheese);
 			GameRegistry.registerWorldGenerator(new WorldGenOre());
 		}
 		
@@ -367,6 +377,8 @@ public class mod_retrogame
 			LanguageRegistry.addName(disc2, "New Disc 2");
 			
 			LanguageRegistry.addName(moule, "Moule a Fromage");
+			
+			LanguageRegistry.addName(cheese, "Fromage");
 			
 			LanguageRegistry.addName(selle, "Selle");
 			

@@ -504,3 +504,31 @@ WindowsError: [Error 5] Accès refus: 'reobf\\minecraft'
 18:01:23 - !! Can not find server md5s !!
 15:22:04 - !! Can not find server sources, try decompiling !!
 15:22:41 - !! Can not find server md5s !!
+21:42:16 - '"C:\Program Files\Java\jdk1.7.0_06\bin\javac" -encoding UTF-8 -Xlint:-options -deprecation -g -sourc...' failed : 1
+21:42:16 - 
+21:42:16 - == ERRORS FOUND ==
+21:42:16 - 
+21:42:16 - src\minecraft\mod\legendaire45\entity\mobs\EntityCheval.java:30: error: unmappable character for encoding UTF-8
+21:42:16 -     int tempsSaut; //d?claration de notre fonction pour le temps entre deux saut
+21:42:16 -                       ^
+21:42:16 - 
+21:42:16 - src\minecraft\mod\legendaire45\entity\mobs\EntityCheval.java:109: error: unmappable character for encoding UTF-8
+21:42:16 - 				motionY += 0.1; //Permet de r?gler la hauteur du saut !
+21:42:16 - 				                             ^
+21:42:16 - 
+21:42:16 - src\minecraft\mod\legendaire45\entity\mobs\EntityCheval.java:124: error: unmappable character for encoding UTF-8
+21:42:16 - 			EntityPlayer entityPlayer = (EntityPlayer) riddenByEntity; //fonctions diverses am?liorant le maniabilit? du mob
+21:42:16 - 			                                                                                  ^
+21:42:16 - 
+21:42:16 - src\minecraft\mod\legendaire45\entity\mobs\EntityCheval.java:124: error: unmappable character for encoding UTF-8
+21:42:16 - 			EntityPlayer entityPlayer = (EntityPlayer) riddenByEntity; //fonctions diverses am?liorant le maniabilit? du mob
+21:42:16 - 			                                                                                                        ^
+21:42:16 - 
+21:42:16 - src\minecraft\mod\legendaire45\entity\mobs\EntityCheval.java:145: error: unmappable character for encoding UTF-8
+21:42:16 - 				motionX += riddenByEntity.motionX * 8.5D; //vitesse du mob, changez ? votre guise
+21:42:16 - 				                                                                    ^
+21:42:16 - 
+21:42:16 - 5 errors
+21:42:16 - ==================
+21:42:16 - 
+21:42:16 - !! Can not find server sources, try decompiling !!

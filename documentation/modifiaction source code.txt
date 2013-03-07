@@ -1,15 +1,7 @@
-Render.java ---> aka bbv
-	- protected RenderManager renderManager;
-	+ public RenderManager renderManager;
-	
 EntityPlayer.java ---> aka qx
 	+ public int select = 0;
     + public ItemStack tool = null;
     + public ItemStack tool2 = null;
-	
-NetClientHandler.java ---> aka ayh
-	- private WorldClient worldClient;
-	+ public static WorldClient worldClient;
 	
 EntityPlayerSP
 	- this.skinUrl = "http://skins.minecraft.net/MinecraftSkins/" + StringUtils.stripControlCodes(par3Session.username) + ".png";
