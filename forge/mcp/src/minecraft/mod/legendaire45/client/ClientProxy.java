@@ -1,11 +1,14 @@
 package mod.legendaire45.client;
 
+import mod.legendaire45.mod_retrogame;
 import mod.legendaire45.common.CommonProxy;
 import mod.legendaire45.entity.EntityMagicArrow;
 import mod.legendaire45.entity.EntityTeleportArrow;
 import mod.legendaire45.entity.mobs.EntityCheval;
 import mod.legendaire45.entity.model.ModelCheval;
+import mod.legendaire45.render.DamagedItemRenderer;
 import mod.legendaire45.render.RenderBeer;
+import mod.legendaire45.render.RenderCheese;
 import mod.legendaire45.render.RenderMagicArrow;
 import mod.legendaire45.render.RenderMoule;
 import mod.legendaire45.render.RenderTeleportArrow;
@@ -13,6 +16,7 @@ import mod.legendaire45.render.TileEntitySofaRenderer;
 import mod.legendaire45.render.TileEntityTrampolineRenderer;
 import mod.legendaire45.render.entity.RenderCheval;
 import mod.legendaire45.tile.TileEntityBeer;
+import mod.legendaire45.tile.TileEntityCheese;
 import mod.legendaire45.tile.TileEntityMoule;
 import mod.legendaire45.tile.TileEntitySofa;
 import mod.legendaire45.tile.TileEntityTrampoline;
@@ -48,6 +52,7 @@ public class ClientProxy extends CommonProxy
     	MinecraftForgeClient.preloadTexture(this.moule2);
     	MinecraftForgeClient.preloadTexture(this.moule3);
     	MinecraftForgeClient.preloadTexture(this.moule4);
+    	MinecraftForgeClient.preloadTexture(this.cheese);
     	
     	
 		TileEntitySofaRenderer renderSofa = new TileEntitySofaRenderer();
@@ -62,12 +67,18 @@ public class ClientProxy extends CommonProxy
 		RenderMoule renderMoule = new RenderMoule();
 		ModLoader.registerTileEntity(TileEntityMoule.class, "CheeseMoule", renderMoule);	
 		
+		RenderCheese renderCheese = new RenderCheese();
+		ModLoader.registerTileEntity(TileEntityCheese.class, "Cheese", renderCheese);
+		
 		ModLoader.registerEntityID(EntityMagicArrow.class, "firearrow", ModLoader.getUniqueEntityId());
 		RenderingRegistry.registerEntityRenderingHandler(EntityMagicArrow.class, new RenderMagicArrow());
 		ModLoader.registerEntityID(EntityTeleportArrow.class, "teleportarrow", ModLoader.getUniqueEntityId());
 		RenderingRegistry.registerEntityRenderingHandler(EntityTeleportArrow.class, new RenderTeleportArrow());
 		RenderingRegistry.registerEntityRenderingHandler(EntityCheval.class, new RenderCheval(new ModelCheval(), new ModelCheval() , 0.7F)); 
 		KeyBindingRegistry.registerKeyBinding(new KeyHandlerBow());
+		
+		//MinecraftForgeClient.registerItemRenderer(mod_retrogame.cheese.blockID, new DamagedItemRenderer());
+		
 		 
 		
     	

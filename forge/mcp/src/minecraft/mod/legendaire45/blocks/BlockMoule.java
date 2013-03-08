@@ -3,21 +3,20 @@ package mod.legendaire45.blocks;
 import java.util.List;
 import java.util.Random;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-
+import mod.legendaire45.mod_retrogame;
+import mod.legendaire45.tile.TileEntityCheese;
 import mod.legendaire45.tile.TileEntityMoule;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockMoule extends BlockContainer
 {
@@ -57,6 +56,8 @@ public class BlockMoule extends BlockContainer
     	if(meta==3)
     	{
     		world.setBlockMetadataWithNotify(x, y, z, 0);
+    		this.demoulage(world, x, y, z);
+    		
     	}
     	else if(meta==0 && item.itemID== Item.bucketMilk.itemID)
     	{
@@ -91,6 +92,24 @@ public class BlockMoule extends BlockContainer
                 world.scheduleBlockUpdate(i, j, k, this.blockID, this.tickRate());
             }
             
+    }
+    
+    /**
+     * Ejects the current record inside of the jukebox.
+     */
+    public void demoulage(World par1World, int par2, int par3, int par4)
+    {
+        if (!par1World.isRemote)
+        {
+                    float var7 = 0.7F;
+                    double var8 = (double)(par1World.rand.nextFloat() * var7) + (double)(1.0F - var7) * 0.5D;
+                    double var10 = (double)(par1World.rand.nextFloat() * var7) + (double)(1.0F - var7) * 0.2D + 0.6D;
+                    double var12 = (double)(par1World.rand.nextFloat() * var7) + (double)(1.0F - var7) * 0.5D;
+                    ItemStack var14 = new ItemStack(mod_retrogame.cheese);
+                    EntityItem var15 = new EntityItem(par1World, (double)par2 + var8, (double)par3 + var10, (double)par4 + var12, var14);
+                    var15.delayBeforeCanPickup = 10;
+                    par1World.spawnEntityInWorld(var15);
+        }
     }
    
     /**

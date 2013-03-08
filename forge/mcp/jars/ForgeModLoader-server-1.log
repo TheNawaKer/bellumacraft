@@ -1,520 +1,781 @@
-2013-03-07 02:03:19 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
-2013-03-07 02:03:21 [INFO] [STDOUT] 210 recipes
-2013-03-07 02:03:21 [INFO] [STDOUT] 27 achievements
-2013-03-07 02:03:21 [INFO] [Minecraft] Starting minecraft server version 1.4.7
-2013-03-07 02:03:21 [INFO] [ForgeModLoader] Attempting early MinecraftForge initialization
-2013-03-07 02:03:21 [INFO] [STDOUT] MinecraftForge v6.6.0.497 Initialized
-2013-03-07 02:03:21 [INFO] [ForgeModLoader] MinecraftForge v6.6.0.497 Initialized
-2013-03-07 02:03:21 [INFO] [STDOUT] Replaced 84 ore recipies
-2013-03-07 02:03:21 [INFO] [ForgeModLoader] Completed early MinecraftForge initialization
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Building injected Mod Containers [cpw.mods.fml.common.FMLDummyContainer, net.minecraftforge.common.ForgeDummyContainer]
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Attempting to load mods contained in the minecraft jar file and associated classes
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Found a minecraft related directory at D:\minecraft modding\bellumacraft\forge\mcp\eclipse\Minecraft\bin, examining for mod candidates
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\jinput.jar
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\lwjgl_util.jar
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\lwjgl.jar
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Found a minecraft related file at D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\minecraft.jar, examining for mod candidates
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\argo-2.25.jar
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\bcprov-jdk15on-147.jar
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\asm-all-4.0.jar
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\guava-12.0.1.jar
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\argo-2.25.jar
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\guava-12.0.1.jar
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\asm-all-4.0.jar
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\bcprov-jdk15on-147.jar
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Minecraft jar mods loaded successfully
-2013-03-07 02:03:22 [INFO] [ForgeModLoader] Searching D:\minecraft modding\bellumacraft\forge\mcp\jars\mods for mods
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Examining directory bin for potential mods
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] No mcmod.info file found in directory bin
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.modloader
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.registry
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm.transformers
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery.asm
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.event
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.functions
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.modloader
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.network
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.registry
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.toposort
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.versioning
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.relauncher
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.server
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package ibxm
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.blocks
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.client
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.common
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.mobs
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.model
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.player
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.event
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.gui
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.items
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Identified a class mod.legendaire45.mod_retrogame following modloader naming convention but not directly a BaseMod or currently seen subclass
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Identified an FMLMod type mod mod.legendaire45.mod_retrogame
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Parsed dependency info : [] [] []
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.model
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network.player
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.recipe
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.entity
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.item
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.player
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.server
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.armor
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.base
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.design
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.design.moule
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.gui
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.item
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.mobs
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.tile
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.tools
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.world
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block.material
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.audio
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.entity
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.achievement
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.inventory
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.model
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.multiplayer
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.particle
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.culling
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.entity
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.texturefx
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.tileentity
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.settings
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.texturepacks
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.command
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.crash
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.creativetab
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.dispenser
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.enchantment
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.ai
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.boss
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.effect
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.item
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.monster
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.passive
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.player
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.projectile
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.inventory
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item.crafting
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.nbt
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.packet
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.rcon
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.pathfinding
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.potion
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.profiler
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.dedicated
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.gui
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.integrated
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.management
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.src
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.stats
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.tileentity
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.util
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.village
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.biome
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk.storage
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.demo
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.feature
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.layer
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.structure
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.storage
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.classloading
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event.sound
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.common
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.item
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.living
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.minecart
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.player
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.terraingen
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.world
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.liquids
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.oredict
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.transformers
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package paulscode
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound.codecs
-2013-03-07 02:03:22 [INFO] [ForgeModLoader] Attempting to reparse the mod container bin
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Examining directory bin for potential mods
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] No mcmod.info file found in directory bin
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.modloader
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.registry
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm.transformers
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery.asm
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.event
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.functions
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.modloader
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.network
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.registry
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.toposort
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.versioning
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.relauncher
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.server
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package ibxm
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.blocks
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.client
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.common
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.mobs
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.model
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.player
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.event
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.gui
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.items
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Identified a class mod.legendaire45.mod_retrogame following modloader naming convention but not directly a BaseMod or currently seen subclass
-2013-03-07 02:03:22 [FINE] [ForgeModLoader] Identified an FMLMod type mod mod.legendaire45.mod_retrogame
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Parsed dependency info : [] [] []
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.model
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network.player
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.recipe
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.entity
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.item
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.player
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.server
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.armor
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.base
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.design
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.design.moule
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.gui
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.item
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.mobs
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.tile
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.tools
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.world
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft
-2013-03-07 02:03:22 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block.material
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.audio
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.entity
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.achievement
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.inventory
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.model
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.multiplayer
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.particle
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.culling
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.entity
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.texturefx
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.tileentity
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.settings
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.texturepacks
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.command
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.crash
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.creativetab
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.dispenser
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.enchantment
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.ai
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.boss
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.effect
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.item
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.monster
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.passive
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.player
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.projectile
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.inventory
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item.crafting
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.nbt
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.packet
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.rcon
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.pathfinding
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.potion
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.profiler
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.dedicated
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.gui
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.integrated
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.management
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.src
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.stats
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.tileentity
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.util
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.village
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.biome
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk.storage
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.demo
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.feature
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.layer
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.structure
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.storage
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.classloading
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event.sound
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.common
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.item
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.living
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.minecart
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.player
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.terraingen
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.world
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.liquids
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.oredict
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.transformers
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package paulscode
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound.codecs
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] Examining file minecraft.jar for potential mods
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] The mod container minecraft.jar appears to be missing an mcmod.info file
-2013-03-07 02:03:23 [INFO] [ForgeModLoader] Forge Mod Loader has identified 4 mods to load
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] Received a system property request ''
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] System property request managing the state of 0 mods
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] After merging, found state information for 0 mods
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] Activating mod mcp
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] Activating mod FML
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] Activating mod Forge
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] Enabling mod mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] Activating mod mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] Verifying mod requirements are satisfied
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] All mod requirements are satisfied
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] Sorting mods into an ordered list
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] Mod sorting completed successfully
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] Mod sorting data:
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] 	mod_retrogame(mod retrogame:1.4.0): bin ()
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod mcp
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod mcp
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod FML
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod FML
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod Forge
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod Forge
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemReed(697) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemCup(687) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(700) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemCup(688) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemDrink(689) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemSeeds(690) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(691) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(698) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(699) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPelleMod(661) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPiocheMod(662) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolHacheMod(663) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolEpeeMod(664) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPelleMod(657) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPiocheMod(665) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolHacheMod(666) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolEpeeMod(667) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPelleMod(668) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPiocheMod(669) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolHacheMod(670) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolEpeeMod(671) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(672) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(673) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(674) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(675) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(676) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(677) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(678) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(679) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(680) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(681) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(682) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(683) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(684) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(685) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(686) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.MagicBow(692) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.TeleportBow(694) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(693) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(695) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(701) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemDisc(2268) owned by mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemDisc(2269) owned by mod_retrogame
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] Testing mod mod_retrogame to verify it accepts its own version in a remote connection
-2013-03-07 02:03:23 [FINEST] [ForgeModLoader] The mod mod_retrogame accepts its own version (1.4.0)
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] Attempting to inject @SidedProxy classes into mod_retrogame
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod mod_retrogame
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] Mod signature data:
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] 	mcp(Minecraft Coder Pack:7.26): minecraft.jar (NO VALID CERTIFICATE FOUND)
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] 	FML(Forge Mod Loader:4.7.4.520): coremods (NO VALID CERTIFICATE FOUND)
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] 	Forge(Minecraft Forge:6.6.0.497): coremods (NO VALID CERTIFICATE FOUND)
-2013-03-07 02:03:23 [FINE] [ForgeModLoader] 	mod_retrogame(mod retrogame:1.4.0): bin (NO VALID CERTIFICATE FOUND)
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod mcp
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod mcp
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod FML
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod FML
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod Forge
-2013-03-07 02:03:23 [INFO] [ForgeModLoader] Configured a dormant chunk cache size of 0
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod Forge
-2013-03-07 02:03:23 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod mod_retrogame
-2013-03-07 02:03:24 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod mod_retrogame
-2013-03-07 02:03:24 [INFO] [Minecraft] Loading properties
-2013-03-07 02:03:24 [INFO] [Minecraft] Default game type: SURVIVAL
-2013-03-07 02:03:24 [INFO] [Minecraft] Generating keypair
-2013-03-07 02:03:25 [INFO] [Minecraft] Starting Minecraft server on *:25565
-2013-03-07 02:03:25 [WARNING] [Minecraft] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-2013-03-07 02:03:25 [WARNING] [Minecraft] The server will make no attempt to authenticate usernames. Beware.
-2013-03-07 02:03:25 [WARNING] [Minecraft] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-2013-03-07 02:03:25 [WARNING] [Minecraft] To change this, set "online-mode" to "true" in the server.properties file.
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod mcp
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod mcp
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod FML
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod FML
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod Forge
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod Forge
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod mod_retrogame
-2013-03-07 02:03:25 [INFO] [STDOUT] CONFLICT @ 73 item slot already occupied by net.minecraft.item.ItemSaddle@25af578c while adding mod.legendaire45.items.ItemSelle@1a9cbba8
-2013-03-07 02:03:25 [INFO] [ForgeModLoader] [ItemTracker] The mod mod_retrogame is overwriting existing item at 329 (net.minecraft.item.ItemSaddle from Minecraft) with mod.legendaire45.items.ItemSelle
-2013-03-07 02:03:25 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemSelle(329) owned by mod_retrogame
-2013-03-07 02:03:25 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.SpawnEgg(704) owned by mod_retrogame
-2013-03-07 02:03:25 [INFO] [STDOUT] 3
-2013-03-07 02:03:25 [FINEST] [ForgeModLoader] Automatically registered mod mod_retrogame entity firearrow as mod_retrogame.firearrow
-2013-03-07 02:03:25 [FINEST] [ForgeModLoader] Automatically registered mod mod_retrogame entity teleportarrow as mod_retrogame.teleportarrow
-2013-03-07 02:03:25 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(171) owned by mod_retrogame
-2013-03-07 02:03:25 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(172) owned by mod_retrogame
-2013-03-07 02:03:25 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(173) owned by mod_retrogame
-2013-03-07 02:03:25 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(174) owned by mod_retrogame
-2013-03-07 02:03:25 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(175) owned by mod_retrogame
-2013-03-07 02:03:25 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemMoule(178) owned by mod_retrogame
-2013-03-07 02:03:25 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(176) owned by mod_retrogame
-2013-03-07 02:03:25 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(177) owned by mod_retrogame
-2013-03-07 02:03:25 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(179) owned by mod_retrogame
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod mod_retrogame
-2013-03-07 02:03:25 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod mcp
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event IMCEvent to mod mcp
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event IMCEvent to mod mcp
-2013-03-07 02:03:25 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod FML
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event IMCEvent to mod FML
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event IMCEvent to mod FML
-2013-03-07 02:03:25 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod Forge
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event IMCEvent to mod Forge
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event IMCEvent to mod Forge
-2013-03-07 02:03:25 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod mod_retrogame
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event IMCEvent to mod mod_retrogame
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event IMCEvent to mod mod_retrogame
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod mcp
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod mcp
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod FML
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod FML
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod Forge
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod Forge
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod mod_retrogame
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod mod_retrogame
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod mcp
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod mcp
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod FML
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod FML
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod Forge
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod Forge
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod mod_retrogame
-2013-03-07 02:03:25 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod mod_retrogame
-2013-03-07 02:03:25 [INFO] [ForgeModLoader] Forge Mod Loader has successfully loaded 4 mods
-2013-03-07 02:03:25 [INFO] [Minecraft] Preparing level "mcpworld"
-2013-03-07 02:03:25 [FINE] [ForgeModLoader] The difference set is equal
-2013-03-07 02:03:25 [INFO] [ForgeModLoader] Loading dimension 0 (mcpworld) (net.minecraft.server.dedicated.DedicatedServer@1f9b2b8)
-2013-03-07 02:03:25 [INFO] [ForgeModLoader] Loading dimension 1 (mcpworld) (net.minecraft.server.dedicated.DedicatedServer@1f9b2b8)
-2013-03-07 02:03:25 [INFO] [ForgeModLoader] Loading dimension -1 (mcpworld) (net.minecraft.server.dedicated.DedicatedServer@1f9b2b8)
-2013-03-07 02:03:25 [INFO] [Minecraft] Preparing start region for level 0
-2013-03-07 02:03:26 [INFO] [Minecraft] Done (0,933s)! For help, type "help" or "?"
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod mcp
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod mcp
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod FML
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod FML
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod Forge
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod Forge
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod mod_retrogame
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod mod_retrogame
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod mcp
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod mcp
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod FML
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod FML
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod Forge
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod Forge
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod mod_retrogame
-2013-03-07 02:03:26 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod mod_retrogame
-2013-03-07 02:03:31 [FINEST] [ForgeModLoader] Received valid FML login packet from /127.0.0.1:19077
-2013-03-07 02:03:31 [INFO] [Minecraft] User Player496 connecting with mods [mod_retrogame]
-2013-03-07 02:03:31 [INFO] [ForgeModLoader] User Player496 connecting with mods [mod_retrogame]
-2013-03-07 02:03:31 [INFO] [Minecraft] Player496[/127.0.0.1:19077] logged in with entity id 138 at (4.5, 64.0, 206.4187988837896)
-2013-03-07 02:03:31 [INFO] [STDOUT] loggin ...
-2013-03-07 02:03:47 [FINER] [ForgeModLoader] Sending event FMLServerStoppingEvent to mod mcp
-2013-03-07 02:03:47 [FINER] [ForgeModLoader] Sent event FMLServerStoppingEvent to mod mcp
-2013-03-07 02:03:47 [FINER] [ForgeModLoader] Sending event FMLServerStoppingEvent to mod FML
-2013-03-07 02:03:47 [FINER] [ForgeModLoader] Sent event FMLServerStoppingEvent to mod FML
-2013-03-07 02:03:47 [FINER] [ForgeModLoader] Sending event FMLServerStoppingEvent to mod Forge
-2013-03-07 02:03:47 [FINER] [ForgeModLoader] Sent event FMLServerStoppingEvent to mod Forge
-2013-03-07 02:03:47 [FINER] [ForgeModLoader] Sending event FMLServerStoppingEvent to mod mod_retrogame
-2013-03-07 02:03:47 [FINER] [ForgeModLoader] Sent event FMLServerStoppingEvent to mod mod_retrogame
-2013-03-07 02:03:47 [INFO] [Minecraft] Stopping server
-2013-03-07 02:03:47 [INFO] [Minecraft] Saving players
-2013-03-07 02:03:47 [INFO] [STDERR] java.net.SocketException: socket closed
-2013-03-07 02:03:47 [INFO] [STDERR] 	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
-2013-03-07 02:03:47 [INFO] [STDERR] 	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:121)
-2013-03-07 02:03:47 [INFO] [STDERR] 	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
-2013-03-07 02:03:47 [INFO] [STDERR] 	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:183)
-2013-03-07 02:03:47 [INFO] [STDERR] 	at java.net.ServerSocket.implAccept(ServerSocket.java:522)
-2013-03-07 02:03:47 [INFO] [STDERR] 	at java.net.ServerSocket.accept(ServerSocket.java:490)
-2013-03-07 02:03:47 [INFO] [STDERR] 	at net.minecraft.server.ServerListenThread.run(ServerListenThread.java:81)
-2013-03-07 02:03:47 [INFO] [STDOUT] Closing listening thread
-2013-03-07 02:03:47 [INFO] [Minecraft] Saving worlds
-2013-03-07 02:03:47 [INFO] [Minecraft] Saving chunks for level 'mcpworld'/Overworld
-2013-03-07 02:03:47 [INFO] [Minecraft] Saving chunks for level 'mcpworld'/Nether
-2013-03-07 02:03:47 [INFO] [Minecraft] Saving chunks for level 'mcpworld'/The End
-2013-03-07 02:03:48 [INFO] [ForgeModLoader] Unloading dimension 0
-2013-03-07 02:03:48 [INFO] [ForgeModLoader] Unloading dimension -1
-2013-03-07 02:03:48 [INFO] [ForgeModLoader] Unloading dimension 1
-2013-03-07 02:03:48 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod mcp
-2013-03-07 02:03:48 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod mcp
-2013-03-07 02:03:48 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod FML
-2013-03-07 02:03:48 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod FML
-2013-03-07 02:03:48 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod Forge
-2013-03-07 02:03:48 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod Forge
-2013-03-07 02:03:48 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod mod_retrogame
-2013-03-07 02:03:48 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod mod_retrogame
-2013-03-07 02:03:48 [INFO] [Minecraft] Stopping server
+2013-03-07 20:44:02 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
+2013-03-07 20:44:03 [INFO] [STDOUT] 210 recipes
+2013-03-07 20:44:03 [INFO] [STDOUT] 27 achievements
+2013-03-07 20:44:03 [INFO] [Minecraft] Starting minecraft server version 1.4.7
+2013-03-07 20:44:04 [INFO] [ForgeModLoader] Attempting early MinecraftForge initialization
+2013-03-07 20:44:04 [INFO] [STDOUT] MinecraftForge v6.6.0.497 Initialized
+2013-03-07 20:44:04 [INFO] [ForgeModLoader] MinecraftForge v6.6.0.497 Initialized
+2013-03-07 20:44:04 [INFO] [STDOUT] Replaced 84 ore recipies
+2013-03-07 20:44:04 [INFO] [ForgeModLoader] Completed early MinecraftForge initialization
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Building injected Mod Containers [cpw.mods.fml.common.FMLDummyContainer, net.minecraftforge.common.ForgeDummyContainer]
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Attempting to load mods contained in the minecraft jar file and associated classes
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Found a minecraft related directory at D:\minecraft modding\bellumacraft\forge\mcp\eclipse\Minecraft\bin, examining for mod candidates
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\jinput.jar
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\lwjgl_util.jar
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\lwjgl.jar
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Found a minecraft related file at D:\minecraft modding\bellumacraft\forge\mcp\jars\bin\minecraft.jar, examining for mod candidates
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\argo-2.25.jar
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\bcprov-jdk15on-147.jar
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\asm-all-4.0.jar
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\lib\guava-12.0.1.jar
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\argo-2.25.jar
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\guava-12.0.1.jar
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\asm-all-4.0.jar
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Skipping known library file D:\minecraft modding\bellumacraft\forge\mcp\jars\lib\bcprov-jdk15on-147.jar
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Minecraft jar mods loaded successfully
+2013-03-07 20:44:04 [INFO] [ForgeModLoader] Searching D:\minecraft modding\bellumacraft\forge\mcp\jars\mods for mods
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Examining directory bin for potential mods
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] No mcmod.info file found in directory bin
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.modloader
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.registry
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm.transformers
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery.asm
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.event
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.functions
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.modloader
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.network
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.registry
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.toposort
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.versioning
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.relauncher
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.server
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package ibxm
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.blocks
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.client
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.common
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.mobs
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.model
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.player
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.event
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.gui
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.items
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Identified a class mod.legendaire45.mod_retrogame following modloader naming convention but not directly a BaseMod or currently seen subclass
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Identified an FMLMod type mod mod.legendaire45.mod_retrogame
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Parsed dependency info : [] [] []
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.model
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network.player
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.recipe
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.entity
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.item
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.player
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.server
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.armor
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.base
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.design
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.design.moule
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.gui
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.item
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.mobs
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.tile
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.tools
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.world
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block.material
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.audio
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.entity
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.achievement
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.inventory
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.model
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.multiplayer
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.particle
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.culling
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.entity
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.texturefx
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.tileentity
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.settings
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.texturepacks
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.command
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.crash
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.creativetab
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.dispenser
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.enchantment
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.ai
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.boss
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.effect
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.item
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.monster
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.passive
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.player
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.projectile
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.inventory
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item.crafting
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin.natives
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin.texture
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin.texture.armor
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin.texture.base
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin.texture.design
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin.texture.gui
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.config
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.coremods
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.crash-reports
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.lib
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.mods
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.mod
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.mod.cavemusic
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.mod.music
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.mod.sound
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.mod.streaming
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.music
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newmusic
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.ambient
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.ambient.cave
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.ambient.weather
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.damage
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.fire
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.liquid
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.blaze
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.cat
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.endermen
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.ghast
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.irongolem
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.magmacube
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.silverfish
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.wolf
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.zombie
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.zombiepig
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.note
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.portal
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.random
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.step
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.tile
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.tile.piston
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.pe
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound.step
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.ambient
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.ambient.cave
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.ambient.weather
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.damage
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.dig
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.fire
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.fireworks
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.liquid
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.minecart
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.bat
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.blaze
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.cat
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.chicken
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.cow
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.creeper
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.enderdragon
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.endermen
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.ghast
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.horse
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.irongolem
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.magmacube
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.pig
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.sheep
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.silverfish
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.skeleton
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.slime
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.spider
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.wither
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.wolf
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.zombie
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.zombiepig
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.note
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.portal
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.random
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.step
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.tile
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.tile.piston
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.streaming
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.screenshots
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.nbt
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.packet
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.rcon
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.pathfinding
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.potion
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.profiler
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.dedicated
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.gui
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.integrated
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.management
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.src
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.stats
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.tileentity
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.util
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.village
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.biome
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk.storage
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.demo
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.feature
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.layer
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.structure
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.storage
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.classloading
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event.sound
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.common
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.item
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.living
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.minecart
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.player
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.terraingen
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.world
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.liquids
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.oredict
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.transformers
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package paulscode
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound.codecs
+2013-03-07 20:44:04 [INFO] [ForgeModLoader] Attempting to reparse the mod container bin
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Examining directory bin for potential mods
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] No mcmod.info file found in directory bin
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.modloader
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.client.registry
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.asm.transformers
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.discovery.asm
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.event
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.functions
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.modloader
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.network
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.registry
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.toposort
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.common.versioning
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.relauncher
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package cpw.mods.fml.server
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package ibxm
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.blocks
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.client
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.common
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.mobs
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.model
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.entity.player
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.event
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.gui
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.items
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Identified a class mod.legendaire45.mod_retrogame following modloader naming convention but not directly a BaseMod or currently seen subclass
+2013-03-07 20:44:04 [FINE] [ForgeModLoader] Identified an FMLMod type mod mod.legendaire45.mod_retrogame
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Parsed dependency info : [] [] []
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.model
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.network.player
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.recipe
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.entity
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.item
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.render.player
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.server
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.armor
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.base
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.design
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.design.moule
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.gui
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.item
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.texture.mobs
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.tile
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.tools
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package mod.legendaire45.world
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.block.material
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.audio
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.entity
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.achievement
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.gui.inventory
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.model
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.multiplayer
+2013-03-07 20:44:04 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.particle
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.culling
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.entity
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.texturefx
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.renderer.tileentity
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.settings
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.client.texturepacks
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.command
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.crash
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.creativetab
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.dispenser
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.enchantment
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.ai
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.boss
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.effect
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.item
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.monster
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.passive
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.player
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.entity.projectile
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.inventory
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.item.crafting
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin.natives
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin.texture
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin.texture.armor
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin.texture.base
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin.texture.design
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.bin.texture.gui
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.config
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.coremods
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.crash-reports
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.lib
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.mods
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.mod
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.mod.cavemusic
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.mod.music
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.mod.sound
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.mod.streaming
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.music
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newmusic
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.ambient
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.ambient.cave
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.ambient.weather
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.damage
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.fire
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.liquid
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.blaze
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.cat
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.endermen
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.ghast
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.irongolem
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.magmacube
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.silverfish
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.wolf
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.zombie
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.mob.zombiepig
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.note
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.portal
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.random
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.step
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.tile
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.newsound.tile.piston
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.pe
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound.step
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.ambient
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.ambient.cave
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.ambient.weather
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.damage
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.dig
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.fire
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.fireworks
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.liquid
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.minecart
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.bat
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.blaze
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.cat
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.chicken
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.cow
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.creeper
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.enderdragon
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.endermen
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.ghast
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.horse
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.irongolem
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.magmacube
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.pig
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.sheep
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.silverfish
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.skeleton
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.slime
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.spider
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.wither
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.wolf
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.zombie
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.mob.zombiepig
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.note
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.portal
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.random
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.step
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.tile
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.sound3.tile.piston
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.resources.streaming
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.jars.screenshots
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.nbt
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.packet
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.network.rcon
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.pathfinding
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.potion
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.profiler
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.dedicated
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.gui
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.integrated
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.server.management
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.src
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.stats
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.tileentity
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.util
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.village
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.biome
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.chunk.storage
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.demo
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.feature
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.layer
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.gen.structure
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraft.world.storage
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.classloading
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.client.event.sound
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.common
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.item
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.living
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.minecart
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.entity.player
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.terraingen
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.event.world
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.liquids
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.oredict
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package net.minecraftforge.transformers
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package paulscode
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Recursing into package paulscode.sound.codecs
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] Examining file minecraft.jar for potential mods
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] The mod container minecraft.jar appears to be missing an mcmod.info file
+2013-03-07 20:44:05 [INFO] [ForgeModLoader] Forge Mod Loader has identified 4 mods to load
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] Received a system property request ''
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] System property request managing the state of 0 mods
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] After merging, found state information for 0 mods
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] Activating mod mcp
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] Activating mod FML
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] Activating mod Forge
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] Enabling mod mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] Activating mod mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] Verifying mod requirements are satisfied
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] All mod requirements are satisfied
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] Sorting mods into an ordered list
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] Mod sorting completed successfully
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] Mod sorting data:
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] 	mod_retrogame(mod retrogame:1.4.0): bin ()
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod mcp
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod mcp
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod FML
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod FML
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod Forge
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod Forge
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemReed(697) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemCup(687) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(700) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemCup(688) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemDrink(689) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemSeeds(690) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(691) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(698) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(699) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPelleMod(661) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPiocheMod(662) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolHacheMod(663) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolEpeeMod(664) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPelleMod(657) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPiocheMod(665) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolHacheMod(666) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolEpeeMod(667) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPelleMod(668) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolPiocheMod(669) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolHacheMod(670) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemToolEpeeMod(671) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(672) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(673) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(674) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(675) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(676) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(677) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(678) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(679) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(680) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(681) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(682) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(683) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(684) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(685) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ArmorBase(686) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.MagicBow(692) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.TeleportBow(694) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(693) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(695) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.Item(701) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemDisc(2268) owned by mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemDisc(2269) owned by mod_retrogame
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] Testing mod mod_retrogame to verify it accepts its own version in a remote connection
+2013-03-07 20:44:05 [FINEST] [ForgeModLoader] The mod mod_retrogame accepts its own version (1.4.0)
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] Attempting to inject @SidedProxy classes into mod_retrogame
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod mod_retrogame
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] Mod signature data:
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] 	mcp(Minecraft Coder Pack:7.26): minecraft.jar (NO VALID CERTIFICATE FOUND)
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] 	FML(Forge Mod Loader:4.7.4.520): coremods (NO VALID CERTIFICATE FOUND)
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] 	Forge(Minecraft Forge:6.6.0.497): coremods (NO VALID CERTIFICATE FOUND)
+2013-03-07 20:44:05 [FINE] [ForgeModLoader] 	mod_retrogame(mod retrogame:1.4.0): bin (NO VALID CERTIFICATE FOUND)
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod mcp
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod mcp
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod FML
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod FML
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod Forge
+2013-03-07 20:44:05 [INFO] [ForgeModLoader] Configured a dormant chunk cache size of 0
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod Forge
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod mod_retrogame
+2013-03-07 20:44:05 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod mod_retrogame
+2013-03-07 20:44:05 [INFO] [Minecraft] Loading properties
+2013-03-07 20:44:05 [INFO] [Minecraft] Default game type: SURVIVAL
+2013-03-07 20:44:05 [INFO] [Minecraft] Generating keypair
+2013-03-07 20:44:06 [INFO] [Minecraft] Starting Minecraft server on *:25566
+2013-03-07 20:44:06 [WARNING] [Minecraft] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-03-07 20:44:06 [WARNING] [Minecraft] The server will make no attempt to authenticate usernames. Beware.
+2013-03-07 20:44:06 [WARNING] [Minecraft] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-03-07 20:44:06 [WARNING] [Minecraft] To change this, set "online-mode" to "true" in the server.properties file.
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod mcp
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod mcp
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod FML
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod FML
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod Forge
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod Forge
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod mod_retrogame
+2013-03-07 20:44:06 [INFO] [STDOUT] CONFLICT @ 73 item slot already occupied by net.minecraft.item.ItemSaddle@41704837 while adding mod.legendaire45.items.ItemSelle@32953471
+2013-03-07 20:44:06 [INFO] [ForgeModLoader] [ItemTracker] The mod mod_retrogame is overwriting existing item at 329 (net.minecraft.item.ItemSaddle from Minecraft) with mod.legendaire45.items.ItemSelle
+2013-03-07 20:44:06 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemSelle(329) owned by mod_retrogame
+2013-03-07 20:44:06 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.SpawnEgg(704) owned by mod_retrogame
+2013-03-07 20:44:06 [INFO] [STDOUT] 3
+2013-03-07 20:44:06 [FINEST] [ForgeModLoader] Automatically registered mod mod_retrogame entity firearrow as mod_retrogame.firearrow
+2013-03-07 20:44:06 [FINEST] [ForgeModLoader] Automatically registered mod mod_retrogame entity teleportarrow as mod_retrogame.teleportarrow
+2013-03-07 20:44:06 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(171) owned by mod_retrogame
+2013-03-07 20:44:06 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(172) owned by mod_retrogame
+2013-03-07 20:44:06 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(173) owned by mod_retrogame
+2013-03-07 20:44:06 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(174) owned by mod_retrogame
+2013-03-07 20:44:06 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(175) owned by mod_retrogame
+2013-03-07 20:44:06 [FINE] [ForgeModLoader] [ItemTracker] Adding item mod.legendaire45.items.ItemMoule(178) owned by mod_retrogame
+2013-03-07 20:44:06 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(176) owned by mod_retrogame
+2013-03-07 20:44:06 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(177) owned by mod_retrogame
+2013-03-07 20:44:06 [FINE] [ForgeModLoader] [ItemTracker] Adding item net.minecraft.item.ItemBlock(179) owned by mod_retrogame
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod mod_retrogame
+2013-03-07 20:44:06 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod mcp
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event IMCEvent to mod mcp
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event IMCEvent to mod mcp
+2013-03-07 20:44:06 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod FML
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event IMCEvent to mod FML
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event IMCEvent to mod FML
+2013-03-07 20:44:06 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod Forge
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event IMCEvent to mod Forge
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event IMCEvent to mod Forge
+2013-03-07 20:44:06 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod mod_retrogame
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event IMCEvent to mod mod_retrogame
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event IMCEvent to mod mod_retrogame
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod mcp
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod mcp
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod FML
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod FML
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod Forge
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod Forge
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod mod_retrogame
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod mod_retrogame
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod mcp
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod mcp
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod FML
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod FML
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod Forge
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod Forge
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod mod_retrogame
+2013-03-07 20:44:06 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod mod_retrogame
+2013-03-07 20:44:06 [INFO] [ForgeModLoader] Forge Mod Loader has successfully loaded 4 mods
+2013-03-07 20:44:06 [WARNING] [Minecraft] Failed to load operators list: java.io.FileNotFoundException: .\ops.txt (Le fichier spécifié est introuvable)
+2013-03-07 20:44:06 [WARNING] [Minecraft] Failed to load white-list: java.io.FileNotFoundException: .\white-list.txt (Le fichier spécifié est introuvable)
+2013-03-07 20:44:06 [INFO] [Minecraft] Preparing level "mcpworld"
+2013-03-07 20:44:07 [INFO] [ForgeModLoader] Loading dimension 0 (mcpworld) (net.minecraft.server.dedicated.DedicatedServer@6e25d936)
+2013-03-07 20:44:07 [INFO] [ForgeModLoader] Loading dimension 1 (mcpworld) (net.minecraft.server.dedicated.DedicatedServer@6e25d936)
+2013-03-07 20:44:07 [INFO] [ForgeModLoader] Loading dimension -1 (mcpworld) (net.minecraft.server.dedicated.DedicatedServer@6e25d936)
+2013-03-07 20:44:07 [INFO] [Minecraft] Preparing start region for level 0
+2013-03-07 20:44:08 [INFO] [Minecraft] Preparing spawn area: 10%
+2013-03-07 20:44:09 [INFO] [Minecraft] Preparing spawn area: 26%
+2013-03-07 20:44:10 [INFO] [Minecraft] Preparing spawn area: 43%
+2013-03-07 20:44:11 [INFO] [Minecraft] Preparing spawn area: 60%
+2013-03-07 20:44:12 [INFO] [Minecraft] Preparing spawn area: 77%
+2013-03-07 20:44:13 [INFO] [Minecraft] Preparing spawn area: 92%
+2013-03-07 20:44:13 [INFO] [Minecraft] Done (7,011s)! For help, type "help" or "?"
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod mcp
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod mcp
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod FML
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod FML
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod Forge
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod Forge
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod mod_retrogame
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod mod_retrogame
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod mcp
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod mcp
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod FML
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod FML
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod Forge
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod Forge
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod mod_retrogame
+2013-03-07 20:44:13 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod mod_retrogame
+2013-03-07 20:44:25 [FINEST] [ForgeModLoader] Received valid FML login packet from /127.0.0.1:21580
+2013-03-07 20:44:26 [INFO] [Minecraft] User Player696 connecting with mods [mod_retrogame]
+2013-03-07 20:44:26 [INFO] [ForgeModLoader] User Player696 connecting with mods [mod_retrogame]
+2013-03-07 20:44:26 [INFO] [Minecraft] Player696[/127.0.0.1:21580] logged in with entity id 3389 at (-10.5, 78.62000000476837, 190.5)
+2013-03-07 20:44:58 [FINEST] [ForgeModLoader] Received valid FML login packet from /127.0.0.1:21612
+2013-03-07 20:44:58 [INFO] [Minecraft] User Player676 connecting with mods [mod_retrogame]
+2013-03-07 20:44:58 [INFO] [ForgeModLoader] User Player676 connecting with mods [mod_retrogame]
+2013-03-07 20:44:58 [INFO] [Minecraft] Player676[/127.0.0.1:21612] logged in with entity id 7309 at (-6.5, 73.62000000476837, 188.5)
+2013-03-07 20:47:29 [INFO] [STDOUT] slot var2
+2013-03-07 20:47:29 [INFO] [STDOUT] 64xitem.seau de biere@0
+2013-03-07 20:47:29 [INFO] [STDOUT] slot var3
+2013-03-07 20:47:29 [INFO] [STDOUT] net.minecraft.inventory.Slot@6c7675ab
+2013-03-07 20:47:30 [INFO] [STDOUT] slot var2
+2013-03-07 20:47:30 [INFO] [STDOUT] 64xitem.Chope Vide@0
+2013-03-07 20:47:30 [INFO] [STDOUT] slot var3
+2013-03-07 20:47:30 [INFO] [STDOUT] net.minecraft.inventory.Slot@6dc90d31
+2013-03-07 20:47:36 [INFO] [STDOUT] slot var2
+2013-03-07 20:47:36 [INFO] [STDOUT] 1xitem.Chope Pleine@0
+2013-03-07 20:47:36 [INFO] [STDOUT] slot var3
+2013-03-07 20:47:36 [INFO] [STDOUT] mod.legendaire45.gui.SlotBeer@3b3fe7d6
+2013-03-07 20:48:05 [INFO] [STDERR] java.lang.NoClassDefFoundError: net/minecraft/client/Minecraft
+2013-03-07 20:48:05 [INFO] [STDERR] 	at mod.legendaire45.entity.mobs.EntityCheval.onLivingUpdate(EntityCheval.java:127)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:843)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2291)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.world.WorldServer.uncheckedUpdateEntity(WorldServer.java:656)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.network.NetServerHandler.handleFlying(NetServerHandler.java:239)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.network.packet.Packet10Flying.processPacket(Packet10Flying.java:51)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.network.TcpConnection.processReadPackets(TcpConnection.java:458)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.network.NetServerHandler.networkTick(NetServerHandler.java:136)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.network.NetworkListenThread.networkTick(NetworkListenThread.java:57)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.server.dedicated.DedicatedServerListenThread.networkTick(DedicatedServerListenThread.java:34)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:703)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.server.dedicated.DedicatedServer.updateTimeLightAndEntities(DedicatedServer.java:270)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:599)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:497)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at net.minecraft.server.ThreadMinecraftServer.run(ThreadMinecraftServer.java:16)
+2013-03-07 20:48:05 [INFO] [STDERR] Caused by: java.lang.ClassNotFoundException: net.minecraft.client.Minecraft
+2013-03-07 20:48:05 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.RelaunchClassLoader.findClass(RelaunchClassLoader.java:185)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+2013-03-07 20:48:05 [INFO] [STDERR] 	... 15 more
+2013-03-07 20:48:05 [INFO] [STDERR] Caused by: java.lang.RuntimeException: Attempted to load class net/minecraft/client/Minecraft for invalid side SERVER
+2013-03-07 20:48:05 [INFO] [STDERR] 	at cpw.mods.fml.common.asm.transformers.SideTransformer.transform(SideTransformer.java:38)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.RelaunchClassLoader.runTransformers(RelaunchClassLoader.java:228)
+2013-03-07 20:48:05 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.RelaunchClassLoader.findClass(RelaunchClassLoader.java:173)
+2013-03-07 20:48:05 [INFO] [STDERR] 	... 17 more
+2013-03-07 20:48:05 [SEVERE] [Minecraft] Encountered an unexpected exception NoClassDefFoundError
+java.lang.NoClassDefFoundError: net/minecraft/client/Minecraft
+	at mod.legendaire45.entity.mobs.EntityCheval.onLivingUpdate(EntityCheval.java:127)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:843)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2291)
+	at net.minecraft.world.WorldServer.uncheckedUpdateEntity(WorldServer.java:656)
+	at net.minecraft.network.NetServerHandler.handleFlying(NetServerHandler.java:239)
+	at net.minecraft.network.packet.Packet10Flying.processPacket(Packet10Flying.java:51)
+	at net.minecraft.network.TcpConnection.processReadPackets(TcpConnection.java:458)
+	at net.minecraft.network.NetServerHandler.networkTick(NetServerHandler.java:136)
+	at net.minecraft.network.NetworkListenThread.networkTick(NetworkListenThread.java:57)
+	at net.minecraft.server.dedicated.DedicatedServerListenThread.networkTick(DedicatedServerListenThread.java:34)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:703)
+	at net.minecraft.server.dedicated.DedicatedServer.updateTimeLightAndEntities(DedicatedServer.java:270)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:599)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:497)
+	at net.minecraft.server.ThreadMinecraftServer.run(ThreadMinecraftServer.java:16)
+Caused by: java.lang.ClassNotFoundException: net.minecraft.client.Minecraft
+	at cpw.mods.fml.relauncher.RelaunchClassLoader.findClass(RelaunchClassLoader.java:185)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	... 15 more
+Caused by: java.lang.RuntimeException: Attempted to load class net/minecraft/client/Minecraft for invalid side SERVER
+	at cpw.mods.fml.common.asm.transformers.SideTransformer.transform(SideTransformer.java:38)
+	at cpw.mods.fml.relauncher.RelaunchClassLoader.runTransformers(RelaunchClassLoader.java:228)
+	at cpw.mods.fml.relauncher.RelaunchClassLoader.findClass(RelaunchClassLoader.java:173)
+	... 17 more
+2013-03-07 20:48:05 [SEVERE] [Minecraft] This crash report has been saved to: D:\minecraft modding\bellumacraft\forge\mcp\jars\.\crash-reports\crash-2013-03-07_20.48.05-server.txt
+2013-03-07 20:55:18 [INFO] [Minecraft] Stopping server
+2013-03-07 20:55:18 [INFO] [Minecraft] Saving players
+2013-03-07 20:55:18 [INFO] [STDERR] java.net.SocketException: socket closed
+2013-03-07 20:55:18 [INFO] [STDERR] 	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+2013-03-07 20:55:18 [INFO] [STDERR] 	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:121)
+2013-03-07 20:55:18 [INFO] [STDERR] 	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+2013-03-07 20:55:18 [INFO] [STDERR] 	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:183)
+2013-03-07 20:55:18 [INFO] [STDERR] 	at java.net.ServerSocket.implAccept(ServerSocket.java:522)
+2013-03-07 20:55:18 [INFO] [STDERR] 	at java.net.ServerSocket.accept(ServerSocket.java:490)
+2013-03-07 20:55:18 [INFO] [STDERR] 	at net.minecraft.server.ServerListenThread.run(ServerListenThread.java:81)
+2013-03-07 20:55:18 [INFO] [STDOUT] Closing listening thread
+2013-03-07 20:55:18 [INFO] [Minecraft] Saving worlds
+2013-03-07 20:55:18 [INFO] [Minecraft] Saving chunks for level 'mcpworld'/Overworld
+2013-03-07 20:55:18 [INFO] [Minecraft] Saving chunks for level 'mcpworld'/Nether
+2013-03-07 20:55:18 [INFO] [Minecraft] Saving chunks for level 'mcpworld'/The End
+2013-03-07 20:55:19 [INFO] [ForgeModLoader] Unloading dimension 0
+2013-03-07 20:55:19 [INFO] [ForgeModLoader] Unloading dimension -1
+2013-03-07 20:55:19 [INFO] [ForgeModLoader] Unloading dimension 1
+2013-03-07 20:55:19 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod mcp
+2013-03-07 20:55:19 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod mcp
+2013-03-07 20:55:19 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod FML
+2013-03-07 20:55:19 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod FML
+2013-03-07 20:55:19 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod Forge
+2013-03-07 20:55:19 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod Forge
+2013-03-07 20:55:19 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod mod_retrogame
+2013-03-07 20:55:19 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod mod_retrogame
+2013-03-07 20:55:19 [SEVERE] [ForgeModLoader] Fatal errors were detected during the transition from SERVER_STARTED to SERVER_STOPPED. Loading cannot continue
+2013-03-07 20:55:19 [SEVERE] [ForgeModLoader] 
+	mcp [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML [Forge Mod Loader] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge [Minecraft Forge] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	mod_retrogame [mod retrogame] (bin) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+2013-03-07 20:55:19 [SEVERE] [ForgeModLoader] The following problems were captured during this phase
+2013-03-07 20:55:19 [INFO] [STDERR] Exception in thread "Server thread" cpw.mods.fml.common.LoaderException
+2013-03-07 20:55:19 [INFO] [STDERR] 	at cpw.mods.fml.common.LoadController.transition(LoadController.java:117)
+2013-03-07 20:55:19 [INFO] [STDERR] 	at cpw.mods.fml.common.Loader.serverStopped(Loader.java:752)
+2013-03-07 20:55:19 [INFO] [STDERR] 	at cpw.mods.fml.common.FMLCommonHandler.handleServerStopped(FMLCommonHandler.java:459)
+2013-03-07 20:55:19 [INFO] [STDERR] 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:559)
+2013-03-07 20:55:19 [INFO] [STDERR] 	at net.minecraft.server.ThreadMinecraftServer.run(ThreadMinecraftServer.java:16)
+2013-03-07 20:55:19 [INFO] [Minecraft] Stopping server
+2013-03-07 20:55:19 [INFO] [Minecraft] Saving players
+2013-03-07 20:55:19 [INFO] [Minecraft] Saving worlds

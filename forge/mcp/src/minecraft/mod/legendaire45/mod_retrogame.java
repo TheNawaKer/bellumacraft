@@ -34,12 +34,12 @@ import mod.legendaire45.render.player.RenderPlayerSword;
 import mod.legendaire45.server.ConnectionHandler;
 import mod.legendaire45.server.ServerPacketHandler;
 import mod.legendaire45.tile.TileEntityBeer;
+import mod.legendaire45.tile.TileEntityCheese;
 import mod.legendaire45.tile.TileEntityTrampoline;
 import mod.legendaire45.tools.NewSound;
 import mod.legendaire45.world.WorldGenOre;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.item.EnumArmorMaterial;
@@ -51,7 +51,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.src.ModLoader;
 import net.minecraft.src.PlayerAPI;
 import net.minecraft.src.RenderPlayerAPI;
-import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.client.event.sound.SoundEvent;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
@@ -72,12 +71,11 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 
 @Mod(modid = "mod_retrogame", name = "mod retrogame", version = "1.4.0")
 @NetworkMod(clientSideRequired = false, serverSideRequired = true,
-clientPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","sword","field" }, packetHandler = ClientPacketHandler.class),
-serverPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","sword","field" }, packetHandler = ServerPacketHandler.class),
+clientPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","sword","field","init","other" }, packetHandler = ClientPacketHandler.class),
+serverPacketHandlerSpec = @SidedPacketHandler(channels = {"mod_retrogame","sword","field","init","other" }, packetHandler = ServerPacketHandler.class),
 connectionHandler = ConnectionHandler.class)
 
 public class mod_retrogame 
@@ -240,6 +238,7 @@ public class mod_retrogame
 			{
 				ModLoader.registerTileEntity(TileEntityBeer.class, "beer");
 				ModLoader.registerTileEntity(TileEntityTrampoline.class, "trampoline");
+				ModLoader.registerTileEntity(TileEntityCheese.class, "cheese");
 			}
 			
 			this.horseID = ModLoader.getUniqueEntityId();//<---- ID du cheval

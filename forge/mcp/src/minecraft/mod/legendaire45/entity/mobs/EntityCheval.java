@@ -1,5 +1,7 @@
 package mod.legendaire45.entity.mobs;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import mod.legendaire45.common.CommonProxy;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityAgeable;
@@ -27,7 +29,7 @@ public class EntityCheval extends EntityAnimal
 	
 	private static String cheval = CommonProxy.cheval;
     
-    int tempsSaut; //déclaration de notre fonction pour le temps entre deux saut
+    int tempsSaut; //declaration de notre fonction pour le temps entre deux saut
     
     public EntityCheval(World world)
     {
@@ -106,12 +108,13 @@ public class EntityCheval extends EntityAnimal
 			super.jump();
 
 			if (flag) {
-				motionY += 0.1; //Permet de régler la hauteur du saut !
+				motionY += 0.1; //Permet de regler la hauteur du saut !
 			}
 			tempsSaut = 10;
 		}
 	}
 	
+    @SideOnly(Side.CLIENT)
 	public void onLivingUpdate() {
 
 		super.onLivingUpdate();
@@ -121,10 +124,10 @@ public class EntityCheval extends EntityAnimal
 		}
 
 		if (riddenByEntity != null) {
-			EntityPlayer entityPlayer = (EntityPlayer) riddenByEntity; //fonctions diverses améliorant le maniabilité du mob
+			EntityPlayer entityPlayer = (EntityPlayer) riddenByEntity; //fonctions diverses ameliorant le maniabilite du mob
 			rotationYaw = prevRotationYaw = entityPlayer.rotationYaw;
 			EntityLiving par1EntityLiving = (EntityLiving) riddenByEntity;
-                        this.isJumping = Minecraft.getMinecraft().thePlayer.movementInput.jump; // Fonction initiant le saut lorsque on appuie sur espace	
+            this.isJumping = Minecraft.getMinecraft().thePlayer.movementInput.jump; // Fonction initiant le saut lorsque on appuie sur espace	
 		}
 	}
 
@@ -142,8 +145,8 @@ public class EntityCheval extends EntityAnimal
 			}
 
 			else if (onGround) {
-				motionX += riddenByEntity.motionX * 8.5D; //vitesse du mob, changez à votre guise
-				motionZ += riddenByEntity.motionZ * 8.5D;
+				motionX += riddenByEntity.motionX * 5.5D; //vitesse du mob, changez a votre guise
+				motionZ += riddenByEntity.motionZ * 5.5D;
 			} else {
 				motionX += riddenByEntity.motionX;
 				motionZ += riddenByEntity.motionZ;

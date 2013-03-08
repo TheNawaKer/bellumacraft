@@ -27,15 +27,21 @@ public class ServerPacketHandler implements IPacketHandler
 		EntityPlayer sender = (EntityPlayer) player;	
 	    if (payload.channel.equals("sword"))
 	    {
-	    	handleSword(payload,player);
+	    	handleAll(payload,player);
+	    }
+	    if (payload.channel.equals("other"))
+	    {
+	    	handleAll(payload,player);
 	    }
 	}
 	
-    private void handleSword(Packet250CustomPayload packet, Player player)
+    private void handleAll(Packet250CustomPayload packet, Player player)
     {
         DataInputStream inputStream = new DataInputStream(new ByteArrayInputStream(packet.data));
         PacketDispatcher.sendPacketToAllPlayers(packet);
     }
+    
+    
 
 
 }

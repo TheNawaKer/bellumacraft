@@ -23,6 +23,7 @@ public class CommonProxy
 	public static String teleportarrowtexture = "/mod/legendaire45/texture/item/arrowteleport.png";
 	public static String cheval = "/mod/legendaire45/texture/mobs/cheval.png";
 	public static String chevalselle = "/mod/legendaire45/texture/mobs/chevalselle.png";
+	public static String cheese = "/mod/legendaire45/texture/design/cheese.png";
 	
 	public static String moule1 = "/mod/legendaire45/texture/design/moule/Moule1.png";
 	public static String moule2 = "/mod/legendaire45/texture/design/moule/Moule2.png";

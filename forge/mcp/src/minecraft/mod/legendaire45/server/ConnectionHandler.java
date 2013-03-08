@@ -20,11 +20,12 @@ public class ConnectionHandler implements IConnectionHandler {
 
 	@Override
 	 public void playerLoggedIn(Player player, NetHandler netHandler, INetworkManager manager) {
-        int init = 0;       
+		EntityPlayer joueur = (EntityPlayer)player;
+        int playerId = joueur.entityId;       
         ByteArrayOutputStream bos = new ByteArrayOutputStream(4);
         DataOutputStream outputStream = new DataOutputStream(bos);
         try {
-                outputStream.writeInt(init);
+                outputStream.writeInt(playerId);
         } catch (Exception ex) {
                 ex.printStackTrace();
         }
@@ -33,7 +34,7 @@ public class ConnectionHandler implements IConnectionHandler {
         packet.channel = "field";
         packet.data = bos.toByteArray();
         packet.length = bos.size();
-        PacketDispatcher.sendPacketToPlayer(packet,player);
+        PacketDispatcher.sendPacketToAllPlayers(packet); 
 	 }
 
 	@Override
@@ -64,9 +65,7 @@ public class ConnectionHandler implements IConnectionHandler {
 	}
 
 	@Override
-	public void clientLoggedIn(NetHandler clientHandler,
-			INetworkManager manager, Packet1Login login) {
-		System.out.println("is logged ...");
+	public void clientLoggedIn(NetHandler clientHandler,INetworkManager manager, Packet1Login login) {
 		
 	}
 

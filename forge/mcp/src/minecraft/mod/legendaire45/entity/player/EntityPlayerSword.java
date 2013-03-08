@@ -20,28 +20,28 @@ public class EntityPlayerSword extends PlayerBase
     public void afterOnUpdate()
     {
 		 boolean var = false;
-		 if(this.mc.thePlayer.inventory.currentItem != this.mc.thePlayer.select)
+		 if(this.mc.thePlayer.inventory.currentItem != this.mc.thePlayer.getDataWatcher().getWatchableObjectInt(25))
 		 {
 			 var=true;
 		 }
 		 if(this.mc.thePlayer.inventory.mainInventory[0] != null && var!=true)
 		 {
-			 if(this.mc.thePlayer.tool == null)
+			 if(this.mc.thePlayer.getDataWatcher().getWatchableObjectItemStack(26) == null)
 			 {
 				 var=true;
 			 }
-			 else if(this.mc.thePlayer.inventory.mainInventory[0].itemID != this.mc.thePlayer.tool.itemID)
+			 else if(this.mc.thePlayer.inventory.mainInventory[0].itemID != this.mc.thePlayer.getDataWatcher().getWatchableObjectItemStack(26).itemID)
 			 {
 				 var=true;
 			 }
 		 }
 		 if(this.mc.thePlayer.inventory.mainInventory[1] != null && var!=true)
 		 {
-			 if(this.mc.thePlayer.tool2 == null)
+			 if(this.mc.thePlayer.getDataWatcher().getWatchableObjectItemStack(27) == null)
 			 {
 				 var=true;
 			 }
-			 else if(this.mc.thePlayer.inventory.mainInventory[1].itemID != this.mc.thePlayer.tool2.itemID)
+			 else if(this.mc.thePlayer.inventory.mainInventory[1].itemID != this.mc.thePlayer.getDataWatcher().getWatchableObjectItemStack(27).itemID)
 			 {
 				 var=true;
 			 }

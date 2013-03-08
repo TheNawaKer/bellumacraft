@@ -21,13 +21,12 @@ public class RenderPlayerSword extends RenderPlayerBase
 	
 	public final void beforeRenderSpecialItemInHand(EntityPlayer par1EntityPlayer, float var2)
     {
-		System.out.println(par1EntityPlayer.getDataWatcher().getWatchableObjectInt(25));
-        if(par1EntityPlayer.tool != null)
+		ItemStack zero = par1EntityPlayer.getDataWatcher().getWatchableObjectItemStack(26);
+        if(zero != null)
         {
-	        if(par1EntityPlayer.select != 0)
+	        if(par1EntityPlayer.getDataWatcher().getWatchableObjectInt(25) != 0)
 	        {
-		        ItemStack var41 = par1EntityPlayer.tool;
-		        if(ItemToolEnum.isWeapon(var41))
+		        if(ItemToolEnum.isWeapon(zero))
 		        {
 			        float var40 = 0.625F;
 			        GL11.glPushMatrix();
@@ -42,24 +41,24 @@ public class RenderPlayerSword extends RenderPlayerBase
 	                }
 			        GL11.glRotatef(310.0F, 0.0F, 1.0F, 0.0F);//Axe Y
 			        GL11.glRotatef(0.0F, 0.0F, 0.0F, 1.0F);//Axe Z
-			        if(var41.itemID==Item.bow.itemID)
+			        if(zero.itemID==Item.bow.itemID)
 			        {
 			        	RenderManager.instance.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, new ItemStack(mod_retrogame.bowfix, 1), 0);
 			        }
 			        else
 			        {
-			        	RenderManager.instance.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, var41, 0);
+			        	RenderManager.instance.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, zero, 0);
 			        }
 			        GL11.glPopMatrix();
 		        }
 	        }
         }
-        if(par1EntityPlayer.tool2 != null)
+        ItemStack un = par1EntityPlayer.getDataWatcher().getWatchableObjectItemStack(27);
+        if(un != null)
         {
-	        if(par1EntityPlayer.select != 1)
+	        if(par1EntityPlayer.getDataWatcher().getWatchableObjectInt(25) != 1)
 	        {
-		        ItemStack var41 = par1EntityPlayer.tool2;
-		        if(ItemToolEnum.isWeapon(var41))
+		        if(ItemToolEnum.isWeapon(un))
 		        {
 			        float var40 = 0.625F;
 			        GL11.glPushMatrix();
@@ -74,13 +73,13 @@ public class RenderPlayerSword extends RenderPlayerBase
 	                }
 			        GL11.glRotatef(310.0F, 0.0F, 1.0F, 0.0F);//Axe Y
 			        GL11.glRotatef(0.0F, 0.0F, 0.0F, 1.0F);//Axe Z
-			        if(var41.itemID==Item.bow.itemID)
+			        if(un.itemID==Item.bow.itemID)
 			        {
 			        	RenderManager.instance.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, new ItemStack(mod_retrogame.bowfix, 1), 0);
 			        }
 			        else
 			        {
-			        	RenderManager.instance.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, var41, 0);
+			        	RenderManager.instance.itemRenderer.renderItem((EntityLiving)par1EntityPlayer, un, 0);
 			        }
 			        GL11.glPopMatrix();
 		        }

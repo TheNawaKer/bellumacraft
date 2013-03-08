@@ -6,7 +6,7 @@
 #
 # RetroGuard MCP v3.6.5
 #
-# Logfile created on Thu Feb 28 15:22:14 CET 2013
+# Logfile created on Thu Mar 07 22:50:31 CET 2013
 #
 # Jar file to be obfuscated:           client_recomp.jar
 # Target Jar file for obfuscated code: client_reobf.jar
@@ -65,8 +65,8 @@
 #      Your class net/minecraftforge/event/ASMEventHandler$ASMClassLoader calls the java/lang/ClassLoader method defineClass(Ljava/lang/String;[BII)Ljava/lang/Class;
 #      Your class net/minecraftforge/event/EventBus calls the java/lang/Class method getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 #
-# Memory in use after class data structure built: 27262520 bytes
-# Total memory available                        : 275120128 bytes
+# Memory in use after class data structure built: 27294704 bytes
+# Total memory available                        : 275251200 bytes
 #
 #
 # Names reserved from obfuscation:
@@ -2796,6 +2796,17 @@
 .class_map mod/legendaire45/model/ModelTrampoline ModelTrampoline
 .field_map mod/legendaire45/model/ModelTrampoline/cube cube
 .method_map mod/legendaire45/model/ModelTrampoline/render ()V render
+.class_map mod/legendaire45/model/ModelMoule ModelMoule
+.field_map mod/legendaire45/model/ModelMoule/bord1 bord1
+.field_map mod/legendaire45/model/ModelMoule/bord2 bord2
+.field_map mod/legendaire45/model/ModelMoule/bord3 bord3
+.field_map mod/legendaire45/model/ModelMoule/bord4 bord4
+.field_map mod/legendaire45/model/ModelMoule/base base
+.field_map mod/legendaire45/model/ModelMoule/lait lait
+.method_map mod/legendaire45/model/ModelMoule/setRotation (Lnet/minecraft/client/model/ModelRenderer;FFF)V setRotation
+.method_map mod/legendaire45/model/ModelMoule/render (Lnet/minecraft/entity/Entity;FFFFFF)V a
+.method_map mod/legendaire45/model/ModelMoule/renderAll ()V renderAll
+.method_map mod/legendaire45/model/ModelMoule/setRotationAngles (FFFFFFLnet/minecraft/entity/Entity;)V a
 .class_map mod/legendaire45/model/ModelCanape ModelCanape
 .field_map mod/legendaire45/model/ModelCanape/bord1 bord1
 .field_map mod/legendaire45/model/ModelCanape/bord2 bord2
@@ -2825,6 +2836,11 @@
 .method_map mod/legendaire45/model/ModelBeer/render (Lnet/minecraft/entity/Entity;FFFFFF)V a
 .method_map mod/legendaire45/model/ModelBeer/renderModel ()V renderModel
 .method_map mod/legendaire45/model/ModelBeer/setRotationAngles (FFFFFFLnet/minecraft/entity/Entity;)V a
+.class_map mod/legendaire45/model/ModelCheese ModelCheese
+.field_map mod/legendaire45/model/ModelCheese/Shape1 Shape1
+.method_map mod/legendaire45/model/ModelCheese/setRotation (Lnet/minecraft/client/model/ModelRenderer;FFF)V setRotation
+.method_map mod/legendaire45/model/ModelCheese/render (Lnet/minecraft/entity/Entity;FFFFFF)V a
+.method_map mod/legendaire45/model/ModelCheese/setRotationAngles (FFFFFFLnet/minecraft/entity/Entity;)V a
 .package_map mod/legendaire45/recipe recipe
 .class_map mod/legendaire45/recipe/BeerRecipe BeerRecipe
 .field_map mod/legendaire45/recipe/BeerRecipe/solidifyingList solidifyingList
@@ -2849,8 +2865,12 @@
 .method_map mod/legendaire45/client/KeyHandlerBow/ticks ()Ljava/util/EnumSet; ticks
 .method_map mod/legendaire45/client/KeyHandlerBow/keyUp (Ljava/util/EnumSet;Lnet/minecraft/client/settings/KeyBinding;Z)V keyUp
 .class_map mod/legendaire45/client/ClientPacketHandler ClientPacketHandler
+.field_map mod/legendaire45/client/ClientPacketHandler/mc mc
 .method_map mod/legendaire45/client/ClientPacketHandler/handleSword (Lnet/minecraft/network/packet/Packet250CustomPayload;Lcpw/mods/fml/common/network/Player;)V handleSword
 .method_map mod/legendaire45/client/ClientPacketHandler/onPacketData (Lnet/minecraft/network/INetworkManager;Lnet/minecraft/network/packet/Packet250CustomPayload;Lcpw/mods/fml/common/network/Player;)V onPacketData
+.method_map mod/legendaire45/client/ClientPacketHandler/handleFieldInit (Lnet/minecraft/network/packet/Packet250CustomPayload;Lcpw/mods/fml/common/network/Player;)V handleFieldInit
+.method_map mod/legendaire45/client/ClientPacketHandler/handleField (Lnet/minecraft/network/packet/Packet250CustomPayload;Lcpw/mods/fml/common/network/Player;)V handleField
+.method_map mod/legendaire45/client/ClientPacketHandler/handleFieldOther (Lnet/minecraft/network/packet/Packet250CustomPayload;Lcpw/mods/fml/common/network/Player;)V handleFieldOther
 .package_map mod/legendaire45/common common
 .class_map mod/legendaire45/common/CommonProxy CommonProxy
 .field_map mod/legendaire45/common/CommonProxy/firearrowtexture firearrowtexture
@@ -2863,10 +2883,15 @@
 .field_map mod/legendaire45/common/CommonProxy/guibeer guibeer
 .field_map mod/legendaire45/common/CommonProxy/textureBlock textureBlock
 .field_map mod/legendaire45/common/CommonProxy/textureSaphir textureSaphir
+.field_map mod/legendaire45/common/CommonProxy/chevalselle chevalselle
+.field_map mod/legendaire45/common/CommonProxy/moule2 moule2
+.field_map mod/legendaire45/common/CommonProxy/moule3 moule3
 .field_map mod/legendaire45/common/CommonProxy/textureItem textureItem
 .field_map mod/legendaire45/common/CommonProxy/textureSaphir2 textureSaphir2
 .field_map mod/legendaire45/common/CommonProxy/textureEmerald2 textureEmerald2
+.field_map mod/legendaire45/common/CommonProxy/moule1 moule1
 .field_map mod/legendaire45/common/CommonProxy/textureRuby textureRuby
+.field_map mod/legendaire45/common/CommonProxy/moule4 moule4
 .field_map mod/legendaire45/common/CommonProxy/distributor distributor
 .field_map mod/legendaire45/common/CommonProxy/trampoline trampoline
 .field_map mod/legendaire45/common/CommonProxy/textureEmerald textureEmerald
@@ -2889,24 +2914,25 @@
 .method_map mod/legendaire45/entity/model/ModelCheval/setRotationAngles (FFFFFFLnet/minecraft/entity/Entity;)V a
 .package_map mod/legendaire45/entity/mobs mobs
 .class_map mod/legendaire45/entity/mobs/EntityCheval EntityCheval
+.field_map mod/legendaire45/entity/mobs/EntityCheval/tempsSaut tempsSaut
 .field_map mod/legendaire45/entity/mobs/EntityCheval/cheval cheval
-.field_map mod/legendaire45/entity/mobs/EntityCheval/aiControlledByPlayer aiControlledByPlayer
 .method_map mod/legendaire45/entity/mobs/EntityCheval/getMaxHealth ()I aT
 .method_map mod/legendaire45/entity/mobs/EntityCheval/setSaddled (Z)V setSaddled
 .method_map mod/legendaire45/entity/mobs/EntityCheval/getDeathSound ()Ljava/lang/String; ba
 .method_map mod/legendaire45/entity/mobs/EntityCheval/isAIEnabled ()Z be
-.method_map mod/legendaire45/entity/mobs/EntityCheval/canBeSteered ()Z bI
 .method_map mod/legendaire45/entity/mobs/EntityCheval/fall (F)V a
 .method_map mod/legendaire45/entity/mobs/EntityCheval/createChild (Lnet/minecraft/entity/EntityAgeable;)Lnet/minecraft/entity/EntityAgeable; a
 .method_map mod/legendaire45/entity/mobs/EntityCheval/getLivingSound ()Ljava/lang/String; aY
 .method_map mod/legendaire45/entity/mobs/EntityCheval/entityInit ()V a
+.method_map mod/legendaire45/entity/mobs/EntityCheval/onLivingUpdate ()V c
+.method_map mod/legendaire45/entity/mobs/EntityCheval/updateEntityActionState ()V bn
 .method_map mod/legendaire45/entity/mobs/EntityCheval/getSaddled ()Z getSaddled
 .method_map mod/legendaire45/entity/mobs/EntityCheval/readEntityFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V a
-.method_map mod/legendaire45/entity/mobs/EntityCheval/getAIControlledByPlayer ()Lnet/minecraft/entity/ai/EntityAIControlledByPlayer; getAIControlledByPlayer
 .method_map mod/legendaire45/entity/mobs/EntityCheval/getBlockPathWeight (III)F a
 .method_map mod/legendaire45/entity/mobs/EntityCheval/writeEntityToNBT (Lnet/minecraft/nbt/NBTTagCompound;)V b
 .method_map mod/legendaire45/entity/mobs/EntityCheval/playStepSound (IIII)V a
 .method_map mod/legendaire45/entity/mobs/EntityCheval/getHurtSound ()Ljava/lang/String; aZ
+.method_map mod/legendaire45/entity/mobs/EntityCheval/jump (Ljava/lang/Boolean;)V jump
 .method_map mod/legendaire45/entity/mobs/EntityCheval/spawnBabyAnimal (Lnet/minecraft/entity/EntityAgeable;)Lmod/legendaire45/entity/mobs/EntityCheval; spawnBabyAnimal
 .method_map mod/legendaire45/entity/mobs/EntityCheval/updateAITasks ()V bl
 .method_map mod/legendaire45/entity/mobs/EntityCheval/interact (Lnet/minecraft/entity/player/EntityPlayer;)Z a
@@ -2979,6 +3005,10 @@
 .method_map mod/legendaire45/entity/EntityTeleportArrow/setKnockbackStrength (I)V setKnockbackStrength
 .method_map mod/legendaire45/entity/EntityTeleportArrow/getIsCritical ()Z getIsCritical
 .package_map mod/legendaire45/blocks blocks
+.class_map mod/legendaire45/blocks/BlockCheese BlockCheese
+.method_map mod/legendaire45/blocks/BlockCheese/getSubBlocks (ILnet/minecraft/creativetab/CreativeTabs;Ljava/util/List;)V a
+.method_map mod/legendaire45/blocks/BlockCheese/onBlockActivated (Lnet/minecraft/world/World;IIILnet/minecraft/entity/player/EntityPlayer;IFFF)Z a
+.method_map mod/legendaire45/blocks/BlockCheese/quantityDropped (Ljava/util/Random;)I a
 .class_map mod/legendaire45/blocks/BlockSaphir BlockSaphir
 .method_map mod/legendaire45/blocks/BlockSaphir/idDropped (ILjava/util/Random;I)I a
 .method_map mod/legendaire45/blocks/BlockSaphir/onBlockDestroyedByPlayer (Lnet/minecraft/world/World;IIII)V c
@@ -3025,6 +3055,20 @@
 .method_map mod/legendaire45/blocks/BlockSofa/idDropped (ILjava/util/Random;)I idDropped
 .method_map mod/legendaire45/blocks/BlockSofa/getMobilityFlag ()I q_
 .method_map mod/legendaire45/blocks/BlockSofa/quantityDropped (Ljava/util/Random;)I a
+.class_map mod/legendaire45/blocks/BlockMoule BlockMoule
+.field_map mod/legendaire45/blocks/BlockMoule/time time
+.field_map mod/legendaire45/blocks/BlockMoule/timer timer
+.method_map mod/legendaire45/blocks/BlockMoule/getSubBlocks (ILnet/minecraft/creativetab/CreativeTabs;Ljava/util/List;)V a
+.method_map mod/legendaire45/blocks/BlockMoule/renderAsNormalBlock ()Z b
+.method_map mod/legendaire45/blocks/BlockMoule/tickRate ()I r_
+.method_map mod/legendaire45/blocks/BlockMoule/updateTick (Lnet/minecraft/world/World;IIILjava/util/Random;)V b
+.method_map mod/legendaire45/blocks/BlockMoule/onBlockActivated (Lnet/minecraft/world/World;IIILnet/minecraft/entity/player/EntityPlayer;IFFF)Z a
+.method_map mod/legendaire45/blocks/BlockMoule/createNewTileEntity (Lnet/minecraft/world/World;)Lnet/minecraft/tileentity/TileEntity; a
+.method_map mod/legendaire45/blocks/BlockMoule/isOpaqueCube ()Z c
+.method_map mod/legendaire45/blocks/BlockMoule/getRenderType ()I d
+.method_map mod/legendaire45/blocks/BlockMoule/idDropped (ILjava/util/Random;)I idDropped
+.method_map mod/legendaire45/blocks/BlockMoule/quantityDropped (Ljava/util/Random;)I a
+.method_map mod/legendaire45/blocks/BlockMoule/damageDropped (I)I b
 .class_map mod/legendaire45/blocks/BlockRuby BlockRuby
 .method_map mod/legendaire45/blocks/BlockRuby/idDropped (ILjava/util/Random;I)I a
 .method_map mod/legendaire45/blocks/BlockRuby/onBlockDestroyedByPlayer (Lnet/minecraft/world/World;IIII)V c
@@ -3052,9 +3096,11 @@
 .method_map mod/legendaire45/render/item/ItemSofaRenderer/renderTile (Lnet/minecraft/block/Block;IF)V renderTile
 .package_map mod/legendaire45/render/entity entity
 .class_map mod/legendaire45/render/entity/RenderCheval RenderCheval
-.method_map mod/legendaire45/render/entity/RenderCheval/doRender (Lnet/minecraft/entity/Entity;DDDFF)V a
+.field_map mod/legendaire45/render/entity/RenderCheval/chevalselle chevalselle
+.method_map mod/legendaire45/render/entity/RenderCheval/renderLivingHorse (Lmod/legendaire45/entity/mobs/EntityCheval;DDDFF)V renderLivingHorse
+.method_map mod/legendaire45/render/entity/RenderCheval/renderSaddledHorse (Lmod/legendaire45/entity/mobs/EntityCheval;IF)I renderSaddledHorse
 .method_map mod/legendaire45/render/entity/RenderCheval/doRenderLiving (Lnet/minecraft/entity/EntityLiving;DDDFF)V a
-.method_map mod/legendaire45/render/entity/RenderCheval/renderCow (Lmod/legendaire45/entity/mobs/EntityCheval;DDDFF)V renderCow
+.method_map mod/legendaire45/render/entity/RenderCheval/shouldRenderPass (Lnet/minecraft/entity/EntityLiving;IF)I a
 .class_map mod/legendaire45/render/RenderBeer RenderBeer
 .field_map mod/legendaire45/render/RenderBeer/distrib distrib
 .field_map mod/legendaire45/render/RenderBeer/distributor distributor
@@ -3074,9 +3120,14 @@
 .field_map mod/legendaire45/render/TileEntityTrampolineRenderer/trampoline trampoline
 .method_map mod/legendaire45/render/TileEntityTrampolineRenderer/renderTileEntityTileAt (Lnet/minecraft/tileentity/TileEntity;DDDF)V renderTileEntityTileAt
 .method_map mod/legendaire45/render/TileEntityTrampolineRenderer/renderTileEntityAt (Lnet/minecraft/tileentity/TileEntity;DDDF)V a
-.class_map mod/legendaire45/render/RenderSword RenderSword
-.field_map mod/legendaire45/render/RenderSword/renderManager renderManager
-.method_map mod/legendaire45/render/RenderSword/renderSpecials (Lnet/minecraft/entity/player/EntityPlayer;F)V renderSpecials
+.class_map mod/legendaire45/render/RenderMoule RenderMoule
+.field_map mod/legendaire45/render/RenderMoule/model model
+.field_map mod/legendaire45/render/RenderMoule/moule2 moule2
+.field_map mod/legendaire45/render/RenderMoule/moule3 moule3
+.field_map mod/legendaire45/render/RenderMoule/moule1 moule1
+.field_map mod/legendaire45/render/RenderMoule/moule4 moule4
+.method_map mod/legendaire45/render/RenderMoule/renderTileEntityTileAt (Lnet/minecraft/tileentity/TileEntity;DDDF)V renderTileEntityTileAt
+.method_map mod/legendaire45/render/RenderMoule/renderTileEntityAt (Lnet/minecraft/tileentity/TileEntity;DDDF)V a
 .class_map mod/legendaire45/render/ItemToolEnum ItemToolEnum
 .method_map mod/legendaire45/render/ItemToolEnum/isWeapon (Lnet/minecraft/item/ItemStack;)Z isWeapon
 .method_map mod/legendaire45/render/ItemToolEnum/isTool (Lnet/minecraft/item/ItemStack;)Z isTool
@@ -3146,7 +3197,12 @@
 .method_map mod/legendaire45/items/MagicBow/getItemEnchantability ()I c
 .method_map mod/legendaire45/items/MagicBow/getItemUseAction (Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/EnumAction; b_
 .method_map mod/legendaire45/items/MagicBow/getMaxItemUseDuration (Lnet/minecraft/item/ItemStack;)I c_
+.class_map mod/legendaire45/items/ItemMoule ItemMoule
+.method_map mod/legendaire45/items/ItemMoule/getIconFromDamage (I)I b
+.method_map mod/legendaire45/items/ItemMoule/getMetadata (I)I a
 .class_map mod/legendaire45/items/ItemToolPelleMod ItemToolPelleMod
+.class_map mod/legendaire45/items/ItemSelle ItemSelle
+.method_map mod/legendaire45/items/ItemSelle/itemInteractionForEntity (Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLiving;)Z a
 .class_map mod/legendaire45/items/ItemDisc ItemDisc
 .field_map mod/legendaire45/items/ItemDisc/recordName recordName
 .method_map mod/legendaire45/items/ItemDisc/getRecordTitle ()Ljava/lang/String; g
@@ -3155,6 +3211,11 @@
 .class_map mod/legendaire45/items/ItemCup ItemCup
 .method_map mod/legendaire45/items/ItemCup/addCreativeItems (Ljava/util/ArrayList;)V addCreativeItems
 .class_map mod/legendaire45/items/ItemToolEpeeMod ItemToolEpeeMod
+.class_map mod/legendaire45/items/SpawnEgg SpawnEgg
+.field_map mod/legendaire45/items/SpawnEgg/id id
+.method_map mod/legendaire45/items/SpawnEgg/onItemUse (Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;IIIIFFF)Z a
+.method_map mod/legendaire45/items/SpawnEgg/spawnCreature (Lnet/minecraft/world/World;IDDD)Lnet/minecraft/entity/Entity; spawnCreature
+.method_map mod/legendaire45/items/SpawnEgg/getItemDisplayName (Lnet/minecraft/item/ItemStack;)Ljava/lang/String; l
 .class_map mod/legendaire45/items/TeleportBow TeleportBow
 .method_map mod/legendaire45/items/TeleportBow/onPlayerStoppedUsing (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;I)V a
 .method_map mod/legendaire45/items/TeleportBow/getIconIndex (Lnet/minecraft/item/ItemStack;ILnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;I)I getIconIndex
@@ -3172,6 +3233,11 @@
 .method_map mod/legendaire45/tile/TileEntityTrampoline/closeChest ()V closeChest
 .method_map mod/legendaire45/tile/TileEntityTrampoline/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)V b
 .method_map mod/legendaire45/tile/TileEntityTrampoline/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V a
+.class_map mod/legendaire45/tile/TileEntityMoule TileEntityMoule
+.method_map mod/legendaire45/tile/TileEntityMoule/openChest ()V openChest
+.method_map mod/legendaire45/tile/TileEntityMoule/closeChest ()V closeChest
+.method_map mod/legendaire45/tile/TileEntityMoule/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)V b
+.method_map mod/legendaire45/tile/TileEntityMoule/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V a
 .class_map mod/legendaire45/tile/TileEntitySofa TileEntitySofa
 .field_map mod/legendaire45/tile/TileEntitySofa/adjacentSofaChecked adjacentSofaChecked
 .field_map mod/legendaire45/tile/TileEntitySofa/adjacentSofaZPosition adjacentSofaZPosition
@@ -3217,9 +3283,16 @@
 .method_map mod/legendaire45/tile/TileEntityBeer/getStackInSlotOnClosing (I)Lnet/minecraft/item/ItemStack; a_
 .method_map mod/legendaire45/tile/TileEntityBeer/Getlevel ()I Getlevel
 .package_map mod/legendaire45/server server
+.class_map mod/legendaire45/server/ConnectionHandler ConnectionHandler
+.method_map mod/legendaire45/server/ConnectionHandler/connectionReceived (Lnet/minecraft/network/NetLoginHandler;Lnet/minecraft/network/INetworkManager;)Ljava/lang/String; connectionReceived
+.method_map mod/legendaire45/server/ConnectionHandler/connectionOpened (Lnet/minecraft/network/packet/NetHandler;Ljava/lang/String;ILnet/minecraft/network/INetworkManager;)V connectionOpened
+.method_map mod/legendaire45/server/ConnectionHandler/clientLoggedIn (Lnet/minecraft/network/packet/NetHandler;Lnet/minecraft/network/INetworkManager;Lnet/minecraft/network/packet/Packet1Login;)V clientLoggedIn
+.method_map mod/legendaire45/server/ConnectionHandler/playerLoggedIn (Lcpw/mods/fml/common/network/Player;Lnet/minecraft/network/packet/NetHandler;Lnet/minecraft/network/INetworkManager;)V playerLoggedIn
+.method_map mod/legendaire45/server/ConnectionHandler/connectionOpened (Lnet/minecraft/network/packet/NetHandler;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/network/INetworkManager;)V connectionOpened
+.method_map mod/legendaire45/server/ConnectionHandler/connectionClosed (Lnet/minecraft/network/INetworkManager;)V connectionClosed
 .class_map mod/legendaire45/server/ServerPacketHandler ServerPacketHandler
-.method_map mod/legendaire45/server/ServerPacketHandler/handleSword (Lnet/minecraft/network/packet/Packet250CustomPayload;Lcpw/mods/fml/common/network/Player;)V handleSword
 .method_map mod/legendaire45/server/ServerPacketHandler/onPacketData (Lnet/minecraft/network/INetworkManager;Lnet/minecraft/network/packet/Packet250CustomPayload;Lcpw/mods/fml/common/network/Player;)V onPacketData
+.method_map mod/legendaire45/server/ServerPacketHandler/handleAll (Lnet/minecraft/network/packet/Packet250CustomPayload;Lcpw/mods/fml/common/network/Player;)V handleAll
 .package_map mod/legendaire45/world world
 .class_map mod/legendaire45/world/WorldGenOre WorldGenOre
 .method_map mod/legendaire45/world/WorldGenOre/generateEnd (Lnet/minecraft/world/World;Ljava/util/Random;II)V generateEnd
@@ -3246,20 +3319,23 @@
 .field_map mod/legendaire45/mod_retrogame/ArmorR4 ArmorR4
 .field_map mod/legendaire45/mod_retrogame/wheatBeer wheatBeer
 .field_map mod/legendaire45/mod_retrogame/rubyGem rubyGem
+.field_map mod/legendaire45/mod_retrogame/selle selle
 .field_map mod/legendaire45/mod_retrogame/ArmorS1 ArmorS1
 .field_map mod/legendaire45/mod_retrogame/textureItem textureItem
 .field_map mod/legendaire45/mod_retrogame/ArmorS3 ArmorS3
-.field_map mod/legendaire45/mod_retrogame/IDblock IDblock
 .field_map mod/legendaire45/mod_retrogame/ArmorS2 ArmorS2
+.field_map mod/legendaire45/mod_retrogame/IDblock IDblock
 .field_map mod/legendaire45/mod_retrogame/Cup Cup
 .field_map mod/legendaire45/mod_retrogame/rubyOre rubyOre
 .field_map mod/legendaire45/mod_retrogame/ruby ruby
+.field_map mod/legendaire45/mod_retrogame/cheese cheese
 .field_map mod/legendaire45/mod_retrogame/epeeToolS epeeToolS
 .field_map mod/legendaire45/mod_retrogame/hacheToolR hacheToolR
 .field_map mod/legendaire45/mod_retrogame/hacheToolS hacheToolS
 .field_map mod/legendaire45/mod_retrogame/rubyarmor rubyarmor
 .field_map mod/legendaire45/mod_retrogame/cropBeer cropBeer
 .field_map mod/legendaire45/mod_retrogame/sofa sofa
+.field_map mod/legendaire45/mod_retrogame/moule moule
 .field_map mod/legendaire45/mod_retrogame/disc2 disc2
 .field_map mod/legendaire45/mod_retrogame/lunette3 lunette3
 .field_map mod/legendaire45/mod_retrogame/pelleToolR pelleToolR
@@ -3270,6 +3346,7 @@
 .field_map mod/legendaire45/mod_retrogame/lunette2 lunette2
 .field_map mod/legendaire45/mod_retrogame/proxy proxy
 .field_map mod/legendaire45/mod_retrogame/ArmorR1 ArmorR1
+.field_map mod/legendaire45/mod_retrogame/horseID horseID
 .field_map mod/legendaire45/mod_retrogame/ArmorR2 ArmorR2
 .field_map mod/legendaire45/mod_retrogame/epeeToolE epeeToolE
 .field_map mod/legendaire45/mod_retrogame/firebow firebow
@@ -3283,6 +3360,7 @@
 .field_map mod/legendaire45/mod_retrogame/ArmorE2 ArmorE2
 .field_map mod/legendaire45/mod_retrogame/piocheToolR piocheToolR
 .field_map mod/legendaire45/mod_retrogame/ArmorE3 ArmorE3
+.field_map mod/legendaire45/mod_retrogame/horseEgg horseEgg
 .field_map mod/legendaire45/mod_retrogame/teleportbow teleportbow
 .field_map mod/legendaire45/mod_retrogame/sofas sofas
 .field_map mod/legendaire45/mod_retrogame/saphirarmor saphirarmor
@@ -11472,7 +11550,6 @@
 .field_map net/minecraft/entity/player/EntityPlayer/field_71097_bO bV
 .field_map net/minecraft/entity/player/EntityPlayer/startMinecartRidingCoordinate e
 .field_map net/minecraft/entity/player/EntityPlayer/openContainer bL
-.field_map net/minecraft/entity/player/EntityPlayer/tool tool
 .field_map net/minecraft/entity/player/EntityPlayer/field_71098_bD bO
 .field_map net/minecraft/entity/player/EntityPlayer/field_71089_bV cc
 .field_map net/minecraft/entity/player/EntityPlayer/experienceLevel ce
@@ -11483,7 +11560,6 @@
 .field_map net/minecraft/entity/player/EntityPlayer/spawnChunk c
 .field_map net/minecraft/entity/player/EntityPlayer/theInventoryEnderChest a
 .field_map net/minecraft/entity/player/EntityPlayer/field_71091_bM bT
-.field_map net/minecraft/entity/player/EntityPlayer/tool2 tool2
 .field_map net/minecraft/entity/player/EntityPlayer/fishEntity cj
 .field_map net/minecraft/entity/player/EntityPlayer/experience cg
 .field_map net/minecraft/entity/player/EntityPlayer/field_71085_bR bY
@@ -11495,7 +11571,6 @@
 .field_map net/minecraft/entity/player/EntityPlayer/field_82249_h h
 .field_map net/minecraft/entity/player/EntityPlayer/sleepTimer b
 .field_map net/minecraft/entity/player/EntityPlayer/experienceTotal cf
-.field_map net/minecraft/entity/player/EntityPlayer/select select
 .field_map net/minecraft/entity/player/EntityPlayer/itemInUseCount g
 .field_map net/minecraft/entity/player/EntityPlayer/flyToggleTimer bN
 .field_map net/minecraft/entity/player/EntityPlayer/playerCloakUrl cz
@@ -11505,8 +11580,8 @@
 .field_map net/minecraft/entity/player/EntityPlayer/prevCameraYaw bP
 .field_map net/minecraft/entity/player/EntityPlayer/speedOnGround ch
 .field_map net/minecraft/entity/player/EntityPlayer/field_71095_bQ bX
-.field_map net/minecraft/entity/player/EntityPlayer/field_71082_cx cA
 .field_map net/minecraft/entity/player/EntityPlayer/inventory bJ
+.field_map net/minecraft/entity/player/EntityPlayer/field_71082_cx cA
 .field_map net/minecraft/entity/player/EntityPlayer/playerLocation ca
 .field_map net/minecraft/entity/player/EntityPlayer/capabilities cd
 .field_map net/minecraft/entity/player/EntityPlayer/foodStats bM
