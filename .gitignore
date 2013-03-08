@@ -1,13 +1,19 @@
-# git ls-files --others --exclude-from=.git/info/exclude
-# Lines that start with '#' are comments.
-# For a project mostly in C, the following would be a good set of
-# exclude patterns (uncomment them if you want to use them):
-# *.[oa]
-# *~
-/forge/mcp/eclipse/**
-/forge/mcp/eclipse/*
-/forge/mcp/eclipse/**/*
-/forge/mcp/eclipse/.metadata/**
-/forge/mcp/eclipse/.metadata/*
-eclipse/
-/forge/mcp/eclipse/
+forge/mcp/bin/*
+forge/mcp/conf/*
+forge/mcp/docs/*
+forge/mcp/eclipse/*
+/forge/*
+!/forge/mcp/
+/forge/mcp/jars/*
+/forge/mcp/lib/*
+/forge/mcp/logs/*
+/forge/mcp/modsrc/*
+/forge/mcp/runtime/*
+/forge/mcp/temp/*
+
+/forge/mcp/src/minecraft/*
+/forge/mcp/src/minecraft_server/*
+/forge/mcp/src/common/*
+!/forge/mcp/src/minecraft/mod/
+*.bat
+*.sh
