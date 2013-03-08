@@ -6,7 +6,7 @@ import mod.legendaire45.entity.EntityMagicArrow;
 import mod.legendaire45.entity.EntityTeleportArrow;
 import mod.legendaire45.entity.mobs.EntityCheval;
 import mod.legendaire45.entity.model.ModelCheval;
-import mod.legendaire45.render.DamagedItemRenderer;
+import mod.legendaire45.render.ItemRendererCheese;
 import mod.legendaire45.render.RenderBeer;
 import mod.legendaire45.render.RenderCheese;
 import mod.legendaire45.render.RenderMagicArrow;
@@ -21,6 +21,7 @@ import mod.legendaire45.tile.TileEntityMoule;
 import mod.legendaire45.tile.TileEntitySofa;
 import mod.legendaire45.tile.TileEntityTrampoline;
 import net.minecraft.src.ModLoader;
+import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.MinecraftForgeClient;
 import cpw.mods.fml.client.registry.KeyBindingRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -77,7 +78,7 @@ public class ClientProxy extends CommonProxy
 		RenderingRegistry.registerEntityRenderingHandler(EntityCheval.class, new RenderCheval(new ModelCheval(), new ModelCheval() , 0.7F)); 
 		KeyBindingRegistry.registerKeyBinding(new KeyHandlerBow());
 		
-		//MinecraftForgeClient.registerItemRenderer(mod_retrogame.cheese.blockID, new DamagedItemRenderer());
+		MinecraftForgeClient.registerItemRenderer(mod_retrogame.cheese.blockID, (IItemRenderer)new ItemRendererCheese());
 		
 		 
 		

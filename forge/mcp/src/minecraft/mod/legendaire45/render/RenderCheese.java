@@ -19,7 +19,7 @@ import cpw.mods.fml.client.FMLClientHandler;
 
 public class RenderCheese extends TileEntitySpecialRenderer {  
 		
-		private ModelCheese model = new ModelCheese();
+		public ModelCheese model = new ModelCheese();
 		
 		private RenderBlocks blockRenderer = new RenderBlocks();
 		
@@ -45,5 +45,9 @@ public class RenderCheese extends TileEntitySpecialRenderer {
 	    public void renderTileEntityAt(TileEntity par1TileEntity, double par2, double par4, double par6, float par8)
 	    {
 	        this.renderTileEntityTileAt((TileEntityCheese)par1TileEntity, par2, par4, par6, par8);
+	    }
+	    
+	    public void renderInventoryBlock(Block block, int metadata, int modelID, RenderBlocks renderer)
+	    {
 	    }
 }
