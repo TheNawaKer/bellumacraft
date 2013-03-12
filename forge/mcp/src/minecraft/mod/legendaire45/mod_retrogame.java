@@ -1,5 +1,6 @@
 package mod.legendaire45;
 
+import mod.legendaire45.blocks.BlockBedColor;
 import mod.legendaire45.blocks.BlockBeer;
 import mod.legendaire45.blocks.BlockCheese;
 import mod.legendaire45.blocks.BlockCropBeer;
@@ -18,6 +19,7 @@ import mod.legendaire45.entity.player.EntityPlayerSword;
 import mod.legendaire45.event.BoneMealEvent;
 import mod.legendaire45.gui.GuiHandler;
 import mod.legendaire45.items.ArmorBase;
+import mod.legendaire45.items.ItemBedColor;
 import mod.legendaire45.items.ItemCup;
 import mod.legendaire45.items.ItemDisc;
 import mod.legendaire45.items.ItemDrink;
@@ -123,8 +125,10 @@ public class mod_retrogame
 		
 		public static final Block moule = (new BlockMoule(IDblock+8, 4, Material.wood)).setStepSound(Block.soundWoodFootstep).setBlockName("moule").setCreativeTab(CreativeTabs.tabDecorations).setRequiresSelfNotify();
 		public static final Block cheese = (new BlockCheese(IDblock+9, 4)).setStepSound(Block.soundSnowFootstep).setBlockName("cheese").setCreativeTab(CreativeTabs.tabDecorations).setRequiresSelfNotify();
-
 		
+		public static final Block bed = (new BlockBedColor(IDblock+10, 17)).setTextureFile(textureBlock).setBlockName("bed").setCreativeTab(CreativeTabs.tabDecorations).setRequiresSelfNotify();
+
+		public static final Item ibed = (new ItemBedColor(IDoutil+46)).setTextureFile(textureItem).setIconCoord(0, 3).setItemName("Bed").setCreativeTab(CreativeTabs.tabDecorations);
 		/*
 		 * Item
 		 */
@@ -190,7 +194,7 @@ public class mod_retrogame
 	    /*
 	     * Disc
 	     */
-	    public static Item disc1 = (new ItemDisc(2012, "mia")).setIconCoord(0, 15).setItemName("mia");
+	    public static Item disc1 = (new ItemDisc(2012, "test")).setIconCoord(0, 15).setItemName("mia");
 	    public static Item disc2 = (new ItemDisc(2013, "skrillex")).setIconCoord(0, 15).setItemName("skrillex");
 	    
 	    /*
@@ -315,6 +319,7 @@ public class mod_retrogame
 			GameRegistry.registerBlock(rubyOre);
 			GameRegistry.registerBlock(saphirOre);
 			GameRegistry.registerBlock(cheese);
+			GameRegistry.registerBlock(bed);
 			GameRegistry.registerWorldGenerator(new WorldGenOre());
 		}
 		
@@ -380,6 +385,8 @@ public class mod_retrogame
 			LanguageRegistry.addName(cheese, "Fromage");
 			
 			LanguageRegistry.addName(selle, "Selle");
+			
+			LanguageRegistry.addName(ibed, "Lit");
 			
 		}
 	    
